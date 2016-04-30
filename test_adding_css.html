@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+
+
+    jQuery(document).ready(function($){
+        loadCSS = function(href) {
+            var cssLink = $("<link rel='stylesheet' type='text/css' href='"+href+"'>");
+            $("head").append(cssLink);
+        };
+
+        loadJS = function(src) {
+            var jsLink = $("<script type='text/javascript' src='"+src+"'>");
+            $("head").append(jsLink);
+        };
+
+console.log("ss")
+        // load the css file
+        loadCSS("https://cdn.rawgit.com/msamak81/fusion/#pages/fusion.css");
+
+        // load the js file
+       // loadJS("one.js");
+
+
+
+    });
+
+</script>
+
+
+<div class="floated-spans gray_bg aligned-center">
+    <p class="quicknet-icons"><img src="http://www.stc.com.sa/wps/wcm/connect/arabic/individual/resources/6/5/65d03ffe-50a5-4a84-8d8d-e5c0e9931eff/4g_coverage_icon.png" width="51" height="54" alt=""></p>
+    <h5 class="gray_hs">الخطوة الأولى:</h5>
+    <h4 class="pink_hs">تحقق من تغطية 4G</h4>
+    <p><a href="/wps/wcm/connect/arabic/helpAndSupport/afterSaleSupport#coverage"> خرائط التغطية</a></p>
+
+</div>
+
+<a class="test">test</a>
+
+
+</body>
+</html>

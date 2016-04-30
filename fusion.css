@@ -1,3 +1,4 @@
+@import url("https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css");
 @font-face {
     font-family: 'Conv_STC-Bold';
     src: url("fonts/STC-Bold.eot");
@@ -81,9 +82,13 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
     margin-bottom: 5px;
 }
 .iconBlock img{display:none !important; }
-.iconBlock a:before{content:'';}
+.iconBlock a:before{content:'\f2a3'; font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
 
 .iconBlock:hover{background:#712c81 !important; }
 .iconBlock:hover a{color:#fff !important;}
-.subIconBlock{margin: 11px 0 0;width: 80%;position: relative;margin-left: 20px;}
+.subIconBlock{margin: 11px 0 0 20px;width: 80%;position: relative;}
 

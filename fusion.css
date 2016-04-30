@@ -80,3 +80,5 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
     font-size: 35px;
     margin-bottom: 5px;
 }
+
+.iconBlock:hover{background:#e3d5e6 !important; }

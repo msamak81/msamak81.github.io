@@ -108,3 +108,9 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
 .iconBlock:hover a, .iconBlock:hover a.xh7:before{color:#fff !important;}
 .subIconBlock{margin: 11px 0 0 20px;width: 80%;position: relative;}
 
+.mainTable2{
+    background-color: transparent !important;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.mainTable2 td:nth-of-type(1), .mainTable2 td:nth-of-type(3), .mainTable2 td:nth-of-type(1) .feeds-panel, .mainTable2 td:nth-of-type(1) .x2n6{background:#fff !important;}

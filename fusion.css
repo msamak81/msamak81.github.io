@@ -83,3 +83,5 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
 
 .iconBlock:hover{background:#712c81 !important; }
 .iconBlock:hover a{color:#fff !important;}
+.subIconBlock{margin:20px 0 0;width:82%;}
+.subIconBlock:before{content:'';border:solid 10px #fff;border-bottom-color:transparent;}

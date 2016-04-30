@@ -83,7 +83,7 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
 }
 .iconBlock img{display:none !important; }
 .iconBlock a.xh7:before{
-    content:'\f2a3';
+    content:'\f0b1';
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
@@ -94,8 +94,16 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
     display: block;
     margin-bottom: 5px;
 }
+.iconBlock:nth-of-type(1) a.xh7:before{content:'\f0b1'}
+.iconBlock:nth-of-type(2) a.xh7:before{content:'\f12e'}
+.iconBlock:nth-of-type(3) a.xh7:before{content:'\f0c0'}
+.iconBlock:nth-of-type(4) a.xh7:before{content:'\f007'}
+.iconBlock:nth-of-type(5) a.xh7:before{content:'\f0e4'}
+.iconBlock:nth-of-type(6) a.xh7:before{content:'\f085'}
+.iconBlock:nth-of-type(7) a.xh7:before{content:'\f0e8'}
+
 
 .iconBlock:hover{background:#712c81 !important; }
-.iconBlock:hover a{color:#fff !important;}
+.iconBlock:hover a, .iconBlock:hover a.xh7:before{color:#fff !important;}
 .subIconBlock{margin: 11px 0 0 20px;width: 80%;position: relative;}
 

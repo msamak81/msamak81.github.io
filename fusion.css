@@ -82,11 +82,18 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
     margin-bottom: 5px;
 }
 .iconBlock img{display:none !important; }
-.iconBlock a:before{content:'\f2a3'; font: normal normal normal 14px/1 FontAwesome;
+.iconBlock a.xh7:before{
+    content:'\f2a3';
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;}
+    -moz-osx-font-smoothing: grayscale;
+    color: #501F6C;
+    font-size: 48px;
+    display: block;
+    margin-bottom: 5px;
+}
 
 .iconBlock:hover{background:#712c81 !important; }
 .iconBlock:hover a{color:#fff !important;}

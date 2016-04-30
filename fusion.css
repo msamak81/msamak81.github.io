@@ -94,13 +94,14 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
     display: block;
     margin-bottom: 5px;
 }
-table.x1a td:nth-of-type(2) .iconBlock a.xh7:before{content:'\f0b1'}
-table.x1a td:nth-of-type(3) .iconBlock a.xh7:before{content:'\f12e'}
-table.x1a td:nth-of-type(4) .iconBlock  a.xh7:before{content:'\f0c0'}
-table.x1a td:nth-of-type(5) .iconBlock  a.xh7:before{content:'\f007'}
-.iconBlock:nth-of-type(5) a.xh7:before{content:'\f0e4'}
-.iconBlock:nth-of-type(6) a.xh7:before{content:'\f085'}
-.iconBlock:nth-of-type(7) a.xh7:before{content:'\f0e8'}
+.iconDiv div:nth-of-type(3) table.x1a td:nth-of-type(2) .iconBlock a.xh7:before{content:'\f0b1'}
+.iconDiv div:nth-of-type(3) table.x1a td:nth-of-type(3) .iconBlock a.xh7:before{content:'\f12e'}
+.iconDiv div:nth-of-type(3) table.x1a td:nth-of-type(4) .iconBlock a.xh7:before{content:'\f0c0'}
+.iconDiv div:nth-of-type(3) table.x1a td:nth-of-type(5) .iconBlock a.xh7:before{content:'\f007'}
+
+.iconDiv div:nth-of-type(6) table.x1a td:nth-of-type(2) .iconBlock a.xh7:before{content:'\f0e4'}
+.iconDiv div:nth-of-type(6) table.x1a td:nth-of-type(3)  .iconBlock a.xh7:before{content:'\f085'}
+.iconDiv div:nth-of-type(6) table.x1a td:nth-of-type(4)  .iconBlock a.xh7:before{content:'\f0e8'}
 
 
 .iconBlock:hover{background:#712c81 !important; }

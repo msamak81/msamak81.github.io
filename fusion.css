@@ -81,4 +81,5 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
     margin-bottom: 5px;
 }
 
-.iconBlock:hover{background:#e3d5e6 !important; }
+.iconBlock:hover{background:#712c81 !important; }
+.iconBlock:hover a{color:#fff !important;}

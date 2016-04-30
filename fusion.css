@@ -83,7 +83,7 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
 }
 .iconBlock img{display:none !important; }
 .iconBlock a.xh7:before{
-    content:'\f0b1';
+    content:'';
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
@@ -94,10 +94,10 @@ a{font-family: "Conv_STC-Regular",arial, sans-serif !important}
     display: block;
     margin-bottom: 5px;
 }
-table.x1a td:nth-of-type(1) .iconBlock a.xh7:before{content:'\f0b1'}
-table.x1a td:nth-of-type(2) .iconBlock a.xh7:before{content:'\f12e'}
-table.x1a td:nth-of-type(3) .iconBlock  a.xh7:before{content:'\f0c0'}
-table.x1a td:nth-of-type(4) .iconBlock  a.xh7:before{content:'\f007'}
+table.x1a td:nth-of-type(2) .iconBlock a.xh7:before{content:'\f0b1'}
+table.x1a td:nth-of-type(3) .iconBlock a.xh7:before{content:'\f12e'}
+table.x1a td:nth-of-type(4) .iconBlock  a.xh7:before{content:'\f0c0'}
+table.x1a td:nth-of-type(5) .iconBlock  a.xh7:before{content:'\f007'}
 .iconBlock:nth-of-type(5) a.xh7:before{content:'\f0e4'}
 .iconBlock:nth-of-type(6) a.xh7:before{content:'\f085'}
 .iconBlock:nth-of-type(7) a.xh7:before{content:'\f0e8'}

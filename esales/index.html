@@ -13,6 +13,30 @@
     <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script>
+        $('document').ready(function (){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:false
+                    },
+                    600:{
+                        items:1,
+                        nav:false
+                    },
+                    1000:{
+                        items:1,
+                        nav:false,
+                        loop:true
+                    }
+                }
+            })
+        })
+    </script>
 
 </head>
 <body>
@@ -31,7 +55,7 @@
 
                 <div class="row">
 
-                    <nav class="navbar navbar-default top_menu animated fadeIn ">
+                    <nav class="navbar navbar-default  animated fadeIn  align_right">
 
                                     <div class="navbar-header">
                                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -62,30 +86,53 @@
     </header>
     <section class="main_top">
         <div class="container">
-            <div class="col-lg-6">
-                owl carousel
+            <div class="col-lg-7">
+                <div class="tablet_frame">
+                    <div class="owl-carousel">
+
+                        <div class="item">
+                             <img src="images/screens/002-login.jpg"/>
+                        </div>
+                        <div class="item">
+                            <img src="images/screens/003-registerFingerPrint.jpg"/>
+                        </div>
+                        <div class="item">
+                            <img src="images/screens/004-prepaidTransfer.jpg"/>
+                        </div>
+                        <div class="item">
+                            <img src="images/screens/005-newprepaidSIM.jpg"/>
+                        </div>
+                        <div class="item">
+                            <img src="images/screens/007-setting.jpg"/>
+                        </div>
+
+
+                    </div>
+                </div>
+
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <div class="row">
-                 <i class="esales_cion"></i>
+                 <i class="esales_icon"></i>
                 <h2>STC eSales</h2>
                 <p>
-                    Description
+                    This app should be used only by STC agents not by STC customers.
                 </p>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 downloads">
                         <a href="#" class="windows">
-                            <i class="fa"></i>
+                            <i class="fa fa-windows" aria-hidden="true"></i>
                             Windows Store
                         </a>
                     </div>
                     <div class="col-lg-6 downloads">
                         <a href="#" class="android">
-                            <i class="fa"></i>
+                            <i class="fa fa-android" aria-hidden="true"></i>
                             Google Play
+                            <h4>Coming soon</h4>
                         </a>
-                        <h4>Coming soon</h4>
+
                     </div>
                 </div>
 

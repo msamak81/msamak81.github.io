@@ -4,6 +4,7 @@
     <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esales/index.html" afterPath="$PROJECT_DIR$/esales/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esales/css/main.css" afterPath="$PROJECT_DIR$/esales/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esales/.idea/workspace.xml" afterPath="$PROJECT_DIR$/esales/.idea/workspace.xml" />
     </list>
     <ignored path="msamak81.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +33,11 @@
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1462779540000" expanded="false" signature="5151:6584" placeholder="..." />
-                <marker date="1462779540000" expanded="true" signature="6659:9304" placeholder="..." />
-                <marker date="1462779540000" expanded="true" signature="6691:9293" placeholder="..." />
-                <marker date="1462779540000" expanded="true" signature="6793:9278" placeholder="..." />
-                <marker date="1462779540000" expanded="true" signature="7965:9224" placeholder="..." />
+                <marker date="1462779983000" expanded="false" signature="5151:6584" placeholder="..." />
+                <marker date="1462779983000" expanded="true" signature="6659:9304" placeholder="..." />
+                <marker date="1462779983000" expanded="true" signature="6691:9293" placeholder="..." />
+                <marker date="1462779983000" expanded="true" signature="6793:9278" placeholder="..." />
+                <marker date="1462779983000" expanded="true" signature="7965:9224" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -292,11 +293,11 @@
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1462779540000" expanded="false" signature="5151:6584" placeholder="..." />
-            <marker date="1462779540000" expanded="true" signature="6659:9304" placeholder="..." />
-            <marker date="1462779540000" expanded="true" signature="6691:9293" placeholder="..." />
-            <marker date="1462779540000" expanded="true" signature="6793:9278" placeholder="..." />
-            <marker date="1462779540000" expanded="true" signature="7965:9224" placeholder="..." />
+            <marker date="1462779983000" expanded="false" signature="5151:6584" placeholder="..." />
+            <marker date="1462779983000" expanded="true" signature="6659:9304" placeholder="..." />
+            <marker date="1462779983000" expanded="true" signature="6691:9293" placeholder="..." />
+            <marker date="1462779983000" expanded="true" signature="6793:9278" placeholder="..." />
+            <marker date="1462779983000" expanded="true" signature="7965:9224" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -72,7 +72,13 @@
                     }
                 });
 
+
         });
+
+
+
+
+
     </script>
 
 </head>
@@ -126,29 +132,31 @@
                 <div class="col-lg-5 screens animate"  data-animation="fadeInUp">
                     <div class="banner_img"><img src="images/mac_03.png"/></div>
 
-                    <div class="owl-carousel">
-                        <div class="item">
-                            <img src="images/screens/option_3/001-splashPage.jpg"/>
-                        </div>
+                   <div class="video_cont">
+                       <video   id="video_1"  poster="video/poster.png">
+                           <source src="video/STCfingerprint.mp4" type="video/mp4">
 
-                        <div class="item">
-                            <img src="images/screens/option_3/002-login.jpg"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/screens/option_3/003-registerFingerPrint.jpg"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/screens/option_3/004-prepaidTransfer.jpg"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/screens/option_3/005-newprepaidSIM.jpg"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/screens/option_3/007-setting.jpg"/>
-                        </div>
+                           Your browser does not support the video tag.
+                       </video>
+                       <button class="play_video" onclick="playPause()" id="play_video">
+                           <i class="fa fa-play"></i>
+                       </button>
+                       <script>
+                           var myVideo = document.getElementById("video_1");
 
+                           function playPause() {
+                               if (myVideo.paused) {
+                                   myVideo.play();
+                                   document.getElementById("play_video").classList.add("pause");
+                               }
+                               else{
+                                   myVideo.pause();
+                                   document.getElementById("play_video").classList.remove("pause");
+                               }
+                           }
+                       </script>
 
-                    </div>
+                   </div>
 
 
 

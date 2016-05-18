@@ -356,6 +356,37 @@ div.features.updates .updated_bg ul li:before{content:'';background: #D73775;wid
     background: #fff;
 }
 .option_3 .owl-theme .owl-dots .owl-dot.active span, .option_3 .owl-theme .owl-dots .owl-dot:hover span{background: #E06494;}
+.video_cont{
+    position: absolute;
+    left: 75px;
+    top: 81px;
+    width: 91.7%;
+    height: 245px;
+    background: #EBEBEB;
+}
+.video_cont video{width:100%;height:100%}
+
+.video_cont .play_video {
+    background: rgba(224, 100, 148, 0.8);
+    border: solid 3px #E06494;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #EBEBEB;
+    font-size: 24px;
+    text-align: center;
+    outline: 0;
+    position: absolute;
+    top: 89px;
+    left: 43%;
+    box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.41);
+}
+
+.video_cont .play_video i{margin-left:3px;}
+.video_cont .play_video.pause{opacity:0;transition: all ease 300ms}
+.video_cont:hover .play_video.pause{opacity:1;}
+.video_cont .play_video.pause i:before{content:"\f04c"}
+
 @media (max-width: 650px){
     .screens{display:none}
     .downloads {margin-top:-25px;}

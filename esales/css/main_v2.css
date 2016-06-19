@@ -387,6 +387,8 @@ div.features.updates .updated_bg ul li:before{content:'';background: #D73775;wid
 .video_cont:hover .play_video.pause{opacity:1;}
 .video_cont .play_video.pause i:before{content:"\f04c"}
 
+.downloads .userguide{background: #e06494;text-transform: uppercase; text-align: center;}
+.downloads .userguide:hover{background: #8D569B;}
 @media (max-width: 650px){
     .screens{display:none}
     .downloads {margin-top:-25px;}

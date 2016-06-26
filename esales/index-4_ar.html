@@ -133,29 +133,12 @@
                 <div class="col-lg-5 screens animate"  data-animation="fadeInUp">
                     <div class="banner_img"><img src="images/mac_03.png"/></div>
 
-                   <div class="video_cont">
-                       <video   id="video_1"  poster="video/poster.png">
-                           <source src="video/STCfingerprint.mp4" type="video/mp4">
-
-                          متصفحك لا يدعم الفيديو
-                       </video>
-                       <button class="play_video" onclick="playPause()" id="play_video">
+                   <div class="video_cont" data-toggle="modal" data-target=".bs-example-modal-lg">
+                       <img src="video/poster.png">
+                       <button class="play_video"  id="play_video" >
                            <i class="fa fa-play"></i>
                        </button>
-                       <script>
-                           var myVideo = document.getElementById("video_1");
 
-                           function playPause() {
-                               if (myVideo.paused) {
-                                   myVideo.play();
-                                   document.getElementById("play_video").classList.add("pause");
-                               }
-                               else{
-                                   myVideo.pause();
-                                   document.getElementById("play_video").classList.remove("pause");
-                               }
-                           }
-                       </script>
 
                    </div>
 
@@ -175,14 +158,31 @@
             <div class="col-lg-4 feature_div animate " data-animation="fadeInUp">
                 <div class="col-xs-12 animate " data-animation="fadeInUp"><i class="svg-icons fingerprint"></i></div>
                 <div class="col-xs-12 animate " data-animation="fadeInUp">
-                    <h3>توثيق البصمة</h3>
+                    <h3>ربط البصمة</h3>
                     <ul>
                         <li>
-                            توثيق شريحة مفوتر حالية مع البصمة
-
+                            ربط البصمة مع رقم جوال مفوتر
                         </li>
-                        <li>توثيق شريحة مسبقة الدفع حاليه مع البصمة</li>
-                        <li>توثيق شريحة كويك نت حالية مع البصمة</li>
+                        <li>ربط البصمة مع رقم سوا</li>
+                        <li>ربط البصمة مع شريحة بيانات</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 feature_div animate " data-animation="fadeInUp">
+                <div class="col-xs-12 animate " data-animation="fadeInUp"><i class="svg-icons transfer"></i></div>
+                <div class="col-xs-12 animate " data-animation="fadeInUp">
+                    <h3>
+                        نقل الملكية
+                    </h3>
+                    <ul>
+                        <li>
+                            نقل ملكية المسبق الدفع (سوا و شريحة البيانات) إلى عميل آخر في الشركة
+                        </li>
+                        <li>
+                            نقل ملكية المسبق الدفع (سوا و شريحة البيانات) إلى عميل جديد
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -195,39 +195,16 @@
                     </h3>
                     <ul>
                         <li>
-شريحة مفوترة جديدة مع ربطها بالصمة
+                            اصدار شريحة سوا جديدة
                         </li>
                         <li>
-                            شريحة مسبقة الدفع جديدة مع توثيقها بالبصمة
+                            اصدار شريحة بيانات جديدة
 
 
                         </li>
                         <li>
-                           شريحة سوا زيارة جديدة مع توثيقها بالبصمة
+                            اصدار شريحة سوا زيارة جديدة
 
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-4 feature_div animate " data-animation="fadeInUp">
-                <div class="col-xs-12 animate " data-animation="fadeInUp"><i class="svg-icons transfer"></i></div>
-                <div class="col-xs-12 animate " data-animation="fadeInUp">
-                    <h3>
-                        نقل الملكية
-                    </h3>
-                    <ul>
-                        <li>
-                            نقل ملكية شريحة سوا لعميل حالي
-                        </li>
-                        <li>
-                            نقل ملكية شريحة سوا لعميل جديد
-                        </li>
-                        <li>
-                            نقل ملكية شريحة كويك نت مفوترة لعميل حالي
-                        </li>
-                        <li>
-
-                            نقل ملكية شريحة كويك نت مفوترة لعميل جديد
                         </li>
                     </ul>
                 </div>
@@ -363,5 +340,37 @@
 
 
 </div>
+
+
+<!-- video popup -->
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="video_popup">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <video   id="video_1"  poster="video/poster.png" controls class="video_player">
+                    <source src="video/STCfingerprint.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function (){
+        $('.bs-example-modal-lg').on('shown.bs.modal', function (e) {
+            $('.video_player').trigger('play');
+        })
+
+        $('.bs-example-modal-lg').on('hidden.bs.modal', function (e) {
+            $('.video_player').trigger('pause');
+        })
+    })
+</script>
 </body>
 </html>

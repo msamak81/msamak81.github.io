@@ -105,7 +105,7 @@
                 <div class="col-lg-7 top_logo">
 
 
-                    <h2 class="site_name animate " data-animation="fadeInRight"> eSales App.</h2>
+                    <h2 class="site_name animate " data-animation="fadeInRight"> eSales App</h2>
 
                     <h1 class="main_msg animate " data-animation="fadeInLeft">
                        New STC Sales Channel.
@@ -132,29 +132,12 @@
                 <div class="col-lg-5 screens animate"  data-animation="fadeInUp">
                     <div class="banner_img"><img src="images/mac_03.png"/></div>
 
-                   <div class="video_cont">
-                       <video   id="video_1"  poster="video/poster.png">
-                           <source src="video/STCfingerprint.mp4" type="video/mp4">
-
-                           Your browser does not support the video tag.
-                       </video>
-                       <button class="play_video" onclick="playPause()" id="play_video">
+                   <div class="video_cont"  data-toggle="modal" data-target=".bs-example-modal-lg">
+                      <img src="video/poster.png">
+                       <button class="play_video"  id="play_video">
                            <i class="fa fa-play"></i>
                        </button>
-                       <script>
-                           var myVideo = document.getElementById("video_1");
 
-                           function playPause() {
-                               if (myVideo.paused) {
-                                   myVideo.play();
-                                   document.getElementById("play_video").classList.add("pause");
-                               }
-                               else{
-                                   myVideo.pause();
-                                   document.getElementById("play_video").classList.remove("pause");
-                               }
-                           }
-                       </script>
 
                    </div>
 
@@ -172,35 +155,36 @@
             <div class="col-lg-4 feature_div animate " data-animation="fadeInUp">
                 <div class="col-xs-12 animate " data-animation="fadeInUp"><i class="svg-icons fingerprint"></i></div>
                 <div class="col-xs-12 animate " data-animation="fadeInUp">
-                    <h3>Register Fingerprint</h3>
+                    <h3>Link Fingerprint</h3>
                     <ul>
-                        <li>Register existing  postpaid SIM card with finger print.</li>
-                        <li>Register existing prepaid SIM card with finger print.</li>
-                        <li>Register existing prepaid Quicknet SIM card with finger print.</li>
+                        <li>Link fingerprint to existing prepaid number.</li>
+                        <li>Link fingerprint to existing postpaid number.</li>
+                        <li>Link fingerprint to existing Data SIM.</li>
                     </ul>
                 </div>
             </div>
+
+            <div class="col-lg-4 feature_div animate " data-animation="fadeInUp">
+                <div class="col-xs-12 animate " data-animation="fadeInUp"><i class="svg-icons transfer"></i></div>
+                <div class="col-xs-12 animate " data-animation="fadeInUp">
+                    <h3>Transfer Ownership</h3>
+                    <ul>
+                        <li>Transfer prepaid (Sawa + Data SIM) ownership to existing STC customer.</li>
+                        <li>Transfer prepaid (Sawa + Data SIM) ownership to new customer.</li>
+
+                    </ul>
+                </div>
+            </div>
+
             <div class="col-lg-4 feature_div animate " data-animation="fadeInUp">
                 <div class="col-xs-12 animate " data-animation="fadeInUp"><i class="svg-icons newsim"></i></div>
 
                 <div class="col-xs-12 animate " data-animation="fadeInUp">
-                    <h3>New SIM Cards</h3>
+                    <h3>New SIM Card</h3>
                     <ul>
-                        <li>New postpaid SIM cards with finger print registration.</li>
-                        <li>New SAWA SIM cards with finger print registration.</li>
-                        <li>New SAWA Zeyara SIM cards with finger print registration.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-4 feature_div animate " data-animation="fadeInUp">
-                <div class="col-xs-12 animate " data-animation="fadeInUp"><i class="svg-icons transfer"></i></div>
-                <div class="col-xs-12 animate " data-animation="fadeInUp">
-                    <h3>Ownership Transfer</h3>
-                    <ul>
-                        <li>Transfer SAWA ownership to existing STC customer.</li>
-                        <li>Transfer SAWA ownership to new customer</li>
-                        <li>Transfer postpaid Quicknet ownership to existing STC customer</li>
-                        <li>Transfer postpaid Quicknet ownership to new customer</li>
+                        <li>Issues new Sawa SIM card.</li>
+                        <li>Issues new prepaid Data SIM card.</li>
+                        <li>Issues new Sawa Zeyara SIM card.</li>
                     </ul>
                 </div>
             </div>
@@ -285,12 +269,21 @@
 
 
             <div class="row">
-                <div class="col-lg-4 centered downloads animate " data-animation="fadeInUp">
-                    <a href="#" class="userguide">
-                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                        Download user Guide
-                    </a>
+                <div class="col-lg-9 centered">
+                    <div class="col-lg-6  downloads animate " data-animation="fadeInUp">
+                        <a href="#" class="userguide">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            Download user Guide (Android)
+                        </a>
+                    </div>
+                    <div class="col-lg-6  downloads animate " data-animation="fadeInUp">
+                        <a href="#" class="userguide">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            Download user Guide (Windwos)
+                        </a>
+                    </div>
                 </div>
+
 
             </div>
         </div>
@@ -332,5 +325,37 @@
 
 
 </div>
+
+
+<!-- video popup -->
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="video_popup">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <video   id="video_1"  poster="video/poster.png" controls class="video_player">
+                    <source src="video/STCfingerprint.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function (){
+        $('.bs-example-modal-lg').on('shown.bs.modal', function (e) {
+              $('.video_player').trigger('play');
+        })
+
+        $('.bs-example-modal-lg').on('hidden.bs.modal', function (e) {
+            $('.video_player').trigger('pause');
+        })
+    })
+</script>
 </body>
 </html>

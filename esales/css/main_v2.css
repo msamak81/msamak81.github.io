@@ -212,6 +212,7 @@ div.features.updates .updated_bg ul li:before{content:'';background: #D73775;wid
     font-size: 2.5em;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: normal;
+    text-align: center;
 }
 .feature_div ul{
     padding: 15px;
@@ -363,8 +364,9 @@ div.features.updates .updated_bg ul li:before{content:'';background: #D73775;wid
     width: 91.7%;
     height: 245px;
     background: #EBEBEB;
+    cursor: pointer;
 }
-.video_cont video{width:100%;height:100%}
+ video{width:100%;height:100%}
 
 .video_cont .play_video {
     background: rgba(224, 100, 148, 0.8);
@@ -387,8 +389,10 @@ div.features.updates .updated_bg ul li:before{content:'';background: #D73775;wid
 .video_cont:hover .play_video.pause{opacity:1;}
 .video_cont .play_video.pause i:before{content:"\f04c"}
 
+
 .downloads .userguide{background: #e06494;text-transform: uppercase; text-align: center;}
 .downloads .userguide:hover{background: #8D569B;}
+.video_cont img{width:100%;}
 @media (max-width: 650px){
     .screens{display:none}
     .downloads {margin-top:-25px;}

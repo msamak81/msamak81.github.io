@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <title>Eid Greeting Card</title>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/html2canvas.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/eid_card.css"/>
+
+    <script>
+        $(document).ready(function(){
+
+
+            var element = $(".eid_card"); // global variable
+            var getCanvas; // global variable
+
+            $('.greeter_name').change(function (){
+                if (! $(this).val() == ''){
+                    html2canvas(element, {
+                        onrendered: function (canvas) {
+                            $(".card_preview").append(canvas);
+
+                            getCanvas = canvas;
+                        },
+                        allowTaint:true,
+                        width:'842',
+                        height:'595',
+                        timeout:20,
+                        letterRendering:true,
+                    });
+                }
+
+            })
+
+            $(".download_card").on('click', function () {
+
+                var name= $('.greeter_name').val();
+                var imgageData = getCanvas.toDataURL("image/png");
+                // Now browser starts downloading it instead of just showing it
+                var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+                $(".download_card").attr("download",name+"_greeting.png").attr("href", newData);
+
+                $('.card_preview').html('');
+
+
+            });
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+<div class="eid_cont">
+    <div class="eid_card">
+        <input type="text" placeholder="أدخل اسمك " class="greeter_name" value=""/>
+
+    </div>
+    <div class="eid_download">
+        <a href="javascript:void(0)" class="download_card" >Download Card</a>
+    </div>
+    <div class="card_preview" style="display:none"></div>
+</div>
+</body>
+</html>

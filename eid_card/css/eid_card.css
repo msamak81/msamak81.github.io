@@ -20,7 +20,7 @@ body{}
 .eid_card .greeter_name {
     position: absolute;
     right: 40px;
-    top:70px;
+    top:60px;
     font-family: stc-bold,arial,sans-serif;
     font-size:30px;
     color:#712d81;

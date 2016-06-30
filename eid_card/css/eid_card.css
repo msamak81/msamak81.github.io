@@ -30,7 +30,8 @@ body{}
     outline: 0;
     line-height: 38px;
     direction: rtl;
-    padding: 0 5px;
+    padding: 5px;
+	height:40px;
 }
 .download_card{
     background: #6f2c80;

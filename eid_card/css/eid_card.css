@@ -5,7 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
-body{direction:ltr}
+body{}
 .eid_cont {
     width:842px;
     margin:0 auto;
@@ -19,7 +19,7 @@ body{direction:ltr}
 }
 .eid_card .greeter_name {
     position: absolute;
-    right:40px;
+    right: 40px;
     top:70px;
     font-family: stc-bold,arial,sans-serif;
     font-size:30px;
@@ -28,8 +28,9 @@ body{direction:ltr}
     background:transparent;
     text-align: right;
     outline: 0;
-
-
+    line-height: 38px;
+    direction: rtl;
+    padding: 0 5px;
 }
 .download_card{
     background: #6f2c80;

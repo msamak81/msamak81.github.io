@@ -1,0 +1,127 @@
+@media (min-width: 748px) {
+	.title-with-video-custom {
+		margin-top: -215px !important;
+	}
+	.title-with-video-custom h1 {
+		color: #FFF;
+	}
+	.title-with-video-custom p {
+		color: #e6e6e6;
+	}
+}
+section.section-color-custom {
+	border-top: 0;
+	background: #E8E8E8;
+}
+
+.social-icons li {
+	box-shadow: none;
+}
+.social-icons li a {
+	background: transparent;
+	color: #FFF !important;
+}
+
+.divider-top-section-custom {
+	margin-bottom: -50px !important;
+}
+
+.google-map {
+	margin: 35px 0 -50px !important;
+}
+
+#footer .logo img {
+	max-width: 100px;
+	opacity: 0.5;
+}
+#footer hr.solid {
+	background: #1b1b1b none repeat scroll 0 0;
+	margin-top: -10px;
+}
+#footer h5 {
+	font-size: 15px;
+}
+#footer .fa-phone {
+	position: relative;
+	top: 1px;
+	margin-right: 2px;
+}
+#footer .footer-email-custom {
+	margin: 2px 10px 0 0;
+	font-size: 13px;
+	border-right: 1px solid #1b1b1b;
+	padding: 0 20px 3px 0;
+	display: block;
+}
+
+#footer {
+	background: #E9EFF2 url(../../img/footer-bg.jpg) no-repeat 50% 50%;
+	border-top: 0;
+	padding: 60px 0 30px;
+	min-height: 400px;
+	overflow: hidden;
+}
+#footer h1, #footer h2, #footer h3, #footer h4, #footer a {
+	color: #333;
+}
+#footer .list-footer-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#footer .list-footer-nav a {
+	font-size: 14px;
+	color: #777;
+	text-decoration: none;
+}
+#footer .list-footer-nav a:hover {
+	color: #888;
+}
+#footer .newsletter form {
+	max-width: 100%;
+	margin: 27px 0 12px;
+}
+#footer .newsletter form input.form-control {
+	height: 45px;
+	padding: 12px;
+}
+#footer .newsletter form .btn {
+	height: 45px;
+	width: 45px;
+}
+#footer .fa {
+	display: inline-block;
+	padding-right: 2px;
+	position: relative;
+	top: 1px;
+	color: #000;
+}
+#footer .footer-copyright {
+	background: transparent;
+	margin: -10px 0 0;
+	padding: 20px 0 0;
+	border-top: 1px solid #FFF;
+}
+#footer .footer-copyright p {
+	color: #ababab;
+}
+
+@media (min-width: 992px) {
+	#footer {
+		margin-top: 0;
+	}
+	#footer .logo {
+		margin-top: 75px;
+	}
+	#footer:after {
+		background: #000 none repeat scroll 0 0;
+		bottom: -233px;
+		content: "";
+		height: 400px;
+		position: absolute;
+		right: -177px;
+		transform: rotate(50deg);
+		width: 400px;
+		z-index: 1;
+	}
+}

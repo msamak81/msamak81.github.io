@@ -2934,7 +2934,7 @@ html[dir="rtl"] #header .tip.skin:before {
 	}
 
 	#header .header-nav.header-nav-stripe nav > ul > li:not(:hover).active > a {
-		color: #89b837;
+		color: #006543;
 	}
 
 	#header .header-nav.header-nav-stripe nav > ul > li:hover > a {

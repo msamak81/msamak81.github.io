@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'mystc3';
+    src:
+    url('fonts/mystc3.ttf?t7coel') format('truetype'),
+    url('fonts/mystc3.woff?t7coel') format('woff'),
+    url('fonts/mystc3.svg?t7coel#mystc3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'mystc3' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-4g:before {
+    content: "\61";
+}
+.icon-bill:before {
+    content: "\62";
+}
+.icon-chat:before {
+    content: "\63";
+}
+.icon-cloud:before {
+    content: "\64";
+}
+.icon-contact_us:before {
+    content: "\65";
+}
+.icon-coverage:before {
+    content: "\66";
+}
+.icon-demo:before {
+    content: "\67";
+}
+.icon-download:before {
+    content: "\68";
+}
+.icon-email:before {
+    content: "\69";
+}
+.icon-faqs:before {
+    content: "\6a";
+}
+.icon-fax:before {
+    content: "\6b";
+}
+.icon-fiber_optic:before {
+    content: "\6c";
+}
+.icon-games:before {
+    content: "\6d";
+}
+.icon-internet:before {
+    content: "\6e";
+}
+.icon-landline:before {
+    content: "\6f";
+}
+.icon-laptop:before {
+    content: "\70";
+}
+.icon-location:before {
+    content: "\71";
+}
+.icon-mobile:before {
+    content: "\72";
+}
+.icon-pc:before {
+    content: "\73";
+}
+.icon-rate:before {
+    content: "\74";
+}
+.icon-retails_outlet:before {
+    content: "\75";
+}
+.icon-rewards:before {
+    content: "\76";
+}
+.icon-router:before {
+    content: "\77";
+}
+.icon-sim:before {
+    content: "\78";
+}
+.icon-sms:before {
+    content: "\79";
+}
+.icon-tablet:before {
+    content: "\7a";
+}
+.icon-tv:before {
+    content: "\31";
+}
+.icon-usb_router:before {
+    content: "\32";
+}
+.icon-website:before {
+    content: "\33";
+}
+.icon-wifi:before {
+    content: "\34";
+}
+

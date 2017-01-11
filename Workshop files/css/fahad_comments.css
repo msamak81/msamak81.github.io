@@ -1,0 +1,56 @@
+/*<link rel="stylesheet" type="text/css" href="../css/fahad_comments.css">*/
+
+
+/*contac us classes - added by Fahad Saud at 9-4-2016*/
+.contact_search {margin: 0 auto; height: 110px; padding: 31px;width: 50%;}
+.round_box { height:110px; padding:24px; border-radius:8px; background:#eaeaea;}
+.margin-left-40 { margin-left:40px;}
+.mystc_app a{display:inline-block}
+.mystc_app a img {mix-blend-mode:darken}
+.social_links a{width:54px;height:54px;border-radius:50%;color:#fff;display: block;text-align: center;margin: 0 auto;border:solid 1px transparent;transition:all ease 300ms;}
+.social_links a i{font-size: 30px;margin-top: 23%;}
+.social_links h4{color:#40729a !important;font-size: 16px !important;text-transform:capitalize}
+.social_links .instagram  a{background:#40729a}
+.social_links .instagram h4{color:#40729a !important;}
+.social_links .twitter  a{background:#26a7df}
+.social_links .twitter h4{color:#26a7df !important;}
+.social_links .facebook  a{background:#4d67a5}
+.social_links .faecbook h4{color:#4d67a5 !important;}
+.social_links .google  a{background:#d84a36}
+.social_links .google h4{color:#d84a36 !important;}
+.social_links .youtube  a{background:#cc181e}
+.social_links .youtube h4{color:#cc181e !important;}
+.social_links .foursquare  a{background:#f94877}
+.social_links .foursquare h4{color:#f94877 !important;}
+.social_links   a:hover{background:#fff;}
+.social_links .instagram  a:hover{border-color:#40729a; color:#40729a}
+.social_links .twitter  a:hover{border-color:#26a7df; color:#26a7df}
+.social_links .facebook  a:hover{border-color:#4d67a5; color:#4d67a5}
+.social_links .google  a:hover{border-color:#d84a36; color:#d84a36}
+.social_links .youtube  a:hover{border-color:#cc181e; color:#cc181e}
+.social_links .foursquare  a:hover{border-color:#f94877; color:#f94877}
+.tobig h1 {font-weight: bold;font-size: 74px !important;margin-top: -25px !important;}
+.contact_info ul{width:100%; background: #eaeaea; padding: 15px 20px 1px 20px;}
+.contact_info ul li{ border-bottom:1px solid #cebad3;}
+.contact_info ul li:last-child {border-bottom:none;}
+.live_chat{width:98% !important;margin-left: 10px!important;background:#e79b14;color:#FFF;padding: 36px;}
+.live_chat h1 {color: #FFF !important;font-weight: bold;}
+.contact_STC ul{width:100%;/* padding: 15px 20px 1px 20px; */}
+.contact_STC ul li{border-bottom:1px solid #cebad3;padding: 15px 0;}
+.contact_STC ul li:last-child {border-bottom:none;}
+
+
+/*FAQs classes - added by Fahad Saud at 13-4-2016*/
+.faqs-box {padding: 40px 48px !important;width: 48%;margin-bottom: 24px;}
+.faqs-box span { text-decoration: underline !important;margin-bottom: 10px !important;display: block;}
+.faqs-box a {margin-top: 33px;}
+.margin-right-35{ margin-right:35px;}
+
+/*special offers classes - added by Fahad Saud at 20-4-2016*/
+
+
+
+
+
+
+

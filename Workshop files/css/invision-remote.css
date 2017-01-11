@@ -1,0 +1,160 @@
+
+#inv-remote .firstbox {
+
+	border-radius: 4px;
+	border: 1px #c8ccc6 solid;
+	height: 353px;
+	margin-bottom: 20px;
+	padding: 17px 16px 0px 16px;
+}
+
+#inv-remote .threedarea {
+	position: relative;
+}
+
+#inv-remote .threedright, #inv-remote .threedleft {
+	position: absolute;
+	top: 105px;
+	right: 0px;
+	width: 32px;
+	height: 32px;
+	z-index: 300;
+	cursor: pointer;
+	border: solid 1px #713183;
+	border-radius: 50%;
+	color: #713183;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 0;
+	transition:ease all  300ms;
+}
+#inv-remote .threedleft {
+	position: absolute;
+	top: 105px;
+	left: -20px;
+	right:auto;
+}
+
+#inv-remote .gotodetails {
+	position: absolute;
+	bottom: 28px;
+	width: 119px;
+	height: 31px;
+	cursor: pointer;
+	z-index: 300;
+	background: transparent;
+	border: solid 1px #713183;
+	border-radius: 20px;
+	color: #713183;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 6px;
+	transition:ease all 300ms;
+	left: 30%;
+}
+#inv-remote .threedright:hover, #inv-remote .threedleft:hover, #inv-remote .gotodetails:hover{
+	background:#713183;color:#fff;
+}
+#inv-remote .tooltiponoff {
+	bottom: 91px;
+	cursor: pointer;
+	height: 29px;
+	left: 204px;
+	position: absolute;
+	width: 18px;
+	z-index: 300;
+}
+
+#inv-remote .tooltip {
+	position: absolute;
+	bottom: 126px;
+	left: 42px;
+	width: 303px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 300;
+	display: none;
+	opacity: 1;
+}
+#inv-remote .tooltip bdo, #inv-remote .tooltiponoff bdo, #inv-remote .remote bdo  {
+	width: 120px;
+	background: #d7427c;
+	position: absolute;
+	top: 24px;
+	right: -9px;
+	color: #fff;
+	font-size: 12px;
+	padding: 10px;
+	display: none;
+	min-height: 46px;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+	font-family: inherit;
+	z-index:600;
+}
+#inv-remote .tooltip bdo b, #inv-remote .tooltiponoff bdo b {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: -15px;
+	right: 9px;
+	border: solid 8px transparent;
+	border-bottom-color: #D7427C;
+}
+#inv-remote .tooltiponoff bdo {top: 24px;right: -8px;}
+#inv-remote .tooltip .s1, #inv-remote .tooltip .s2, #inv-remote .tooltip .s3, #inv-remote .tooltip .s4, #inv-remote .tooltip .s5, #inv-remote .tooltip .s6, #inv-remote .tooltip .s7, #inv-remote .tooltip .s8, #inv-remote .tooltip .s9, #inv-remote .tooltip .s10, #inv-remote .tooltip .s11, #inv-remote .remote .s1, #inv-remote .remote .s2, #inv-remote .remote .s3, #inv-remote .remote .s4, #inv-remote .remote .s5, #inv-remote .remote .s6, #inv-remote .tooltiponoff .s1 {
+	background: transparent;
+	height: 17px;
+	width: 17px;
+	position: absolute;
+	top: 0;
+	left: 12px;
+	display: none;
+	border: solid 1px #65676B;
+	border-radius: 50%;
+	display: none;
+	transition: all ease 300ms;
+	cursor: pointer;
+}
+#inv-remote .tooltip .s1:hover, #inv-remote .tooltip .s2:hover, #inv-remote .tooltip .s3:hover, #inv-remote .tooltip .s4:hover, #inv-remote .tooltip .s5:hover, #inv-remote .tooltip .s6:hover, #inv-remote .tooltip .s7:hover, #inv-remote .tooltip .s8:hover, #inv-remote .tooltip .s9:hover, #inv-remote .tooltip .s10:hover, #inv-remote .tooltip .s11:hover, #inv-remote .remote .s1:hover, #inv-remote .remote .s2:hover, #inv-remote .remote .s3:hover, #inv-remote .remote .s4:hover, #inv-remote .remote .s5:hover, #inv-remote .remote .s6:hover, #inv-remote .tooltiponoff .s1:hover
+{background:rgba(215, 66, 124, 0.58);}
+#inv-remote .tooltip .s2 {left: 35px;}
+#inv-remote .tooltip .s3 {left: 58px;}
+#inv-remote .tooltip .s4 {left: 76px;}
+#inv-remote .tooltip .s5 {left: 94px;}
+#inv-remote .tooltip .s6 {left: 121px;}
+#inv-remote .tooltip .s7 {top: 6px;left: 188px;}
+#inv-remote .tooltip .s8 {top: 6px;left: 209px;}
+#inv-remote .tooltip .s9 {top: 9px;left: 233px;}
+#inv-remote .tooltip .s10 {top: 7px;left: 260px;}
+#inv-remote .tooltip .s11 {top: 9px;left: 283px;}
+#inv-remote .remote {
+	position: relative;
+	background: transparent url(../images/tv/animations/remote.png) no-repeat scroll center center;
+	height: 247px;
+}
+#inv-remote .remote bdo {top: -14px;right: 29px;}
+#inv-remote .remote bdo b {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 15px;
+	right: -19px;
+	border: solid 10px transparent;
+	border-left-color: #D7427C;
+}
+.remote_controls{width: 86px;margin:0 auto;position: relative;}
+#inv-remote .remote .s1, #inv-remote .remote .s2, #inv-remote .remote .s3, #inv-remote .remote .s4, #inv-remote .remote .s5, #inv-remote .remote .s6 {
+	top: 4px;
+	left: 65px;
+	display: block;
+}
+#inv-remote .remote .s2 {top: 87px;left: 6px;}
+#inv-remote .remote .s3 {top: 87px;left: 25px;}
+#inv-remote .remote .s4 {top: 87px;left: 44px;}
+#inv-remote .remote .s5 {top: 87px;left: 63px;}
+#inv-remote .remote .s6 {top: 108px;left: 6px;}
+#inv-remote .tooltiponoff .s1 {top: 1px;left: 15px;}
+

@@ -1,0 +1,157 @@
+<div data-page="ask_ambulance" class="page">
+  <div class="navbar">
+    <div class="navbar-inner"> 
+      <!-- We have home navbar without left link-->
+      <div class="left"> <a href="#" class="back link"> <i class="icon-back"></i></a> </div>
+      <div class="center sliding">Ask for Abmbulance</div>
+    </div>
+  </div>
+  <div class="page-content lightgray_2_bg">
+
+          <div class="lightgray_2_bg">
+            <div class="inner_pages_gradient animated fadeIn">
+              <div class="white_bg content_radius">
+      <div class="form" >
+
+    <form action="#">
+          <div class="">
+
+            <div class="list-block verification">
+              <ul>
+				<li>
+                  <div class="item-content animated fadeInUp">
+                    <div class="item-inner">
+                      <div class="row full-width">
+                        <div class="col-15">
+                          <div class="inputs_group">
+                            <i  class="icon-calendar"></i>
+                          </div>
+                        </div>
+                        <div class="col-85">
+                          <div class="inputs_group">
+                            <input type="text" required="" class="date_picker">
+                            <span class="bar"></span>
+                            <label>Select Date *</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </li>
+				<li>
+                  <div class="item-content animated fadeInUp">
+                    <div class="item-inner">
+                      <div class="row full-width">
+                        <div class="col-15">
+                          <div class="inputs_group">
+                            <i  class="icon-clock"></i>
+                          </div>
+                        </div>
+                        <div class="col-85">
+                          <div class="inputs_group">
+                            <input type="text" required="" class="time_picker">
+                            <span class="bar"></span>
+                            <label>Select Time *</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content animated fadeInUp">
+                    <div class="item-inner">
+                      <div class="inputs_group">
+                         <span class="icon-locations"></span>
+						  <input type="text" required="" onClick="myApp.popup(.map_popup, removeOnClose, animated)"  class="open-popup">
+                        <span class="bar"></span>
+                        <label>Pickup Location  *</label>
+						 
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content animated fadeInUp">
+                    <div class="item-inner">
+                      <div class="inputs_group">
+						  <span class="icon-locations"></span>
+                        <input type="text" required="" onClick="myApp.popup(.map_popup, removeOnClose, animated)"  class="open-popup">
+                        <span class="bar"></span>
+                        <label>Where To *</label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+               <li>
+                  <div class="item-content animated fadeInUp">
+                    <div class="item-inner not-empty-state">
+                      <div class="row full-width">
+
+                        <div class="col-30">
+                          <div class="inputs_group">
+                            <select class="not-empty-state">
+                              <option>
+                                +974
+                              </option>
+                              <option>
+                                +966
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-70">
+                          <div class="inputs_group">
+                            <input type="number" required="" class="not-empty-state" pattern="\d*">
+                            <span class="bar"></span>
+                            <label>Mobile Number *</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content animated fadeInUp">
+                    <div class="item-inner">
+                      <p class="white_text no-padding">* Required field</p>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li>
+                  <div class="item-content animated fadeInUp">
+                    <div class="item-inner">
+                      <a href="#" class="button active blue_bg white_text alert-text-title">Request</a>
+						
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+    </form>
+ 	<div class="popup map_popup" >
+      <div class="content-block">
+        <p class="popup_header gradient_left_bg white_text">Map Location</p>
+        <p><a href="#" class="close-popup"><i class="icon-close"></i></a></p>
+        <div class="popup-content">
+          <h3 class="masked_text gradient_left_bg"> Map will be here</h3>
+        </div>
+      </div>
+    </div>  
+ 	 </div>
+	  </div>
+  </div>
+</div>
+</div>

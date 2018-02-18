@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.rtl.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-right panel-cover gradient_top_bg menu-cont">
+      <div class="profile_cont gradient_left_bg shadow" style="height:90px;">
+          <div class="row">
+            <div class="col-30">
+              <div class="profile_img">
+                <i class="icon-SBAHC"></i>
+              </div>
+            </div>
+            <div class="col-70">
+              <div class="profile_data">
+                <h3>Welcome,..</h3>
+                <h3>SBAHC</h3>
+              </div>
+              <a href="Profile/home.html" class="edit_profile close-panel">
+                <i class="icon-profile2"></i>
+                My Profile
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="content-block">
+        <div class="list-block">
+          <ul>
+            <li class="item-content">
+              <div class="item-media"><i class="icon-doctors white_text"></i></div>
+              <div class="item-inner no-padding">
+                <div class="item-title">
+                  <a href="CareProvider/home.html" class="white_text close-panel">Care Provider</a>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-media"><i class="icon-vital-signs white_text"></i></div>
+              <div class="item-inner no-padding">
+                <div class="item-title">
+                  <a href="HealthCalculator/home.html" class="white_text close-panel">Health Calculator</a>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-media"><i class="icon-hom2 white_text"></i></div>
+              <div class="item-inner no-padding">
+                <div class="item-title">
+                  <a href="eServices/Dashboard.html" class="white_text close-panel">e-Services</a>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-media"><i class="icon-settings2 white_text"></i></div>
+              <div class="item-inner no-padding">
+                <div class="item-title">
+                  <a href="Settings/settings.html" class="white_text close-panel">Settings</a>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-media"><i class="icon-more white_text"></i></div>
+              <div class="item-inner no-padding">
+                <div class="item-title">
+                  <a href="More/home.html" class="white_text close-panel">More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <p> <a href="Login/login.html" class="button active white_bg darkblue_text menu_login close-panel">Login</a> </p>
+
+
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-left panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Top Navbar-->
+
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Page,  -page contains page name-->
+        <!--<div class="navbar">-->
+          <!--<div class="navbar-inner">-->
+            <!--&lt;!&ndash; We have home navbar without left link&ndash;&gt;-->
+            <!--<div class="center sliding"></div>-->
+            <!--<div class="left">-->
+              <!--<a href="#" class="link icon-only open-panel"> <i class="icon-burger-menu"></i></a>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+
+
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed toolbar-fixed">
+
+
+
+        </div>
+
+        <div class="toolbar gradient_left_bg bottom_bar">
+          <div class="toolbar-inner">
+            <a href="CareProvider/home.html" class="">
+              <i class="icon-doctors"></i>
+              <span class="tabbar-label">Providers</span>
+            </a>
+            <a href="HealthCalculator/home.html" class="">
+              <i class="icon-vital-signs"></i>
+              <span class="tabbar-label">Calculator</span>
+            </a>
+            <a  href="eServices/Dashboard.html" class=" main-tab shadow blue_text">
+              <i class="icon-home"></i>
+
+            </a>
+            <a href="Settings/settings.html" class="">
+              <i class="icon-settings2"></i>
+              <span class="tabbar-label">Settings</span>
+            </a>
+            <a href="More/home.html" class="">
+              <i class="icon-more"></i>
+              <span class="tabbar-label">More</span>
+            </a>
+          </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script src="js/Chart.bundle.min.js" type="text/javascript"></script>
+
+
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>

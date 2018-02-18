@@ -1,0 +1,15 @@
+[
+  {"name":"Anesthesiology","id":"Anesthesiology"},
+  {"name":"Cardology", "id":"Cardology"},
+  {"name":"Dentistry", "id":"Dentistry"},
+  {"name":"ENT", "id":"ENT"},
+  {"name":"E.R Physicians", "id":"E.R Physicians"},
+  {"name":"House Physicians", "id":"House Physicians"},
+  {"name":"Internal Medicine", "id":"Internal Medicine"},
+  {"name":"Neurology", "id":"Neurology"},
+  {"name":"OB-Gyne", "id":"OB-Gyne"},
+  {"name":"Pediatrics", "id":"Pediatrics"},
+  {"name":"Surgery", "id":"Surgery"},
+  {"name":"General Medicine", "id":"General Medicine"}
+
+]

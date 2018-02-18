@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9852abc-e6e2-4849-8b79-572a6a211fc6" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="App_HTML" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="my-app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ar/css/my-app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46155">
+              <caret line="3077" column="0" lean-forward="false" selection-start-line="3076" selection-start-column="30" selection-end-line="3077" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/En/css/my-app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45990">
+              <caret line="3066" column="0" lean-forward="false" selection-start-line="3066" selection-start-column="0" selection-end-line="3066" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/En/js/my-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="477" column="0" lean-forward="false" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="framework7.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ar/js/framework7.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Ar/js/my-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Body_fat_calculator.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/En/HealthCalculator/Body_fat_calculator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2250">
+              <caret line="150" column="50" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>p</find>
+      <find>pass</find>
+      <find>modal</find>
+      <find>title</find>
+      <find>// modal</find>
+      <find>modal-inner</find>
+      <find>p{</find>
+      <find>font-family: Roboto, Noto, Helvetica, Arial, sans-serif;</find>
+      <find>roboto</find>
+      <find>font-family</find>
+      <find>eServices/MyAppointments/appointment_details.html</find>
+      <find>boundary</find>
+      <find>CareProvider/doctor_list.html</find>
+      <find>call_confirmationModals</find>
+      <find>CareProvider/doctor_details.html</find>
+      <find>doctor_details</find>
+      <find>gradient-left</find>
+      <find>create_autocomplete</find>
+      <find>grad</find>
+      <find>gradient</find>
+      <find>feedback</find>
+      <find>CareProvider/</find>
+      <find>book</find>
+      <find>accorsdion</find>
+      <find>rangeChange</find>
+      <find>bmi</find>
+      <find>info</find>
+      <find>../img</find>
+      <find>nabil</find>
+      <find>spinner</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&lt;li class=&quot;animated fadeInUp&quot;&gt;</replace>
+      <replace>eServices/VitalSigns/VitalSigns_details.html</replace>
+      <replace>MyDoctors/doctor_details.html</replace>
+      <replace>eServices/VisitHistory/visit_details.html</replace>
+      <replace>eServices/BookAppointment/</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/eServices/BookAppointment/book.html" />
+        <option value="$PROJECT_DIR$/eServices/BookAppointment/Doctor_avaliability.html" />
+        <option value="$PROJECT_DIR$/Login/NewAccount.html" />
+        <option value="$PROJECT_DIR$/Login/verification.html" />
+        <option value="$PROJECT_DIR$/Profile/home.html" />
+        <option value="$PROJECT_DIR$/Profile/update_email.html" />
+        <option value="$PROJECT_DIR$/Profile/change_password.html" />
+        <option value="$PROJECT_DIR$/js/framework7.js" />
+        <option value="$PROJECT_DIR$/More/ask_for_ambulance.html" />
+        <option value="$PROJECT_DIR$/eServices/MyAppointments/home.html" />
+        <option value="$PROJECT_DIR$/eServices/VisitHistory/myvisits_home.html" />
+        <option value="$PROJECT_DIR$/eServices/MyAppointments/appointment_details.html" />
+        <option value="$PROJECT_DIR$/eServices/VisitHistory/visit_details.html" />
+        <option value="$PROJECT_DIR$/CareProvider/doctor_list.html" />
+        <option value="$USER_HOME$/Desktop/Chart.js/samples/charts/area/line-boundaries.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/eServices/VitalSigns/VitalSigns_details.html" />
+        <option value="$PROJECT_DIR$/eServices/VitalSigns/VitalSigns.html" />
+        <option value="$PROJECT_DIR$/CareProvider/doctor_details.html" />
+        <option value="$PROJECT_DIR$/eServices/MyDoctors/MyDoctors.html" />
+        <option value="$PROJECT_DIR$/eServices/FavoritsDoctors/FavoritsDoctors.html" />
+        <option value="$PROJECT_DIR$/eServices/Dashboard.html" />
+        <option value="$PROJECT_DIR$/eServices/Pharmacy/pharmacy_orders.html" />
+        <option value="$PROJECT_DIR$/css/animate.css" />
+        <option value="$PROJECT_DIR$/eServices/Pharmacy/prescription_details.html" />
+        <option value="$PROJECT_DIR$/HealthCalculator/BMI_calculator.html" />
+        <option value="$PROJECT_DIR$/HealthCalculator/Body_fat_calculator.html" />
+        <option value="$PROJECT_DIR$/HealthCalculator/carb_protin_calculator.html" />
+        <option value="$PROJECT_DIR$/HealthCalculator/ovulation_period.html" />
+        <option value="$PROJECT_DIR$/HealthCalculator/pregenancy_due_date.html" />
+        <option value="$PROJECT_DIR$/css/my-app.css" />
+        <option value="$PROJECT_DIR$/More/feedback.html" />
+        <option value="$PROJECT_DIR$/eServices/RequestReferral/RequestReferral.html" />
+        <option value="$PROJECT_DIR$/eServices/BookAppointment/doctor_list.html" />
+        <option value="$PROJECT_DIR$/js/my-app.js" />
+        <option value="$PROJECT_DIR$/eServices/MyAppointments/myappointment_home.html" />
+        <option value="$PROJECT_DIR$/eServices/LabResults/lab_details.html" />
+        <option value="$PROJECT_DIR$/eServices/MedicalReport/medical_report_details.html" />
+        <option value="$PROJECT_DIR$/eServices/RadiologyResults/radiology_report.html" />
+        <option value="$PROJECT_DIR$/Ar/Login/login.html" />
+        <option value="$PROJECT_DIR$/Ar/index.html" />
+        <option value="$PROJECT_DIR$/Ar/Settings/settings.html" />
+        <option value="/Volumes/Media/Cloud folders/Creative Cloud Files/Work/HTML/2016/MySTC_Team/UI_Kit/en/UI_KIT.html" />
+        <option value="$PROJECT_DIR$/En/HealthCalculator/BMI_calculator.html" />
+        <option value="/Volumes/Media/Cloud folders/Creative Cloud Files/Work/HTML/2016/MySTC_Team/css/main.css" />
+        <option value="$PROJECT_DIR$/Ar/HealthCalculator/BMI_calculator.html" />
+        <option value="$PROJECT_DIR$/En/HealthCalculator/Body_fat_calculator.html" />
+        <option value="$PROJECT_DIR$/En/css/my-app.css" />
+        <option value="$PROJECT_DIR$/Ar/css/my-app.css" />
+        <option value="$PROJECT_DIR$/En/js/my-app.js" />
+        <option value="$PROJECT_DIR$/Ar/js/my-app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
+              <item name="Ar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
+              <item name="Ar" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
+              <item name="Ar" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
+              <item name="En" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="javascript.nodejs.core.library.configured.version" value="6.11.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/eServices/BookAppointment" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/eServices/BookAppointment" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/eServices/Pharmacy" />
+      <recent name="$PROJECT_DIR$/eServices/MyDoctors" />
+      <recent name="$PROJECT_DIR$/eServices/FavoritsDoctors" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html (3)">
+    <configuration name="doctor_details.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/App_HTML/CareProvider/doctor_details.html" />
+    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SBAHC Mobile App Final Version/index.html" />
+    <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/App_HTML/En/index.html" />
+    <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/App_HTML/Ar/index.html" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/App_HTML/index.html" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.doctor_details.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.doctor_details.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9852abc-e6e2-4849-8b79-572a6a211fc6" name="Default" comment="" />
+      <created>1512207947267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1512207947267</updated>
+      <workItem from="1512207948426" duration="26986000" />
+      <workItem from="1512413920111" duration="8941000" />
+      <workItem from="1512477125005" duration="3003000" />
+      <workItem from="1512806763246" duration="26517000" />
+      <workItem from="1512924884946" duration="563000" />
+      <workItem from="1513017247417" duration="8833000" />
+      <workItem from="1513139547839" duration="1252000" />
+      <workItem from="1513187005897" duration="11541000" />
+      <workItem from="1513231550427" duration="2088000" />
+      <workItem from="1513275234054" duration="4280000" />
+      <workItem from="1513467856681" duration="199000" />
+      <workItem from="1513485809590" duration="1614000" />
+      <workItem from="1513620135180" duration="24466000" />
+      <workItem from="1514140143756" duration="2958000" />
+      <workItem from="1514143831132" duration="19700000" />
+      <workItem from="1514271038034" duration="1804000" />
+      <workItem from="1514298935398" duration="8172000" />
+      <workItem from="1514708035854" duration="721000" />
+      <workItem from="1514709974596" duration="224000" />
+      <workItem from="1515426582255" duration="1127000" />
+      <workItem from="1516136274391" duration="721000" />
+      <workItem from="1516360257931" duration="476000" />
+      <workItem from="1516683711657" duration="151000" />
+      <workItem from="1516688728100" duration="418000" />
+      <workItem from="1516911442265" duration="270000" />
+      <workItem from="1517114297553" duration="5798000" />
+      <workItem from="1517210651529" duration="1555000" />
+      <workItem from="1517286720514" duration="301000" />
+      <workItem from="1517373121537" duration="10244000" />
+      <workItem from="1517421991715" duration="1055000" />
+      <workItem from="1517460154863" duration="3322000" />
+      <workItem from="1517468527383" duration="2436000" />
+      <workItem from="1517721211037" duration="321000" />
+      <workItem from="1517783134048" duration="55000" />
+      <workItem from="1518076977883" duration="527000" />
+      <workItem from="1518324698814" duration="334000" />
+      <workItem from="1518814093743" duration="2179000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="214217000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10594723" sideWeight="0.49576783" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489169" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17054264" sideWeight="0.50423217" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17167382" sideWeight="0.49576783" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17054264" sideWeight="0.50423217" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/eServices/VisitHistory/visit_details.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/VisitHistory/myvisits_home.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/Pharmacy/pharmacy_orders.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/BookAppointment/book.html" />
+    <entry file="file://$PROJECT_DIR$/Login/forgetPassword.html" />
+    <entry file="file://$PROJECT_DIR$/HealthCalculator/BMI_calculator.html" />
+    <entry file="file://$PROJECT_DIR$/HealthCalculator/Body_fat_calculator.html" />
+    <entry file="file://$PROJECT_DIR$/HealthCalculator/carb_protin_calculator.html" />
+    <entry file="file://$PROJECT_DIR$/HealthCalculator/ovulation_period.html" />
+    <entry file="file://$PROJECT_DIR$/HealthCalculator/pregenancy_due_date.html" />
+    <entry file="file://$PROJECT_DIR$/css/animate.css" />
+    <entry file="file://$PROJECT_DIR$/eServices/RequestReferral/RequestReferral.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/BookAppointment/doctor_details.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/BookAppointment/doctor_list.html" />
+    <entry file="file://$PROJECT_DIR$/js/my-app.js" />
+    <entry file="file://$PROJECT_DIR$/eServices/MyAppointments/myappointment_home.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/Pharmacy/prescription_details.html" />
+    <entry file="file://$PROJECT_DIR$/More/feedback.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/LabResults/lab_orders.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/LabResults/lab_details.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/MedicalReport/medical_reports.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/MedicalReport/medical_report_details.html" />
+    <entry file="file://$PROJECT_DIR$/eServices/RadiologyResults/radiology_report.html" />
+    <entry file="file://$PROJECT_DIR$/css/my-app (1).css" />
+    <entry file="file://$PROJECT_DIR$/css/my-app.css" />
+    <entry file="file://$PROJECT_DIR$/Ar/css/framework7.material.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/Login/changePassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="105" column="32" lean-forward="false" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ar/Login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="66" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ar/Settings/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/D7/1x/logoAsset 2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ar/css/framework7.material.rtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Media/Cloud folders/Creative Cloud Files/Work/HTML/2016/MySTC_Team/UI_Kit/en/UI_KIT.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12105">
+          <caret line="807" column="38" lean-forward="false" selection-start-line="807" selection-start-column="38" selection-end-line="807" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Media/Cloud folders/Creative Cloud Files/Work/HTML/2016/MySTC_Team/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57135">
+          <caret line="3809" column="0" lean-forward="true" selection-start-line="3809" selection-start-column="0" selection-end-line="3809" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/HealthCalculator/BMI_calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="18" lean-forward="true" selection-start-line="63" selection-start-column="11" selection-end-line="74" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ar/HealthCalculator/BMI_calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="74" column="20" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="74" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En copy/js/framework7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En copy/css/framework7.material.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14580">
+          <caret line="972" column="43" lean-forward="false" selection-start-line="972" selection-start-column="43" selection-end-line="972" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/css/framework7.material.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En copy/css/my-app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1807" column="18" lean-forward="false" selection-start-line="1807" selection-start-column="18" selection-end-line="1807" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En copy/js/framework7.min (1).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/js/framework7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/HealthCalculator/Body_fat_calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="150" column="50" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ar/js/framework7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/css/my-app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45990">
+          <caret line="3066" column="0" lean-forward="false" selection-start-line="3066" selection-start-column="0" selection-end-line="3066" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ar/css/my-app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46155">
+          <caret line="3077" column="0" lean-forward="false" selection-start-line="3076" selection-start-column="30" selection-end-line="3077" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/En/js/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="477" column="0" lean-forward="false" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ar/js/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

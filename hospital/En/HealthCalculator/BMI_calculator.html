@@ -1,0 +1,85 @@
+<div data-page="bmi_calculator" class="page">
+<div class="navbar">
+  <div class="navbar-inner"> 
+    <!-- We have home navbar without left link-->
+    <div class="left"> <a href="#" class="back link"> <i class="icon-back"></i></a> </div>
+    <div class="center sliding">BMI Calculator</div>
+  </div>
+</div>
+<div class="page-content lightgray_2_bg">
+  <div class="lightgray_2_bg">
+    <div class="inner_pages_gradient animated fadeIn">
+      <div class="white_bg content_radius">
+        <div class="form" >
+          <form action="#">
+            <div class="">
+              <div class="list-block verification">
+                <ul>
+                  <div class="item-content animated fadeInUp">
+                    <div class="item-inner">
+                      <div class="row full-width">
+                        <div class="col-15">
+                          <div class="inputs_group"> <i  class="icon-height"></i> </div>
+                        </div>
+                        <div class="col-85">
+                          <div class="inputs_group">
+                            <input type="number" required="" pattern="\d*" class="bmi_height">
+                            <span class="bar"></span>
+                            <label>Tall (50cm - 220cm) *</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <li>
+                    <div class="item-content animated fadeInUp">
+                      <div class="item-inner">
+                        <div class="row full-width">
+                          <div class="col-15">
+                            <div class="inputs_group"> <i  class="icon-bmi"></i> </div>
+                          </div>
+                          <div class="col-85">
+                            <div class="inputs_group">
+                              <input type="number" required="" pattern="\d*" class="bmi_weight">
+                              <span class="bar"></span>
+                              <label>Weight (30km - 200km) *</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content animated fadeInUp">
+                      <div class="item-inner"> <a href="#" class="button active blue_bg white_text show_results ">Calculate</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="loading hidden"></div>
+            <div id="infoCard" class="info-card shadow hidden animated fadeInDown" >
+              <div class="info-card-title blue_text">The Result:</div>
+            <div class="row">
+
+              <div class="col-30  health_cal_results">
+                <i class="icon-body-fat"></i>
+              </div>
+              <div class="col-70  result_val">
+
+                <h3>90</h3>
+                <h5>normal</h5>
+
+              </div>
+            </div>
+
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

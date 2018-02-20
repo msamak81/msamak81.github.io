@@ -115,7 +115,6 @@ $$('.label-radio input[type="radio"]').on('change', function(){
     else if ( val == 'en'){
         $$('link[rel=stylesheet][href~="../Ar/css/my-app.css"]').remove();
         $$('link[rel=stylesheet][href~="css/framework7.material.rtl.min.css"]').remove();
-
         $$('head').append('<link rel="stylesheet" href="css/my-app.css">');
 
 

@@ -38,6 +38,11 @@ myApp.onPageInit('splash-screen', function (page) {
         })
 
     }, 5000);
+
+    $$(".fullscreen").on('click', function() {
+        GoInFullscreen($$(".views"));
+    });
+
 });
 
 
@@ -98,6 +103,24 @@ $$('.delete_user').on('click',function(){
     $$(this).parents('li').remove();
 })
 
+$$('.label-radio input[type="radio"]').on('change', function(){
+   var  val =  $$(this).val();
+    if(val == 'ar'){
+        $$('link[rel=stylesheet][href~="css/my-app.css"]').remove();
+
+        $$('head').append('<link rel="stylesheet" href="css/framework7.material.rtl.min.css">');
+        $$('head').append('<link rel="stylesheet" href="../Ar/css/my-app.css">');
+
+    }
+    else if ( val == 'en'){
+        $$('link[rel=stylesheet][href~="../Ar/css/my-app.css"]').remove();
+        $$('link[rel=stylesheet][href~="css/framework7.material.rtl.min.css"]').remove();
+
+        $$('head').append('<link rel="stylesheet" href="css/my-app.css">');
+
+
+    }
+})
 });
 
 
@@ -890,6 +913,21 @@ function loading_spinner (ele){
     }
 
 }
+
+
+
+function GoInFullscreen(element) {
+    if(element.requestFullscreen)
+        element.requestFullscreen();
+    else if(element.mozRequestFullScreen)
+        element.mozRequestFullScreen();
+    else if(element.webkitRequestFullscreen)
+        element.webkitRequestFullscreen();
+    else if(element.msRequestFullscreen)
+        element.msRequestFullscreen();
+}
+
+
 
 // Generate dynamic page
 

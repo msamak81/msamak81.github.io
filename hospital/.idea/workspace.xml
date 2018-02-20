@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/En/js/my-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="477" column="0" lean-forward="false" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="113" column="35" lean-forward="false" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -57,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ar/js/my-app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
-              <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+              <caret line="82" column="24" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -165,15 +165,15 @@
         <option value="$PROJECT_DIR$/Ar/Login/login.html" />
         <option value="$PROJECT_DIR$/Ar/index.html" />
         <option value="$PROJECT_DIR$/Ar/Settings/settings.html" />
-        <option value="/Volumes/Media/Cloud folders/Creative Cloud Files/Work/HTML/2016/MySTC_Team/UI_Kit/en/UI_KIT.html" />
+        <option value="$PROJECT_DIR$/../../../MySTC_Team/UI_Kit/en/UI_KIT.html" />
         <option value="$PROJECT_DIR$/En/HealthCalculator/BMI_calculator.html" />
-        <option value="/Volumes/Media/Cloud folders/Creative Cloud Files/Work/HTML/2016/MySTC_Team/css/main.css" />
+        <option value="$PROJECT_DIR$/../../../MySTC_Team/css/main.css" />
         <option value="$PROJECT_DIR$/Ar/HealthCalculator/BMI_calculator.html" />
         <option value="$PROJECT_DIR$/En/HealthCalculator/Body_fat_calculator.html" />
         <option value="$PROJECT_DIR$/En/css/my-app.css" />
         <option value="$PROJECT_DIR$/Ar/css/my-app.css" />
-        <option value="$PROJECT_DIR$/En/js/my-app.js" />
         <option value="$PROJECT_DIR$/Ar/js/my-app.js" />
+        <option value="$PROJECT_DIR$/En/js/my-app.js" />
       </list>
     </option>
   </component>
@@ -190,7 +190,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -209,40 +209,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
+              <item name="hospital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hospital" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Ar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Ar" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Ar" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App_HTML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App_HTML" type="462c0819:PsiDirectoryNode" />
+              <item name="hospital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hospital" type="462c0819:PsiDirectoryNode" />
               <item name="En" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -279,26 +262,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (3)">
-    <configuration name="doctor_details.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/App_HTML/CareProvider/doctor_details.html" />
+  <component name="RunManager" selected="JavaScript Debug.index.html (4)">
     <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SBAHC Mobile App Final Version/index.html" />
     <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/App_HTML/En/index.html" />
     <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/App_HTML/Ar/index.html" />
+    <configuration name="index.html (4)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hospital/En/index.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/App_HTML/index.html" />
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.doctor_details.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (4)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.doctor_details.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (4)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -352,17 +335,18 @@
       <workItem from="1518076977883" duration="527000" />
       <workItem from="1518324698814" duration="334000" />
       <workItem from="1518814093743" duration="2179000" />
+      <workItem from="1519147556187" duration="515000" />
+      <workItem from="1519148572792" duration="134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214217000" />
+    <option name="totallyTimeSpent" value="214866000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10594723" sideWeight="0.49576783" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10570825" sideWeight="0.49576783" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -483,14 +467,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Volumes/Media/Cloud folders/Creative Cloud Files/Work/HTML/2016/MySTC_Team/UI_Kit/en/UI_KIT.html">
+    <entry file="file://$PROJECT_DIR$/../../../MySTC_Team/UI_Kit/en/UI_KIT.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12105">
           <caret line="807" column="38" lean-forward="false" selection-start-line="807" selection-start-column="38" selection-end-line="807" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Volumes/Media/Cloud folders/Creative Cloud Files/Work/HTML/2016/MySTC_Team/css/main.css">
+    <entry file="file://$PROJECT_DIR$/../../../MySTC_Team/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57135">
           <caret line="3809" column="0" lean-forward="true" selection-start-line="3809" selection-start-column="0" selection-end-line="3809" selection-end-column="0" />
@@ -599,18 +583,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/En/js/my-app.js">
+    <entry file="file://$PROJECT_DIR$/Ar/js/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="477" column="0" lean-forward="false" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
+        <state relative-caret-position="237">
+          <caret line="82" column="24" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ar/js/my-app.js">
+    <entry file="file://$PROJECT_DIR$/En/js/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+        <state relative-caret-position="147">
+          <caret line="113" column="35" lean-forward="false" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
           <folding />
         </state>
       </provider>

@@ -955,9 +955,6 @@ function GoInFullscreen(element) {
           
   $$('.page').find('input, textarea').on('blur', function() {
      console.log('blured')
-        var container = $$(this).closest('.page-content');
-        var elementOffset = $$(this).offset().top;
-        var pageOffset = container.scrollTop();
         var newPageOffset = 0;
        setTimeout(function () {
             container.scrollTop(newPageOffset, 300);

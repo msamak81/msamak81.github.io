@@ -958,7 +958,7 @@ function GoInFullscreen(element) {
         var container = $$(this).closest('.page-content');
         var elementOffset = $$(this).offset().top;
         var pageOffset = container.scrollTop();
-        var newPageOffset = pageOffset - elementOffset - 81;
+        var newPageOffset = pageOffset + elementOffset + 81;
   mainView.showToolbar();
 })
 } 

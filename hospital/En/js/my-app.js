@@ -65,6 +65,7 @@ myApp.onPageInit('login-screen', function (page) {
 
         });
     loggedin_fn(false)
+    scrollupTextbox()
 });
 
 
@@ -75,6 +76,8 @@ myApp.onPageInit('verification', function (page) {
 
     timer()
     loggedin_fn(false)
+    
+    scrollupTextbox();
 
 });
 myApp.onPageInit('forget-verification', function (page) {
@@ -123,6 +126,7 @@ $$('.label-radio input[type="radio"]').on('change', function(){
 
     }
 })
+    
 });
 
 
@@ -143,28 +147,32 @@ myApp.onPageInit('book-appointment', function (page) {
 
     createCalendar('.date_picker')
     createTimePicker('.time_picker')
-    create_autocomplete('.clinics_autocomplete', 'Try "ENT"', 'clinics.json')
-
+    create_autocomplete('.clinics_autocomplete', 'Try "ENT"', 'clinics.json');
+scrollupTextbox()
 });
 
 myApp.onPageInit('ask_ambulance', function (page) {
     createCalendar('.date_picker')
     createTimePicker('.time_picker')
-    call_confirmationModals('.alert-text-title','would you like to submit this request', 'Confirmation','Cancel','OK','')
+    call_confirmationModals('.alert-text-title','would you like to submit this request', 'Confirmation','Cancel','OK','');
+    scrollupTextbox()
 });
 myApp.onPageInit('ask_care_provider', function (page) {    
-    call_confirmationModals('.alert-text-title','would you like to submit this question', 'Confirmation','Cancel','OK','')
+    call_confirmationModals('.alert-text-title','would you like to submit this question', 'Confirmation','Cancel','OK','');
+    scrollupTextbox()
 });
 myApp.onPageInit('ovulation_period', function (page) {
     createCalendar('.date_picker')
     createTimePicker('.time_picker')
-    call_confirmationModals('.alert-text-title','would you like to submit this request', 'Confirmation','Cancel','OK','')
+    call_confirmationModals('.alert-text-title','would you like to submit this request', 'Confirmation','Cancel','OK','');
+    scrollupTextbox()
 });
 
 myApp.onPageInit('pregenancy_due_date', function (page) {
     createCalendar('.date_picker')
     createTimePicker('.time_picker')
-    call_confirmationModals('.alert-text-title','would you like to submit this request', 'Confirmation','Cancel','OK','')
+    call_confirmationModals('.alert-text-title','would you like to submit this request', 'Confirmation','Cancel','OK','');
+    scrollupTextbox()
 });
 
 
@@ -450,7 +458,7 @@ myApp.onPageInit('bmi_calculator', function (page) {
             $$('.info-card').removeClass('hidden');
         }, 3000);
     });
-
+scrollupTextbox()
 });
 
 // End of BMI Calculation service
@@ -604,7 +612,7 @@ myApp.onPageInit('Body_fat_calculator', function (page) {
         }, 3000);
     });
 
-
+scrollupTextbox()
 });
 // End of Body Fat Calculation service
 
@@ -619,7 +627,7 @@ myApp.onPageInit('carb_protin_calculator', function (page) {
             $$('.info-card').removeClass('hidden');
         }, 2000);
     });
-
+scrollupTextbox()
 });
 myApp.onPageInit('ovulation_period', function (page) {
 
@@ -631,7 +639,7 @@ myApp.onPageInit('ovulation_period', function (page) {
             $$('.info-card').removeClass('hidden');
         }, 3000);
     });
-
+scrollupTextbox()
 });
 myApp.onPageInit('pregenancy_due_date', function (page) {
 
@@ -643,7 +651,7 @@ myApp.onPageInit('pregenancy_due_date', function (page) {
             $$('.info-card').removeClass('hidden');
         }, 2000);
     });
-
+scrollupTextbox()
 });
 myApp.onPageInit('feedback', function (page) {
 
@@ -655,7 +663,7 @@ myApp.onPageInit('feedback', function (page) {
         }, 1000);
     });
 
-
+scrollupTextbox()
 });
 myApp.onPageInit('request_for_referral', function (page) {
 
@@ -667,7 +675,7 @@ myApp.onPageInit('request_for_referral', function (page) {
         }, 1000);
     });
 
-
+scrollupTextbox()
 });
 
 
@@ -929,7 +937,21 @@ function GoInFullscreen(element) {
         element.msRequestFullscreen();
 }
 
+ function scrollupTextbox(){
+      if (!myApp.device.ios) {
+    $$('.page').find('input, textarea').on('focus', function (event) {
+    
+        var container = $$(this).closest('.page-content');
+        var elementOffset = $$(this).offset().top;
+        var pageOffset = container.scrollTop();
+        var newPageOffset = pageOffset + elementOffset - 81;
 
+        setTimeout(function () {
+            container.scrollTop(newPageOffset, 300);
+        }, 700);
+    });
+}
+ }
 
 // Generate dynamic page
 

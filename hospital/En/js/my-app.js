@@ -949,16 +949,15 @@ function GoInFullscreen(element) {
         setTimeout(function () {
             container.scrollTop(newPageOffset, 300);
         }, 700);
+        console.log('focus')
+           mainView.hideToolbar();
     });
           
-           mainView.hideToolbar();
-}
-
- $$('.page').find('input, textarea').on('blur', function() {
+  $$('.page').find('input, textarea').on('blur', function() {
+     console.log('blured')
   mainView.showToolbar();
 })
-     
-     
+} 
  }
 
 // Generate dynamic page

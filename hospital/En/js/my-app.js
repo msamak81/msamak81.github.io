@@ -955,6 +955,10 @@ function GoInFullscreen(element) {
           
   $$('.page').find('input, textarea').on('blur', function() {
      console.log('blured')
+        var container = $$(this).closest('.page-content');
+        var elementOffset = $$(this).offset().top;
+        var pageOffset = container.scrollTop();
+        var newPageOffset = pageOffset - elementOffset - 81;
   mainView.showToolbar();
 })
 } 

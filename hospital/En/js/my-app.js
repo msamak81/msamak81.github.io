@@ -950,7 +950,15 @@ function GoInFullscreen(element) {
             container.scrollTop(newPageOffset, 300);
         }, 700);
     });
+          
+           mainView.hideToolbar();
 }
+
+ $$('.page').find('input, textarea').on('blur', function() {
+  mainView.showToolbar();
+})
+     
+     
  }
 
 // Generate dynamic page

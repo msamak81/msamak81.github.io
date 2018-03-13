@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+    <title>Console Admin :: Login</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body,
+        .login-page {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            font-family: "Open Sans";
+            -webkit-font-smoothing: antialiased;
+            color: #727272;
+            font-size: 13px;
+            padding: 0;
+            margin: 0;
+            background-color: #fafafa;
+            -webkit-transition: all 450ms ease-in-out;
+            -moz-transition: all 450ms ease-in-out;
+            -ms-transition: all 450ms ease-in-out;
+            -o-transition: all 450ms ease-in-out;
+            transition: all 450ms ease-in-out;
+            opacity: 0;
+        }
+        
+        body.opened {
+            opacity: 1;
+        }
+        
+        .login-page header {
+            position: absolute;
+            width: 100%;
+            padding: 30px;
+            z-index: 991;
+        }
+        
+        .login-page header .login-logo {
+            float: left;
+            color: #fff;
+            font-weight: 100;
+            font-size: 21px;
+            line-height: 43px;
+        }
+        
+        .login-page header .access-request {
+            float: right;
+        }
+        
+        .l__btn {
+            -webkit-border-radius: 35px;
+            -moz-border-radius: 35px;
+            border-radius: 35px;
+            padding: 15px 40px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #8E5E93;
+            border: 0;
+            outline: none;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            -webkit-transition: all 150ms ease-in-out;
+            -moz-transition: all 150ms ease-in-out;
+            -ms-transition: all 150ms ease-in-out;
+            -o-transition: all 150ms ease-in-out;
+            transition: all 150ms ease-in-out;
+        }
+        
+        .l__btn:hover {
+            background-color: #e26b99;
+        }
+        
+        .login-page header .access-request .l__btn {
+            background-color: #e26b99;
+        }
+        
+        .login-page header .access-request .l__btn:hover {
+            background-color: #8E5E93;
+        }
+        
+        .forms {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, #5f1e67, #c82e81 58%, #da3f7b 69%, #e0596d 80%, #e5596d), linear-gradient(to bottom, #762c81, #ce4b70 79%, #f2ba58), linear-gradient(#f4f3f3, #f4f3f3);
+        }
+        
+        .forms_container {
+            position: relative;
+            width: 696px;
+            height: 480px;
+            border-radius: 16px;
+            background-color: #ffffff;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+            border: solid 1px #e6eaee;
+            padding: 62px 120px;
+            z-index: 999;
+        }
+        
+        .forms_container .logo_div img {
+            width: 217.2px;
+            height: 65.8px;
+        }
+        
+        .forms_container .logo_div {
+            padding: 0 118px 51px 118px;
+        }
+        
+        .forms_container div.l__form {
+            float: left;
+        }
+        
+        .forms_container div.l__form input {
+            padding: 15px;
+            border: 0px #eee solid;
+            width: 320px;
+            float: left;
+            margin: 0 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            outline: none;
+            -webkit-transition: all 150ms ease-in-out;
+            -moz-transition: all 150ms ease-in-out;
+            -ms-transition: all 150ms ease-in-out;
+            -o-transition: all 150ms ease-in-out;
+            transition: all 150ms ease-in-out;
+        }
+        
+        .forms_container div.l__form input:focus {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .login-control {
+            text-align: center;
+        }
+        
+        .login-control .l__btn {
+            margin: 20px 0 0;
+            padding: 15px 60px;
+        }
+        
+        .login-control a {
+            text-decoration: none;
+            color: #fff;
+            display: table;
+            margin: 10px auto 0;
+            opacity: 0.8;
+            -webkit-transition: all 150ms ease-in-out;
+            -moz-transition: all 150ms ease-in-out;
+            -ms-transition: all 150ms ease-in-out;
+            -o-transition: all 150ms ease-in-out;
+            transition: all 150ms ease-in-out;
+        }
+        
+        .login-control a:hover {
+            opacity: 1;
+        }
+        
+        .msg {
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            max-width: 450px;
+            padding-bottom: 30px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width:720px) {
+            .forms_container {
+                width: 100%;
+            }
+            .forms_container div.l__form {
+                float: none;
+                width: 100%;
+                display: table;
+            }
+            .forms_container div.l__form input {
+                width: 100%;
+                margin: 5px 0;
+            }
+            .forms {
+                padding: 0 30px;
+            }
+            .login-page header .access-request {
+                width: 100%;
+                text-align: center;
+            }
+            .r__access .l__form:first-of-type,
+            .r__access .l__form:nth-of-type(2) {
+                width: 100%;
+                float: none !important;
+            }
+            .login-page header .login-logo {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+        
+            .form {
+                margin: 15px 0;
+            }
+        
+        .forget-password {
+font-size: 18px;
+    color: #da3f7b;
+    display: block;
+        }
+        
+        .login-control .btn {
+              max-width: 152px;
+  height: 51px;
+        }
+        
+        .login-control {
+            margin-top: 20px;
+        }
+
+        header#main-header .ctrl .stc-logo {
+
+    padding-top: 10px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="login-page">
+        <header id="main-header">
+            <div class="ctrl">
+                
+                <div class="stc-logo"><img src="../img/stc-logo.jpg" /></div>
+            </div>
+        </header>
+        <div class="forms">
+            <div class="forms_container">
+                <div class="logo_div">
+                    <img src="../img/logo.png">
+                </div>
+                <form>
+                    <div class="form"><input class="vald" type="text" placeholder="Username" /></div>
+                    <div class="form"><input class="vald" type="password" placeholder="Password" /></div>
+                    <div class="login-control">
+                        <input class="btn" type="button" value="Login">
+
+                        <label class="forget-password">Forgot Password ?</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('body').addClass('opened');
+        }, 100);
+    });
+
+</script>
+
+</html>

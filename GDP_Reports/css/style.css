@@ -5,7 +5,7 @@ http://meyerweb.com/eric/tools/css/reset/
 @font-face {
     font-family: 'GE SS Light';
     src: url('/fonts/GE SS Unique Light.eot');
-    src: local('Ã¢ËœÂº'), url('fonts/GE SS Unique Light.woff') format('woff'), url('fonts/GE SS Unique Light.ttf') format('truetype'), url('fonts/GE SS Unique Light.svg') format('svg');
+    src: local('ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Âº'), url('fonts/GE SS Unique Light.woff') format('woff'), url('fonts/GE SS Unique Light.ttf') format('truetype'), url('fonts/GE SS Unique Light.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -92,7 +92,7 @@ body.opened{opacity:1;}
 }
 h1 {
     text-transform: uppercase;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 700;
     letter-spacing: 0.015em;
     color:#fff;
@@ -185,7 +185,7 @@ p {
     top: 0;
 }
 .side_menu{width: 20%;background:transparent;padding:20px;}
-.charts_container{width: calc(100% - 20%);background:#fff;padding:20px;}
+.charts_container{width: calc(100% - 20%);background:#fff;padding:20px;overflow:  auto;min-height: 100%;}
 header{
     box-shadow: 1px 9px 25px -14px rgba(0,0,0,.3);
     width: 100%;
@@ -384,4 +384,4 @@ html.ar .side_menu ul li a.active:after{
     left: -60px;
     border-right-color: #1da085;
     border-left-color:  transparent;
-}
+} 

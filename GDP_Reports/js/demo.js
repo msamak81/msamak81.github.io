@@ -11,7 +11,7 @@ $(document).ready(function() {
     lineColor: '#5cbdaa'
   });
 
-  var lang,months,monthsArr,transactions,services, servicesArr,demand,total='',served,nonserved,q1,q2,q3, colors=['#0b563c', '#c9a63f','#1da085']
+  var lang,months,monthsArr,transactions,services, servicesArr,demand,total='',served,nonserved,q1,q2,q3, colors=['#0b563c', '#c9a63f','#1da085'],play,pause
   ;
 
     if($('html').hasClass('ar')){
@@ -28,6 +28,8 @@ $(document).ready(function() {
         q1='الربع الاول 2016'
         q2='الربع الاول 2017'
         q3='الربع الاول 2018'
+        play='نشغيل'
+        pause= 'توقف'
 
 
     }
@@ -45,6 +47,8 @@ $(document).ready(function() {
         q1='Q1 2016'
         q2='Q1 2017'
         q3='Q1 2018'
+        play='Play'
+        pause= 'Pause'
 
 
     }
@@ -146,55 +150,66 @@ $(document).ready(function() {
 
     /* Pause and Play buttons*/
     var play1,play2
-    $('.chart_play .start').on('click',function(){
+    $('.chart_play .chart_anim').on('click',function(){
+         var item= $(this);
+        if(item.hasClass('play')){
+            item.removeClass('play').addClass('pause').text(pause);
+
+            console.log('start')
+            if ($('.charts_line').length){
+                var i=0;
+                play1 = setInterval(function() {
+                    switch(i++%4) {
+                        case 0: chart.transform('bar');
+                            break;
+                        case 1: chart.groups([[total, served, nonserved]]);
+                            break;
+                        case 2:   chart.transform('line');
+                            break;
+                        case 3:   chart.transform('area');
+                            break;
+
+                    }
+                }, 4000);
+            }
+
+            if ($('.charts_bars').length){
+                var i=0;
+
+                var play2 = setInterval(function() {
+                    switch(i++%5) {
+                        case 0: chart2.groups([[q1, q2, q3]]);
+                            break;
+                        case 1: chart2.transform('area');
+                            break;
+                        case 2:  chart2.transform('bar'); chart2.groups([[q1]]);
+                            break;
+                        case 3:  chart2.groups([[q1, q2, q3]]);
+                            break;
+                        case 4: chart2.groups([[q1]])
+                            break;
+                    }
+
+                }, 4000);
+            };
 
 
-        console.log('start')
-        if ($('.charts_line').length){
-            var i=0;
-            play1 = setInterval(function() {
-                switch(i++%4) {
-                    case 0: chart.transform('bar');
-                        break;
-                    case 1: chart.groups([[total, served, nonserved]]);
-                        break;
-                    case 2:   chart.transform('line');
-                        break;
-                    case 3:   chart.transform('area');
-                        break;
-
-                }
-            }, 4000);
         }
 
-        if ($('.charts_bars').length){
-            var i=0;
+        else if(item.hasClass('pause')){
+            item.removeClass('pause').addClass('play').text(play);
+            console.log('pause')
+            if ($('.charts_line').length) clearInterval(play1);
+            if ($('.charts_bars').length) clearInterval(play2);
 
-            var play2 = setInterval(function() {
-                switch(i++%5) {
-                    case 0: chart2.groups([[q1, q2, q3]]);
-                        break;
-                    case 1: chart2.transform('area');
-                        break;
-                    case 2:  chart2.transform('bar'); chart2.groups([[q1]]);
-                        break;
-                    case 3:  chart2.groups([[q1, q2, q3]]);
-                        break;
-                    case 4: chart2.groups([[q1]])
-                        break;
-                }
+        }
 
-            }, 4000);
-        };
-        return false;
-    })
-
-    $('.chart_play .pause').on('click',function(){
-        console.log('pause')
-        if ($('.charts_line').length) clearInterval(play1);
-        if ($('.charts_bars').length) clearInterval(play2);
 
         return false;
+
+
     })
+
+
 
 });

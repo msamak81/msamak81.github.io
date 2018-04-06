@@ -11,124 +11,99 @@ $(document).ready(function() {
     lineColor: '#5cbdaa'
   });
 
+  var lang,months,monthsArr,transactions,services, servicesArr,demand,total='',served,nonserved,q1,q2,q3, colors=['#0b563c', '#c9a63f','#1da085']
+  ;
 
-    var chart = c3.generate({
-        bindto: '.charts_line',
-        data: {
-            columns: [
-                ['Total', 147432, 132638, 180040, 175318, 215479, 129976, 231071, 218765, 126211, 181314, 171465, 169197],
-                ['Served', 140060, 126306, 169238, 166553, 204705, 123477, 219518, 207827, 119901, 174062, 161178, 159046],
-                ['NonServed', 7372, 6332, 10802, 8765, 10774, 6499, 11553, 10938, 6310, 7252, 10287, 10151],
+    if($('html').hasClass('ar')){
+        lang='ar';
+        months = 'الشهور'
+        monthsArr = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+        transactions = 'الحركات'
+        services = 'الخدمات'
+        servicesArr = ['اصدار جواز', 'تجديد الجواز', 'تجديد الاقامة', 'تفعيل ابشر', 'التأشيرات', 'نقل معلومات', 'نقل كفاله (افراد)']
+        demand = 'الطلبات'
+        total = 'إجمالي الحركات'
+        served = 'خدمات تم تقديمها'
+        nonserved='خدمات لم يتم تقديمها'
+        q1='الربع الاول 2016'
+        q2='الربع الاول 2017'
+        q3='الربع الاول 2018'
 
 
-            ],
-            colors: {
-                Total: '#0b563c',
-                Served: '#c9a63f',
-                NonServed: '#1da085'
-            },
-        },
-            axis: {
-                x: {
-                    label: {
-                        text: 'Months',
-                        position: 'outer-center'
-                    },
-                    type: 'category',
-                    categories:['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    }
+    else {
+        lang = 'en'
+        months = 'Months'
+        monthsArr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        transactions = 'Transactions'
+        services = 'Services'
+        servicesArr = ['اصدار جواز', 'تجديد الجواز', 'تجديد الاقامة', 'تفعيل ابشر', 'التأشيرات', 'نقل معلومات', 'نقل كفاله (افراد)']
+        demand = 'Demands'
+        total = 'Total Transactions'
+        served = 'Served Transactions'
+        nonserved='Non Served Transactions'
+        q1='Q1 2016'
+        q2='Q1 2017'
+        q3='Q1 2018'
 
-                },
-                y: {
-                    label: {
-                        text: 'Transactions',
-                        position: 'outer-center'
-
-                    }
-                },
-
-        }
-    });
-
-    function changeCharts() {
-        var listItems = 3;
-        var count = 0;
-
-        setInterval(function() {
-            setTimeout(function () {
-                chart.transform('bar');
-            }, 4000);
-
-            setTimeout(function () {
-                chart.groups([['Total', 'Served', 'NonServed']])
-            }, 8000);
-
-            setTimeout(function () {
-                chart.transform('line');
-            }, 12000);
-
-            setTimeout(function () {
-                chart.transform('area');
-            }, 16000);
-
-            count += 1;
-            if (count >= listItems) {
-                count = 0;
-            }
-        }, 24000);
 
     }
 
 
-    setTimeout(function () {
-        chart.transform('bar');
-    }, 4000);
+    // cahrts genertaions
+    var chart = c3.generate({
+        bindto: '.charts_line',
+        data: {
+            columns: [
+                [total, 147432, 132638, 180040, 175318, 215479, 129976, 231071, 218765, 126211, 181314, 171465, 169197],
+                [served, 140060, 126306, 169238, 166553, 204705, 123477, 219518, 207827, 119901, 174062, 161178, 159046],
+                [nonserved, 7372, 6332, 10802, 8765, 10774, 6499, 11553, 10938, 6310, 7252, 10287, 10151]
+            ],
 
-    setTimeout(function () {
-        chart.groups([['Total', 'Served', 'NonServed']])
-    }, 8000);
+        },
+            axis: {
+                x: {
+                    label: {
+                        text: months,
+                        position: 'outer-center'
+                    },
+                    type: 'category',
+                    categories:monthsArr,
 
-    setTimeout(function () {
-        chart.transform('line');
-    }, 12000);
+                },
+                y: {
+                    label: {
+                        text: transactions,
+                        position: 'outer-center'
 
-    setTimeout(function () {
-        chart.transform('area');
-    }, 16000);
+                    }
+                },
+        }
+    });
 
-    changeCharts();
-  // setTimeout(function () {
-  //   location.reload();
-  //   }, 24000);
-
-
-    var chart2 = c3.generate({
+  var chart2 = c3.generate({
         bindto: '.charts_bars',
         data: {
             columns: [
-                ['Q1_2016', 33100, 31351, 24881, 2815, 19305, 9267, 5288],
-                ['Q1_2017', 27860, 28313, 9778, 28362, 9447, 18834, 20858 ],
-                ['Q1_2018', 19510, 16988, 3912, 2534, 5667, 8802, 4970 ]
+                [q1, 33100, 31351, 24881, 2815, 19305, 9267, 5288],
+                [q2, 27860, 28313, 9778, 28362, 9447, 18834, 20858 ],
+                [q3, 19510, 16988, 3912, 2534, 5667, 8802, 4970 ]
             ],
             type: 'bar',
-            colors: {
-                Q1_2016: '#0b563c',
-                Q1_2017: '#c9a63f',
-                Q1_2018: '#1da085'
-            },
         },
         axis: {
         x: {
             label: {
-                text: 'Services',
+                text: services,
                 position: 'outer-center'
             },
             type: 'category',
-                categories:['اصدار جواز', 'تجديد الجواز', 'تجديد الاقامة', 'تفعيل ابشر', 'التأشيرات', 'نقل معلومات', 'نقل كفاله (افراد)'],
+                categories:servicesArr,
 
         },
             y: {
                 label: {
-                    text: 'Demand',
+                    text: demand,
                     position: 'outer-center'
                 },
             }
@@ -137,69 +112,89 @@ $(document).ready(function() {
             width: {
                 ratio: 0.5 // this makes bar width 50% of length between ticks
             }
-            // or
-            //width: 100 // this makes bar width 100px
-
         }
     });
 
+ if($('html').hasClass('ar')){
+        chart.data.colors({
+            'إجمالي الحركات' : colors[0],
+            'خدمات تم تقديمها': colors[1],
+            'خدمات لم يتم تقديمها': colors[2]
+        });
 
-    function changeCharts_2() {
-        var listItems = 4;
-        var count = 0;
-
-        setInterval(function() {
-            setTimeout(function () {
-                chart2.groups([['Q1_2016', 'Q1_2017', 'Q1_2018']])
-            }, 4000);
-
-            setTimeout(function () {
-                chart2.transform('area');
-            }, 8000);
-
-            setTimeout(function () {
-                chart2.transform('bar');
-                chart2.groups([['Q1_2016']])
-            }, 12000);
-
-            setTimeout(function () {
-                chart2.groups([['Q1_2016', 'Q1_2017', 'Q1_2018']])
-            }, 16000);
-
-            setTimeout(function () {
-                chart2.groups([['Q1_2016']])
-            }, 20000);
-
-            count += 1;
-            if (count >= listItems) {
-                count = 0;
-            }
-        }, 24000);
+        chart2.data.colors({
+            'الربع الاول 2016' : colors[0],
+            'الربع الاول 2017': colors[1],
+            'الربع الاول 2018': colors[2]
+        });
 
     }
+    else {
+        chart.data.colors({
+            'Total Transactions' : colors[0],
+            'Served Transactions': colors[1],
+            'Non Served Transactions': colors[2]
+        });
 
-    setTimeout(function () {
-        chart2.groups([['Q1_2016', 'Q1_2017', 'Q1_2018']])
-    }, 4000);
+        chart2.data.colors({
+            'Q1 2016' : colors[0],
+            'Q1 2017': colors[1],
+            'Q1 2018': colors[2]
+        });
+    }
 
-    setTimeout(function () {
-        chart2.transform('area');
-    }, 8000);
 
-    setTimeout(function () {
-        chart2.transform('bar');
-        chart2.groups([['Q1_2016']])
-    }, 12000);
+    /* Pause and Play buttons*/
+    var play1,play2
+    $('.chart_play .start').on('click',function(){
 
-    setTimeout(function () {
-        chart2.groups([['Q1_2016', 'Q1_2017', 'Q1_2018']])
-    }, 16000);
 
-    setTimeout(function () {
-        chart2.groups([['Q1_2016']])
-    }, 20000);
+        console.log('start')
+        if ($('.charts_line').length){
+            var i=0;
+            play1 = setInterval(function() {
+                switch(i++%4) {
+                    case 0: chart.transform('bar');
+                        break;
+                    case 1: chart.groups([[total, served, nonserved]]);
+                        break;
+                    case 2:   chart.transform('line');
+                        break;
+                    case 3:   chart.transform('area');
+                        break;
 
-    changeCharts_2()
+                }
+            }, 4000);
+        }
 
+        if ($('.charts_bars').length){
+            var i=0;
+
+            var play2 = setInterval(function() {
+                switch(i++%5) {
+                    case 0: chart2.groups([[q1, q2, q3]]);
+                        break;
+                    case 1: chart2.transform('area');
+                        break;
+                    case 2:  chart2.transform('bar'); chart2.groups([[q1]]);
+                        break;
+                    case 3:  chart2.groups([[q1, q2, q3]]);
+                        break;
+                    case 4: chart2.groups([[q1]])
+                        break;
+                }
+
+            }, 4000);
+        };
+        return false;
+    })
+
+    $('.chart_play .pause').on('click',function(){
+        console.log('pause')
+        if ($('.charts_line').length) clearInterval(play1);
+        if ($('.charts_bars').length) clearInterval(play2);
+
+        return false;
+    })
 
 });

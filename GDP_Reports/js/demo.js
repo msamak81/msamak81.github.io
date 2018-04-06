@@ -5,6 +5,7 @@
 
 $(document).ready(function() {
   "use strict";
+  $('body').addClass('opened');
   $('#particles').particleground({
     dotColor: '#5cbdaa',
     lineColor: '#5cbdaa'
@@ -15,37 +16,89 @@ $(document).ready(function() {
         bindto: '.charts_line',
         data: {
             columns: [
-                ['data1', 30, 200, 100, 400, 150, 250],
-                ['data2', 50, 20, 10, 40, 15, 25]
+                ['Total', 147432, 132638, 180040, 175318, 215479, 129976, 231071, 218765, 126211, 181314, 171465, 169197],
+                ['Served', 140060, 126306, 169238, 166553, 204705, 123477, 219518, 207827, 119901, 174062, 161178, 159046],
+                ['NonServed', 7372, 6332, 10802, 8765, 10774, 6499, 11553, 10938, 6310, 7252, 10287, 10151],
+
+
             ],
-            axes: {
-                data2: 'y2'
+            colors: {
+                Total: '#0b563c',
+                Served: '#c9a63f',
+                NonServed: '#1da085'
             },
-            types: {
-                data2: 'bar'
-            }
+        },
+            axis: {
+                x: {
+                    label: {
+                        text: 'Months',
+                        position: 'outer-center'
+                    },
+                    type: 'category',
+                    categories:['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+
+                },
+                y: {
+                    label: {
+                        text: 'Transactions',
+                        position: 'outer-center'
+
+                    }
+                },
+
         }
     });
 
-    setTimeout(function () {
-        chart.transform('area', 'data1');
-    }, 3000);
+    function changeCharts() {
+        var listItems = 3;
+        var count = 0;
 
-    setTimeout(function () {
-        chart.transform('area', 'data2');
-    }, 5000);
+        setInterval(function() {
+            setTimeout(function () {
+                chart.transform('bar');
+            }, 4000);
+
+            setTimeout(function () {
+                chart.groups([['Total', 'Served', 'NonServed']])
+            }, 8000);
+
+            setTimeout(function () {
+                chart.transform('line');
+            }, 12000);
+
+            setTimeout(function () {
+                chart.transform('area');
+            }, 16000);
+
+            count += 1;
+            if (count >= listItems) {
+                count = 0;
+            }
+        }, 24000);
+
+    }
+
 
     setTimeout(function () {
         chart.transform('bar');
-    }, 7000);
+    }, 4000);
+
+    setTimeout(function () {
+        chart.groups([['Total', 'Served', 'NonServed']])
+    }, 8000);
 
     setTimeout(function () {
         chart.transform('line');
-    }, 9000);
+    }, 12000);
 
-    // setTimeout(function () {
-    // location.reload();
-    // }, 11000);
+    setTimeout(function () {
+        chart.transform('area');
+    }, 16000);
+
+    changeCharts();
+  // setTimeout(function () {
+  //   location.reload();
+  //   }, 24000);
 
 
     var chart2 = c3.generate({
@@ -54,16 +107,31 @@ $(document).ready(function() {
             columns: [
                 ['Q1_2016', 33100, 31351, 24881, 2815, 19305, 9267, 5288],
                 ['Q1_2017', 27860, 28313, 9778, 28362, 9447, 18834, 20858 ],
-                ['Q1_2018', 21860, 25313, 7778, 23362, 7447, 15834, 18858 ]
+                ['Q1_2018', 19510, 16988, 3912, 2534, 5667, 8802, 4970 ]
             ],
-            type: 'bar'
+            type: 'bar',
+            colors: {
+                Q1_2016: '#0b563c',
+                Q1_2017: '#c9a63f',
+                Q1_2018: '#1da085'
+            },
         },
         axis: {
         x: {
+            label: {
+                text: 'Services',
+                position: 'outer-center'
+            },
             type: 'category',
                 categories:['اصدار جواز', 'تجديد الجواز', 'تجديد الاقامة', 'تفعيل ابشر', 'التأشيرات', 'نقل معلومات', 'نقل كفاله (افراد)'],
 
-        }
+        },
+            y: {
+                label: {
+                    text: 'Demand',
+                    position: 'outer-center'
+                },
+            }
     },
         bar: {
             width: {
@@ -75,11 +143,63 @@ $(document).ready(function() {
         }
     });
 
+
+    function changeCharts_2() {
+        var listItems = 4;
+        var count = 0;
+
+        setInterval(function() {
+            setTimeout(function () {
+                chart2.groups([['Q1_2016', 'Q1_2017', 'Q1_2018']])
+            }, 4000);
+
+            setTimeout(function () {
+                chart2.transform('area');
+            }, 8000);
+
+            setTimeout(function () {
+                chart2.transform('bar');
+                chart2.groups([['Q1_2016']])
+            }, 12000);
+
+            setTimeout(function () {
+                chart2.groups([['Q1_2016', 'Q1_2017', 'Q1_2018']])
+            }, 16000);
+
+            setTimeout(function () {
+                chart2.groups([['Q1_2016']])
+            }, 20000);
+
+            count += 1;
+            if (count >= listItems) {
+                count = 0;
+            }
+        }, 24000);
+
+    }
+
     setTimeout(function () {
         chart2.groups([['Q1_2016', 'Q1_2017', 'Q1_2018']])
     }, 4000);
 
     setTimeout(function () {
-        chart2.groups([['Q1_2016']])
+        chart2.transform('area');
     }, 8000);
+
+    setTimeout(function () {
+        chart2.transform('bar');
+        chart2.groups([['Q1_2016']])
+    }, 12000);
+
+    setTimeout(function () {
+        chart2.groups([['Q1_2016', 'Q1_2017', 'Q1_2018']])
+    }, 16000);
+
+    setTimeout(function () {
+        chart2.groups([['Q1_2016']])
+    }, 20000);
+
+    changeCharts_2()
+
+
 });

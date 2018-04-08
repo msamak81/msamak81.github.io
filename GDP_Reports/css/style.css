@@ -261,7 +261,7 @@ header .lang_link:hover{
 .side_menu ul li a:after{display:  block;}
 .side_menu ul li a span{display:  inline-block;width: calc(100% - 25px);vertical-align:  middle;}
 
-.side_menu .logo{width: 80%;}
+.side_menu .logo{width: 50%;}
 main{margin-top: 90px;position:  relative;}
 
 .time_period {

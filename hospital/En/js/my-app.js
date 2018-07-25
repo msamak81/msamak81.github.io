@@ -285,7 +285,8 @@ myApp.onPageInit('vital_signs_weight', function (page) {
                     ticks: {
                         beginAtZero:false,
                         fontColor: "#ffffff",
-                        fontSize :"10"
+                        fontSize :"10",
+
                     },
 
                 }],

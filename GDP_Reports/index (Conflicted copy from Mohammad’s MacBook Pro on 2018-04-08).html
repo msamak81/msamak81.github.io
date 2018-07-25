@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" class="no-js ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>GDP Reports</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/c3.css" />
+  <!-- remember, jQuery is completely optional -->
+  <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script>
+    <script type='text/javascript' src='js/d3.js'></script>
+    <script type='text/javascript' src='js/c3.js'></script>
+  <script type='text/javascript' src='js/jquery.particleground.js'></script>
+  <script type='text/javascript' src='js/demo.js'></script>
+</head>
+
+<body>
+
+<div id="particles">
+  
+        <div class="container">
+            
+            <div class="side_menu">
+                <h1>
+                    <img src="images/gdp_logo.png" class="logo"/>
+                </h1>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active"><span>حركة زيارة العملاء</span></a>
+                    </li>
+                    <li>
+                        <a href="service_demand.html"><span>تحليل الطلب على الخدمات</span></a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="charts_container">
+               <header>
+                   <div class="logo"><img src="images/2030_logo.png" alt=""/></div>
+                   <h2>حركة زيارة العملاء</h2>
+                   <a href="index_en.html" class="lang_link">English</a>
+               </header>
+                <main>
+                    <div class="time_period">
+                        <h3>الفترة الزمنية</h3>
+                        <div>
+                            <h4>من</h4>
+                            <h3>2017/1/1</h3>
+                        </div>
+                        <div>
+                            <h4>الي</h4>
+                            <h3>2017/12/31</h3>
+                        </div>
+                    </div>
+
+
+                    <!--<div class="summmary">-->
+                        <!--<div>-->
+                            <!--<h4>إجمالي الحركات</h4>-->
+                            <!--<h3>2078906</h3>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<h4>خدمات تم تقديمها</h4>-->
+                            <!--<h3>1971871</h3>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<h4>خدمات لم يتم تقديمها</h4>-->
+                            <!--<h3>107035</h3>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+
+                    <div class="charts charts_line"></div>
+                    <div class="chart_play">
+                        <a class="chart_anim play" href="#">تشغيل</a>
+                    </div>
+                </main>
+            </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+:root{
+    --purple : #712c81;
+    --lightPurple: #977aa8;
+    --yellow: #fadf46;
+    --orange: #fab53c;
+    --grayBG : #f6f7f8;
+    --pink : #d73474;
+    --gray : #7b7b7b;
+    --darkGray: #acafb1;
+    --lightGray : #dadbdd;
+    --blackGray:#4a4a4a;
+    --mainRadius : 8px;
+    --containerWidth : 1001px;
+    --transition: all 210ms ease-in-out;
+    --curved: 35px;
+    --defualtPadding:16px 10px;
+    --fontAr : 'Geeza Pro';
+    --fontEn : 'Open Sans';
+}

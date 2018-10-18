@@ -1,0 +1,97 @@
+@media (max-width: 375px) {
+    html{font-size:9px;}
+
+}
+
+
+@media (max-width: 990px) {
+    html{overflow-x: hidden !important;}
+    .col-sm-hidden {
+        display: none;
+    }
+
+    .widgettitle {
+        font-size: 2rem;
+    }
+
+    .packagesmargin {
+        margin-bottom: 0;
+    }
+
+    .qitaf_tiers {
+        height: 195px;
+        max-width: 290px;
+    }
+
+    .nav_list a {
+        font-size: 1.8rem
+    }
+
+    .nav_list a i {
+        font-size: 5.6rem;
+    }
+
+    .btns {
+        width: 100%;
+        line-height: 2;
+        font-size: 1.4rem;
+    }
+
+    .form-input.inline-inputs {
+        display: block;
+    }
+
+    .form-input.inline-inputs input {
+        max-width: 100%;
+    }
+
+    .bootstrap-select > .dropdown-toggle, .form-input input{
+        min-height:40px;
+    }
+    .bootstrap-select .dropdown-toggle .filter-option{top:5px;}
+    .bootstrap-select > .dropdown-toggle:after{top:7px;}
+    .seperatorbrdr:after, .widgetcontent.billing .flex-sm-full.seperatorbrdr:after {
+        width: calc(100% - 30px);
+        height: 1px;
+        right: 15px;
+        opacity: 0.4;
+        top: auto;
+        bottom: 0;
+        display: block;
+        left: 15px;
+    }
+
+    .circlechartscontainer.seperatorbrdr:after {
+        height: 100%;
+        top: -9px;
+        width: 1px;
+        right: -5px;
+        left: auto;
+    }
+
+    .freebiesusage .circlechartscontainer.seperatorbrdr:after {
+        height: 100%;
+        top: -9px;
+        width: 1px;
+        right: -5px;
+    }
+
+    .widgetcontent.billing .seperatorbrdr:after {
+        height: 60%;
+        top: 27px;
+        width: 1px;
+        right: -5px;
+        left: auto;
+    }
+
+
+    .widgetcontent.billing .seperatorbrdr:nth-child(3):after {
+        width: 0
+    }
+    .tabscontainer .nav-tabs li a {
+        font-size: 1.4rem;
+    }
+    .flex-sm-full{flex:100%}
+    .col-lg-hidden{display:block;}
+
+}

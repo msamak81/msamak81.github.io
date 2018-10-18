@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>MySTC Dashboard</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS libraries imports -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/animate.min.css" rel="stylesheet" type="text/css"/>
+    <!-- end of CSS libraries imports -->
+
+    <!-- STC custom styles -->
+    <link href="../../css/mystc_icons.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/mobile.css" rel="stylesheet" type="text/css"/>
+    <!-- end of STC custom styles -->
+
+</head>
+<body>
+<!-- header which will come from template -->
+<!--<header></header>-->
+<!-- End of header which will come from template -->
+
+
+<!-- page content which will be added here  -->
+<main class="mainsection">
+
+    <div class="row">
+        <div class="col-lg-12 widgetcontainer wow fadeInUp">
+            <h1>
+                <span>Billing</span>
+                <div class="action-sheet-btn col-lg-hidden ">
+                    <a class="action_btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-ellipsis-v"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <h6 class="dropdown-header">Current Plan</h6>
+                        <a class="dropdown-item btns" href="#">Change Plan</a>
+                        <h6 class="dropdown-header">Current Bill</h6>
+                        <a class="dropdown-item btns" href="#"  data-toggle="modal" data-target="#payment">Pay Bill</a>
+                        <a class="dropdown-item btns" href="#">Bill Details</a>
+                        <h6 class="dropdown-header">Unbilled Amount</h6>
+                        <a class="dropdown-item btns" href="#">Usage Details</a>
+                    </div>
+                </div>
+
+            </h1>
+            <div class="row widgetcontent graybg align-content-center billing">
+                <div class="col flex-sm-full widgetmargins seperatorbrdr ">
+                    <h3 class="widgettitle text-center">Current Plan</h3>
+                    <div class="packagesimg">
+                        <img src="../../imgs/packages/100-en.png" alt="current Plan"/>
+                    </div>
+                    <div class="widgetbtns text-center col-sm-hidden">
+                        <a href="#" class="btns borderedbtns">Change your plan</a>
+                    </div>
+                </div>
+
+                <div class="col widgetmargins seperatorbrdr ">
+                    <h3 class="widgettitle text-center">Current Bill</h3>
+                    <div class="numberdisplay packagesmargin">
+                        <h2>
+                            <span class="mainnumber">12410</span>
+                            <span class="secondnumber">
+                                <i class="numberamount">34</i>
+                                <i class="numberabbr">SR</i>
+                            </span>
+                        </h2>
+                        <h4>Bill issued 19 days ago</h4>
+                    </div>
+                    <div class="widgetbtns text-center col-sm-hidden">
+                        <a href="#" class="btns purplebg text-white curvedbtns" data-toggle="modal" data-target="#payment">Pay Bill</a>
+                        <a href="#" class="btns borderedbtns">Bill Details</a>
+                    </div>
+                </div>
+                <div class="col widgetmargins">
+                    <h3 class="widgettitle text-center">Unbilled Amount</h3>
+                    <div class="numberdisplay packagesmargin">
+                        <h2>
+                            <span class="mainnumber">32</span>
+                            <span class="secondnumber">
+                                <i class="numberamount">34</i>
+                                <i class="numberabbr">SR</i>
+                            </span>
+                        </h2>
+                        <h4>Update 10 hours ago</h4>
+                    </div>
+                    <div class="widgetbtns text-center col-sm-hidden">
+                        <a href="#" class="btns borderedbtns">Usage Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5 widgetcontainer  wow fadeInUp order-lg-last order-md-first ">
+            <h1><span>Usage</span></h1>
+            <div class="row widgetcontent graybg">
+                <div class="col">
+                    <div class="tabscontainer">
+                        <ul class="nav nav-tabs" id="usage-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="usage-internet-tab" data-toggle="tab" href="#internet-usage" role="tab" aria-controls="internet-usage" aria-selected="true">Internet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="usage-freebies-tab" data-toggle="tab" href="#freebies-usage" role="tab" aria-controls="freebies-usage" aria-selected="false">Freebies</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="usage-content">
+                            <div class="tab-pane fade show active" id="internet-usage" role="tabpanel" aria-labelledby="internet-usage">
+
+                                <div class="owl-carousel internetusage" id="internetUSage" data-items-desktop="2" data-items-tablet="2" data-items-mobile="1">
+                                    <div class="item">
+
+                                        <h3 class="widgettitle text-center">Local Internet</h3>
+                                        <div class=" circlechartscontainer seperatorbrdr">
+
+                                            <div class="dounghtchart ">
+                                                <canvas id="local-internet" class="dounghtcanvas internetcharts" width="140" height="140"  data-source="localinternet" data-type="packages"></canvas>
+                                                <div class="chartvalues numberdisplay">
+                                                    <h2>
+                                                        <span class="mainnumber">13.8</span>
+                                                        <span class="secondnumber">
+                                                    <i class="numberabbr">GB</i>
+                                                </span>
+                                                    </h2>
+                                                    <h4>15 GB Expired in 30 days</h4>
+                                                </div>
+
+                                            </div>
+                                            <div class="widgetbtns text-center col-sm-hidden">
+                                                <a href="#" class="btns borderedbtns">Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <h3 class="widgettitle text-center">Roaming Internet</h3>
+
+                                        <a href="#" class="btns addnewbtn"><i class="icon-add"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="freebies-usage" role="tabpanel" aria-labelledby="freebies-usage">
+                                <div class="owl-carousel freebiesusage" id="freebiesusage" data-items-desktop="2" data-items-tablet="3" data-items-mobile="2">
+
+                                    <div class="item ">
+                                        <h3 class="widgettitle text-center">SMS</h3>
+                                        <h4>Inside Network</h4>
+                                        <div class="circlechartscontainer seperatorbrdr">
+
+                                            <div class="dounghtchart freebies">
+                                                <canvas id="freebies_sms" class="dounghtcanvas freebies" width="100" height="100"  data-source="freebiesData" data-type="freebies"></canvas>
+                                                <div class="chartvalues numberdisplay">
+                                                    <h2>
+                                                        <span class="mainnumber">100</span>
+                                                        <span class="secondnumber">
+                                                    <i class="numberabbr">%</i>
+                                                </span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <h3 class="widgettitle text-center">Minutes</h3>
+                                        <h4>Inside Network</h4>
+                                        <div class="circlechartscontainer seperatorbrdr">
+
+                                            <div class="dounghtchart freebies">
+                                                <canvas id="freebies_min" class="dounghtcanvas freebies" width="100" height="100"  data-source="freebiesData" data-type="freebies"></canvas>
+                                                <div class="chartvalues numberdisplay">
+                                                    <h2>
+                                                        <span class="mainnumber">100</span>
+                                                        <span class="secondnumber">
+                                                    <i class="numberabbr">%</i>
+                                                </span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item ">
+                                        <h3 class="widgettitle text-center">SMS</h3>
+                                        <h4>Outside Network</h4>
+                                        <div class="circlechartscontainer seperatorbrdr">
+
+                                            <div class="dounghtchart freebies ">
+                                                <canvas id="freebies_out" class="dounghtcanvas freebies" width="100" height="100"  data-source="freebiesData" data-type="freebies"></canvas>
+                                                <div class="chartvalues numberdisplay">
+                                                    <h2>
+                                                        <span class="mainnumber">100</span>
+                                                        <span class="secondnumber">
+                                                    <i class="numberabbr">%</i>
+                                                </span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <h3 class="widgettitle text-center">Minutes</h3>
+                                        <h4>Outside Network</h4>
+                                        <div class="circlechartscontainer seperatorbrdr">
+
+                                            <div class="dounghtchart freebies ">
+                                                <canvas id="freebies_min_out" class="dounghtcanvas freebies" width="100" height="100"  data-source="freebiesData" data-type="freebies"></canvas>
+                                                <div class="chartvalues numberdisplay">
+                                                    <h2>
+                                                        <span class="mainnumber">100</span>
+                                                        <span class="secondnumber">
+                                                    <i class="numberabbr">%</i>
+                                                </span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-7 widgetcontainer wow fadeInUp  ">
+            <h1>
+                <span>Balance</span>
+                <div class="action-sheet-btn col-lg-hidden ">
+                    <a class="action_btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-ellipsis-v"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item btns showContent" href="#" data-show="#balance_recharge">Recharge</a>
+                        <a class="dropdown-item btns showContent" href="#" data-show="#balance_transfer">Transfer</a>
+
+                    </div>
+                </div>
+            </h1>
+            <div class="row widgetcontent graybg">
+                <div class="col-lg-6  widgetmargins seperatorbrdr">
+                    <h3 class="widgettitle text-center">Budget Control</h3>
+                    <div class="numberdisplay ">
+                        <h2>
+                            <span class="mainnumber">0</span>
+                            <span class="secondnumber">
+                                <i class="numberamount">00</i>
+                                <i class="numberabbr">SR</i>
+                            </span>
+                        </h2>
+                        <h4>Current balance</h4>
+                    </div>
+                    <div class="tabscontainer col-sm-hidden hiddenContent"  id="balance_recharge">
+                        <ul class="nav nav-tabs" id="budget-controls-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="budget-recharge-tab" data-toggle="tab" href="#budget-recharge" role="tab" aria-controls="budget-recharge" aria-selected="true">Recharge</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="budget-credit-tab" data-toggle="tab" href="#budget-credit" role="tab" aria-controls="budget-credit" aria-selected="false">Credit Card</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="budget-control-content">
+                            <div class="tab-pane fade show active" id="budget-recharge" role="tabpanel" aria-labelledby="balance-transfer">
+                                <form id="budget-recharge-form">
+                                    <div class="form-input inline-inputs">
+                                        <input type="text" name="mobile" id="voucher_no" placeholder="Recharge Code"/>
+                                        <button type="submit" class="btns curvedbtns purplebg text-white" disabled>Recharge</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            <div class="tab-pane fade" id="budget-credit" role="tabpanel" aria-labelledby="balance-request">
+                                <form id="budget-credit-form">
+                                    <div class="form-input inline-inputs">
+                                        <select  name="amount" id="cc_amount" class="selectpicker" title="Amount">
+                                            <option value="300" data-content="
+                                                                        <div class='bc_item'>
+                                                                            <span class='bc_price_block'>315.00 SR</span>
+                                                                            <span>
+                                                                                Balance added 300
+                                                                                <small>Valid for 300 Days</small>
+                                                                            </span>
+                                                                        </div>">
+                                            </option>
+                                            <option value="200" data-content="
+                                                                        <div class='bc_item'>
+                                                                            <span class='bc_price_block'>310.00 SR</span>
+                                                                            <span>
+                                                                                Balance added 200
+                                                                                <small>Valid for 150 Days</small>
+                                                                            </span>
+                                                                        </div>">
+                                            </option>
+                                            <option value="100" data-content="
+                                                                        <div class='bc_item'>
+                                                                            <span class='bc_price_block'>105.00 SR</span>
+                                                                                <span>Balance added 100
+                                                                                <small>Valid for 120 Days</small>
+                                                                            </span>
+                                                                        </div>">
+                                            </option>
+                                            <option value="50" data-content="
+                                                                        <div class='bc_item'>
+                                                                            <span class='bc_price_block'>52.50 SR</span>
+                                                                            <span>
+                                                                                Balance added 50
+                                                                                <small>Valid for 60 Days</small>
+                                                                            </span>
+                                                                        </div>">
+                                            </option>
+                                            <option value="30" data-content="
+                                                                        <div class='bc_item'>
+                                                                            <span class='bc_price_block'>31.50 SR</span>
+                                                                            <span>
+                                                                                Balance added 30
+                                                                                <small>Valid for 45 Days</small>
+                                                                            </span>
+                                                                        </div>">
+                                            </option>
+                                            <option value="25" data-content="
+                                                                        <div class='bc_item'>
+                                                                            <span class='bc_price_block'>26.25 SR</span>
+                                                                            <span>
+                                                                                Balance added 25
+                                                                                <small>Valid for 30 Days</small>
+                                                                            </span>
+                                                                        </div>">
+                                            </option>
+                                            <option value="20" data-content="
+                                                                        <div class='bc_item'>
+                                                                            <span class='bc_price_block'>21.00 SR</span>
+                                                                            <span>
+                                                                                Balance added 20
+                                                                                <small>Valid for 30 Days</small>
+                                                                            </span>
+                                                                        </div>">
+                                            </option>
+                                            <option value="15" data-content="
+                                                                        <div class='bc_item'>
+                                                                            <span class='bc_price_block'>15.75 SR</span>
+                                                                            <span>
+                                                                                Balance added 15
+                                                                                <small>Valid for 7 Days</small>
+                                                                            </span>
+                                                                        </div>">
+                                            </option>
+
+                                        </select>
+                                        <button type="button" class="btns curvedbtns purplebg text-white"  data-toggle="modal" data-target="#payment">Recharge</button>
+                                    </div>
+
+                                </form>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+                <div class="col-lg-6 widgetmargins col-sm-hidden hiddenContent"  id="balance_transfer">
+                    <h3 class="widgettitle text-center">Balance Transfer</h3>
+                    <div class="tabscontainer">
+                        <ul class="nav nav-tabs" id="balance-transfer-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="balance-transfer-tab" data-toggle="tab" href="#balance-transfer" role="tab" aria-controls="balance-transfer" aria-selected="true">Transfer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="balance-request-tab" data-toggle="tab" href="#balance-request" role="tab" aria-controls="balance-request" aria-selected="false">Request</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="balance-transfer-content">
+                            <div class="tab-pane fade show active" id="balance-transfer" role="tabpanel" aria-labelledby="balance-transfer">
+                                <form id="balance-transfer-form">
+                                    <div class="form-input">
+                                        <input type="text" name="mobile" id="mobile" placeholder="mobile"/>
+                                    </div>
+                                    <div class="form-input">
+                                        <select  name="amount" id="amount" class="selectpicker" title="Amount">
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                            <option value="300">300</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-input">
+                                        <button type="submit" class="btns curvedbtns purplebg text-white" disabled>Transfer</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="tab-pane fade" id="balance-request" role="tabpanel" aria-labelledby="balance-request">
+                                <form id="balance-request-form">
+                                    <div class="form-input">
+                                        <input type="text" name="mobile" id="request-mobile" placeholder="mobile"/>
+                                    </div>
+                                    <div class="form-input">
+                                        <select  name="amount" id="request_amount" class="selectpicker" title="Amount">
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                            <option value="300">300</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-input">
+                                        <button type="submit" class="btns curvedbtns purplebg text-white" disabled>Transfer</button>
+                                    </div>
+                                </form>                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5 widgetcontainer wow fadeInUp">
+            <h1><span>Qitaf</span></h1>
+            <div class="row widgetcontent graybg">
+                <div class="col-lg-7 col-md-7 widgetmargins">
+                    <div class="qitaf_tiers gold">
+                        <span id="qitaf_points">233</span>
+                    </div>
+                    <h4>Expire in 28 days</h4>
+                <div class="widgetbtns text-center">
+                    <a href="#" class="btns purplebg text-white curvedbtns">Transfer Points</a>
+                    <a href="#" class="btns borderedbtns">History</a>
+                </div>
+
+                </div>
+                <div class="col-lg-5 col-md-5 no-padding">
+
+                    <div class="nav_list qitaf">
+                        <a href="#" class="btns borderedbtns" title="rewards">
+                            <i class="icon-4_qitaf_rewards"></i>
+                            <span>Qitaf Rewards</span>
+                        </a>
+                        <a href="#" class="btns borderedbtns" title="fursan">
+                            <i class="icon-4_alfursan"></i>
+                            <span>alfursan</span>
+                        </a>
+                        <a href="#" class="btns borderedbtns" title="partners">
+                            <i class="icon-4_evoucher"></i>
+                            <span>Qitaf partners</span>
+                        </a>
+                        <a href="#" class="btns borderedbtns" title="donate">
+                            <i class="icon-4_donation"></i>
+                            <span>donate</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-7 widgetcontainer wow fadeInUp">
+            <h1><span>Analytics</span></h1>
+            <div class="row widgetcontent graybg">
+                <div class="col">
+                    <div class="tabscontainer">
+                        <ul class="nav nav-tabs" id="analytics-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="top-dialed-tab" data-toggle="tab" href="#top-dialed" role="tab" aria-controls="top-dialed" aria-selected="true">Top Dialed Numers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="previous-bills-tab" data-toggle="tab" href="#previous-bills" role="tab" aria-controls="previous-bills" aria-selected="false">Previous Bill Inovoices</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content " id="analytics-content">
+                            <div class="tab-pane fade show active" id="top-dialed" role="tabpanel" aria-labelledby="top-dialed">
+
+                                 <canvas id="top-dialed-chart" class="barcharts"  data-source="topdialedvalues" data-labels="topdialednumbers"></canvas>
+
+                            </div>
+                            <div class="tab-pane fade" id="previous-bills" role="tabpanel" aria-labelledby="previous-bills">
+
+                                <canvas id="previous-bills-chart" class="barcharts" data-source="topdialedvalues" data-labels="topdialednumbers"></canvas>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</main>
+<!-- End of page content which will be added here  -->
+
+
+<!-- footer which will come from template -->
+<!--<footer></footer>-->
+<!-- End of footer which will come from template -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="payment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Javascript libraries imports -->
+<script type="text/javascript" src="../../js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="../../js/popper.min.js" ></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="../../js/owl.carousel.js" ></script>
+<script type="text/javascript" src="../../js/Chart.min.js" ></script>
+<script type="text/javascript" src="../../js/wow.min.js" ></script>
+<script type="text/javascript" src="../../js/bootstrap-select.min.js" ></script>
+<!-- end of Javascript libraries imports -->
+
+<!-- STC custom Javascript functions -->
+<script type="text/javascript" src="../../js/functions.js" ></script>
+<!-- end of STC custom Javascript functions -->
+
+</body>
+</html>

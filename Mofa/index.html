@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+
+<!-- ************************ IMPORTANT INFORMATION ************************************
+  This web navigation drawer template is provided as an example of how to configure
+  a JET web application with a navigation drawer as a single page application
+  using ojRouter and oj-module.  It contains the Oracle JET framework and a default
+  requireJS configuration file to show how JET can be setup in a common application.
+  This project template can be used in conjunction with demo code from the JET
+  website to test JET component behavior and interactions.
+
+  Any CSS styling with the prefix "demo-" is for demonstration only and is not
+  provided as part of the JET framework.
+
+  Please see the demos under Cookbook/Patterns/App Shell: Web and the CSS documentation
+  under Support/API Docs/Non-Component Styling on the JET website for more information on how to use
+  the best practice patterns shown in this template.
+
+  Aria Landmark role attributes are added to the different sections of the application
+  for accessibility compliance. If you change the type of content for a specific
+  section from what is defined, you should also change the role value for that
+  section to represent the appropriate content type.
+  ***************************** IMPORTANT INFORMATION ************************************ -->
+<html lang="en-us">
+<head>
+    <title>MOFA EPS App </title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1">
+  <link rel="icon" href="css/images/favicon.ico" type="image/x-icon" />
+
+  <!-- This is the main css file for the default Alta theme -->
+<!-- injector:theme -->
+<link rel="stylesheet" href="css/alta/5.2.0/web/alta.css" id="css" />
+<!-- endinjector -->
+
+  <!-- This contains icon fonts used by the starter template -->
+  <link rel="stylesheet" href="css/demo-alta-site-min.css" type="text/css"/>
+
+  <!-- This is where you would add any app specific styling -->
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+  <link rel="stylesheet" href="css/MOFA_Fonts.css" type="text/css"/>
+  <link rel="stylesheet" href="css/MOFA_App.css" type="text/css"/>
+    <link rel="stylesheet" href="css/mobile.css" type="text/css"/>
+
+
+
+</head>
+<body class="oj-web-applayout-body">
+
+<div id="globalBody" class="oj-offcanvas-outer-wrapper oj-offcanvas-page">
+  <!--
+     ** Oracle JET V5.0.0 web application navigation drawer pattern.
+     ** Please see the demos under Cookbook/Patterns/App Shell: Web
+     ** and the CSS documentation under Support/API Docs/Non-Component Styling
+     ** on the JET website for more information on how to use this pattern.
+     ** The off-canvas section is used when the browser is resized to a smaller media
+     ** query size for a phone format and hidden until a user clicks on
+     ** the header hamburger icon.
+
+  <div id="pageContent" class="oj-web-applayout-page">
+    <!--
+       ** Oracle JET V5.0.0 web application header pattern.
+       ** Please see the demos under Cookbook/Patterns/App Shell: Web
+       ** and the CSS documentation under Support/API Docs/Non-Component Styling
+       ** on the JET website for more information on how to use this pattern.
+    -->
+    <div id="parentDiv" class="main_container">
+        <header role="banner" class="oj-web-applayout-header">
+
+            <div class="top_header_cont">
+                <div class="logo">
+                    <span></span>
+                </div>
+                <div class="menu_div">
+                    <oj-button display='icons' chroming='half'
+                               on-oj-action='[[toggleDrawer]]'>
+                        <i class="icon-bars" slot='startIcon' ></i>
+                    </oj-button>
+                </div>
+                <div class="time_display">
+                    <span data-bind="text: dates" ></span>
+                </div>
+                <div class="top_nav">
+                    <nav class="top_nav_cont">
+                        <ul>
+                            <li><a href="#"><i class="icon-home4"></i></a></li>
+                            <li>
+                                <a href="#" class="user_menu_link notification favourite"><i class="icon-star2"></i></a>
+                                <div class="user_menu notification favourite">
+                                    <div class="toggel_dropdown__header" >
+                                        <span class="toggel_dropdown__header-title">My</span>
+                                        <span class="toggel_dropdown__header-subtitle">Favourites</span>
+                                    </div>
+                                    <oj-navigation-list drill-mode="collapsible"
+                                                        selection="{{router.stateId}}"
+                                                        item.selectable="[[itemOnly]]">
+                                        <ul data-bind="template: {name: 'FastLinkMenuTemplate', foreach: fastLink, as: 'item'}">
+                                        </ul>
+                                    </oj-navigation-list>
+                                    <script type="text/html" id="FastLinkMenuTemplate">
+                                        <li>
+                                            <a href="#">
+
+                                                <!-- ko text: label-->
+                                                <!-- /ko -->
+
+                                            </a>
+                                            <!-- ko if: item.children -->
+                                            <ul data-bind="template: {name: 'userMenuTemplate', foreach: item.children, as: 'item'}">
+                                            </ul>
+                                            <!-- /ko -->
+                                        </li>
+                                    </script>
+
+                                    <!-- <a class="view_all" href="#">
+                                         View All
+                                     </a>-->
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="user_menu_link notification"><i class="icon-mail"></i><span class="count">10</span></a>
+                                <div class="user_menu notification">
+                                        <div class="toggel_dropdown__header" >
+                                            <span class="toggel_dropdown__header-title">New</span>
+                                            <span class="toggel_dropdown__header-subtitle">User Notifications</span>
+                                        </div>
+                                    <oj-navigation-list drill-mode="collapsible"
+                                                        selection="{{router.stateId}}"
+                                                        item.selectable="[[itemOnly]]">
+                                        <ul data-bind="template: {name: 'NotificationMenuTemplate', foreach: notifications, as: 'item'}">
+                                        </ul>
+                                    </oj-navigation-list>
+                                    <script type="text/html" id="NotificationMenuTemplate">
+                                        <li data-bind="css: {'unread': item.unread}">
+                                            <a href="#">
+
+                                                <!-- ko text: label-->
+                                                <!-- /ko -->
+
+                                            </a>
+                                            <!-- ko if: item.children -->
+                                            <ul data-bind="template: {name: 'userMenuTemplate', foreach: item.children, as: 'item'}">
+                                            </ul>
+                                            <!-- /ko -->
+                                        </li>
+                                    </script>
+
+                                   <!-- <a class="view_all" href="#">
+                                        View All 
+                                    </a>-->
+
+                                </div>
+                            </li>
+                            <li><a href="#"><i class="icon-settings"></i></a></li>
+                            <li>
+                                <a href="#" class="user_menu_link">
+                                    <img src="images/user_img.jpg" title="user image"/>
+                                    <i class="icon-caret-down"></i>
+                                </a>
+                                <div class="user_menu">
+                                    <h3>
+                                        <span>Welcome..</span>
+                                        <span class="user_name">
+                                              Mohamed Ahmed
+                                          </span>
+                                    </h3>
+                                    <oj-navigation-list drill-mode="collapsible"
+                                                        selection="{{router.stateId}}"
+                                                        item.selectable="[[itemOnly]]">
+                                        <ul data-bind="template: {name: 'userMenuTemplate', foreach: userMenuList, as: 'item'}">
+                                        </ul>
+                                    </oj-navigation-list>
+                                    <script type="text/html" id="userMenuTemplate">
+                                        <li data-bind="attr: {id: id}, css: {'oj-disabled': item.disabled}">
+                                            <a data-bind="attr: {href: $data['url']}">
+                                                <!-- ko if:iconStyleClass-->
+                                                <span data-bind="attr:{class:iconStyleClass}"></span>
+                                                <!-- /ko -->
+                                                <!-- ko text: label-->
+                                                <!-- /ko -->
+
+                                            </a>
+                                            <!-- ko if: item.children -->
+                                            <ul data-bind="template: {name: 'userMenuTemplate', foreach: item.children, as: 'item'}">
+                                            </ul>
+                                            <!-- /ko -->
+                                        </li>
+                                    </script>
+
+                                </div>
+
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+        </header>
+
+      <!-- outer offcanvas wrapper -->
+      <div class="oj-offcanvas-outer-wrapper">
+
+        <!-- start offcanvas -->
+        <div id="drawer"
+             class="oj-offcanvas-start oj-panel oj-panel-alt5 side_bar">
+
+
+          <h2>Main Menu</h2>
+
+            <div class="main_nav" role="navigation" id="main_navigation">
+
+                <oj-navigation-list drill-mode="collapsible"
+                                    selection="{{router.stateId}}"
+                                    item.selectable="[[itemOnly]]">
+                    <ul data-bind="template: {name: 'listItemTemplate', foreach: listItems, as: 'item'}">
+                    </ul>
+                </oj-navigation-list>
+
+                <script type="text/html" id="listItemTemplate">
+                    <li data-bind="attr: {id: id}, css: {'oj-disabled': item.disabled}">
+                        <a href="#">
+                            <!-- ko if:iconStyleClass-->
+                            <span data-bind="attr:{class:iconStyleClass}"></span>
+                            <!-- /ko -->
+                            <!-- ko text: label-->
+                            <!-- /ko -->
+
+                        </a>
+                        <!-- ko if: item.children -->
+                        <ul data-bind="template: {name: 'listItemTemplate', foreach: item.children, as: 'item'}">
+                        </ul>
+                        <!-- /ko -->
+                    </li>
+                </script>
+
+
+            </div>
+
+          <footer class="oj-web-applayout-footer" role="contentinfo">
+
+            <div class="oj-web-applayout-footer-item oj-web-applayout-max-width oj-text-secondary-color oj-text-sm">
+              جميع الحقوق محفوظة 1439هـ | 2018 م وزارة خارجية المملكة العربية السعودية          </div>
+          </footer>
+        </div>
+
+        <!-- main content -->
+        <div id="main">
+          <!-- start offcanvas launch button -->
+
+
+            <div class="content">
+                <div class="page_header" data-bind="text: router.currentState().label"></div>
+                <oj-module role="main" class="oj-web-applayout-max-width oj-web-applayout-content" config="[[moduleConfig]]"></oj-module>
+            </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/libs/require/require.js"></script>
+  <script type="text/javascript" src="js/Hijri.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</div>
+</body>
+</html>

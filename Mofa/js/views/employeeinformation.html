@@ -1,0 +1,212 @@
+
+<div class="oj-hybrid-padding">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page_title_section sections_header">
+                <div>
+                    <i class="icon-address-card"></i>
+                    <span>Mohammad Ahmed</span>
+                </div>
+
+               <div class="header_notes">
+                       The notes massege will be here
+               </div>
+
+            </h3>
+        </div>
+        <div class="col-lg-12 main_form_holder display_section">
+            <div class="row display_row">
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Assignment Number
+                    </oj-label>
+                    <oj-label class="display_label">
+                        99909828
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Assignment Start Date
+                    </oj-label>
+                    <oj-label class="display_label">
+                        23/11/2017
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Assignment End Date
+                    </oj-label>
+                    <oj-label class="display_label">
+                        23/11/2018
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Job
+                    </oj-label>
+                    <oj-label class="display_label">
+                        Accountant
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Position
+                    </oj-label>
+                    <oj-label class="display_label">
+                        Manager
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Grade
+                    </oj-label>
+                    <oj-label class="display_label">
+                        Grade 12
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Department
+                    </oj-label>
+                    <oj-label class="display_label">
+                        Financial Department
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Location
+                    </oj-label>
+                    <oj-label class="display_label">
+                        Riyadh
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Years of Services
+                    </oj-label>
+                    <oj-label class="display_label">
+                        12 Years
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                        Email Address
+                    </oj-label>
+                    <oj-label class="display_label">
+                        email@mofa.gov.sa
+                    </oj-label>
+                </div>
+                <div class="col-lg-6 form_items d-flex">
+                    <oj-label class="display_desc">
+                       Total Number of Vacation
+                    </oj-label>
+                    <oj-label class="display_label">
+                        21 Days
+                    </oj-label>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-12 gutter_sep">
+                <div style="max-width:400px">
+                    <oj-tab-bar
+                            selection="{{selectedItem}}"
+                            data="[[dataSource]]"
+                            edge="top"
+                            class="oj-tabbar-stack-icon-label custom_tabs"
+                            item.renderer="[[oj.KnockoutTemplateUtils.getRenderer('server_template', true)]]">
+                    </oj-tab-bar>
+                    <script type="text/html" id="server_template">
+                        <li data-bind="attr:{ id : $data['id']}, css:{'oj-disabled' : $data['disabled']=='true'}">
+                            <a href="#">
+                    <i data-bind="attr:{ class : $data['icon']}">
+                    </i>
+                                <span class="tab_text" data-bind="text: $data['name']">
+                    </span>
+                            </a>
+                        </li>
+                    </script>
+                </div>
+            </div>
+        <div class="col-lg-12 timeline_holder main_form_holder no-padding">
+
+
+            <!-- ko if: selectedItem() == 'careers' -->
+            <div class="timeline">
+                    <h2>Employee career path timeline</h2>
+
+                <ul class="timeline-items">
+                    <oj-bind-for-each data="[[timeline_data]]">
+                        <template>
+                            <li data-bind="attr:{class : 'timeline-item ' + $current.data['color']} " >
+                                <time data-bind="text: $current.data['date']"></time>
+                                <div class="t__content">
+                                    <div class="arrow-triangle"></div>
+                                    <h3 data-bind="text: $current.data['title']"></h3>
+                                    <h4 data-bind="text: $current.data['description']"></h4>
+                                </div>
+                            </li>
+                        </template>
+                    </oj-bind-for-each>
+                </ul>
+
+            </div>
+
+            <!-- /ko -->
+
+            <!-- ko if: selectedItem() == 'vacations' -->
+            <oj-table id='table' aria-label='Departments Table'
+                      class="data_tables"
+                      data='[[datasource]]'
+                      row-renderer='[[oj.KnockoutTemplateUtils.getRenderer("row_template", true)]]'
+                      selection-required='true'
+                      selection-mode='{"row": "single", "column": "single"}'
+                      dnd='{"reorder": {"columns": "enabled"}}'
+                      scroll-policy='loadMoreOnScroll'
+                      scroll-policy-options='{"fetchSize": 10}'
+                      columns='[[tableHeader]]'
+                      style='width: 100% !important;max-height:400px;'>
+            </oj-table>
+            <script type="text/html" id="row_template">
+                <tr>
+                    <!-- ko if: $context['rowContext']['depth'] == 1 -->
+                    <td>
+                        <oj-row-expander context='[[$context.rowContext]]'></oj-row-expander>
+                    </td>
+                    <td>
+                        <span data-bind="text: vacationType"></span>
+                    </td>
+                    <td>
+                        <span data-bind="text: vacationCategory"></span>
+                    </td>
+                    <td>
+                        <span data-bind="text: start"></span>
+                    </td>
+                    <td>
+                        <span data-bind="text: end"></span>
+                    </td>
+                    <td>
+                        <span data-bind="text: duration"></span>
+                    </td>
+                    <td>
+                        <span data-bind="text: status"></span>
+                    </td>
+                    <!-- /ko -->
+                    <!-- ko if: $context['rowContext']['depth'] == 2 -->
+
+                    <td colspan="8">
+                        <span data-bind="text: detail"></span>
+
+                    </td>
+
+                    <!-- /ko -->
+                </tr>
+            </script>
+            <!-- /ko -->
+
+        </div>
+       
+    </div>
+
+
+</div>

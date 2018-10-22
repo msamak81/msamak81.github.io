@@ -1,0 +1,44 @@
+
+<link rel="stylesheet" href="css/login.css" type="text/css"/>
+<link rel="stylesheet" href="css/mobile.css" type="text/css"/>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+
+<div class="login_logo" style="display:none;">
+	<img src="images/mofaLogo.png"/>
+</div>
+<div class="login_panel">
+	<div class="login_container">
+        <form id="login" action="javascript:submitCredentials();" autocomplete="off" method="POST">
+		<div id="UsernameBox" class="control_box min_margin">
+			<oj-label for="text-input" show-required>User Name</oj-label>
+          <oj-input-text id="text-input" required value=""></oj-input-text>
+
+		</div>
+
+                
+		<div class="control_box min_margin">
+			<oj-label for="password" show-required>Password</oj-label>
+            <oj-input-password id="password" required value=""></oj-input-password>
+        </div>
+        </form>
+		<div id="ButtonBox" class="control_box center">
+			
+			<oj-button id='button1' on-oj-action='[[buttonClick]]' class="btns btn-default">Login</oj-button>
+			<oj-button id='button1'  class="btns btn-default d-lg-none">Cancel</oj-button>
+		</div>
+		
+		
+		<div id="LanguagePickerBox" class="control_box min_margin">
+			
+            
+            <oj-label for="basicSelect">Select  Language</oj-label>
+          <oj-select-one id="basicSelect" value="" style="width:100%;">
+            <oj-option value="IE">English</oj-option>
+            <oj-option value="FF">Arabic</oj-option>
+        
+          </oj-select-one>
+		</div>
+               
+	</div>
+	</div>
+

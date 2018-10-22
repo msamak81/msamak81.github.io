@@ -1,0 +1,86 @@
+
+<div class="oj-hybrid-padding">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page_title">
+                <i class="icon-building1"></i>
+                <span>Residential unit Request</span>
+
+
+            </h3>
+        </div>
+
+        <div class="col-lg-12 col-md-12">
+           <!-- <oj-collapsible expanded="true"> -->
+                <div class="widgetHeader table_filter_add" >
+                    <div class="filter_input">
+                        <oj-input-text id="filter" maxlength="30" placeholder="Type to filter" class="filter_table" on-raw-value-changed="[[handleValueChanged]]" value="{{filter}}"></oj-input-text>
+                        <oj-button id="clearButton"  on-oj-action='[[clearClick]]' display='icons' chroming='half'>
+                        <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>Clear </oj-button>
+                    </div>
+                    <oj-button id='add' class="btns btn-default bordered_btn" on-oj-action="[[addresidentialunit]]"><i class="icon-plus"></i> Add </oj-button>
+
+
+                </div>
+                <div class="widgetContent no-padding">
+
+
+                    <oj-table id='table' aria-label='Departments Table'
+                              class="data_tables"
+                              data='[[datasource]]'
+                              row-renderer='[[oj.KnockoutTemplateUtils.getRenderer("row_template", true)]]'
+                              selection-required='true'
+                              selection-mode='{"row": "single", "column": "single"}'
+                              dnd='{"reorder": {"columns": "enabled"}}'
+                              scroll-policy='loadMoreOnScroll'
+                              scroll-policy-options='{"fetchSize": 10}'
+                              columns='[[tableHeader]]'
+                              style='width: 100% !important;max-height:400px;'>
+                    </oj-table>
+                    <script type="text/html" id="row_template">
+                        <tr>
+                            <!-- ko if: $context['rowContext']['depth'] == 1 -->
+                        
+                    
+                            <td>
+                                <span data-bind="text: decision_no"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: destination"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: status"></span>
+                            </td>
+                            <td class="centered_text table_icon">
+                                <oj-button display='icons' chroming='half' on-oj-action="{{$parent.updateresidentialunit}}"><i class="icon-edit" ></i></oj-button>                                <oj-button display='icons' chroming='half'><i class="icon-trash-alt"></i></oj-button>
+                            </td>
+                            <!-- /ko -->
+                            <!-- ko if: $context['rowContext']['depth'] == 2 -->
+
+                            <td colspan="8">
+                                <span data-bind="text: detail"></span>
+
+                            </td>
+
+                            <!-- /ko -->
+                        </tr>
+                    </script>
+
+
+
+                </div>
+           <!-- </oj-collapsible> -->
+
+            <div class="info alert-info msgs_box">
+                <h2>Notes</h2>
+                <ul>
+                    <li>
+                        Submit request doesn't mean unit availability ...
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>

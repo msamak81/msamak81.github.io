@@ -1,0 +1,424 @@
+<div class="oj-hybrid-padding">
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <oj-collapsible expanded="true">
+            <div class="widgetHeader" slot="header">
+                <h2>
+                    <i class="icon-address-card"></i>
+                    <span>Basic Information</span>
+                </h2>
+                <div>
+
+                    <oj-menu-button id="menuButton" class="action_menu">
+                        <span slot='startIcon' class='icon-ellipsis-v'></span>
+                        <oj-menu id="menu" slot="menu" style="display:none">
+                            <!-- ko foreach: menuItems -->
+                            <oj-option :id="[[id]]" :disabled="[[disabled]]" :value="[[label]]">
+                              <span>
+                                <oj-bind-text value="[[label]]"></oj-bind-text>
+                              </span>
+                            </oj-option>
+                            <!-- /ko -->
+                        </oj-menu>
+                    </oj-menu-button>
+
+                </div>
+            </div>
+            <div class="widgetContent">
+                <div class="basic_info_details">
+                    <img alt="User Name" src="images/user_img.jpg" class="user_img">
+                        <ul class="detailed_list">
+                            <li>
+                                <h4>Name</h4>
+                                <h3>Mohammed Ahmed</h3>
+                            </li>
+                            <li>
+                                <h4>Employee No</h4>
+                                <h3>323233</h3>
+                            </li>
+                            <li>
+                                <h4>Gatagory</h4>
+                                <h3>Chief Financial Officer</h3>
+                            </li>
+                            <li>
+                                <h4>Degree</h4>
+                                <h3>8</h3>
+                            </li>
+                            <li>
+                                <h4>Postion</h4>
+                                <h3>General manager</h3>
+                            </li>
+                            <li>
+                                <h4>Department</h4>
+                                <h3>HR</h3>
+                            </li>
+                            <li>
+                                <h4>Location</h4>
+                                <h3>Riyadh</h3>
+                            </li>
+                        </ul>
+
+
+                </div>
+
+            </div>
+            </oj-collapsible>
+
+        </div>
+        <div class="col-lg-8 col-md-6">
+            <oj-collapsible expanded="true">
+            <div class="widgetHeader" slot="header">
+                <h2>
+                    <i class="icon-bullhorn"></i>
+                    <span>Announcement</span>
+                </h2>
+                <div>
+
+                </div>
+            </div>
+            <div class="widgetContent">
+
+                    <oj-film-strip id="filmStrip"
+                                   aria-label="Set of chemicals"
+                                   arrow-placement = "adjacent"
+                                   arrow-visibility = "visible"
+                                   current-item='{"index" : 3}'
+                                   max-items-per-page = "1"
+                                   class="announcement_slider"
+                    >
+                        <!-- ko foreach: chemicals -->
+                        <div class="announcement_item">
+                            <a  data-bind="attr:{'href':url}">
+                                <img  data-bind="attr:{'src':imgSrc}"/>
+                                <div class="announcement_text">
+                                    <h3 data-bind="text: header"></h3>
+                                    <p data-bind="text: description" ></p>
+                                </div>
+
+                            </a>
+                        </div>
+                        <!-- /ko -->
+                    </oj-film-strip>
+
+                    <a href="#" class="learn_more">view All</a>
+
+            </div>
+            </oj-collapsible>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <oj-collapsible expanded="true">
+            <div class="widgetHeader" slot="header">
+                <h2>
+                    <i class="icon-user-clock"></i>
+                    <span>Attendance views</span>
+                </h2>
+                <div>
+
+                    <oj-menu-button id="menuButton" class="action_menu">
+                        <span slot='startIcon' class='icon-ellipsis-v'></span>
+                        <oj-menu id="Chartmenu" slot="menu" style="display:none">
+                            <!-- ko foreach: chartPeriod -->
+                            <oj-option :id="[[id]]" :disabled="[[disabled]]" :value="[[label]]">
+                              <span>
+                                <oj-bind-text value="[[label]]"></oj-bind-text>
+                              </span>
+                            </oj-option>
+                            <!-- /ko -->
+                        </oj-menu>
+                    </oj-menu-button>
+                </div>
+            </div>
+
+            <div class="widgetContent">
+                <oj-chart id="areaChart"
+                          type="lineWithArea"
+                          series="[[areaSeries]]"
+                          groups="[[areaGroups]]"
+                          animation-on-display="zoom"
+                          legend.position = "bottom"
+                          animation-on-data-change="auto"
+                          style-defaults.line-type = 'curved'
+                          style-defaults.line-style = "solid"
+                          style-defaults.colors ="[[chartColors]]"
+                          style-defaults.data-cursor.line-color = "#13b18c"
+                          y-axis.axis-line.rendered = "off"
+                          y-axis.axis-line.line-color = "rgba(46,104,208,0.1)"
+                          x-axis.major-tick.baseline-width = 3
+                          y-axis.major-tick.baseline-width = 1
+                          style-defaults.marker-displayed = "on"
+                          style-defaults.marker-shape = "circle"
+                          style-defaults.marker-size = "10"
+                          style-defaults.data-cursor.marker-color = "rgba(255,255,255,0.1)"
+                          style="max-width:500px;width:100%;height:150px;"></oj-chart>
+            </div>
+            </oj-collapsible>
+        </div>
+
+        <div class="col-lg-12 col-md-12">
+            <oj-collapsible expanded="true">
+            <div class="widgetHeader" slot="header" >
+                <h2>
+                    <i class="icon-inbox"></i>
+                    <span>Notification inbox</span>
+                </h2>
+
+
+            </div>
+                <div class=" widgetHeader table_btn_actions table_filter_add" >
+                    <div class="filter_input">
+                        <oj-input-text id="filter" maxlength="30" placeholder="Type to filter" class="filter_table" on-raw-value-changed="[[handleValueChanged]]" value="{{filter}}"></oj-input-text>
+                        <oj-button id="clearButton"  on-oj-action='[[clearClick]]' display='icons' chroming='half'>
+                        <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>Clear </oj-button>
+
+                        <oj-menu-button id="menuButton_filter" class="action_menu">
+                            <span slot='startIcon' class='icon-filter'></span>
+
+                            <oj-menu id="menu_filter" slot="menu" style="display:none" >
+                                <div  class="table_panels shadow-lg p-3 mb-5 bg-white rounded">
+                                    <h3>Filter Table Data</h3>
+                                            <div class="main_form_holder no-padding no-shadow no-margin no-border">
+                                        <div class="row">
+                                            <div class="col-lg-4  form_items">
+                                                <oj-label for="sender">Request Type</oj-label>
+                                                <oj-select-one id="sender"  >
+                                                    <oj-option value="s1">Request</oj-option>
+                                                    <oj-option value="s2">Request</oj-option>
+                                                   
+                                                </oj-select-one>
+                                            </div>
+                                            <div class="col-lg-4 form_items form_items">
+                                                
+                                                    <oj-label id="DestinationID">ID</oj-label>
+                                                    <oj-input-text id="Destination-input" value="Retrieved Data"></oj-input-text>
+                                                
+                                            </div>
+
+                                            <div class="col-lg-4 form_items form_items">
+                                                <oj-label for="filter2">Request Type</oj-label>
+                                                <oj-select-one id="filter2"  >
+                                                    <oj-option value="s1">Mohammad Ahmed</oj-option>
+                                                    <oj-option value="s2">Fawaz AlFawaz</oj-option>
+                                                    
+                                                </oj-select-one>
+                                            </div>
+                                            <div class="col-lg-4 form_items ">
+                                                <oj-label id="traveldateID" show-required>From</oj-label>
+                                                <oj-input-date id="traveldateinput" value=''></oj-input-date>
+                                            </div>
+                                            <div class="col-lg-4 form_items">
+                                                <oj-label id="returndateID" show-required>To</oj-label>
+                                                <oj-input-date id="returndate-input" value=""></oj-input-date>
+                                            </div>
+
+                                            <div class="col-lg-12 align-right form_items">
+                                                <oj-button id='submit' class="btns btn-default" >Filter</oj-button>
+                                            </div>
+                                          
+                                        </div>
+                                        </div>
+
+                                </div>
+
+                            </oj-menu>
+                        </oj-menu-button>
+
+                    </div>
+                    <oj-button display='icons' chroming='half'><i class="icon-th" ></i></oj-button>
+
+
+                </div>
+            <div class="widgetContent no-padding">
+
+
+                <oj-table id='table' aria-label='Departments Table'
+                          class="data_tables"
+                          data='[[dataprovider]]'
+                          selection-mode='{"row": "multiple", "column": "multiple"}'
+                          dnd='{"reorder": {"columns": "enabled"}}'
+                          scroll-policy='loadMoreOnScroll'
+                          scroll-policy-options='{"fetchSize": 10}'
+                          columns='[[tableHeader]]'
+                          style='width: 100%; height: 200px;'>
+                </oj-table>
+
+                <script type="text/html" id="view_tbl_record">
+                    <td class="centered_text table_icon">
+                        <oj-button display='icons' chroming='half' on-click="[[$parent.openPopups]]" ><i class="icon-eye1" ></i></oj-button>
+
+                    </td>
+                </script>
+                <script type="text/html" id="delete_tbl_record">
+                    <td class="centered_text table_icon">
+                        <oj-button display='icons' chroming='half' on-oj-action="[[$parent.open]]"><i class="icon-trash-alt"></i></oj-button>
+
+
+
+                    </td>
+                </script>
+
+            </div>
+            </oj-collapsible>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+            <div class="widgetContent inner-content">
+                <oj-collapsible expanded="true">
+                <div class="innerheader" slot="header">
+                    <h2>
+                        <span>Payslip</span>
+                    </h2>
+                    <div>
+
+                        <oj-menu-button id="menuButton" class="action_menu">
+                            <span slot='startIcon' class='icon-ellipsis-v'></span>
+                            <oj-menu id="menu" slot="menu" style="display:none">
+                                <!-- ko foreach: menuItems -->
+                                <oj-option :id="[[id]]" :disabled="[[disabled]]" :value="[[label]]">
+                              <span>
+                                <oj-bind-text value="[[label]]"></oj-bind-text>
+                              </span>
+                                </oj-option>
+                                <!-- /ko -->
+                            </oj-menu>
+                        </oj-menu-button>
+
+                    </div>
+                </div>
+                <div class="inner_body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h4>Total Salary</h4>
+                            <h3>23,550</h3>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h4>Deducitions</h4>
+                            <h3 class="deductions">6,550</h3>
+                        </div>
+                    </div>
+                </div>
+                </oj-collapsible>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="widgetContent inner-content">
+                <oj-collapsible expanded="true">
+                <div class="innerheader" slot="header">
+                    <h2>
+                        <span>Mission</span>
+                    </h2>
+                    <div>
+
+                        <oj-menu-button id="menuButton" class="action_menu">
+                            <span slot='startIcon' class='icon-ellipsis-v'></span>
+                            <oj-menu id="menu" slot="menu" style="display:none">
+                                <!-- ko foreach: menuItems -->
+                                <oj-option :id="[[id]]" :disabled="[[disabled]]" :value="[[label]]">
+                              <span>
+                                <oj-bind-text value="[[label]]"></oj-bind-text>
+                              </span>
+                                </oj-option>
+                                <!-- /ko -->
+                            </oj-menu>
+                        </oj-menu-button>
+
+                    </div>
+                </div>
+                <div class="inner_body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 flex_option">
+                            <h4>Total Balance</h4>
+                            <h3><span>80</span> <span class="appr">Days</span></h3>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 flex_option">
+                            <h4>Consumed</h4>
+                            <h3><span>20</span> <span class="appr">Days</span></h3>
+                        </div>
+                    </div>
+                </div>
+                </oj-collapsible>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="widgetContent inner-content">
+                <oj-collapsible expanded="true">
+                <div class="innerheader" slot="header">
+                    <h2>
+                        <span>Vacation</span>
+                    </h2>
+                    <div>
+
+                        <oj-menu-button id="menuButton" class="action_menu">
+                            <span slot='startIcon' class='icon-ellipsis-v'></span>
+                            <oj-menu id="menu" slot="menu" style="display:none">
+                                <!-- ko foreach: menuItems -->
+                                <oj-option :id="[[id]]" :disabled="[[disabled]]" :value="[[label]]">
+                              <span>
+                                <oj-bind-text value="[[label]]"></oj-bind-text>
+                              </span>
+                                </oj-option>
+                                <!-- /ko -->
+                            </oj-menu>
+                        </oj-menu-button>
+
+                    </div>
+                </div>
+                <div class="inner_body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 flex_option">
+                            <h4>Total Balance</h4>
+                            <h3><span>80</span> <span class="appr">Days</span></h3>
+
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 flex_option">
+                            <h4>Consumed</h4>
+                            <h3><span>20</span> <span class="appr">Days</span></h3>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 flex_option">
+                            <h4>Annual Balance</h4>
+                            <h3><span>100</span> <span class="appr">Days</span></h3>
+                        </div>
+                    </div>
+                </div>
+                </oj-collapsible>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<oj-popup id="joinModal" class="demo-popup popupFixWidth"
+                      tail="none" position.my.horizontal="center" position.my.vertical="bottom"
+                      position.at.horizontal="center" position.at.vertical="bottom"
+                      position.of="window" position.offset.y="-10"
+                      modality="modal" >
+
+                <h3 class="popup-title">Notification Details</h3>
+
+                <div class="row">
+                    <div class="main_form_holder no-margin no-border no-padding no-shadow">
+
+                        <div class="col-lg-12">
+                            Notification Details
+                        </div>
+
+                    </div>
+
+                </div>
+ </oj-popup>
+
+
+ <oj-dialog style="display:none" id="delDialog1" title="Confirmation" class="confirmationModal">
+
+                      <div slot="body">
+                        Are you sure you want to delete
+                      </div>
+
+                      <div slot="footer">
+                            <oj-button id="okButton" on-oj-action="[[close]]" class="btns btn-default">Yes
+                            </oj-button>
+                             <oj-button id="okButton" on-oj-action="[[close]]" class="btns btn-default">NO
+                            </oj-button>
+                      </div>
+</oj-dialog>

@@ -1,0 +1,154 @@
+
+<div class="oj-hybrid-padding">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page_title">
+                <i class="icon-inbox"></i>
+                <span>Notification Inbox</span>
+
+
+            </h3>
+        </div>
+
+        <div class="col-lg-12 col-md-12">
+            <div class=" widgetHeader table_btn_actions table_filter_add" >
+                <div class="filter_input">
+                    <oj-input-text id="filter" maxlength="30" placeholder="Type to filter" class="filter_table" on-raw-value-changed="[[handleValueChanged]]" value="{{filter}}"></oj-input-text>
+                    <oj-button id="clearButton"  on-oj-action='[[clearClick]]' display='icons' chroming='half'>
+                        <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>Clear </oj-button>
+                    <oj-menu-button id="menuButton_filter" class="action_menu">
+                        <span slot='startIcon' class='icon-filter'></span>
+
+                        <oj-menu id="menu_filter" slot="menu" style="display:none" >
+                            <div  class="table_panels shadow-lg ">
+                                <h3>Filter Table Data</h3>
+                                <div class="main_form_holder no-padding no-shadow no-margin no-border">
+                                    <div class="row">
+                                        <div class="col-lg-4  form_items">
+                                            <oj-label for="sender">Request Type</oj-label>
+                                            <oj-select-one id="sender"  >
+                                                <oj-option value="s1">Request</oj-option>
+                                                <oj-option value="s2">Request</oj-option>
+
+                                            </oj-select-one>
+                                        </div>
+                                        <div class="col-lg-4 form_items form_items">
+
+                                            <oj-label id="DestinationID">ID</oj-label>
+                                            <oj-input-text id="Destination-input" value="Retrieved Data"></oj-input-text>
+
+                                        </div>
+
+                                        <div class="col-lg-4 form_items form_items">
+                                            <oj-label for="filter2">Request Type</oj-label>
+                                            <oj-select-one id="filter2"  >
+                                                <oj-option value="s1">Mohammad Ahmed</oj-option>
+                                                <oj-option value="s2">Fawaz AlFawaz</oj-option>
+
+                                            </oj-select-one>
+                                        </div>
+                                        <div class="col-lg-4 form_items ">
+                                            <oj-label id="traveldateID" show-required>From</oj-label>
+                                            <oj-input-date id="traveldateinput" value=''></oj-input-date>
+                                        </div>
+                                        <div class="col-lg-4 form_items">
+                                            <oj-label id="returndateID" show-required>To</oj-label>
+                                            <oj-input-date id="returndate-input" value=""></oj-input-date>
+                                        </div>
+
+                                        <div class="col-lg-12 align-right form_items">
+                                            <oj-button id='submit' class="btns btn-default" >Filter</oj-button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </oj-menu>
+                    </oj-menu-button>
+
+                </div>
+
+
+            </div>
+            <div class="widgetContent no-padding">
+
+
+                <oj-table id='table' aria-label='Departments Table'
+                          class="data_tables"
+                          data='[[dataprovider]]'
+                          scroll-policy='loadMoreOnScroll'
+                          scroll-policy-options='{"fetchSize": 10}'
+                          columns='[[tableHeader]]'
+                          style='width: 100%; height: 200px;'>
+                </oj-table>
+
+                <script type="text/html" id="view_tbl_record">
+                    <td class="centered_text table_icon">
+                        <oj-button id="open_notification" display='icons' chroming='half' on-click="[[$parent.viewdetails]]"><i class="icon-eye1" ></i></oj-button>
+
+                    </td>
+                </script>
+                <script type="text/html" id="delete_tbl_record">
+                    <td class="centered_text table_icon">
+                        <oj-button display='icons' chroming='half'  on-click="[[$parent.openPopups]]" ><i class="icon-stats-dots"></i></oj-button>
+                        
+
+                    </td>
+                </script>
+
+            </div>
+
+
+            <oj-popup id="joinModal" class="demo-popup popupFixWidth"
+                      tail="none" position.my.horizontal="center" position.my.vertical="bottom"
+                      position.at.horizontal="center" position.at.vertical="bottom"
+                      position.of="window" position.offset.y="-10"
+                      modality="modal" >
+
+                <h3 class="popup-title">Process flow Chart</h3>
+
+                <div class="row">
+                    <div class="main_form_holder no-margin no-border no-padding no-shadow">
+
+                        <div class="col-lg-12">
+                            Process flow chart will appear here
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </oj-popup>
+
+
+            <oj-popup id="viewDl" class="demo-popup popupFixWidth"
+            tail="none" position.my.horizontal="center" position.my.vertical="bottom"
+            position.at.horizontal="center" position.at.vertical="bottom"
+            position.of="window" position.offset.y="-10"
+            modality="modal" >
+
+      <h3 class="popup-title">Notification Details</h3>
+
+      <div class="row">
+          <div class="main_form_holder no-margin no-border no-padding no-shadow">
+
+              <div class="col-lg-12">
+                  filds here
+              </div>
+
+          </div>
+
+
+      </div>
+
+  </oj-popup>
+
+           
+        </div>
+    </div>
+
+
+</div>

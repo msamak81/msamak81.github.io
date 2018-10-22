@@ -1,0 +1,68 @@
+[
+  {"attr": {
+    "id": "t1",
+    "name": "Mohammad Ahmed",
+    "resource": "Manager",
+    "start": "1/1/2014",
+    "end": "10/1/2014",
+    "decision_no": "12345678",
+    "serial_no": "022355335633",
+    "mission": "Mission 1",
+    "destination": "New York",
+    "status": "Approved",
+    "notification": "notification name number 1",
+    "age": "34",
+    "relation": "spouse",
+    "title": "Title 1",
+    "category": "Passport Image",
+    "type": "Image",
+    "url": "myphoto.jpg",
+    "approve_type": "HR People",
+    "bank":"SABB Bank",
+    "amount":"4554",
+    "vacationType":"Annual Leave",
+    "duration":"21",
+    "vacationCategory":"Planned"
+
+  },
+    "children": [
+      {"attr": {
+        "detail": "Various coding subtasks",
+        "complete": "20",
+        "incomplete": "80"
+      }}
+    ]
+  },
+  {"attr": {
+    "id": "t2",
+    "name": "Mohammad Alzaidy",
+    "resource": "HR Specialist",
+    "start": "4/1/2019",
+    "end": "10/4/2020",
+    "decision_no": "098765432",
+    "serial_no": "3445250002202",
+    "mission": "Mission 2",
+    "destination": "London",
+    "status": "Pending",
+    "notification": "notification name number 2",
+    "age": "12",
+    "relation": "child",
+    "title": "Title 2",
+    "category": "Personal image",
+    "type": "PDF File",
+    "url": "myphoto_3.jpg",
+    "approve_type": "Financial Department",
+    "bank":"SMBA Bank",
+    "amount":"3000",
+    "vacationType":"Sick Leave",
+    "duration":"2",
+    "vacationCategory":"Emergency"
+  },
+    "children": [
+      {"attr": {"detail": "Various testing subtasks",
+        "complete": "50",
+        "incomplete": "50"
+      }}
+    ]
+  }
+]

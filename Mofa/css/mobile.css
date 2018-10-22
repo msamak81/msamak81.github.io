@@ -1,0 +1,89 @@
+@media screen and (max-width: 768px) {
+    .basic_info_details{flex-wrap:wrap;}
+    .detailed_list {flex: 0 0 100%}
+    .detailed_list li {max-width:100%;flex:0 0 100%}
+    .main_container .oj-offcanvas-shift-start .content, .main_container .oj-offcanvas-shift-start #main header{width: calc(100% - 0px);}
+    .main_container header .time_display {display:none;}
+    .main_container header .top_nav{flex: 1;max-width: 84%;margin-right: 3px;}
+    .timeline .timeline-items .timeline-item { width: 100%;padding: 5px 20px;}
+    .timeline .timeline-items .timeline-item time {
+        left: 34px;
+        top: -12px;
+        width: 38%;
+        min-height: 35px;
+    }
+
+    .timeline .timeline-items .timeline-item .t__content {
+        left: 33px;
+        position: absolute;
+        width: 94%
+    }
+    .timeline .timeline-items .timeline-item::before {
+        left: 0;
+    }
+
+    .timeline .timeline-items .timeline-item::after {
+
+        left: -9px;
+    }
+    .timeline .timeline-items {
+        max-width: 100%;
+    }
+
+    .oj-popup{
+        max-width: 90%;
+        min-width: 90%;
+    }
+
+    .main_container header .logo{
+        max-width: 60px;
+    }
+    .main_container header .logo span{
+        background-position-x: -94px;
+        background-size: 80%;
+    }
+    .main_container  header .user_menu.notification {
+        right: auto;
+        left: 0;
+        position: fixed;
+        width: calc(100% - 10px);
+        margin: 0 5px;
+    }
+    .main_container  header .user_menu.notification:before {
+        right: auto;
+        left: 62%;
+    }
+    .main_container header .user_menu.notification.favourite:before {
+        right: auto;
+        left: 49%;
+    }
+    .main_container header .top_nav_cont .user_menu_link i{margin-left:5px}
+    .main_container .side_bar{top:115px;}
+
+}
+
+
+@media screen and (max-width: 990px) {
+    .fixReadonlyPosition{
+        position: inherit;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .d-lg-none {
+        display: none !important;
+    }
+    .login_container
+    {
+        width: 100%;
+        margin: 0 20px;
+    }
+    .oj-button
+    {
+        width: 40%;
+    }
+
+}

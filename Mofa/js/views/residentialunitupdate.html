@@ -1,0 +1,310 @@
+
+<div class="oj-hybrid-padding">
+    <div class="row wizard" >
+        <div class="col-lg-12">
+            <oj-train id="wizardTrain"
+                      class="oj-train-stretch steps_train"
+                      selected-step="{{currentStepValue}}"
+                      steps="[[stepArray]]"
+                      style="max-width:700px;min-width:240px;margin-left:auto;margin-right:auto;" >
+            </oj-train>
+        </div>
+
+        <div class="col-lg-12">
+            <h3 class="page_title form_title no-margin">
+                <div>
+                    <i class="icon-building1"></i>
+                    <span>Update Residential unit Request</span>
+                </div>
+
+            </h3>
+        </div>
+
+        <div class="col-lg-12">
+
+            <!-- ko if: currentStepValue() == 'add' -->
+
+                <div class="main_form_holder">
+                    
+
+                    <div class="row">
+                        <div class="col-lg-6 form_items ">
+                                <div class="readonly">
+                            <oj-label id="effectivedateID" >Marital status</oj-label>
+                            <oj-input-text id="traveldateinput" value='Married'></oj-input-date>
+                            </div>
+                        </div>
+                       
+                                <div class="col-lg-6 form_items ">
+                                        <div class="readonly">
+                                    <oj-label id="effectivedateID" >No of Dependents</oj-label>
+                                    <oj-input-text id="traveldateinput" value='12'></oj-input-date>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 form_items ">
+                                        <div class="readonly">
+                                    <oj-label id="effectivedateID" >Date of Submission</oj-label>
+                                    <oj-input-text id="traveldateinput" value='03-3-2018'></oj-input-date>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 form_items "></div>
+                     
+                    
+                                <div class="col-lg-6 form_items ">
+                                        <oj-label for="ticketClass" show-required>Request Type</oj-label>
+                                        <oj-select-one id="ticketClassselect" value="" >
+                                            <oj-option value="IE">Type 1</oj-option>
+                                            <oj-option value="FF">Type 2</oj-option>
+                                            <oj-option value="CH">Type 3</oj-option>
+                                            <oj-option value="OP">Type 4</oj-option>
+                                            <oj-option value="SA">Type 5</oj-option>
+                                        </oj-select-one>
+                                    </div>
+                        
+                        <div class="col-lg-6 form_items ">
+                            <oj-label for="ticketClass" show-required>Quarter Type</oj-label>
+                            <oj-select-one id="ticketClassselect" value="" >
+                                <oj-option value="IE">Quarter Type 1</oj-option>
+                                <oj-option value="FF">Quarter Type 2</oj-option>
+                                <oj-option value="CH">Quarter Type 3</oj-option>
+                                <oj-option value="OP">Quarter Type 4</oj-option>
+                                <oj-option value="SA">Quarter Type 5</oj-option>
+                            </oj-select-one>
+                        </div>
+
+                        <div class="col-lg-6 form_items ">
+                                <oj-label id="accountnumberID" show-required>Reason of Applying</oj-label>
+                                <oj-input-text id="traveldateinput" value=''></oj-input-text>
+                            </div>
+                          
+
+                                <div class="col-lg-2 form_items ">
+                                        <oj-label id="agreeId"></oj-label>
+                                        <oj-checkboxset  class="zoomStyle" checked>
+                                                <oj-option id="check" value="">Speial Case</oj-option>
+                                        </oj-checkboxset>
+                                </div>
+
+                                <div class="col-lg-4 form_items ">
+                                    <oj-label id="accountnumberID" show-required>Special Case Reason</oj-label>
+                                    <oj-input-text id="traveldateinput" value='' disabled="true"></oj-input-text>
+                                </div>
+                                <div class="col-lg-6 form_items ">
+                                        <oj-label id="agreeId"></oj-label>
+                                        <oj-checkboxset  class="zoomStyle" >
+                                                <oj-option id="check2" value=""> I am willing to accept another Quarter Type </oj-option>
+                                        </oj-checkboxset>
+                                </div>
+
+                    </div>
+                </div>
+
+                <div class=" row  gutter_sep">
+                    <div class="col-lg-12">
+                    <h3 class="page_title form_title no-margin">
+                        <div>
+                            <i class="icon-attachment"></i>
+                            <span>Attachment</span>
+                        </div>
+
+                    </h3>
+                    </div>
+                    <div class="col-lg-12 form_items">
+                        <oj-file-picker accept="[[acceptArr]]"
+                                        selection-mode="multiple"
+                                        on-oj-select='[[selectListener]]'>
+                        </oj-file-picker>
+                        <div style="padding-top:8px">
+                            <label for="selected">Selected files: </label>
+                            <span id="selected" data-bind="text: ko.toJSON(fileNames)"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            <div class=" row gutter_sep">
+                <div class="col-lg-12">
+                    <h3 class="page_title form_title no-margin">
+                        <div>
+                            <i class="icon-comment-dots"></i>
+                            <span>Comments</span>
+                        </div>
+
+                    </h3>
+                </div>
+                <div class="col-lg-12 form_items">
+
+                    <oj-text-area id="text-area" value=""></oj-text-area>
+                </div>
+
+            </div>
+            <div class=" row gutter_sep">
+                <div class="col-lg-12 align-right">
+                    <oj-button id='cancel' class="btns btn-default">Cancel</oj-button>
+                    <oj-button id='later' class="btns btn-default">Save for later</oj-button>
+                    <oj-button id='next' class="btns btn-default " on-click="[[nextStep]]">Next</oj-button>
+
+
+                </div>
+
+            </div>
+
+            <!-- /ko -->
+
+
+            <!-- ko if: currentStepValue() == 'preview' -->
+
+            <div class="main_form_holder">
+                <div class=" row ">
+                    <div class="col-lg-12">
+                        <oj-table id='table' aria-label='Departments Table'
+                                  class="data_tables preview_table"
+                                  data='[[datasource_preview]]'
+                                  row-renderer='[[oj.KnockoutTemplateUtils.getRenderer("row_template", true)]]'
+                                  columns='[[columnArray_preview]]'
+                                  style='width: 100% !important;'>
+                        </oj-table>
+                        <script type="text/html" id="row_template">
+                            <tr>
+                                <td class="custom_td_30">
+                                    <span data-bind="text: description"></span>
+                                </td>
+                                <td>
+                                    <span data-bind="text: proposed"></span>
+                                </td>
+
+
+                            </tr>
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" row  gutter_sep">
+                <div class="col-lg-12">
+                    <h3 class="page_title form_title no-margin">
+                        <div>
+                            <i class="icon-attachment"></i>
+                            <span>Attachment</span>
+                        </div>
+
+                    </h3>
+                </div>
+                <div class="col-lg-12 ">
+                    <oj-table id='table' aria-label='Departments Table'
+                              class="data_tables"
+                              data='[[previewdatasource]]'
+                              row-renderer='[[oj.KnockoutTemplateUtils.getRenderer("attachment_row_template", true)]]'
+                              dnd='{"reorder": {"columns": "enabled"}}'
+                              scroll-policy='loadMoreOnScroll'
+                              scroll-policy-options='{"fetchSize": 10}'
+                              columns='[[attachmenttableHeader]]'
+                              style='width: 100% !important;max-height:400px;'>
+                    </oj-table>
+                    <script type="text/html" id="attachment_row_template">
+                        <tr>
+                            <td>
+                                <span data-bind="text: title"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: category"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: type"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: name"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: start"></span>
+                            </td>
+                            <td>
+                                <a href="#"><span data-bind="text: url"></span></a>
+                            </td>
+                        </tr>
+                    </script>
+
+                </div>
+                </div>
+
+            <div class=" row  gutter_sep">
+                <div class="col-lg-12">
+                    <h3 class="page_title form_title no-margin">
+                        <div>
+                            <i class="icon-file-signature"></i>
+                            <span>Approvals</span>
+                        </div>
+
+                    </h3>
+                </div>
+                <div class="col-lg-12 ">
+                    <oj-table id='table' aria-label='Departments Table'
+                              class="data_tables"
+                              data='[[previewdatasource]]'
+                              row-renderer='[[oj.KnockoutTemplateUtils.getRenderer("approvals_row_template", true)]]'
+                              dnd='{"reorder": {"columns": "enabled"}}'
+                              scroll-policy='loadMoreOnScroll'
+                              scroll-policy-options='{"fetchSize": 10}'
+                              columns='[[approvaltableHeader]]'
+                              style='width: 100% !important;max-height:400px;'>
+                    </oj-table>
+                    <script type="text/html" id="approvals_row_template">
+                        <tr>
+                            <!-- ko if: $context['rowContext']['depth'] == 1 -->
+                            <td class="custom_td_2">
+                                <oj-row-expander context='[[$context.rowContext]]'></oj-row-expander>
+                            </td>
+                            <td>
+                                <span data-bind="text: name"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: approve_type"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: decision_no"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: category"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: status"></span>
+                            </td>
+
+                            <!-- /ko -->
+                            <!-- ko if: $context['rowContext']['depth'] == 2 -->
+
+                            <td colspan="6">
+                                <span data-bind="text: detail"></span>
+
+                            </td>
+
+                            <!-- /ko -->
+                        </tr>
+                    </script>
+
+
+                </div>
+            </div>
+
+            <div class=" row gutter_sep">
+                <div class="col-lg-12 align-right">
+                    <oj-button id='cancel_preview' class="btns btn-default">Cancel</oj-button>
+                    <oj-button id='back' class="btns btn-default" on-click="[[previousStep]]">Back</oj-button>
+                    <oj-button id='submit' class="btns btn-default ">Submit</oj-button>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- /ko -->
+        </div>
+
+
+
+    </div>
+
+
+</div>

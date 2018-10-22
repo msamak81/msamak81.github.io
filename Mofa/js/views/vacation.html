@@ -1,0 +1,424 @@
+<div class="oj-hybrid-padding">
+
+    <div class="row">
+            <div class="col-lg-12">
+                    <h3 class="page_title">
+                        <i class="icon-earth"></i>
+                        <span>Vacation Details</span>
+        
+        
+                    </h3>
+                </div>
+        <div class="col-lg-12 col-md-12">
+           
+                <div class="col-lg-12 main_form_holder display_section summary_display">
+                        <div class="row display_row">
+                            <div class="col-lg-12 form_items ">
+
+                               <h3>
+                                   Vacation Summary
+                               </h3>
+                            </div>
+                            <div class="col-lg-4 form_items">
+                                <oj-label class="display_desc">
+                                        Total Balance
+                                </oj-label>
+                                <oj-label class="display_label">
+                                    120
+                                </oj-label>
+                            </div>
+                            <div class="col-lg-4 form_items">
+                                <oj-label class="display_desc">
+                                        Consumed
+                                </oj-label>
+                                <oj-label class="display_label">
+                                    30
+                                </oj-label>
+                            </div>
+                            <div class="col-lg-4 form_items">
+                                <oj-label class="display_desc">
+                                    Annual Balance
+                                </oj-label>
+                                <oj-label class="display_label">
+                                    80
+                                </oj-label>
+                            </div>
+                            </div>
+                            </div>
+        </div>
+
+        
+
+        <div class="col-lg-12 col-md-12">
+                <div class=" widgetHeader  table_filter_add" >
+                    <div class="filter_input table_btn_actions">
+                        <oj-input-text id="filter" maxlength="30" placeholder="Type to filter" class="filter_table" on-raw-value-changed="[[handleValueChanged]]" value="{{filter}}"></oj-input-text>
+                        <oj-button id="clearButton"  on-oj-action='[[clearClick]]' display='icons' chroming='half'>
+                            <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>Clear </oj-button>
+                        <oj-menu-button id="menuButton_filter" class="action_menu">
+                            <span slot='startIcon' class='icon-filter'></span>
+
+                            <oj-menu id="menu_filter" slot="menu" style="display:none" >
+                                <div  class="table_panels shadow-lg p-3 mb-5 bg-white rounded">
+                                    <h3>Filter Table Data</h3>
+                                        <div class="main_form_holder no-padding no-shadow no-margin no-border">
+                                            <div class="row">
+                                                <div class="col-lg-4  form_items">
+                                                    <oj-label for="sender">Vacation Type</oj-label>
+                                                    <oj-select-one id="vacationType" >
+                                                        <oj-option value="t1">type1</oj-option>
+                                                        <oj-option value="t2">type2</oj-option>
+
+                                                    </oj-select-one>
+                                                </div>
+                                                <div class="col-lg-4 form_items form_items">
+
+                                                    <oj-label for="sender">Vacation Category</oj-label>
+                                                    <oj-select-one id="vacationCategory" >
+                                                        <oj-option value="c1">category 1</oj-option>
+                                                        <oj-option value="c2">category 2</oj-option>
+
+                                                    </oj-select-one>
+                                                </div>
+
+                                                <div class="col-lg-4 form_items form_items">
+                                                    <oj-label for="filter2">Approval Status</oj-label>
+                                                    <oj-select-one id="approval"  >
+                                                        <oj-option value="a1">Approved</oj-option>
+                                                        <oj-option value="a2">Pending</oj-option>
+
+                                                    </oj-select-one>
+                                                </div>
+                                                <div class="col-lg-4 form_items form_items">
+                                                    <oj-label for="filter2">Vacation Status</oj-label>
+                                                    <oj-select-one id="status"  >
+                                                        <oj-option value="st1">Approved</oj-option>
+                                                        <oj-option value="st2">Pending</oj-option>
+
+                                                    </oj-select-one>
+                                                </div>
+                                                <div class="col-lg-4 form_items ">
+                                                    <oj-label id="traveldateID" show-required>Start Date</oj-label>
+                                                    <oj-input-date id="traveldateinput" value=''></oj-input-date>
+                                                </div>
+                                                <div class="col-lg-4 form_items">
+                                                    <oj-label id="returndateID" show-required>End Date</oj-label>
+                                                    <oj-input-date id="returndate-input" value=""></oj-input-date>
+                                                </div>
+
+                                                <div class="col-lg-12 align-right form_items">
+                                                    <oj-button id='submit' class="btns btn-default" >Filter</oj-button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                </div>
+
+                            </oj-menu>
+                        </oj-menu-button>
+
+                    </div>
+
+                    <oj-button id='add' class="btns btn-default bordered_btn" on-oj-action="[[addvacation]]"><i class="icon-plus"></i> Add </oj-button>
+                    
+
+                </div>
+            <div class="widgetContent no-padding">
+
+                <oj-table id='table' aria-label='Departments Table'
+                          class="data_tables"
+                          data='[[datasource]]'
+                          row-renderer='[[oj.KnockoutTemplateUtils.getRenderer("row_template", true)]]'
+                          selection-required='true'
+                          selection-mode='{"row": "single", "column": "single"}'
+                          dnd='{"reorder": {"columns": "enabled"}}'
+                          scroll-policy='loadMoreOnScroll'
+                          scroll-policy-options='{"fetchSize": 10}'
+                          columns='[[tableHeader]]'
+                          style='width: 100% !important;max-height:400px;'>
+                </oj-table>
+                <script type="text/html" id="row_template">
+                    <tr>
+                        <!-- ko if: $context['rowContext']['depth'] == 1 -->
+                        <td>
+                            <oj-row-expander context='[[$context.rowContext]]'></oj-row-expander>
+                        </td>
+                        <td>
+                            <span data-bind="text: vacationType"></span>
+                        </td>
+                        <td>
+                            <span data-bind="text: vacationCategory"></span>
+                        </td>
+                        <td>
+                            <span data-bind="text: start"></span>
+                        </td>
+                        <td>
+                            <span data-bind="text: end"></span>
+                        </td>
+                        <td>
+                            <span data-bind="text: duration"></span>
+                        </td>
+                        <td>
+                            <span data-bind="text: status"></span>
+                        </td>
+                        <td class="centered_text table_icon">
+                            <oj-button display='icons' chroming='half' on-oj-action="{{$parent.updatevacation}}"><i class="icon-edit" ></i></oj-button>
+                            <oj-button display='icons' chroming='half' on-click="[[$parent.joinVacation]]"><i class="icon-users-cog"></i></oj-button>
+                        </td>
+                        <!-- /ko -->
+                        <!-- ko if: $context['rowContext']['depth'] == 2 -->
+
+                        <td colspan="8">
+                            <span data-bind="text: detail"></span>
+
+                        </td>
+
+                        <!-- /ko -->
+                    </tr>
+                </script>
+                
+                <oj-popup id="joinModal" class="demo-popup popupFixWidth"
+                          tail="none" position.my.horizontal="center" position.my.vertical="bottom"
+                          position.at.horizontal="center" position.at.vertical="bottom"
+                          position.of="window" position.offset.y="-10"
+                          modality="modal" >
+
+                            <h3 class="popup-title">Join Vacation</h3>
+
+                        <div class="row">
+                            <div class="main_form_holder no-margin no-border no-padding no-shadow">
+
+                                    <div class="col-lg-8 form_items">
+                                        <oj-label id="returndateID" show-required>Actual Date Of Join</oj-label>
+                                        <oj-input-date id="returndate-input" value=""></oj-input-date>
+                                    </div>
+
+                                    <div class="col-lg-12 align-right form_items">
+                                        <oj-button id='cancel_join' class="btns btn-default"  on-click="[[cancelListener]]">Cancel</oj-button>
+                                        <oj-button id='submit_join' class="btns btn-default">Submit</oj-button>
+                                    </div>
+
+                            </div>
+
+
+                        </div>
+
+                </oj-popup>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12">
+        <oj-collapsible expanded="false">
+                <div class="widgetHeader" slot="header" >
+                        <h2>
+                            <i class="icon-inbox"></i>
+                            <span>Vacation Policies</span>
+                        </h2>
+                    </div>
+
+            <div class="col-lg-12 gutter_sep top_sep">
+                <div class="row">
+
+
+                <div class="col-lg-3">
+                    <oj-tab-bar selection="{{selectedItem}}" class="vertical_tabs">
+                        <ul data-bind="foreach: dataSource">
+                            <li data-bind="attr: {id: id}">
+                                <a href="#" data-bind="text: name"></a>
+                            </li>
+                        </ul>
+                    </oj-tab-bar>
+                </div>
+                <div class="col-lg-9">
+                    <!-- ko if: selectedItem() == 'annual' -->
+                        <div class="vacation_tabs main_form_holder">
+                            <h2>
+                                Annual Leave
+                            </h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                            </p>
+                            <h3>Policy Titles</h3>
+                            <ul>
+                                <li>
+                                    type specimen book
+                                </li>
+                                <li>
+                                    It has survived not only five centuries,
+                                </li>
+                            </ul>
+                        </div>
+
+                    <!-- /ko -->
+
+                    <!-- ko if: selectedItem() == 'authorized' -->
+                    <div class="vacation_tabs main_form_holder">
+                        <h2>
+                            Authorized Paid Leave
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </p>
+                        <h3>Policy Titles</h3>
+                        <ul>
+                            <li>
+                                type specimen book
+                            </li>
+                            <li>
+                                It has survived not only five centuries,
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+
+                    <!-- ko if: selectedItem() == 'bereavement' -->
+                    <div class="vacation_tabs main_form_holder">
+                        <h2>
+                            Bereavement Leave
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </p>
+                        <h3>Policy Titles</h3>
+                        <ul>
+                            <li>
+                                type specimen book
+                            </li>
+                            <li>
+                                It has survived not only five centuries,
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+
+                    <!-- ko if: selectedItem() == 'child' -->
+                    <div class="vacation_tabs main_form_holder">
+                        <h2>
+                            Child Birth Leave
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </p>
+                        <h3>Policy Titles</h3>
+                        <ul>
+                            <li>
+                                type specimen book
+                            </li>
+                            <li>
+                                It has survived not only five centuries,
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+
+                    <!-- ko if: selectedItem() == 'communal' -->
+                    <div class="vacation_tabs main_form_holder">
+                        <h2>
+                            Communal Activity Leave
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </p>
+                        <h3>Policy Titles</h3>
+                        <ul>
+                            <li>
+                                type specimen book
+                            </li>
+                            <li>
+                                It has survived not only five centuries,
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+
+                    <!-- ko if: selectedItem() == 'delivery' -->
+                    <div class="vacation_tabs main_form_holder">
+                        <h2>
+                            Delivery Leave
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </p>
+                        <h3>Policy Titles</h3>
+                        <ul>
+                            <li>
+                                type specimen book
+                            </li>
+                            <li>
+                                It has survived not only five centuries,
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+
+                    <!-- ko if: selectedItem() == 'education' -->
+                    <div class="vacation_tabs main_form_holder">
+                        <h2>
+                            Education Leave
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </p>
+                        <h3>Policy Titles</h3>
+                        <ul>
+                            <li>
+                                type specimen book
+                            </li>
+                            <li>
+                                It has survived not only five centuries,
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+
+                    <!-- ko if: selectedItem() == 'emergency' -->
+                    <div class="vacation_tabs main_form_holder">
+                        <h2>
+                            Emergency Leave
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </p>
+                        <h3>Policy Titles</h3>
+                        <ul>
+                            <li>
+                                type specimen book
+                            </li>
+                            <li>
+                                It has survived not only five centuries,
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+
+                    <!-- ko if: selectedItem() == 'escort' -->
+                    <div class="vacation_tabs main_form_holder">
+                        <h2>
+                            Escort Leave
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </p>
+                        <h3>Policy Titles</h3>
+                        <ul>
+                            <li>
+                                type specimen book
+                            </li>
+                            <li>
+                                It has survived not only five centuries,
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+
+                </div>
+                </div>
+            </div>
+
+        </oj-collapsible>
+    </div>
+
+
+        
+    </div>
+</div>

@@ -1,0 +1,195 @@
+
+<div class="oj-hybrid-padding">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page_title">
+                <div>
+                    <i class="icon-money-bill-alt"></i>
+                    <span>Payslip</span>
+                </div>
+            </h3>
+        </div>
+    </div>
+    <div class="main_form_holder no-padding no-shadow no-margin no-border">
+    <div class="row gutter_sep">
+            <div class="col-lg-3 form_items ">
+                    <oj-label for="" show-required>Type</oj-label>
+                    <oj-select-one id="" value="" >
+                        <oj-option value="IE" aria-selected="true">Mission</oj-option>
+                        <oj-option value="FF">Firefox</oj-option>
+                        <oj-option value="CH">Chrome</oj-option>
+                        <oj-option value="OP">Opera</oj-option>
+                        <oj-option value="SA">Safari</oj-option>
+                    </oj-select-one>
+                </div>
+                <div class="col-lg-3 form_items ">
+                        <oj-label for="" show-required>Choose a Payslip</oj-label>
+                        <oj-select-one id="" value="" >
+                            <oj-option value="IE">Payslip 1</oj-option>
+                            <oj-option value="FF">Payslip 2</oj-option>
+                            <oj-option value="CH">Payslip 3</oj-option>
+                            <oj-option value="OP">Payslip 4</oj-option>
+                            <oj-option value="SA">Payslip 5</oj-option>
+                        </oj-select-one>
+                    </div>
+                    <div class="col-lg-6 form_items ">
+                        <oj-label ></oj-label >
+                            <oj-button id='print' class="btns btn-default">Go</oj-button>
+                    </div>
+
+    </div>
+</div>
+        <div class="row gutter_sep">
+        <div class="col-lg-12 col-md-12">
+                <h4 class="table_title">
+                        <div>  
+                            <span>Summary of Payment </span>
+                        </div>
+                    </h4> 
+               
+        <oj-table id="table" aria-label="Departments Table"
+        data='[[summarypayment]]'
+        display='grid'
+        class="data_tables"
+        columns-default='{"sortable": "disable"}' 
+        columns='[
+                  {"headerText": "Total Earning","field": "TotalEariningId"},
+                  {"headerText": "Total Deduction", "field": "TotalDeductionId"},
+                  {"headerText": "Net Pay", "field": "NetPayId"}]'>
+        </oj-table>
+
+
+        </div>
+    </div>
+    
+    <div class="row gutter_sep">
+        <div class="col-lg-6 col-md-6">
+
+                <h3 class="table_title">
+                        <div>
+                            <span>Earning</span>
+                        </div>
+                    </h3>
+            <oj-table id="table" aria-label="Departments Table"
+                      data='[[earningdeductions]]'
+                      display='grid'
+                      class="data_tables"
+                      columns-default='{"sortable": "disable"}'
+                      columns='[
+                  {"headerText": "Reporting Name","field": "ReportingNameId"},
+                  {"headerText": "Amount", "field": "AmountId","footerTemplate": "totalFooterTemplate"}]'>
+                  <template slot="totalFooterTemplate"  data-oj-as="footer">
+                        <div class="totalDisaply" id="table_earning:emp_total"><oj-bind-text value="[[emp_total_func(footer)]]"></oj-bind-text></div>
+                </template>
+            </oj-table>
+
+
+        </div>
+
+        <div class="col-lg-6 col-md-6">
+                <h3 class="table_title">
+                        <div>
+                            <span>Deductions</span>
+                        </div>
+                    </h3>
+
+            <oj-table id='table_deduction' aria-label='Departments Table'
+            data='[[earningdeductions]]'
+             as='cell' 
+             class="data_tables"
+             columns-default='{"sortable": "disable"}'
+             display='grid'
+             columns='[
+            {"headerText": "Reporting Name","field": "ReportingNameId"},
+            {"headerText": "Amount", "field": "AmountId","footerTemplate": "totalFooterTemplate"}
+            ]'>
+                <template slot="totalFooterTemplate"  data-oj-as="footer">
+                        <div class="totalDisaply" id="table_deduction:emp_total"><oj-bind-text value="[[emp_total_func(footer)]]"></oj-bind-text></div>
+                </template>
+            </oj-table>
+
+
+        </div>
+        </div>
+        
+        <div class="row gutter_sep">
+                <div class="col-lg-12 col-md-12">
+                        <h4 class="table_title">
+                                <div>  
+                                    <span>Payment Information </span>
+                                </div>
+                            </h4> 
+                       
+                <oj-table id="table"
+                data='[[paymentinformation]]'
+                display='grid'
+                class="data_tables"
+                columns-default='{"sortable": "disable"}' 
+                columns='[
+                          {"headerText": "Method","field": "MethodId"},
+                          {"headerText": "Bank Name", "field": "BankNameId"},
+                          {"headerText": "Branch Name", "field": "BranchNameId"},
+                          {"headerText": "Account Number", "field": "AccountNumberId"},
+                          {"headerText": "Amount", "field": "AmountId"}]'>
+                </oj-table>
+        
+        
+                </div>
+        </div>
+        
+
+        <div class="row gutter_sep">
+                <div class="col-lg-12 col-md-12">
+                        <h4 class="table_title">
+                                <div>  
+                                    <span>Messages</span>
+                                </div>
+                            </h4> 
+                       
+                <oj-table id="table"
+                data='[[messages]]'
+                display='grid'
+                class="data_tables"
+                columns-default='{"sortable": "disable"}' 
+                columns='[
+                          {"headerText": "Messages","field": "MessageId"}]'>
+                </oj-table>
+        
+        
+                </div>
+        </div>
+        
+        <div class="row gutter_sep">
+                <div class="col-lg-12 col-md-12">
+                        <h4 class="table_title">
+                                <div>  
+                                    <span>Mission Information</span>
+                                </div>
+                            </h4> 
+                       
+                <oj-table id="table"
+                data='[[missioninformation]]'
+                display='grid'
+                class="data_tables"
+                columns-default='{"sortable": "disable"}' 
+                columns='[
+                          {"headerText": "Mission Number","field": "MissionNumberId"},
+                          {"headerText": "Date","field": "DateId"},
+                          {"headerText": "City","field": "`CityId"},
+                          {"headerText": "Amount","field": "AmountId"}]'>
+                </oj-table>
+        
+        
+                </div>
+        </div>
+
+        <div class="col-lg-12 align-right">
+            <oj-button id='print' class="btns btn-default">Print</oj-button>
+            <oj-button id='cancel' class="btns btn-default">Save as</oj-button>
+
+
+        </div>
+    </div>
+
+
+</div>

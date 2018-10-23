@@ -3,8 +3,8 @@ $(document).ready(function(){
     "use strict";
 
     // just for Front end including the header and footer templates
-    $("header").load("../../templates/templates.html #header");
-    $("footer").load("../../templates/templates.html #footer");
+//    $("header").load("../../templates/templates.html #header");
+//    $("footer").load("../../templates/templates.html #footer");
     // $("panel").load("../../templates/templates.html #panel");
 
     $(window).on('load',function(){

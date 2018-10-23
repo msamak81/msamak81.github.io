@@ -1,22 +1,41 @@
+
 $(document).ready(function(){
     "use strict";
 
     // just for Front end including the header and footer templates
     $("header").load("../../templates/templates.html #header");
     $("footer").load("../../templates/templates.html #footer");
+    // $("panel").load("../../templates/templates.html #panel");
+
+    $(window).on('load',function(){
+
+        if ( $(this).width() < 769 ) {
+            $('.quicklinks').detach().insertAfter('.app_store');
+            // $('header .nav').detach().appendTo('footer');
+            $('header .snav').detach();
+        }
+
+        $('header .widgets_btn').on('click',function(){
+            console.log('clicked');
+            $('body').toggleClass('open_widgets');
+        });
+    });
+
+
+
 
     // WOW animation init
-    new WOW().init();
+    //new WOW().init();
 
     // Owl carousel functions
     function generateCarousel(){
         var carouselItem = $('.owl-carousel');
         carouselItem.each(function(index,ele) {
-            var ele = $(ele),
-                id = ele.attr('id'),
-                desktop = ele.data('items-desktop'),
-                tablet = ele.data('items-tablet'),
-                mobile = ele.data('items-mobile');
+            var $this = $(ele),
+                id = $this.attr('id'),
+                desktop = $this.data('items-desktop'),
+                tablet = $this.data('items-tablet'),
+                mobile = $this.data('items-mobile');
 
             var carousel = $("#"+id).owlCarousel({
                 loop:false,
@@ -42,8 +61,6 @@ $(document).ready(function(){
         });
     }
 
-
-
     // charts init functions
     var barchartcolors =['#977aa8','#712b81', '#da3f7b', '#fadf46', '#fab53c', '#977aa8'];
     var topdialedvalues =  [66, 30, 25, 95, 80, 60 ];
@@ -57,10 +74,10 @@ $(document).ready(function(){
     function generateDounght(){
         var dounghtItem = $('.dounghtcanvas');
         dounghtItem.each(function(index,ele){
-            var ele = $(ele),
-                id = ele.attr('id'),
-                src = ele.data('source'),
-                type =ele.data('type');
+            var $this = $(ele),
+                id = $this.attr('id'),
+                src = $this.data('source'),
+                type =$this.data('type');
 
             var ctx =$('#'+id);
             var myDoughnut = new Chart(ctx, {
@@ -101,10 +118,10 @@ $(document).ready(function(){
     function generateBar() {
         var barchartItem = $('.barcharts');
         barchartItem.each(function (index, ele) {
-            var ele = $(ele),
-                id = ele.attr('id'),
-                src = ele.data('source'),
-                labels = ele.data('labels');
+            var $this = $(ele),
+                id = $this.attr('id'),
+                src = $this.data('source'),
+                labels = $this.data('labels');
             var ctx = $('#' + id);
             var myBarChart = new Chart(ctx, {
                 type: 'bar',
@@ -170,10 +187,10 @@ $(document).ready(function(){
     function showContent(){
         var item = $('.showContent');
         item.each(function (index, ele) {
-            var ele = $(ele),
-                content = ele.data('show'),
-                toHide = ele.data('hide');
-                ele.click(function(){
+            var $this = $(ele),
+                content = $this.data('show'),
+                toHide = $this.data('hide');
+                $this.on('click',function(){
 
                     if (toHide == undefined){
                         $('.hiddenContent').hide()
@@ -181,12 +198,15 @@ $(document).ready(function(){
                     else{
                         $(toHide).hide();
                     }
-                    if(ele.hasClass('dropdown-item')) ele.parents('.action-sheet-btn').find('.action_btn').dropdown('toggle');
+                    if($this.hasClass('dropdown-item')) $this.parents('.action-sheet-btn').find('.action_btn').dropdown('toggle');
                     $(content).show();
                     return false;
+
                 })
         });
     }
+
+
 
 
     // call the functions only if the item is placed in the page
@@ -194,7 +214,6 @@ $(document).ready(function(){
     if ( $('.dounghtcanvas').length ) generateDounght();
     if ( $('.barcharts').length ) generateBar();
     if ( $('.showContent').length ) showContent();
-
 
 
 

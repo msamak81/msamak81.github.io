@@ -9,7 +9,7 @@
     <!-- CSS libraries imports -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="../../css/owl.carousel.css" rel="stylesheet" type="text/css"/>
-    <link href="../../css/animate.min.css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="../../css/animate.min.css" rel="stylesheet" type="text/css"/> -->
     <!-- end of CSS libraries imports -->
 
     <!-- STC custom styles -->
@@ -18,10 +18,13 @@
     <link href="../../css/mobile.css" rel="stylesheet" type="text/css"/>
     <!-- end of STC custom styles -->
 
+    <link rel="stylesheet" href="../../css/fonts/font-awesome/css/font-awesome.min.css">
+
+
 </head>
 <body>
 <!-- header which will come from template -->
-<!--<header></header>-->
+<header></header>
 <!-- End of header which will come from template -->
 
 
@@ -29,39 +32,29 @@
 <main class="mainsection">
 
     <div class="row">
-        <div class="col-lg-12 widgetcontainer wow fadeInUp">
+
+        <div class="col-lg-12 widgetcontainer wow fadeInUp order-lg-1 order-md-1" id="billing">
             <h1>
                 <span>Billing</span>
-                <div class="action-sheet-btn col-lg-hidden ">
-                    <a class="action_btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="icon-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <h6 class="dropdown-header">Current Plan</h6>
-                        <a class="dropdown-item btns" href="#">Change Plan</a>
-                        <h6 class="dropdown-header">Current Bill</h6>
-                        <a class="dropdown-item btns" href="#"  data-toggle="modal" data-target="#payment">Pay Bill</a>
-                        <a class="dropdown-item btns" href="#">Bill Details</a>
-                        <h6 class="dropdown-header">Unbilled Amount</h6>
-                        <a class="dropdown-item btns" href="#">Usage Details</a>
-                    </div>
-                </div>
-
             </h1>
             <div class="row widgetcontent graybg align-content-center billing">
                 <div class="col flex-sm-full widgetmargins seperatorbrdr ">
-                    <h3 class="widgettitle text-center">Current Plan</h3>
-                    <div class="packagesimg">
-                        <img src="../../imgs/packages/100-en.png" alt="current Plan"/>
+                    <div class="same_height">
+                        <h3 class="widgettitle text-center">Current Plan</h3>
+                        <div class="packagesimg">
+                            <img src="../../imgs/packages/100-en.png" alt="current Plan"/>
+                        </div>
+                        <div class="widgetbtns text-center col-sm-hidden bottom_position">
+                            <a href="#" class="btns borderedbtns">Change your plan</a>
+                        </div>
                     </div>
-                    <div class="widgetbtns text-center col-sm-hidden">
-                        <a href="#" class="btns borderedbtns">Change your plan</a>
-                    </div>
+
                 </div>
 
                 <div class="col widgetmargins seperatorbrdr ">
+                    <div class="same_height">
                     <h3 class="widgettitle text-center">Current Bill</h3>
-                    <div class="numberdisplay packagesmargin">
+                    <div class="numberdisplay">
                         <h2>
                             <span class="mainnumber">12410</span>
                             <span class="secondnumber">
@@ -71,14 +64,16 @@
                         </h2>
                         <h4>Bill issued 19 days ago</h4>
                     </div>
-                    <div class="widgetbtns text-center col-sm-hidden">
+                    <div class="widgetbtns text-center col-sm-hidden bottom_position">
                         <a href="#" class="btns purplebg text-white curvedbtns" data-toggle="modal" data-target="#payment">Pay Bill</a>
                         <a href="#" class="btns borderedbtns">Bill Details</a>
                     </div>
+                    </div>
                 </div>
                 <div class="col widgetmargins">
+                    <div class="same_height">
                     <h3 class="widgettitle text-center">Unbilled Amount</h3>
-                    <div class="numberdisplay packagesmargin">
+                    <div class="numberdisplay ">
                         <h2>
                             <span class="mainnumber">32</span>
                             <span class="secondnumber">
@@ -88,18 +83,16 @@
                         </h2>
                         <h4>Update 10 hours ago</h4>
                     </div>
-                    <div class="widgetbtns text-center col-sm-hidden">
+                    <div class="widgetbtns text-center col-sm-hidden bottom_position">
                         <a href="#" class="btns borderedbtns">Usage Details</a>
+                    </div>
                     </div>
                 </div>
 
             </div>
         </div>
 
-    </div>
-
-    <div class="row">
-        <div class="col-lg-5 widgetcontainer  wow fadeInUp order-lg-last order-md-first ">
+        <div class="col-lg-5 widgetcontainer  wow fadeInUp order-lg-3 order-md-2 " id="usage">
             <h1><span>Usage</span></h1>
             <div class="row widgetcontent graybg">
                 <div class="col">
@@ -114,7 +107,7 @@
 
                         </ul>
                         <div class="tab-content" id="usage-content">
-                            <div class="tab-pane fade show active" id="internet-usage" role="tabpanel" aria-labelledby="internet-usage">
+                            <div class="tab-pane  show active" id="internet-usage" role="tabpanel" aria-labelledby="internet-usage">
 
                                 <div class="owl-carousel internetusage" id="internetUSage" data-items-desktop="2" data-items-tablet="2" data-items-mobile="1">
                                     <div class="item">
@@ -135,7 +128,7 @@
                                                 </div>
 
                                             </div>
-                                            <div class="widgetbtns text-center col-sm-hidden">
+                                            <div class="widgetbtns col-sm-hidden text-center">
                                                 <a href="#" class="btns borderedbtns">Details</a>
                                             </div>
                                         </div>
@@ -148,7 +141,7 @@
                                 </div>
 
                             </div>
-                            <div class="tab-pane fade" id="freebies-usage" role="tabpanel" aria-labelledby="freebies-usage">
+                            <div class="tab-pane " id="freebies-usage" role="tabpanel" aria-labelledby="freebies-usage">
                                 <div class="owl-carousel freebiesusage" id="freebiesusage" data-items-desktop="2" data-items-tablet="3" data-items-mobile="2">
 
                                     <div class="item ">
@@ -236,7 +229,7 @@
             </div>
         </div>
 
-        <div class="col-lg-7 widgetcontainer wow fadeInUp  ">
+        <div class="col-lg-7 widgetcontainer wow fadeInUp order-lg-2 order-md-3 " id="balance">
             <h1>
                 <span>Balance</span>
                 <div class="action-sheet-btn col-lg-hidden ">
@@ -365,10 +358,10 @@
                                     </div>
 
                                 </form>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 widgetmargins col-sm-hidden hiddenContent"  id="balance_transfer">
                     <h3 class="widgettitle text-center">Balance Transfer</h3>
@@ -428,21 +421,19 @@
             </div>
         </div>
 
-    </div>
-
-    <div class="row">
-        <div class="col-lg-5 widgetcontainer wow fadeInUp">
+        <div class="col-lg-5 widgetcontainer wow fadeInUp order-lg-4 order-md-4" id="qitaf">
             <h1><span>Qitaf</span></h1>
             <div class="row widgetcontent graybg">
                 <div class="col-lg-7 col-md-7 widgetmargins">
-                    <div class="qitaf_tiers gold">
+                    <a class="qitaf_tiers platinum" href="#">
                         <span id="qitaf_points">233</span>
-                    </div>
+                        <span class="hint">click for details</span>
+                    </a>
                     <h4>Expire in 28 days</h4>
-                <div class="widgetbtns text-center">
-                    <a href="#" class="btns purplebg text-white curvedbtns">Transfer Points</a>
-                    <a href="#" class="btns borderedbtns">History</a>
-                </div>
+                    <div class="widgetbtns text-center">
+                        <a href="#" class="btns purplebg text-white curvedbtns">Transfer Points</a>
+                        <a href="#" class="btns borderedbtns">History</a>
+                    </div>
 
                 </div>
                 <div class="col-lg-5 col-md-5 no-padding">
@@ -464,6 +455,10 @@
                             <i class="icon-4_donation"></i>
                             <span>donate</span>
                         </a>
+                        <a href="#" class="btns borderedbtns" title="Tamayouz">
+                            <i class="gi"></i>
+                            <span>donate</span>
+                        </a>
 
                     </div>
 
@@ -471,7 +466,8 @@
 
             </div>
         </div>
-        <div class="col-lg-7 widgetcontainer wow fadeInUp">
+
+        <div class="col-lg-7 widgetcontainer wow fadeInUp order-lg-5 order-md-5" id="analytics">
             <h1><span>Analytics</span></h1>
             <div class="row widgetcontent graybg">
                 <div class="col">
@@ -488,7 +484,7 @@
                         <div class="tab-content " id="analytics-content">
                             <div class="tab-pane fade show active" id="top-dialed" role="tabpanel" aria-labelledby="top-dialed">
 
-                                 <canvas id="top-dialed-chart" class="barcharts"  data-source="topdialedvalues" data-labels="topdialednumbers"></canvas>
+                                <canvas id="top-dialed-chart" class="barcharts"  data-source="topdialedvalues" data-labels="topdialednumbers"></canvas>
 
                             </div>
                             <div class="tab-pane fade" id="previous-bills" role="tabpanel" aria-labelledby="previous-bills">
@@ -511,14 +507,14 @@
 
 
 
-
 </main>
 <!-- End of page content which will be added here  -->
 
 
 <!-- footer which will come from template -->
-<!--<footer></footer>-->
+<footer></footer>
 <!-- End of footer which will come from template -->
+
 
 
 <!-- Modal -->
@@ -544,7 +540,6 @@
 
 
 
-
 <!-- Javascript libraries imports -->
 <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" ></script>
 <script type="text/javascript" src="../../js/popper.min.js" ></script>
@@ -557,6 +552,7 @@
 
 <!-- STC custom Javascript functions -->
 <script type="text/javascript" src="../../js/functions.js" ></script>
+<script type="text/javascript" src="../../js/mobile.js" ></script>
 <!-- end of STC custom Javascript functions -->
 
 </body>

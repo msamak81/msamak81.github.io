@@ -5,14 +5,31 @@ header {
     top:0;
     left:0;
 }
+#header .wrapper .row .col-lg-12 {
+    display: flex;
+}
 #header .mainheader {
     height: 107px;
     padding: 25px 0;
 }
-#header .mainheader .container {
+#header .mainheader .widgets_btn {
+    position: absolute;
+    top:38px;
+    right:30px;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    color:var(--darkGray);
+    font-size: 2.3rem;
+    cursor: pointer;
+    outline: none;
+}
+#header .mainheader .wrapper {
     flex:1;
     display: flex;
-    line-height: 57px;
+}
+#header .mainheader .wrapper .row  {
+    flex:1;
 }
 #header .mainheader .logo {
     width:133px;
@@ -21,22 +38,25 @@ header {
 #header .mainheader .logo a {
     display: block;
 }
-#header .mainheader .nav {
-    flex: 1;
-    margin-right:90px;
+.nav {
+    line-height: 57px;
+    flex:3;
 }
-#header .mainheader .nav ul li {
+.nav ul li {
     position: relative;
     padding: 0 15px;
 }
-#header .mainheader .nav ul li a {
+.nav ul li:last-child {
+    padding-right:0;
+}
+.nav ul li a {
     color: var(--purple);
     font-weight: bold;
-    font-size: 21px;
+    font-size: 2.1rem;
     font-family:"stc-bold";
     position: relative;
 }
-#header .mainheader .nav ul li a:before {
+.nav ul li a:before {
     content:'';
     position: absolute;
     width:100%;
@@ -52,6 +72,18 @@ header {
 }
 #header .mainheader .search {
     flex:1;
+    position: relative;
+    line-height: 57px;
+    margin-right: 21px;
+}
+.search i {
+    position:absolute;
+    top:0;
+    left:0;
+    line-height:54px;
+    width: 36px;
+    text-align: center;
+    color:var(--lightGray);
 }
 #header .mainheader .search input {
     background: transparent;
@@ -66,9 +98,72 @@ header {
     letter-spacing: 0px;
     font-family: Arial;
 }
-
+#header .mainheader .control {
+    flex:1;
+}
+#header .mainheader .control > ul > li {
+    text-align: center;
+    line-height: 52px;
+    float: left;
+}
+#header .mainheader .control > ul > li > a {
+    font-size: 27px;
+    color:var(--purple);
+    font-weight: 600;
+    padding: 0 6px;
+}
+#header .mainheader .control > ul > li:last-child > a {
+    padding-right:0;
+}
+#header .mainheader .control > ul > li > a i.icon-bell {
+    font-size: 21px;
+}
+#header .mainheader .control > ul > li > a > i {
+    line-height: 54px;
+}
+#header .mainheader .control > ul > li.languages {
+    line-height: 57px;
+}
+#header .mainheader .control ul li.languages a {
+    font-size: 2.1rem;
+    line-height: 50px;
+}
 
 #header .subheader {
     height: 106px;
     background-color: var(--grayBG);
+}
+.snav {
+    flex:2;
+    display: flex;
+    align-items: center;
+}
+.snav ul li:first-child a {
+    margin-left: 0;
+}
+.snav ul li a {
+    color:var(--purple);
+    width:100%;
+    text-align: center;
+    padding: 0;
+    display: block;
+    margin: 0 15px;
+    min-width: 60px;
+}
+.snav ul li a i {
+    font-size:34px;
+    display: block;
+}
+.snav ul li a span {
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+#header .subheader .account {
+    flex:1;
+}
+.accounts {
+    line-height: 106px;
+    flex: 0.5;
 }

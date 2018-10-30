@@ -1,7 +1,4 @@
 @media (max-width:1140px) {
-    .widgets_btn {
-        display: none;
-    }
     main,
     .wrapper {
         padding-left: 30px;
@@ -9,20 +6,31 @@
     }
 }
 @media (max-width:1001px) {
-
+    #header .mainheader .search {
+        margin-right: 15px;
+    }
 }
-@media (max-width: 768px){
+@media (max-width: 992px){
+    #header .mainheader {
+        padding: 0;
+        height: auto;
+    }
+    #header .subheader {
+        height: 77px;
+    }
     .col-sm-hidden{display:none;}
     .widgettitle{font-size:2rem;}
     .packagesmargin{margin-bottom:0;}
+    .widgetmargins{
+        margin: 15px 0;
+    }
     .qitaf_tiers{ height: 195px;max-width: 290px;}
-    .nav_list a{font-size:1.8rem }
-    .nav_list a i{font-size: 5.6rem;}
     .btns{width:100%}
     .form-input.inline-inputs {display:block;}
     .form-input.inline-inputs input{max-width:100%}
     div#footer {
         height: auto;
+        padding: 0;
     }
     div#footer .col-lg-12 {
         display:flex;
@@ -32,26 +40,26 @@
     div#footer .col-lg-12 .socialmedia,
     div#footer .col-lg-12 .socialmedia,
     div#footer .col-lg-12 .app_store {
-        flex:100%;
+        flex: 1;
     }
 
     .t_footer {
         flex-flow: column-reverse;
     }
     .quicklinks {
-        padding: 30px 0;
+        padding: 15px 0;
     }
     .copyrights {
         flex: none;
         margin: 0 auto;
         display: inline-block;
         width: 85% !important;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
         font-size: 1.2rem;
     }
     header .nav {
         width: 100%;
-        height: 65px;
+        height: 60px;
         background-color: rgba(255, 255, 255, 0.95);
         position: fixed;
         left:0;
@@ -89,8 +97,8 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         content:"\61";
-        font-size: 4.1rem;
-        line-height: 65px;
+        font-size: 3.2rem;
+        line-height: 60px;
     }
     header .nav ul li:nth-child(2) a:after {
         content:'\62';
@@ -101,44 +109,50 @@
     header .nav ul li:nth-child(4) a:after {
         content:'\64';
     }
-    .nav ul li a {
-        color: var(--darkGray);
+    #header .nav ul li a {
+        color: var(--darkGray) ;
     }
-    header .nav ul li.active a{
-        color:var(--purple)
+    #header .nav ul li.active a{
+        color: var(--purple);
     }
     main,
     .wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 15px 8px 8px;
     }
     .accounts {
         margin: 0 auto;
-    }
-
-    .search input,
-    .languages {
-        display: none;
+        flex:0 0 80%;
+        line-height: 76px;
     }
     .search i {
         color:var(--purple);
     }
+    html {
+        overflow-x: hidden !important;
+    }
 
-}
-@media (max-width: 375px) {
-    html{font-size: 9px;}
+    .widgetcontainer {
+        margin-bottom: 15px;
+        padding: 0 5px;
+    }
 
-}
+    .widgetcontainer h1 {
+        margin: 0 0 8px;
+        font-size: 2.6rem;
+        min-height: 36px;
+    }
 
+    .nav_list.qitaf {
+        margin-top: 20px;
+    }
 
-@media (max-width: 992px) {
-    html{overflow-x: hidden !important;}
     .col-sm-hidden {
         display: none;
     }
 
     .widgettitle {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 15px;
     }
 
     .packagesmargin {
@@ -151,11 +165,13 @@
     }
 
     .nav_list a {
-        font-size: 1.8rem
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
 
     .nav_list a i {
-        font-size: 5.6rem;
+        font-size: 5rem;
+        margin-right: 14px;
     }
 
     .btns {
@@ -172,11 +188,18 @@
         max-width: 100%;
     }
 
-    .bootstrap-select > .dropdown-toggle, .form-input input{
-        min-height:40px;
+    .bootstrap-select > .dropdown-toggle, .form-input input {
+        min-height: 40px;
     }
-    .bootstrap-select .dropdown-toggle .filter-option{top:5px;}
-    .bootstrap-select > .dropdown-toggle:after{top:7px;}
+
+    .bootstrap-select .dropdown-toggle .filter-option {
+        top: 5px;
+    }
+
+    .bootstrap-select > .dropdown-toggle:after {
+        top: 7px;
+    }
+
     .seperatorbrdr:after, .widgetcontent.billing .flex-sm-full.seperatorbrdr:after {
         width: calc(100% - 30px);
         height: 1px;
@@ -211,25 +234,260 @@
         left: auto;
     }
 
-
+    .seperatorbrdr.leftbrder:after{
+        right: inherit;
+        left: inherit;
+        bottom: auto;
+        top: -15px;
+    }
     .widgetcontent.billing .seperatorbrdr:nth-child(3):after {
         width: 0
     }
     .tabscontainer .nav-tabs li a {
         font-size: 1.4rem;
     }
-    .flex-sm-full{flex:100%}
-    .col-lg-hidden{display:block;}
+
+    .flex-sm-full {
+        flex: 100%
+    }
+
+    .col-lg-hidden {
+        display: block;
+    }
+
     .numberdisplay h2 .mainnumber {
         font-size: 4.3rem;
     }
-    .qitaf_tiers .hint{
+
+    .qitaf_tiers .hint {
 
         font-size: 1.4rem;
 
     }
+
     .billing .same_height {
         min-height: 100px;
     }
+
+    .t_footer, .b_footer {
+        padding: 8px 0;
+        height: auto;
+    }
+
+    .owl-carousel .owl-dots .owl-dot span {
+        width: 6px;
+        height: 6px;
+        margin: 5px 5px 0;
+    }
+    .tabscontainer .tab-content{
+        padding: 1.5rem 0 1rem;
+    }
+    .copyrights {
+        text-align: center;
+    }
+    .copyrights span {
+        display: inline-block;
+        float: none;
+    }
+    .copyrights label {
+        line-height: 38px;
+        top: -15px;
+        position: relative;
+    }
+    #msnav .snav #otherswrvices {
+        width:100%;
+    }
+    #msnav .snav #otherswrvices li {
+        width: 100%;
+    }
+    #msnav .snav #otherswrvices li a {
+        width:100%;
+        border-top:1px #ddd solid;
+    }
+    #msnav .snav #otherswrvices li:first-child a {
+        border-top: 0 !important;
+    }
+    #msnav .snav #otherswrvices li a {
+        min-width: auto;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        padding: 15px 0;
+        display: block;
+        float: left;
+        position: relative;
+    }
+    #msnav .snav #otherswrvices li a:before {
+        position: absolute;
+        content:'\53';
+        font-size: 16px;
+        line-height: 62px;
+        color:var(--purple);
+        top:0;
+        right:0;
+        font-family: 'mystc3' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        letter-spacing: 0;
+        -webkit-font-feature-settings: "liga";
+        -moz-font-feature-settings: "liga=1";
+        -moz-font-feature-settings: "liga";
+        -ms-font-feature-settings: "liga" 1;
+        font-feature-settings: "liga";
+        -webkit-font-variant-ligatures: discretionary-ligatures;
+        font-variant-ligatures: discretionary-ligatures;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .snav ul li a i {
+        font-size: 32px;
+        margin-right: 14px;
+    }
+    .snav ul li a i,
+    .snav ul li a span {
+        float: left;
+    }
+    .snav ul li a span {
+        margin: 0;
+        line-height: 32px;
+        font-size: 16px;
+    }
+    header .snav {
+        display: none;
+    }
+    #header .mainheader .control {
+        flex: 0;
+        float: right;
+        flex-direction: row;
+        display: flex;
+    }
+    #header .mainheader .control li {
+        float: right !important;
+    }
+    #header .mainheader .logo {
+        float: left;
+        flex:1;
+        margin: 0 !important;
+        width: 90px;
+    }
+    #header .mainheader .logo img {
+        width: 91px !important;
+        margin-top: 8px;
+    }
+    #header .mainheader .icons {
+        width:45px;
+        padding: 0;
+        text-align: center;
+    }
+    #header .mainheader .icons > a {
+        padding: 0 !important;
+    }
+    .control .icons.notify {
+        display: none !important;
+    }
+    span.widgets_btn {
+        width: 45px;
+        text-align: center;
+        display: block;
+        float: right;
+        line-height: 60px;
+        color:#acafb1;
+    }
+    span.widgets_btn i {
+        font-size: 19px;
+    }
+    .icons {
+        cursor: pointer;
+    }
+    .profile span i.icon-1_profile {
+        font-size: 27px !important;
+    }
+    /* header .mainheader i  {
+        font-size: 21px !important;
+    } */
+    #header .mainheader .search {
+        margin: 0px 5px 0 0;
+        flex: 0;
+    }
+    #header .mainheader .search input {
+        width: 130px;
+    }
+    header .icons > span > i,
+    .widgets_btn i {
+        line-height: 58px !important;
+    }
+    .app_store a {
+        width:140px;
+    }
+    .socialmedia ul li {
+        padding: 0 5px;
+    }
+    #header .mainheader .control > ul > li {
+        position: initial !important;
+    }
+    .dropdown_list {
+        width:100%;
+        min-width: 100%;
+        left:0;
+        top: 99%;
+    }
+    .dropdown_list:before {
+        left: 100%;
+        margin-left: -90px;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid var(--purple);
+        top:-12px;
+    }
+    .dropdown_list:after {
+        left: 100%;
+        margin-left: -100px;
+        display: none;
+    }
+    .profile .dropdown_list ul li:first-child {
+        background: var(--purple);
+    }
+    .profile .dropdown_list ul li:first-child a {
+        color:#fff !important;
+    }
+    .dropdown_list ul li:nth-child(2) a {
+        border-top: 0;
+    }
+
+    .widgetcontent {
+        height: calc(100% - 45px);
+    }
+}
+
+@media (min-width: 992px) {
+    header.sticky + main.mainsection {
+        padding-top: 136px;
+    }
+    #msnav {
+        display: none;
+    }
+
+}
+
+
+@media (max-width:320px) {
+    .search i {
+        line-height: 57px !important;
+        width:45px;
+        position: relative;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+    }
+    #header .mainheader .search input {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    html{font-size: 9px;}
 
 }

@@ -3,27 +3,36 @@ $(document).ready(function(){
     "use strict";
 
     // just for Front end including the header and footer templates
-//    $("header").load("../../templates/templates.html #header");
-//    $("footer").load("../../templates/templates.html #footer");
-    // $("panel").load("../../templates/templates.html #panel");
+    $("header").load("../../templates/templates.html #header");
+    $("footer").load("../../templates/templates.html #footer");
+    $("#panel").load("../../templates/templates.html #widgetspanel");
+
+    // just for Front end including the header and footer templates
+    $("header").load("../../templates/templates.html #header");
+    $("footer").load("../../templates/templates.html #footer");
+    $("#panel").load("../../templates/templates.html #widgetspanel");
 
     $(window).on('load',function(){
-
-        if ( $(this).width() < 769 ) {
+        if ( $(this).width() < 993 ) {
             $('.quicklinks').detach().insertAfter('.app_store');
-            // $('header .nav').detach().appendTo('footer');
-            $('header .snav').detach();
+            $('header .snav #otherswrvices').detach().appendTo('#msnav .snav');
+            $('.widgets_btn').detach().appendTo('.control');
+            $('.languages').detach().insertBefore('.profile .dropdown_list ul li:last');
         }
-
-        $('header .widgets_btn').on('click',function(){
-            console.log('clicked');
-            $('body').toggleClass('open_widgets');
-        });
     });
-
-
-
-
+    $(window).on('resize',function(){
+        if ( $(this).width() < 993 ) {
+            $('.quicklinks').detach().insertAfter('.app_store');
+            $('header .snav #otherswrvices').detach().appendTo('#msnav .snav');
+            $('.widgets_btn').detach().appendTo('.control');
+            $('.languages').detach().insertBefore('.profile .dropdown_list ul li:last');
+        } else {
+            $('.quicklinks').detach().insertAfter('.copyrights');
+            $('#msnav .snav #otherswrvices').detach().appendTo('header .snav');
+            $('.widgets_btn').detach().insertAfter('.mainheader .wrapper');
+            $('.languages').detach().insertBefore('.notify');
+        }
+    });
     // WOW animation init
     //new WOW().init();
 
@@ -63,12 +72,66 @@ $(document).ready(function(){
 
     // charts init functions
     var barchartcolors =['#977aa8','#712b81', '#da3f7b', '#fadf46', '#fab53c', '#977aa8'];
-    var topdialedvalues =  [66, 30, 25, 95, 80, 60 ];
+    var topdialedvalues_2 =  [66, 30, 25, 95, 80, 60 ];
     var topdialednumbers =  ['0534343963', '0112345678', '0512387653', '0531234567', '0567658904', '0123456789' ];
     var packages = ['#712c81', 'rgba(242, 242, 242, 0.1)'];
     var freebies = ['#d73474', 'rgba(242, 242, 242, 0.1)'];
     var localinternet =  [40, 60 ];
     var freebiesData =  [70, 30 ];
+    var topdialedvalues =[
+                        {
+                        label: '0534343963',
+                        backgroundColor: "#977aa8",
+                        data: [66]
+                    }, {
+                        label: '0112345678',
+                        backgroundColor: "#712b81",
+                        data: [30]
+                    }, {
+                        label: '0512387653',
+                        backgroundColor: "#da3f7b",
+                        data: [25]
+                    }, {
+                        label: '0531234567',
+                        backgroundColor: "#fadf46",
+                        data: [95]
+                    }, {
+                        label: '0567658904',
+                        backgroundColor: "#fab53c",
+                        data: [80]
+                    }, {
+                        label: '0123456789',
+                        backgroundColor: "#977aa8",
+                        data: [60]
+                    }
+                ];
+    var previousbill =[
+        {
+            label: '01/05/2018',
+            backgroundColor: "#977aa8",
+            data: [230.37]
+        }, {
+            label: '01/06/2018',
+            backgroundColor: "#712b81",
+            data: [120]
+        }, {
+            label: '01/07/2018',
+            backgroundColor: "#da3f7b",
+            data: [272]
+        }, {
+            label: '01/08/2018',
+            backgroundColor: "#fadf46",
+            data: [227]
+        }, {
+            label: '01/09/2018',
+            backgroundColor: "#fab53c",
+            data: [234]
+        }, {
+            label: '01/10/2018',
+            backgroundColor: "#977aa8",
+            data: [255]
+        }
+    ];
 
     // dounght charts configuration
     function generateDounght(){
@@ -121,26 +184,35 @@ $(document).ready(function(){
             var $this = $(ele),
                 id = $this.attr('id'),
                 src = $this.data('source'),
-                labels = $this.data('labels');
+                labels = $this.data('labels'),
+                steps = $this.data('steps');
+
             var ctx = $('#' + id);
             var myBarChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: eval(labels),
-                    datasets: [{
-                        data: eval(src),
-                        fill: '#ffffff',
-                        backgroundColor: barchartcolors,
-                        borderColor: barchartcolors,
-                        borderWidth: 1,
-
-                    }]
+                   datasets:eval(src),
+                   //  datasets: [{
+                   //      label:eval(labels),
+                   //      data: eval(src),
+                   //      fill: '#ffffff',
+                   //      backgroundColor: barchartcolors,
+                   //      borderColor: barchartcolors,
+                   //      borderWidth: 1,
+                   //
+                   //  }]
                 },
                 options: {
                     responsive: true,
                     legend: {
-                        display: false,
-                        position: 'top',
+                        display: true,
+                        position: "bottom",
+                        fullWidth: true,
+                        labels: {
+                            boxWidth:13,
+                            fontColor: '#712c81',
+                            fontFamily :'Open Sans'
+                        },
                     },
                     title: {
                         display: false,
@@ -148,14 +220,17 @@ $(document).ready(function(){
 
                     scales: {
                         xAxes: [{
-                            barThickness: 18,
-                            maxBarThickness: 20,
+
+                            maxBarThickness: 17,
                             categorySpacing: 50,
+                            categoryPercentage:1,
+                            display:false,
                             gridLines: {
                                 display: false,
                                 drawBorder: false,
 
-                            }
+
+                        }
 
                         }],
                         yAxes: [{
@@ -164,8 +239,7 @@ $(document).ready(function(){
                             },
                             ticks: {
                                 min: 0,
-                                max: 100,
-                                stepSize: 20
+                                stepSize: eval(steps)
                             }
                         }]
 
@@ -180,8 +254,14 @@ $(document).ready(function(){
                     },
                 },
             });
+
+
+            $('.chart_legend').html( myBarChart.generateLegend())
+
         })
     }
+
+
 
     // common function to show divs
     function showContent(){
@@ -206,6 +286,12 @@ $(document).ready(function(){
         });
     }
 
+    // change the z-index of bootstrap select parent
+
+    $('.selectpicker').each(function(){
+        console.log('select')
+        $(this).parents('.widgetcontainer').css('z-index','1')
+    })
 
 
 
@@ -214,16 +300,33 @@ $(document).ready(function(){
     if ( $('.dounghtcanvas').length ) generateDounght();
     if ( $('.barcharts').length ) generateBar();
     if ( $('.showContent').length ) showContent();
-
-
-
 });
 
+$(window).on('scroll', function(){
+    if (  $(this).scrollTop() > 107 ) {
+        $("header").addClass("sticky");
+        console.log('test');
+    } else {
+        $("header").removeClass("sticky");
+    }
+});
+// remove on deploy
 
+$(window).on('load', function(){
+    $('header .profile').on('click', function(){
+        $('body').removeClass('open_widgets');
+        $(this).toggleClass('open');
+    });
+    $('header .widgets_btn').on('click',function(){
+        //$('.profile').removeClass('open');
+        $('body').toggleClass('open_widgets');
+    });
 
-
-
-
-
-
-
+    $(document).on('click', function(){
+        $('body').removeClass('open_widgets');
+        $('.profile').removeClass('open');
+    });
+    $('#panel, .widgets_btn, .profile, .dropdown_list').on('click', function(event){
+        event.stopPropagation();
+    });
+});

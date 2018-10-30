@@ -4,6 +4,7 @@ header {
     position: relative;
     top:0;
     left:0;
+    z-index: 991;
 }
 #header .wrapper .row .col-lg-12 {
     display: flex;
@@ -11,8 +12,13 @@ header {
 #header .mainheader {
     height: 107px;
     padding: 25px 0;
+    background-color: #fff;
+    border: solid 0.5px #dadbdd;
 }
-#header .mainheader .widgets_btn {
+.widgets_btn {
+    cursor: pointer;
+}
+#header .mainheader .wrapper + .widgets_btn {
     position: absolute;
     top:38px;
     right:30px;
@@ -37,26 +43,31 @@ header {
 }
 #header .mainheader .logo a {
     display: block;
+    float: left;
 }
-.nav {
+#header .nav {
     line-height: 57px;
     flex:3;
 }
-.nav ul li {
+#header .nav ul li {
     position: relative;
     padding: 0 15px;
 }
-.nav ul li:last-child {
+#header .nav ul li:last-child {
     padding-right:0;
 }
-.nav ul li a {
-    color: var(--purple);
+#header .nav ul li a {
+    color: var(--gray);
     font-weight: bold;
     font-size: 2.1rem;
     font-family:"stc-bold";
     position: relative;
 }
-.nav ul li a:before {
+#header .nav ul li.active a {
+    color: var(--purple);
+
+}
+#header .nav ul li a:before {
     content:'';
     position: absolute;
     width:100%;
@@ -105,30 +116,41 @@ header {
     text-align: center;
     line-height: 52px;
     float: left;
+    position: relative;
 }
-#header .mainheader .control > ul > li > a {
+#header .mainheader .control > ul > li > span,
+#header .mainheader .control > ul > li > a > span {
     font-size: 27px;
     color:var(--purple);
     font-weight: 600;
     padding: 0 6px;
+    display: block;
+    cursor: pointer;
 }
-#header .mainheader .control > ul > li:last-child > a {
+#header .mainheader .control > ul > li:last-child > span {
     padding-right:0;
 }
-#header .mainheader .control > ul > li > a i.icon-bell {
+#header .mainheader .control > ul > li > span i.icon-bell {
     font-size: 21px;
 }
-#header .mainheader .control > ul > li > a > i {
+#header .mainheader .control > ul > li > span > i {
     line-height: 54px;
 }
 #header .mainheader .control > ul > li.languages {
     line-height: 57px;
 }
-#header .mainheader .control ul li.languages a {
+#header .mainheader .control ul li.languages span {
     font-size: 2.1rem;
-    line-height: 50px;
+    line-height: 55px;
+    font-family: 'stc-regular';
 }
-
+.sticky .subheader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 7px -2px rgba(0,0,0,0.1);
+    border-bottom: 1px #fff solid;
+}
 #header .subheader {
     height: 106px;
     background-color: var(--grayBG);
@@ -166,4 +188,84 @@ header {
 .accounts {
     line-height: 106px;
     flex: 0.5;
+}
+.accounts .form-input {
+    margin: 0 !important;
+}
+.dropdown_list {
+    box-shadow: -7px 0 37px -7px rgba(0,0,0,0.1);
+    background-color: #fff;
+    position: absolute;
+    min-width: 290px;
+    min-height: 210px;
+    z-index: 91;
+    left: -125px;
+    border-radius: 0 0 7px 7px;
+    border:2px #f5f6f7 solid;
+    top: calc(100% + 26px);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: all 0.3s ease-in-out;
+}
+.open .dropdown_list {
+    visibility: visible;
+    opacity: 1; 
+    transform: translateY(0px);
+}
+.dropdown_list:before {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid #fff;
+    top:-18px;
+    left:50%;
+    margin-left: -18px;
+    z-index: -1;
+}
+.dropdown_list:after {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 22px solid #f5f6f7;
+    top:-22px;
+    left:50%;
+    margin-left: -22px;
+    z-index: -2;
+}
+.dropdown_list ul li:first-child {
+    font-weight: bold;
+    text-align: center;
+}
+.dropdown_list ul li:first-child a {
+    border-top: 0;
+}
+.dropdown_list ul li {
+    display: inline-block;
+    width:100%;
+    padding: 0 20px;
+    text-align: left;
+}
+.dropdown_list ul li a {
+    color:var(--purple);
+    display: block;
+    font-size: 18px;
+    border-top:1px #eee solid;
+    padding: 5px 0;
+}
+.dropdown_list ul li a i {
+    display: block;
+    margin-right: 7px;
+    font-size: 21px;
+    float: left;
+    line-height: 50px;
+}
+.dropdown_list ul li a span {
+    line-height: 50px;
 }

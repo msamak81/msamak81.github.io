@@ -24,82 +24,18 @@
 </head>
 <body>
 <!-- header which will come from template -->
-<header>
-    <div id="header">
-    <div class="mainheader">
-        <div class="wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="logo">
-                        <a href=""><img src="../../imgs/stc-logo.jpg" alt="STC Logo" /></a>
-                    </div>
-                    <div class="nav">
-                        <ul>
-                            <li class="active"><a href=""><span>Home</span></a></li>
-                            <li><a href=""><span>Store</span></a></li>
-                            <li><a href=""><span>Location</span></a></li>
-                            <li><a href=""><span>Support</span></a></li>
-                        </ul>
-                    </div>
-                    <div class="search">
-                            <i class="icon-search"></i>
-                            <input type="search" placeholder="Search site ..." />
-                    </div>
-                    <div class="control">
-                        <ul>
-                            <li class="languages"><a href=""><span>العربية</span></a></li>
-                            <li class="icons"><a href=""><i class="icon-bell"></i></a></li>
-                            <li class="icons"><a href=""><i class="icon-1_profile"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <span class="widgets_btn"><i class="icon-th-large"></i></span>
-    </div>
-
-
-            <div class="subheader">
-        <div class="wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="snav">
-                        <ul>
-                            <li><a href=""><i class="icon-3_my_subscriptions"></i><span>My Subscriptions</span></a></li>
-                            <li><a href=""><i class="icon-3_my_payments"></i><span>Number Properties</span></a></li>
-                            <li><a href=""><i class="icon-3_sim_details"></i><span>SIM Details</span></a></li>
-                            <li><a href=""><i class="icon-6_sms"></i><span>SMS</span></a></li>
-                            <li><a href=""><i class="icon-telegram"></i><span>Telegram</span></a></li>
-                        </ul>
-                    </div>
-                    <div class="accounts">
-                            <div class="form-input">
-                            <select  name="accounts" id="accounts" class="selectpicker" title="accounts">
-                                <option>Select Account</option>
-                            <option>0533727579</option>
-                        </select>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</header>
-    
+<header></header>
 <!-- End of header which will come from template -->
 
 
 <!-- page content which will be added here  -->
 <main class="mainsection">
-
     <div class="row">
-
         <div class="col-lg-12 widgetcontainer wow fadeInUp order-lg-1 order-md-1" id="billing">
-            <h1>
-                <span>Billing</span>
-            </h1>
+                <h1>
+                    <span>Billing</span>
+                </h1>
+
             <div class="row widgetcontent graybg align-content-center billing">
                 <div class="col flex-sm-full widgetmargins seperatorbrdr ">
                     <div class="same_height">
@@ -153,8 +89,11 @@
                 </div>
 
             </div>
-        </div>
 
+        </div>
+    </div>
+        <div class="row">
+ 
         <div class="col-lg-5 widgetcontainer  wow fadeInUp order-lg-3 order-md-2 " id="usage">
             <h1><span>Usage</span></h1>
             <div class="row widgetcontent graybg">
@@ -307,7 +246,7 @@
                 </div>
             </h1>
             <div class="row widgetcontent graybg">
-                <div class="col-lg-6  widgetmargins seperatorbrdr">
+                <div class="col-lg-6  widgetmargins">
                     <h3 class="widgettitle text-center">Budget Control</h3>
                     <div class="numberdisplay ">
                         <h2>
@@ -319,7 +258,7 @@
                         </h2>
                         <h4>Current balance</h4>
                     </div>
-                    <div class="tabscontainer col-sm-hidden hiddenContent"  id="balance_recharge">
+                    <div class="tabscontainer col-sm-hidden hiddenContent "  id="balance_recharge">
                         <ul class="nav nav-tabs" id="budget-controls-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="budget-recharge-tab" data-toggle="tab" href="#budget-recharge" role="tab" aria-controls="budget-recharge" aria-selected="true">Recharge</a>
@@ -426,7 +365,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6 widgetmargins col-sm-hidden hiddenContent"  id="balance_transfer">
+                <div class="col-lg-6 widgetmargins col-sm-hidden hiddenContent seperatorbrdr leftbrder"  id="balance_transfer">
                     <h3 class="widgettitle text-center">Balance Transfer</h3>
                     <div class="tabscontainer">
                         <ul class="nav nav-tabs" id="balance-transfer-tabs" role="tablist">
@@ -483,7 +422,9 @@
 
             </div>
         </div>
+    </div>
 
+        <div class="row">
         <div class="col-lg-5 widgetcontainer wow fadeInUp order-lg-4 order-md-4" id="qitaf">
             <h1><span>Qitaf</span></h1>
             <div class="row widgetcontent graybg">
@@ -493,7 +434,7 @@
                         <span class="hint">click for details</span>
                     </a>
                     <h4>Expire in 28 days</h4>
-                    <div class="widgetbtns text-center">
+                    <div class="widgetbtns  text-center">
                         <a href="#" class="btns purplebg text-white curvedbtns">Transfer Points</a>
                         <a href="#" class="btns borderedbtns">History</a>
                     </div>
@@ -516,10 +457,6 @@
                         </a>
                         <a href="#" class="btns borderedbtns" title="donate">
                             <i class="icon-4_donation"></i>
-                            <span>donate</span>
-                        </a>
-                        <a href="#" class="btns borderedbtns" title="Tamayouz">
-                            <i class="gi"></i>
                             <span>donate</span>
                         </a>
 
@@ -547,12 +484,13 @@
                         <div class="tab-content " id="analytics-content">
                             <div class="tab-pane fade show active" id="top-dialed" role="tabpanel" aria-labelledby="top-dialed">
 
-                                <canvas id="top-dialed-chart" class="barcharts"  data-source="topdialedvalues" data-labels="topdialednumbers"></canvas>
+                                <canvas id="top-dialed-chart" class="barcharts"  data-source="topdialedvalues" data-steps="20" ></canvas>
+
 
                             </div>
                             <div class="tab-pane fade" id="previous-bills" role="tabpanel" aria-labelledby="previous-bills">
 
-                                <canvas id="previous-bills-chart" class="barcharts" data-source="topdialedvalues" data-labels="topdialednumbers"></canvas>
+                                <canvas id="previous-bills-chart" class="barcharts"  data-source="previousbill" data-steps="70" ></canvas>
 
                             </div>
                         </div>
@@ -563,7 +501,26 @@
 
             </div>
         </div>
+    </div>
 
+
+
+        <!-- Other Services on Mobile -->
+        <div class="row">
+        <div class="col-lg-12 widgetcontainer wow fadeInUp order-lg-5 order-md-5" id="msnav">
+            <h1><span>Other Services</span></h1>
+            <div class="row widgetcontent graybg">
+                <div class="col">
+                    
+                        <div class="snav">
+
+                        </div>
+
+
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
@@ -575,43 +532,12 @@
 
 
 <!-- footer which will come from template -->
-<footer>
-    <div id="footer">
-    <div class="wrapper">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="t_footer">
-                    <div class="f__left app_store">
-                        <a href="#"><img src="../../imgs/ios.png" /></a>
-                        <a href="#"><img src="../../imgs/android.png" /></a>
-                    </div>
-                    <div class="f__right socialmedia">
-                        <ul>
-                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="b_footer">
-                    <div class="f__left copyrights">
-                        <span><img src="../../imgs/footerlogo.jpg" /></span>
-                        <label>© 2019, All right reserved.</label>
-                    </div>
-                    <div class="f__right quicklinks">
-                        <a href="">STC Homepage</a>
-                        <a href="">Privacy Statement </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    
-</div>
-</footer>
+<footer></footer>
 <!-- End of footer which will come from template -->
+
+<!-- panel which will come from template -->
+<div id="panel"></div>
+<!-- End of panel which will come from template -->
 
 
 
@@ -620,17 +546,64 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">My Payments Details</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <div class="saved_cards">
+                <p class="gray_text">
+                    You can pay through credit card, and you can edit the amount of the bill
+                </p>
+                <div class="form-input width_60">
+                    <input type="text" placeholder="amount to pay"/>
+                </div>
+                <h6>Minimum payment SR1, Max payment SR200000</h6>
+                <h3 class="black_text">Saved Cards</h3>
+                <div class="list_view ">
+                    <ul>
+                        <li>
+                            <input type="radio" name="saved_cards" id="sabb" value="sabb"/>
+                            <label for="sabb" class="list_item">
+                                <span class="list_icon">
+                                    <img src="../../imgs/logos/visa.png" title="Visa"/>
+                                </span>
+                                <span class="list_lables">
+                                    <span class="list_title">SABB</span>
+                                    <span class="list_descripion">****6543 <i>Expiry date: 10/2019</i></span>
+                                </span>
+
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="saved_cards" id="alinma" value="alinma"/>
+                            <label for="alinma"  class="list_item">
+                                <span class="list_icon">
+                                    <img src="../../imgs/logos/mastercard.png" title="Master Card"/>
+                                </span>
+                                <span class="list_lables">
+                                    <span class="list_title">Alinma</span>
+                                    <span class="list_descripion">****6541 <i>Expiry date: 10/2019</i></span>
+                                </span>
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+                    <h4>
+                        <a href="#" class="add_card"><i class="icon-plus1"></i>Add New Credit Card</a>
+                    </h4>
+
+                    <h6>
+                        by clicking "Pay", you are agreeing <a href="#">the Terms and conditions</a>
+                    </h6>
+                </div>
+
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btns reset_btn " data-dismiss="modal">Cancel</button>
+                <button type="button" class="btns curvedbtns pinkbg text-white">Pay</button>
             </div>
         </div>
     </div>
@@ -639,7 +612,8 @@
 
 
 <!-- Javascript libraries imports -->
-<script type="text/javascript" src="../../js/jquery-3.3.1.min.js" ></script>
+ <!--<script type="text/javascript" src="../../js/jquery-3.3.1.min.js" ></script>-->
+<script type="text/javascript" src="../../js/jquery-2.2.2.min.js" ></script>
 <script type="text/javascript" src="../../js/popper.min.js" ></script>
 <script type="text/javascript" src="../../js/bootstrap.min.js" ></script>
 <script type="text/javascript" src="../../js/owl.carousel.js" ></script>
@@ -652,6 +626,5 @@
 <script type="text/javascript" src="../../js/functions.js" ></script>
 <script type="text/javascript" src="../../js/mobile.js" ></script>
 <!-- end of STC custom Javascript functions -->
-
 </body>
 </html>

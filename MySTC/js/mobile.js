@@ -7,14 +7,13 @@ $(window).on('load',function()
         .append('<a class="action_btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="icon-ellipsis-v"></i></a>')
         .append('<div class="dropdown-menu"/>');
 
-    if(width < 992)
+    if(width < 993)
     {
         $('.widgetbtns.col-sm-hidden').parents('.widgetcontainer').find('h1').append(menuCont);
         $('.widgetcontainer').find('.widgetbtns.col-sm-hidden').each(function(index,ele){
             var ele= $(this),
                 id=  ele.parents('.widgetcontainer').attr('id');
-
-            ele.parents('#'+ id)
+            ele.parents('.widgetcontainer')
                 .find('.dropdown-menu')
                 .append(ele.html())
                 .find('.btns')

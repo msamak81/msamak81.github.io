@@ -14,7 +14,7 @@
         $('.mySTC_iframe', window.parent.document).height(getCurrentHeight + 15);
 
         $('html,body', window.parent.document).animate({
-            scrollTop: $('.iframe_content').offset().top + 100
+            scrollTop: $('.iframe_content').offset().top + 150
         }, 'slow');
     }
 
@@ -173,13 +173,19 @@
     <div class="plate_number_img">
         <img src="../images/plate_img.jpg" title="plate_img"/>
     </div>
-    <a href="#" class="bordered_btns shadowed_btns lg-hidden">
-        <img src="../images/take_photo_icon.jpg" title="Take photo of  Plate Image"/>
-        <span>التقط صورة</span>
-    </a>
-    <div class="uplaod_plate_img">
+
+
+    <div class="uplaod_plate_img lg-hidden">
+        <input type="file" accept="image/*" capture="camera" id="camera_capture"/>
+        <label for="camera_capture" class="bordered_btns shadowed_btns">
+            <img src="../images/take_photo_icon.jpg" title="Upload Plate Image"/>
+            <span>التقط صورة</span>
+        </label>
+    </div>
+
+    <div class="uplaod_plate_img ">
         <input type="file" id="uplaod_plate_img"/>
-        <label for="uplaod_plate_img" class="bordered_btns">
+        <label for="uplaod_plate_img" class="bordered_btns ">
             <img src="../images/upload_img_icon.jpg" title="Upload Plate Image"/>
             <span>اختر الصورة</span>
         </label>

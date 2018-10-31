@@ -6520,11 +6520,11 @@ body .mCustomScrollBox .mCSB_scrollTools {
 }
 .fiber_packages_list ul li{
     background: #fff;
-    box-shadow: 1px 1px 17px 0 rgba(123, 55, 140, 0.3);
-    border-radius: 10px;
-    border: solid 1px #7b378c;
+    box-shadow: 0px 2px 8px 0 rgba(123, 55, 140, 0.3);
+    border-radius: 5px;
+    /* border: solid 1px #7b378c; */
     text-align: initial;
-    padding: 10px 20px;
+    padding: 7px 20px 0;
     margin-top: 20px;
 }
 .fiber_packages_list ul li h3{
@@ -6555,9 +6555,7 @@ body .mCustomScrollBox .mCSB_scrollTools {
     max-width: 100%;
 }
 
-.uplaod_plate_img{
-
-}
+.uplaod_plate_img{flex: 1;}
 .uplaod_plate_img input[type='file']{
     display: none;
 }
@@ -6568,7 +6566,7 @@ body .mCustomScrollBox .mCSB_scrollTools {
     border-radius: 5px;
     padding: 10px;
     display: flex;
-    max-width: 260px;
+    max-width: 257px;
     margin: 0 auto 30px;
     color: #7b378c;
     font-family: 'Conv_STC-Regular';
@@ -6576,6 +6574,7 @@ body .mCustomScrollBox .mCSB_scrollTools {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    width: 100%;
 }
 .bordered_btns img{margin: 0 10px;}
 .shadowed_btns {

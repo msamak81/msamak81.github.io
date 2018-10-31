@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New landline</title>
+    <link href="../css/mySTC-main_WCM.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/jquery-2.2.2.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<script>
+    function changeIframeHeight(){
+        var getCurrentHeight = $('.iframe_content').height();
+        $('.mySTC_iframe', window.parent.document).height(getCurrentHeight + 15);
+
+        $('html,body', window.parent.document).animate({
+            scrollTop: $('.iframe_content').offset().top + 100
+        }, 'slow');
+    }
+
+    $(function(){
+        $('.hidden_content').hide();
+        $('.coverage_map').fadeIn();
+
+        $('.show_content').click(function(){
+            var $this=  $(this),
+                id = $this.data('show');
+                $('.hidden_content').hide();
+                $(id).fadeIn();
+
+            changeIframeHeight();
+
+            return false;
+
+        })
+    })
+
+    function initMap() {
+        var riyadh = {lat: 24.7135517, lng: 46.67529569999999};
+        var iconBase = '../images/stcmap.png';
+
+        var fiberCoverageMap = new google.maps.Map(document.getElementById('fiber_coverage_map'), {
+            zoom: 12,
+            center: riyadh,
+            mapTypeId: 'roadmap',
+            disableDefaultUI: false,
+            zoomControl: true,
+            mapTypeControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            rotateControl: false,
+            fullscreenControl: true,
+        });
+
+        google.maps.event.addListener(fiberCoverageMap, "click", function (event) {
+            placeMarker(event.latLng, fiberCoverageMap);
+            setTimeout(function() {
+                $('.coverage_map .loading').fadeIn().css('display','flex')
+
+            },1000);
+
+            setTimeout(function() {
+                $('.coverage_map .loading').hide();
+                $('.hidden_content').hide();
+                $('.success_div').fadeIn();
+
+                changeIframeHeight();
+            }, 3000);
+
+        });
+
+        function placeMarker(position, map) {
+            var marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                icon: iconBase
+            });
+            map.panTo(position);
+        }
+
+    }
+</script>
+<div class="iframe_content">
+
+    <!-- Coverage Map -->
+    <div class="coverage_map hidden_content" >
+        <div class="loading">
+            <div class="loading_img">
+                <img src="../images/spinner.svg" title="loading"/>
+            </div>
+        </div>
+        <div id="fiber_coverage_map" class="map"></div>
+
+    </div>
+    <!-- Coverage Map -->
+
+    <!-- Coverage Status Messages -->
+    <div class="data_holder hidden_content success_div ">
+        <div class="fiber_status_img">
+            <img src="../images/coverage_img.jpg" title="Coverage"/>
+        </div>
+        <h2>مبروك</h2>
+        <p>الفايبر واصل لعندك، اشترك الان بكل سهولة</p>
+        <a href="#" class="fiber_btns show_content" data-show=".fiber_packages_list">اضغط لمعرفة الباقات والاسعار</a>
+    </div>
+
+    <div class="data_holder hidden_content error_div">
+        <div class="fiber_status_img">
+            <img src="../images/no_coverage_img.jpg" title="Coverage"/>
+        </div>
+        <h2>آسفين</h2>
+        <p>بس الفايبر ما وصل بيتك للآن. تابعنا علشان تعرف اول ما يوصلك الفايبر</p>
+        <a href="#" class="fiber_btns show_content" data-show=".coverage_map">خرائط التغطية</a>
+    </div>
+    <!-- End Coverage Status Messages -->
+
+    <!-- Packages list and prices -->
+        <div class="data_holder fiber_packages_list hidden_content">
+            <h2>الباقات</h2>
+            <ul>
+                <li>
+                    <h3>انترنت لا محدود + جوّي TV</h3>
+                    <h4>
+                        <span class="package_price">250 ريالًا/شهريا *</span>
+                        <span class="package_subscribe">
+                         <a href="#" class="fiber_btns show_content" data-show=".plate_number">اشترك</a>
+                        </span>
+                    </h4>
+                </li>
+                <li>
+                    <h3>فايبر لا محدود 50 ميجا + جوّي TV</h3>
+                    <h4>
+                        <span class="package_price">250 ريالًا/شهريا *</span>
+                        <span class="package_subscribe">
+                         <a href="#" class="fiber_btns show_content" data-show=".plate_number">اشترك</a>
+                        </span>
+                    </h4>
+                </li>
+                <li>
+                    <h3>فايبر لا محدود 100 ميجا + جوّي TV
+                    </h3>
+                    <h4>
+                        <span class="package_price">300 ريالًا/شهريا *</span>
+                        <span class="package_subscribe">
+                         <a href="#" class="fiber_btns show_content" data-show=".plate_number">اشترك</a>
+                        </span>
+                    </h4>
+                </li>
+                <li>
+                    <h3>
+                        فايبر لا محدود 300 ميجا + جوّي TV
+
+                    </h3>
+                    <h4>
+                        <span class="package_price">425 ريالًا/شهريا *</span>
+                        <span class="package_subscribe">
+                         <a href="#" class="fiber_btns show_content" data-show=".plate_number">اشترك</a>
+                        </span>
+                    </h4>
+                </li>
+
+            </ul>
+        </div>
+    <!-- End of packages list and prices -->
+
+<!-- Plate number -->
+<div class="data_holder plate_number hidden_content">
+    <h2>اللوحة المعدنية</h2>
+    <p>
+        فيه لوحة معدنية علي جدار بيتك أو عمارتك غالبا جنب الباب شكلها زي الموحود بالصورة
+    </p>
+
+    <div class="plate_number_img">
+        <img src="../images/plate_img.jpg" title="plate_img"/>
+    </div>
+    <a href="#" class="bordered_btns shadowed_btns lg-hidden">
+        <img src="../images/take_photo_icon.jpg" title="Take photo of  Plate Image"/>
+        <span>التقط صورة</span>
+    </a>
+    <div class="uplaod_plate_img">
+        <input type="file" id="uplaod_plate_img"/>
+        <label for="uplaod_plate_img" class="bordered_btns">
+            <img src="../images/upload_img_icon.jpg" title="Upload Plate Image"/>
+            <span>اختر الصورة</span>
+        </label>
+    </div>
+    <a href="#" class="fiber_btns show_content" data-show=".subscribe_phone">كمل الاشتراك</a>
+
+
+</div>
+<!-- End of Plate Number -->
+
+<!-- phone number subscribe -->
+<div class="data_holder subscribe_phone hidden_content">
+    <h2>رقم الجوال</h2>
+    <p>
+فضلا اترك لنا رقم جوالك علشان نتواصل معاك بأقرب وقت ونركّب لك أطلق انترنت في العالم
+    </p>
+
+    <div class="fiber_textbox">
+        <label class="field_mask">
+            <img src="../images/saudi_flag.jpg" title="Saudi Arabia"/>
+            <span>+966</span>
+        </label>
+        <input type="text" id="phone_no" name="phone_no" placeholder="50000000" maxlength="9"  onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+    </div>
+
+    <a href="#" class="fiber_btns show_content" data-show=".final_step">ارسال</a>
+
+
+</div>
+<!-- End of number subscribe -->
+
+    <!-- Final Step -->
+    <div class="data_holder final_step hidden_content">
+        <div class="fiber_status_img">
+            <img src="../images/coverage_img.jpg" title="Coverage"/>
+        </div>
+
+        <h2>مبروك</h2>
+        <p>
+استلمنا طلبك ومندوبنا هيتواصل معاك قريبا
+        </p>
+
+
+        <a href="#" class="fiber_btns show_content" data-show=".coverage_map">اشتراك جديد اخر</a>
+
+
+    </div>
+    <!-- End of Final Step -->
+
+
+</div>
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7GSVSkFrCq-WqPtQpSJPUkzjKykX1iAM&callback=initMap"></script>
+
+
+</body>
+</html>

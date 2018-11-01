@@ -61,9 +61,9 @@ select.selectpicker {
     border-color: var(--darkGray) !important;
     border-radius: var(--curved);
     color: var(--purple);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     outline: none !important;
-    padding: 0.5rem 1.5rem;
+    padding: 0.1rem 2.1rem;
     min-height: 30px;
 }
 
@@ -73,8 +73,8 @@ select.selectpicker {
     content: "\f0d7";
     font-size: 2rem;
     position: absolute;
-    right: 20px;
-    top: 0px;
+    right: 22px;
+    top: -2px;
     margin: 0 !important;
     display: block;
 }
@@ -331,6 +331,94 @@ select.selectpicker {
     padding: 0 0;
     border-bottom: solid 1px var(--lightGray);
 }
+/* accounts */
+.accounts i.icon {
+    line-height:25px;
+    float:left;
+    margin-right:10px
+}
+
+.accounts .filter-option-inner-inner {
+    line-height:25px;
+}
+.accounts li.dropdown-header {
+    color: #aaa !important;
+    margin-top: 21px;
+}
+.accounts .bootstrap-select .dropdown-menu li {
+    float: left;
+    border:0;
+    padding:0 !important;
+    line-height: normal;
+}
+.accounts .bootstrap-select .dropdown-menu li span.icon {
+    float: left;
+    width:30px;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 6px;
+}
+.accounts .bootstrap-select .dropdown-menu.inner {
+    padding:10px 2.1em !important;
+}
+.accounts .bootstrap-select  .dropdown-menu li.dropdown-header:first-child {
+    margin-top:0
+}
+.accounts.bootstrap-select  .dropdown-menu li.dropdown-header {
+    color:#aaa !important;
+    padding:0 !important;
+    margin-top:21px;
+}
+.accounts .bootstrap-select .dropdown-menu li a {
+    color:var(--purple) !important;
+    font-weight:bold;
+    padding:7px 0 !important;
+
+}
+.accounts .dropdown-menu.show {
+    max-height: calc(100vh - 40px) !important;
+    padding-bottom: 10px;
+}
+@media (max-width:992px) {
+    max-height: calc(100vh - 140px) !important;
+}
+.accounts span.text {
+    display: flex !important;
+    flex: 1;
+    flex-flow: column-reverse;
+}
+
+.accounts small.text-muted {
+    order: 1;
+    flex: 1;
+    font-weight: normal !important;
+    color:var(--purple) !important;
+}
+
+.accounts a.opt.dropdown-item {
+    display: flex !important;
+}
+.accounts .dropdown-item:focus, 
+.accounts .dropdown-item:hover {
+    background: transparent !important;
+}
+.accounts .dropdown-item:focus .text, 
+.accounts .dropdown-item:hover .text {
+    color:var(--pink) !important;
+}
+.accounts .bootstrap-select .dropdown-menu li a.active, 
+.accounts .bootstrap-select .dropdown-menu li a:active {
+    background: transparent !important;
+}
+.accounts .bootstrap-select .dropdown-menu li a.active .text, 
+.accounts .bootstrap-select .dropdown-menu li a:active .text {
+    color:var(--pink) !important;
+}
+.accounts .bootstrap-select .dropdown-menu li a.active .text-muted, 
+.accounts .bootstrap-select .dropdown-menu li a:active .text-muted {
+    color:var(--purple) !important;
+}
+
 
 .bootstrap-select .dropdown-menu li:last-child {
     border-bottom: none
@@ -530,6 +618,7 @@ select.selectpicker {
     margin-bottom: 0;
     width: 100%;
     float: none;
+    margin-top: 10px;
 }
 
 .filter-option-inner-inner .bc_item .bc_price_block, .filter-option-inner-inner .bc_item small {

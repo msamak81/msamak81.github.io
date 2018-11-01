@@ -190,13 +190,13 @@ h1 {
     content: '';
     background: var(--purple);
     width: 1px;
-    height: 50%;
+    height: calc(100% - 30px);
     position: absolute;
     right: 0.75rem;
     opacity: 0.4;
-    top: 30px;
+    top: 15px;
     z-index: 111;
-    max-height: 160px;
+    /* max-height: 160px; */
     display: block;
 }
 

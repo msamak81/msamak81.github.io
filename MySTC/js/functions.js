@@ -2,11 +2,15 @@
 $(document).ready(function(){
     "use strict";
 
+    // just for Front end including the header and footer templates
+    $("header").load("../../templates/templates.html #header");
+    $("footer").load("../../templates/templates.html #footer");
+    $("#panel").load("../../templates/templates.html #widgetspanel");
 
     // just for Front end including the header and footer templates
-    //$("header").load("../../templates/templates.html #header");
-    //$("footer").load("../../templates/templates.html #footer");
-    //$("#panel").load("../../templates/templates.html #widgetspanel");
+    $("header").load("../../templates/templates.html #header");
+    $("footer").load("../../templates/templates.html #footer");
+    $("#panel").load("../../templates/templates.html #widgetspanel");
 
     $(window).on('load',function(){
         if ( $(this).width() < 993 ) {
@@ -26,7 +30,7 @@ $(document).ready(function(){
             $('.quicklinks').detach().insertAfter('.copyrights');
             $('#msnav .snav #otherswrvices').detach().appendTo('header .snav');
             $('.widgets_btn').detach().insertAfter('.mainheader .wrapper');
-            $('.languages').detach().insertBefore('.notify');
+            $('.languages').detach().insertBefore('.profile');
         }
     });
     // WOW animation init
@@ -297,9 +301,21 @@ $(document).ready(function(){
     if ( $('.barcharts').length ) generateBar();
     if ( $('.showContent').length ) showContent();
 });
-
 $(window).on('scroll', function(){
-    if (  $(this).scrollTop() > 107 ) {
+        if ( $(this).width() < 993 ) {
+            var offset = 61;
+        } else {
+            var offset = 107;
+        }
+    
+    // $(window).on('load', function(){
+    //     offsetinit();
+    // });
+    // $(window).on('resize', function(){
+    //     offsetinit();
+    // });
+
+    if (  $(this).scrollTop() > offset ) {
         $("header").addClass("sticky");
         console.log('test');
     } else {

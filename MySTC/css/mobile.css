@@ -119,6 +119,9 @@
     .wrapper {
         padding: 15px 8px 8px;
     }
+    header .wrapper {
+        padding: 0 8px;
+    }
     .accounts {
         margin: 0 auto;
         flex:0 0 80%;
@@ -197,7 +200,8 @@
     }
 
     .bootstrap-select > .dropdown-toggle:after {
-        top: 7px;
+        top: 3px;
+        right: 29px;
     }
 
     .seperatorbrdr:after, .widgetcontent.billing .flex-sm-full.seperatorbrdr:after {
@@ -273,7 +277,9 @@
         padding: 8px 0;
         height: auto;
     }
-
+    .t_footer {
+        padding-bottom: 16px;
+    }
     .owl-carousel .owl-dots .owl-dot span {
         width: 6px;
         height: 6px;
@@ -459,6 +465,9 @@
 
     .widgetcontent {
         height: calc(100% - 45px);
+    }
+    header.sticky + main.mainsection {
+        padding-top: 96px;
     }
 }
 

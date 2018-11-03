@@ -17,10 +17,17 @@
             scrollTop: $('.iframe_content').offset().top + 150
         }, 'slow');
     }
+    function showname (ele) {
+        var name = ele;
+        console.log('Selected Image : ' + name.files.item(0).name);
+        $('#selectedImg').text('Selected Image : ' + name.files.item(0).name)
+    };
 
     $(function(){
         $('.hidden_content').hide();
         $('.coverage_map').fadeIn();
+
+
 
         $('.show_content').click(function(){
             var $this=  $(this),
@@ -184,11 +191,12 @@
     </div>
 
     <div class="uplaod_plate_img ">
-        <input type="file" id="uplaod_plate_img"/>
+        <input type="file" id="uplaod_plate_img" onchange="showname (this)" accept="image/*"/>
         <label for="uplaod_plate_img" class="bordered_btns ">
             <img src="../images/upload_img_icon.jpg" title="Upload Plate Image"/>
             <span>اختر الصورة</span>
         </label>
+        <span id="selectedImg"></span>
     </div>
     <a href="#" class="fiber_btns show_content" data-show=".subscribe_phone">كمل الاشتراك</a>
 

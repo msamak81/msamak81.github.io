@@ -6621,7 +6621,7 @@ body .mCustomScrollBox .mCSB_scrollTools {
     display: inline-block;
     margin: 0 10px;
 }
-.fiber_textbox input[type='text'], .fiber_textbox input[type='number']{
+.fiber_textbox input[type='text'], .fiber_textbox input[type='tel']{
     background: transparent !important;
     min-width: auto;
     text-align: left;

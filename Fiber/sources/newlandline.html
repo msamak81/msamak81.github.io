@@ -182,22 +182,11 @@
     </div>
 
 
-    <div class="uplaod_plate_img lg-hidden">
-        <input type="file" accept="image/*" capture="camera" id="camera_capture"/>
-        <label for="camera_capture" class="bordered_btns shadowed_btns">
-            <img src="../images/take_photo_icon.jpg" title="Upload Plate Image"/>
-            <span>التقط صورة</span>
-        </label>
+    <div class="fiber_textbox">
+
+        <input type="text" id="plate_no" name="plate_no" placeholder="رقم اللوحة" />
     </div>
 
-    <div class="uplaod_plate_img ">
-        <input type="file" id="uplaod_plate_img" onchange="showname (this)" accept="image/*"/>
-        <label for="uplaod_plate_img" class="bordered_btns ">
-            <img src="../images/upload_img_icon.jpg" title="Upload Plate Image"/>
-            <span>اختر الصورة</span>
-        </label>
-        <span id="selectedImg"></span>
-    </div>
     <a href="#" class="fiber_btns show_content" data-show=".subscribe_phone">كمل الاشتراك</a>
 
 
@@ -216,7 +205,7 @@
             <img src="../images/saudi_flag.jpg" title="Saudi Arabia"/>
             <span>+966</span>
         </label>
-        <input type="text" id="phone_no" name="phone_no" placeholder="50000000" maxlength="9"  onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+        <input type="tel" id="phone_no" name="phone_no" placeholder="50000000" maxlength="9"  onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
     </div>
 
     <a href="#" class="fiber_btns show_content" data-show=".final_step">ارسال</a>

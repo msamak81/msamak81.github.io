@@ -1,0 +1,204 @@
+html{font-size:10px;}
+body{
+  background: $main_bg;
+  font-family: $default_font;
+  font-size: 1.4rem;
+  padding:0;
+  margin:0;
+  color:$main_color;
+
+  a{
+    color:$main_color;
+    text-decoration: none;
+    @include transition_animation_150();
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+header{
+  background:transparent;
+  height:90px;
+  display: flex;
+  padding: 15px 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo{
+    max-width:60px;
+      img{
+          max-width:100%
+        }
+    }
+}
+
+.cards {
+  background: rgba(255,255,255,0.97);
+  @include border-radius(5px);
+  @include box_shadow;
+  padding: 30px;
+  margin-top:50px;
+  h1{
+    font-size: 5rem;
+    margin-bottom: 40px;
+    position: relative;
+    text-transform: capitalize;
+
+    &:after{
+      content:'';
+      @extend %gradient_bg;
+      position: absolute;
+      width: 120px;
+      height: 8px;
+      left: 0;
+      bottom: -15px;
+    }
+  }
+
+}
+.form_inputs {
+  position:relative;
+  margin-top: 30px;
+
+  input[type ='text'], input[type ='email'], input[type ='search'], input[type ='tel'], input[type ='number'], input[type ='password'], textarea, select {
+
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px $gray;
+    color: $main_color;
+    outline: none;
+    width: 100%;
+    padding-bottom: 5px;
+    font-size:1.4rem;
+
+
+      + label {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: absolute;
+
+        span {
+          font-weight: 400;
+          position: absolute;
+          pointer-events: none;
+          left: .25em;
+          top: 55%;
+          margin-top: -.5em;
+          @include transition_animation_150();
+          color: #898989;
+          line-height: 1;
+          font-size: 1.4rem;
+
+        }
+
+        &:after {
+          content: '';
+          width: 0;
+          height: 4px;
+          background: $main_color;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          @include transition_animation_150()
+        }
+      }
+
+
+    &:focus,  &:valid  {
+
+      + label  {
+        span {
+          top: -.4em;
+          font-size: 1.2rem;
+        }
+
+        &:after{
+          width:100%;
+
+        }
+      }
+
+    }
+
+  }
+
+  textarea{
+    resize: none;
+    min-height: 100px;
+    + label {
+      span {
+        top: 5px;
+
+      }
+      &:after{
+
+        bottom: 3px ;
+      }
+
+    }
+  }
+}
+
+button, input[type="button"], input[type="submit"], input[type="reset"]{
+  background: $main_color;
+  @include border-radius(32px);
+  color:#fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 30px;
+  border: none;
+  outline: none !important;
+  font-size: 1.4rem;
+  min-width: 160px;
+  min-height: 55px;
+  margin: 0 5px;
+  @include transition_animation_150();
+  cursor: pointer;
+  @include box-shadow();
+  vertical-align: middle;
+
+  &.signout_btn{
+    width: 55px;
+    height: 55px;
+    @include border-radius(50%);
+    padding: 0;
+    min-width: initial;
+    font-size: 36px;
+
+  }
+  &:hover{
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+.main-color-text{
+  color: $main_color;
+}
+.right-align{text-align: right;}
+
+.validations_msgs{
+  position: absolute;
+  background: rgba(240, 2, 2, 0.6);
+  padding: 5px 15px;
+  border-radius: 4px;
+  right: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+.gradient-text {
+  display: inline-block;
+  color: $main_color;
+  position: relative;
+  @extend %gradient_bg;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

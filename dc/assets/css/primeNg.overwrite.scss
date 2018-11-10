@@ -22,7 +22,7 @@ body {
           color: $main_color;
           background: rgb(251, 249, 249);
          @include border-radius(5px);
-          border: dashed 2px #d7d8d7;
+          border: dashed 2px rgba(216, 216, 216, 0.5);
 
           div:nth-of-type(1){
             display:none;
@@ -113,7 +113,7 @@ body {
       z-index:9;
 
       .ui-menuitem-link {
-        display: flex;
+        display: flex !important;
         justify-content: flex-start;
         align-items: center;
         margin-top: -70px;
@@ -145,6 +145,76 @@ body {
     }
   }
   }
+
+  .ui-chkbox {
+
+    .ui-chkbox-box {
+      background:transparent !important;
+      border:none !important;
+      box-shadow: inset 0 0 0 1px #d9d8d8;
+      transition-timing-function: cubic-bezier(0,.89,.44,1);
+      transition-duration: .3s;
+
+      .ui-chkbox-icon{
+          transform: scale(0);
+          transition-timing-function: cubic-bezier(0,.89,.44,1);
+          transition-duration: .3s;
+      }
+
+      &.ui-state-active {
+        background:transparent;
+        box-shadow: inset 0 0 0 1px rgba(91, 106, 177, 0.5);
+
+        .ui-chkbox-icon{
+          @extend %gradient_bg ;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text ;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .ui-message, .ui-toast	{
+    width: auto;
+    margin-bottom: 20px ;
+    padding: 15px 30px ;
+    font-size: 1.3rem ;
+    color: $main_color !important;
+    max-width:100%;
+
+    .ui-message-icon, .ui-toast-close-icon{
+      display: none;
+    }
+    .ui-message-text, .ui-toast-message-text-content{
+      .ui-message-summary, .ui-toast-summary{font-size:1.7rem;
+        color: $main_color}
+      .ui-message-details, .ui-toast-details{
+        color: $main_color
+      }
+
+    }
+
+    &.ui-message-info, &.ui-toast-message-info{
+
+    }
+    &.ui-message-success, &.ui-toast-message-success{
+      background-color: rgba(70, 219, 146, 0.7);
+    }
+    &.ui-message-warn, &.ui-toast-message-warn{
+      background-color: rgba(243, 202, 46, 0.7);
+    }
+    &.ui-message-error, &.ui-toast-message-error{
+      background-color: rgba(240, 2, 2, 0.6);
+      color:#fff !important;
+    }
+
+    .ui-toast-message{}
+    .ui-toast-message-content{}
+
+
+  }
+
 }
 
 

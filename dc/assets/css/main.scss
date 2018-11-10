@@ -24,6 +24,8 @@ header{
   padding: 15px 50px;
   justify-content: space-between;
   align-items: center;
+  z-index:99;
+  position: relative;
 
   .logo{
     max-width:60px;
@@ -159,13 +161,18 @@ button, input[type="button"], input[type="submit"], input[type="reset"]{
   @include box-shadow();
   vertical-align: middle;
 
+  &.back_btn{
+    background:#fff;
+    color:$main_color;
+  }
+
   &.signout_btn{
     width: 55px;
     height: 55px;
     @include border-radius(50%);
     padding: 0;
     min-width: initial;
-    font-size: 36px;
+    font-size: 3.6rem;
 
   }
   &:hover{
@@ -189,7 +196,6 @@ button, input[type="button"], input[type="submit"], input[type="reset"]{
   margin-top: 3px;
 }
 .gradient-text {
-  display: inline-block;
   color: $main_color;
   position: relative;
   @extend %gradient_bg;
@@ -201,4 +207,159 @@ button, input[type="button"], input[type="submit"], input[type="reset"]{
   justify-content: center;
   align-items: center;
 
+}
+.wizard_steps{margin-bottom:30px;}
+
+p{
+  font-size:1.4rem;
+  color:#9b9b9b;
+}
+
+
+.signers_list{
+  list-style: none;
+  padding:0;
+  margin:30px 0;
+
+  li{
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    @include border-radius(5px);
+    margin-bottom: 10px;
+    padding: 5px 10px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    .signers_name{font-size:2rem;margin:0 36px;position:relative;z-index:1;}
+    .signers_title{font-size:1.4rem;margin:0 36px;position:relative;z-index:1;}
+
+    p-checkbox{
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      padding: 10px;
+      .ui-chkbox-label{
+        position: absolute;
+        z-index:9;
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+  &.verify{
+    li {
+      background-color: #fbfbfb;
+      &:before {
+        @extend %icomoon_icons;
+        content: "\e908";
+        box-shadow: inset 0 0 0 1px rgba(91, 106, 177, 0.5);
+        @extend %gradient_bg ;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text ;
+        width: 20px;
+        height: 20px;
+        @include border-radius(4px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &.NOT_SIGNED{
+        background-color: #fff;
+        &:before {
+          content: "";
+          box-shadow: inset 0 0 0 1px #d9d8d8;
+        }
+
+      }
+    }
+  }
+}
+.wizard_content{
+  overflow: hidden;
+  padding:5px;
+}
+
+.hidden{
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin-left: -106%;
+  transition: opacity,margin-left ease .3s;
+  position: relative;
+  z-index: 0;
+
+  &.show {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+}
+
+.big_icons {
+  font-size: 11rem;
+  align-items: start;
+  justify-content: start;
+}
+
+.file_url {
+  margin-top: 30px;
+  padding: 15px 36px 15px 15px;
+ @include border-radius(5px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fbfbfb;
+  position: relative;
+
+  textarea{
+    color:$main_color;
+    width:100%;
+    border:none;
+    background: transparent;
+    outline: none;
+    resize: none;
+  }
+
+  .btns{
+    @extend %gradient_bg;
+    width: 32px;
+    height: 32px;
+    min-width: auto;
+    padding: 0;
+    @include border-radius(50%);
+    min-height: auto;
+    position: absolute;
+    right: 6px;
+    top: 7px;
+
+  }
+}
+.doc_details {
+  margin-top: 34px;
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      background: rgba(227, 244, 243, .4);
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+      label{
+        color: #8a8a8a;
+        text-transform: uppercase;
+      }
+       p{
+        font-size: 1.4rem;
+        color: #6675ba;
+      }
+    }
+  }
 }

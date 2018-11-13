@@ -24,7 +24,9 @@
     .widgetmargins{
         margin: 15px 0;
     }
-    .qitaf_tiers{ height: 195px;max-width: 290px;}
+    .billing .widgetmargins{
+        margin:  0;
+    }
     .btns{width:100%}
     .form-input.inline-inputs {display:block;}
     .form-input.inline-inputs input{max-width:100%}
@@ -248,19 +250,23 @@
         width: 0
     }
     .tabscontainer .nav-tabs li a {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .flex-sm-full {
-        flex: 100%
+        flex: 100%;
+        padding: 10px 0;
     }
-
+    .flex-sm-full.widgetmargins{
+        margin: 0 0 15px;
+        padding: 0 0 20px;
+    }
     .col-lg-hidden {
         display: block;
     }
 
     .numberdisplay h2 .mainnumber {
-        font-size: 4.3rem;
+        font-size: 3.4rem;
     }
 
     .qitaf_tiers .hint {
@@ -469,6 +475,23 @@
     header.sticky + main.mainsection {
         padding-top: 96px;
     }
+    .payment_methods{
+        max-width: 90%;
+    }
+    .payment_methods .col, .card_details .col{
+        padding: 7.5px;
+        height: 100%;
+        flex: 0 0 50%;
+    }
+    .card_details .col{padding:0 7.5px;}
+    .payment_methods input[type='radio'] + label img{max-width:100%}
+    .circle_icons {
+        width: 53px;
+        height: 53px;
+        font-size: 3.2rem;
+        margin-bottom: 0;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -477,6 +500,10 @@
     }
     #msnav {
         display: none;
+    }
+
+    .modal-dialog {
+        max-width: 590px;
     }
 
 }
@@ -494,6 +521,8 @@
     #header .mainheader .search input {
         display: none;
     }
+    .qitaf_tiers {height: 165px;}
+    .modal .modal-content .modal-body{max-height:370px;}
 }
 
 @media (max-width: 375px) {

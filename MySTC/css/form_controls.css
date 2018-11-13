@@ -10,7 +10,7 @@
     margin-bottom: 1rem
 }
 
-input[type='text'], input[type='search'], input[type='password'], input[type='number'], input[type='date'], input[type='email'], select {
+input[type='text'], input[type='search'], input[type='password'], input[type='number'], input[type='date'], input[type='email'], input[type="tel"], select {
     border-radius: var(--curved);
     border: solid 1px var(--darkGray);
     outline: 0 !important;
@@ -22,10 +22,10 @@ input[type='text'], input[type='search'], input[type='password'], input[type='nu
     background: #fff;
     width: 100%;
     box-shadow: none;
-    min-height: 30px;
+    min-height: 35px;
 }
 
-input[type='text']:focus, input[type='search']:focus, input[type='password']:focus, input[type='number']:focus, input[type='date']:focus, input[type='email']:focus, select:focus {
+input[type='text']:focus, input[type='search']:focus, input[type='password']:focus, input[type='number']:focus, input[type='date']:focus, input[type='email']:focus, input[type="tel"]:focus, select:focus {
     border-color: var(--purple)
 }
 
@@ -64,7 +64,7 @@ select.selectpicker {
     font-size: 1.6rem;
     outline: none !important;
     padding: 0.1rem 2.1rem;
-    min-height: 30px;
+    min-height: 35px;
 }
 
 .bootstrap-select > .dropdown-toggle:after {
@@ -74,7 +74,7 @@ select.selectpicker {
     font-size: 2rem;
     position: absolute;
     right: 22px;
-    top: -2px;
+    top: 2px;
     margin: 0 !important;
     display: block;
 }
@@ -271,6 +271,7 @@ select.selectpicker {
 
 .bootstrap-select .dropdown-toggle .filter-option-inner {
     padding-right: 5px;
+    margin-top: 3px;
 }
 
 .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
@@ -380,7 +381,9 @@ select.selectpicker {
     padding-bottom: 10px;
 }
 @media (max-width:992px) {
-    max-height: calc(100vh - 140px) !important;
+    .accounts .dropdown-menu.show {
+        max-height: calc(100vh - 140px) !important;
+    }
 }
 .accounts span.text {
     display: flex !important;
@@ -398,23 +401,23 @@ select.selectpicker {
 .accounts a.opt.dropdown-item {
     display: flex !important;
 }
-.accounts .dropdown-item:focus, 
+.accounts .dropdown-item:focus,
 .accounts .dropdown-item:hover {
     background: transparent !important;
 }
-.accounts .dropdown-item:focus .text, 
+.accounts .dropdown-item:focus .text,
 .accounts .dropdown-item:hover .text {
     color:var(--pink) !important;
 }
-.accounts .bootstrap-select .dropdown-menu li a.active, 
+.accounts .bootstrap-select .dropdown-menu li a.active,
 .accounts .bootstrap-select .dropdown-menu li a:active {
     background: transparent !important;
 }
-.accounts .bootstrap-select .dropdown-menu li a.active .text, 
+.accounts .bootstrap-select .dropdown-menu li a.active .text,
 .accounts .bootstrap-select .dropdown-menu li a:active .text {
     color:var(--pink) !important;
 }
-.accounts .bootstrap-select .dropdown-menu li a.active .text-muted, 
+.accounts .bootstrap-select .dropdown-menu li a.active .text-muted,
 .accounts .bootstrap-select .dropdown-menu li a:active .text-muted {
     color:var(--purple) !important;
 }
@@ -638,16 +641,27 @@ select.selectpicker {
 input[type='radio'],  input[type='checkbox'] {
     display: none;
 }
-
+input[type='radio'] + label,  input[type='checkbox'] + label{position: relative;display: flex;align-items: center;width: 100%;}
 input[type='radio'] + label:before,  input[type='checkbox'] + label:before {
     content: "";
     width: 20px;
     height: 20px;
-    display: inline-flex;
-    background: transparent;
-    border: solid 1px var(--light);
     border-radius: 50%;
     margin-right: 10px;
+    box-shadow: inset 0 0 0 1px var(--lightGray);
+    transition-timing-function: cubic-bezier(0,.89,.44,1);
+    transition-duration: .3s;
+}
+
+input[type='checkbox'] + label:before{border-radius:5px;}
+
+input[type='radio']:checked + label:before,  input[type='checkbox']:checked + label:before {
+
+    box-shadow: inset 0 0 0 20px var(--pink);
+
+}
+input[type='radio'] + label:after,  input[type='checkbox'] + label:after {
+    content: "";
     font-family: 'mystc3' !important;
     speak: none;
     font-style: normal;
@@ -656,19 +670,19 @@ input[type='radio'] + label:before,  input[type='checkbox'] + label:before {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    text-align: center;
-    align-items: center;
+    position:absolute;
+    transform: scale(0);
+    transition-timing-function: cubic-bezier(0,.89,.44,1);
+    transition-duration: .3s;
+    font-size: 1.3rem;
+    width: 21px;
+    height: 21px;
+    display: flex;
     justify-content: center;
-    font-size: 1.2rem;
-    transition: var(--transition);
+    align-items: center;
 }
-
-input[type='checkbox'] + label:before{border-radius:5px;}
-
-input[type='radio']:checked + label:before,  input[type='checkbox']:checked + label:before {
+input[type='radio']:checked + label:after,  input[type='checkbox']:checked + label:after {
     content: "\57";
-    background: var(--pink);
     color: #fff;
-    border-color:var(--pink);
-
+    transform: scale(1);
 }

@@ -1,11 +1,7 @@
 
+// START of document.ready() function
 $(document).ready(function(){
     "use strict";
-
-    // just for Front end including the header and footer templates
-    $("header").load("../../templates/templates.html #header");
-    $("footer").load("../../templates/templates.html #footer");
-    $("#panel").load("../../templates/templates.html #widgetspanel");
 
     // just for Front end including the header and footer templates
     $("header").load("../../templates/templates.html #header");
@@ -36,41 +32,6 @@ $(document).ready(function(){
     // WOW animation init
     //new WOW().init();
 
-    // Owl carousel functions
-    function generateCarousel(){
-        var carouselItem = $('.owl-carousel');
-        carouselItem.each(function(index,ele) {
-            var $this = $(ele),
-                id = $this.attr('id'),
-                desktop = $this.data('items-desktop'),
-                tablet = $this.data('items-tablet'),
-                mobile = $this.data('items-mobile');
-
-            var carousel = $("#"+id).owlCarousel({
-                loop:false,
-                margin:10,
-                responsiveClass:true,
-                responsive:{
-                    0:{
-                        items:eval(mobile),
-                        nav:false
-                    },
-                    600:{
-                        items:eval(tablet),
-                        nav:false
-                    },
-                    1000:{
-                        items:eval(desktop),
-                        nav:false,
-                        loop:false
-                    }
-                }
-            });
-
-        });
-    }
-
-    // charts init functions
     var barchartcolors =['#977aa8','#712b81', '#da3f7b', '#fadf46', '#fab53c', '#977aa8'];
     var topdialedvalues_2 =  [66, 30, 25, 95, 80, 60 ];
     var topdialednumbers =  ['0534343963', '0112345678', '0512387653', '0531234567', '0567658904', '0123456789' ];
@@ -133,7 +94,51 @@ $(document).ready(function(){
         }
     ];
 
-    // dounght charts configuration
+    // change the z-index of bootstrap select parent
+    $('.selectpicker').each(function(){
+        $(this).parents('.widgetcontainer').css('z-index','1')
+    })
+
+    /*
+    = COMMON FUNCTION TO CALL WHEN NEEDED AT THE PAGE BASED ON IF THE ELEMENT IS INCLUDED AT THE PAGE OR NOT.
+    = ADDED BY MOHAMMAD SAMAK
+*/
+
+// Owl carousel functions
+    function generateCarousel(){
+        var carouselItem = $('.owl-carousel');
+        carouselItem.each(function(index,ele) {
+            var $this = $(ele),
+                id = $this.attr('id'),
+                desktop = $this.data('items-desktop'),
+                tablet = $this.data('items-tablet'),
+                mobile = $this.data('items-mobile');
+
+            var carousel = $("#"+id).owlCarousel({
+                loop:false,
+                margin:10,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:eval(mobile),
+                        nav:false
+                    },
+                    600:{
+                        items:eval(tablet),
+                        nav:false
+                    },
+                    1000:{
+                        items:eval(desktop),
+                        nav:false,
+                        loop:false
+                    }
+                }
+            });
+
+        });
+    }
+
+// dounght charts configuration
     function generateDounght(){
         var dounghtItem = $('.dounghtcanvas');
         dounghtItem.each(function(index,ele){
@@ -177,7 +182,7 @@ $(document).ready(function(){
         })
     };
 
-    //bar charts configuration
+//bar charts configuration
     function generateBar() {
         var barchartItem = $('.barcharts');
         barchartItem.each(function (index, ele) {
@@ -191,16 +196,16 @@ $(document).ready(function(){
             var myBarChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                   datasets:eval(src),
-                   //  datasets: [{
-                   //      label:eval(labels),
-                   //      data: eval(src),
-                   //      fill: '#ffffff',
-                   //      backgroundColor: barchartcolors,
-                   //      borderColor: barchartcolors,
-                   //      borderWidth: 1,
-                   //
-                   //  }]
+                    datasets:eval(src),
+                    //  datasets: [{
+                    //      label:eval(labels),
+                    //      data: eval(src),
+                    //      fill: '#ffffff',
+                    //      backgroundColor: barchartcolors,
+                    //      borderColor: barchartcolors,
+                    //      borderWidth: 1,
+                    //
+                    //  }]
                 },
                 options: {
                     responsive: true,
@@ -230,7 +235,7 @@ $(document).ready(function(){
                                 drawBorder: false,
 
 
-                        }
+                            }
 
                         }],
                         yAxes: [{
@@ -261,38 +266,51 @@ $(document).ready(function(){
         })
     }
 
-
-
-    // common function to show divs
+// common function to show divs
     function showContent(){
         var item = $('.showContent');
         item.each(function (index, ele) {
             var $this = $(ele),
                 content = $this.data('show'),
                 toHide = $this.data('hide');
-                $this.on('click',function(){
+            $this.on('click',function(){
 
-                    if (toHide == undefined){
-                        $('.hiddenContent').hide()
-                    }
-                    else{
-                        $(toHide).hide();
-                    }
-                    if($this.hasClass('dropdown-item')) $this.parents('.action-sheet-btn').find('.action_btn').dropdown('toggle');
-                    $(content).show();
-                    return false;
-
-                })
+                if (toHide == undefined){
+                    $('.hiddenContent').hide()
+                }
+                else{
+                    $(toHide).hide();
+                }
+                if($this.hasClass('dropdown-item')) $this.parents('.action-sheet-btn').find('.action_btn').dropdown('toggle');
+                $(content).show();
+                return false;
+            })
         });
     }
 
-    // change the z-index of bootstrap select parent
+//add new credit card function
+    function addNewCC(){
+        $('.add_card').on('click', function(){
+            $('.modal_payment_btn').hide();
+            $('.payment_cancel_btn').addClass('floated_btns_space')
 
-    $('.selectpicker').each(function(){
-        console.log('select')
-        $(this).parents('.widgetcontainer').css('z-index','1')
-    })
+        })
 
+        $('.cc_options').on('click',function(){
+            $('.select_payment_method').prop('disabled','');
+          });
+
+        $('.select_payment_method').on('click',function(){
+            $('.newcc_no').payment('formatCardNumber');
+            $('.newcc_expiry').payment('formatCardExpiry');
+            $('.newcc_ccv').payment('formatCardCVC');
+        })
+
+        $('.newCC_added_btn').on('click',function(){
+            console.log('show summary')
+        })
+
+    }
 
 
     // call the functions only if the item is placed in the page
@@ -300,7 +318,12 @@ $(document).ready(function(){
     if ( $('.dounghtcanvas').length ) generateDounght();
     if ( $('.barcharts').length ) generateBar();
     if ( $('.showContent').length ) showContent();
+    if ( $('.add_card').length )  addNewCC();
+
 });
+// END of document.ready() function
+
+
 $(window).on('scroll', function(){
         if ( $(this).width() < 993 ) {
             var offset = 61;
@@ -317,7 +340,6 @@ $(window).on('scroll', function(){
 
     if (  $(this).scrollTop() > offset ) {
         $("header").addClass("sticky");
-        console.log('test');
     } else {
         $("header").removeClass("sticky");
     }
@@ -342,3 +364,6 @@ $(window).on('load', function(){
         event.stopPropagation();
     });
 });
+
+
+

@@ -36,7 +36,7 @@
                     </div>
                     <div class="nav">
                         <ul>
-                            <li class="active"><a href=""><span>Home</span></a></li>
+                            <li class="active"><a href="dashboard.html"><span>Home</span></a></li>
                             <li><a href=""><span>Store</span></a></li>
                             <li><a href=""><span>Location</span></a></li>
                             <li><a href=""><span>Support</span></a></li>
@@ -141,7 +141,7 @@
                         <div class="packagesimg">
                             <img src="../../imgs/packages/100-en.png" alt="current Plan"/>
                         </div>
-                        <div class="widgetbtns text-center col-sm-hidden bottom_position">
+                        <div class="widgetbtns  text-center col-sm-hidden bottom_position">
                             <a href="#" class="btns borderedbtns">Change your plan</a>
                         </div>
                     </div>
@@ -180,8 +180,8 @@
                         </h2>
                         <h4>Update 10 hours ago</h4>
                     </div>
-                    <div class="widgetbtns text-center col-sm-hidden bottom_position">
-                        <a href="#" class="btns borderedbtns">Usage Details</a>
+                    <div class="widgetbtns  text-center col-sm-hidden bottom_position">
+                        <a href="../Bill_Details/call_details.html" class="btns borderedbtns">Usage Details</a>
                     </div>
                     </div>
                 </div>
@@ -218,17 +218,19 @@
                                             <div class="dounghtchart ">
                                                 <canvas id="local-internet" class="dounghtcanvas internetcharts" width="140" height="140"  data-source="localinternet" data-type="packages"></canvas>
                                                 <div class="chartvalues numberdisplay">
+                                                    <div>
                                                     <h2>
-                                                        <span class="mainnumber">13.8</span>
+                                                        <span class="mainnumber">Unlimited</span>
                                                         <span class="secondnumber">
-                                                    <i class="numberabbr">GB</i>
-                                                </span>
+                                                             <i class="numberabbr"></i>
+                                                         </span>
                                                     </h2>
                                                     <h4>15 GB Expired in 30 days</h4>
+                                                    </div>
                                                 </div>
 
                                             </div>
-                                            <div class="widgetbtns col-sm-hidden text-center">
+                                            <div class="widgetbtns no-margin  col-sm-hidden text-center">
                                                 <a href="#" class="btns borderedbtns">Details</a>
                                             </div>
                                         </div>
@@ -344,7 +346,7 @@
                 </div>
             </h1>
             <div class="row widgetcontent graybg">
-                <div class="col-lg-6  widgetmargins">
+                <div class="col-lg-6 ">
                     <h3 class="widgettitle text-center">Budget Control</h3>
                     <div class="numberdisplay ">
                         <h2>
@@ -463,9 +465,9 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6 widgetmargins col-sm-hidden hiddenContent seperatorbrdr leftbrder"  id="balance_transfer">
+                <div class="col-lg-5  offset-lg-1 col-sm-hidden hiddenContent seperatorbrdr leftbrder"  id="balance_transfer">
                     <h3 class="widgettitle text-center">Balance Transfer</h3>
-                    <div class="tabscontainer">
+                    <div class="tabscontainer tabs_top_margin">
                         <ul class="nav nav-tabs" id="balance-transfer-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="balance-transfer-tab" data-toggle="tab" href="#balance-transfer" role="tab" aria-controls="balance-transfer" aria-selected="true">Transfer</a>
@@ -572,10 +574,10 @@
                     <div class="tabscontainer">
                         <ul class="nav nav-tabs" id="analytics-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="top-dialed-tab" data-toggle="tab" href="#top-dialed" role="tab" aria-controls="top-dialed" aria-selected="true">Top Dialed Numers</a>
+                                <a class="nav-link active" id="top-dialed-tab" data-toggle="tab" href="#top-dialed" role="tab" aria-controls="top-dialed" aria-selected="true">Top Dialed </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="previous-bills-tab" data-toggle="tab" href="#previous-bills" role="tab" aria-controls="previous-bills" aria-selected="false">Previous Bill Inovoices</a>
+                                <a class="nav-link" id="previous-bills-tab" data-toggle="tab" href="#previous-bills" role="tab" aria-controls="previous-bills" aria-selected="false">Previous Bills </a>
                             </li>
 
                         </ul>
@@ -631,7 +633,7 @@
 
 <!-- footer which will come from template -->
 <footer>
-    <div id="footer">
+   <div id="footer">
     <div class="wrapper">
         <div class="row">
             <div class="col-lg-12">
@@ -664,15 +666,15 @@
             </div>
         </div>
     </div>    
-</div>
+</div> 
 </footer>
 <!-- End of footer which will come from template -->
 
 <!-- panel which will come from template -->
 <div id="panel">
-<div id="widgetspanel">
-<h2>Book Marks</h2>
-</div>    
+    <div id="widgetspanel">
+
+</div>
 </div>
 <!-- End of panel which will come from template -->
 
@@ -689,7 +691,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="saved_cards">
+                <div class="saved_cards hiddenContent">
                 <p class="gray_text">
                     You can pay through credit card, and you can edit the amount of the bill
                 </p>
@@ -729,18 +731,106 @@
                     </ul>
                 </div>
                     <h4>
-                        <a href="#" class="add_card"><i class="icon-plus1"></i>Add New Credit Card</a>
+                        <a href="#" class="add_card showContent" data-show=".newCC_type" data-hide=".saved_cards"><i class="icon-plus1"></i>Add New Credit Card</a>
                     </h4>
 
                     <h6>
                         by clicking "Pay", you are agreeing <a href="#">the Terms and conditions</a>
                     </h6>
                 </div>
+                <div class="hidden newCC_type">
+                    <h3 class="black_text">Payment Method</h3>
+                    <div class="row payment_methods">
+                        <div class="col">
+                            <input type="radio" id="newcc_master" value="new_master" name="newCC_options" class="cc_options"/>
+                            <label for="newcc_master">
+                                <img src="../../imgs/logos/mastercard.png" title="Master Card"/>
+                                <span>Master Card</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="newcc_visa" value="new_visa" name="newCC_options" class="cc_options"/>
+                            <label for="newcc_visa">
+                                <img src="../../imgs/logos/visa.png" title="Visa"/>
+                                <span>Visa</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="newcc_amex" value="new_amex" name="newCC_options" class="cc_options"/>
+                            <label for="newcc_amex">
+                                <img src="../../imgs/logos/amex.png" title="Mada"/>
+                                <span>American Express</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="newcc_mada" value="new_mada" name="newCC_options" class="cc_options"/>
+                            <label for="newcc_mada">
+                                <img src="../../imgs/logos/mada.png" title="Mada"/>
+                                <span>Mada</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="payment_btns_flaoted">
+                        <button type="button" class="btns curvedbtns pinkbg text-white showContent select_payment_method" disabled data-show=".newCC_details" data-hide=".newCC_type">Next</button>
+                    </div>
+
+                </div>
+                <div class="hidden newCC_details">
+                    <h3 class="black_text">Card Details</h3>
+                    <div class="row card_details">
+                        <div class="col flex-fill">
+                            <input type="tel" id="cc-number" class="newcc_no" autocomplete="cc-number" placeholder="Credit card number" required>
+                        </div>
+                        <div class="col">
+                            <input type="tel" id="cc-exp" class="newcc_expiry" autocomplete="cc-exp" placeholder="Expiry date" required>
+                        </div>
+                        <div class="col">
+                            <input type="tel" id="cc-cvc" class="newcc_ccv" autocomplete="off" placeholder="CCV" required>
+                        </div>
+                    </div>
+
+                    <div class="payment_btns_flaoted">
+                        <button type="button" class="btns curvedbtns pinkbg text-white showContent newCC_added_btn" data-show=".payment_summary" data-hide=".newCC_details">Pay</button>
+                    </div>
+                </div>
+                <div class="hidden payment_summary">
+                    <div class="row black_text">
+                        <div class="col-3 col-md-4 col-lg-12 text-center">
+                            <span class="circle_icons">
+                                <i class="icon-check"></i>
+                            </span>
+                        </div>
+                        <div class="col-9 col-md-8 col-lg-12">
+                            <h4>Thank you.. Your payment was successful.</h4>
+                            <h4><span>Amount Paid:</span> <span class="pink_text amount_display">263.30 SAR</span></h4>
+                        </div>
+
+                        <div class="col-12">
+                            <p>For your records, please keep a copy of your payment reference number: <span class="pink_text" id="bill_reference">STC-31232394829</span></p>
+                            <p>
+                                This transaction will show on your bank statement with reference number: <span class="pink_text" id="bank_reference">STC-394920039402</span>
+                            </p>
+
+                            <hr/>
+                        </div>
+                        <div class="col-12">
+                            <p>Register your payment information for easy payment in the future</p>
+                            <p>
+                                <input type="checkbox" name="saved_cards" id="saved_cards" value="save"/>
+                                <label for="saved_cards">Save This Card</label>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btns reset_btn " data-dismiss="modal">Cancel</button>
-                <button type="button" class="btns curvedbtns pinkbg text-white">Pay</button>
+                <button type="button" class="btns reset_btn payment_cancel_btn " data-dismiss="modal">Cancel</button>
+                <button type="button" class="btns curvedbtns pinkbg text-white modal_payment_btn">Pay</button>
+
             </div>
         </div>
     </div>
@@ -757,6 +847,7 @@
 <script type="text/javascript" src="../../js/Chart.min.js" ></script>
 <script type="text/javascript" src="../../js/wow.min.js" ></script>
 <script type="text/javascript" src="../../js/bootstrap-select.min.js" ></script>
+<script type="text/javascript" src="../../js/jquery.payment.min.js" ></script>
 <!-- end of Javascript libraries imports -->
 
 <!-- STC custom Javascript functions -->

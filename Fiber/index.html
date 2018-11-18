@@ -795,11 +795,45 @@
 
             <div class="iframe_holder">
                 <script>
+                    // modified from same-domain version at www.dyn-web.com/tutorials/iframes/height/
+                    function setIframeHeightCO(id, ht) {
+
+                        var ifrm = document.getElementById('fiber_frame');
+                        ifrm.style.visibility = 'hidden';
+                        // some IE versions need a bit added or scrollbar appears
+                        ifrm.style.height = ht + 15 + "px";
+                        ifrm.style.visibility = 'visible';
+
+                    }
+
+
+                    // iframed document sends its height using postMessage
+                    function handleDocHeightMsg(e) {
+                        // check origin
+                        if ( e.origin === 'http://msamak81.github.io' ) {
+                            // parse data
+                            var data = JSON.parse( e.data );
+                            // check data object
+                            if ( data['docHeight'] ) {
+                                setIframeHeightCO( 'ifrm', data['docHeight'] );
+                                console.log(data['docHeight'])
+                            }
+                        }
+                    }
+
+                    // assign message handler
+                    if ( window.addEventListener ) {
+                        window.addEventListener('message', handleDocHeightMsg, false);
+                    } else if ( window.attachEvent ) { // ie8
+                        window.attachEvent('onmessage', handleDocHeightMsg);
+                    }
+
                     function resizeIframe(obj) {
+                        obj.contentWindow.postMessage('', '*');
                         obj.style.height = obj.contentWindow.document.body.scrollHeight + 15 +'px';
                     }
                 </script>
-                <iframe src="sources/newlandline.html" width="100%" onload="resizeIframe(this)" scrolling="no" frameborder="0" target="_parent" class="show_mobile mySTC_iframe" id="fiber_frame" height="485px"></iframe>
+                <iframe src="sources/newlandline.html" width="100%" scrolling="no" frameborder="0" target="_parent" class="show_mobile mySTC_iframe" id="fiber_frame" height="485px"></iframe>
                 <p>
                     سيتم إضافة نسبة الـ 5% ضريبة القيمة المضافة على إجمالي الفاتورة
 

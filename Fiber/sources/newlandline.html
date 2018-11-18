@@ -9,18 +9,6 @@
 </head>
 <body>
 <script>
-    // Get height of document
-    function getDocHeight(doc) {
-        doc = doc || document;
-        // from http://stackoverflow.com/questions/1145850/get-height-of-entire-document-with-javascript
-        var body = doc.body, html = doc.documentElement;
-        var height = Math.max( body.scrollHeight, body.offsetHeight,
-            html.clientHeight, html.scrollHeight, html.offsetHeight );
-        return height;
-
-        console.log(height)
-    }
-
 
     // assign onload handler
     if ( window.addEventListener ) {
@@ -33,9 +21,9 @@
         parent.postMessage( JSON.stringify( {'docHeight': getCurrentHeight} ), '*' );
         console.log('sending height')
         // $('.mySTC_iframe', window.parent.document).height(getCurrentHeight + 15);
-        // $('html,body', window.parent.document).animate({
-        //     scrollTop: $('.iframe_content').offset().top + 150
-        // }, 'slow');
+         $('html,body', window.parent.document).animate({
+            scrollTop: $('.iframe_content').offset().top + 150
+        }, 'slow');
     }
 
 

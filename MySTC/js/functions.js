@@ -353,8 +353,10 @@ $(document).ready(function(){
                 content = $this.data('show'),
                 toHide = $this.data('hide');
             $this.on('click',function(){
-
+                item.removeClass('active');
+                $(this).addClass('active');
                 if (toHide == undefined){
+                    item.parents().eq(3).find('.hiddenContent').hide();
                     item.parents().find('.hiddenContent').hide();
                 }
                 else{

@@ -567,6 +567,18 @@
         padding:8px;
     }
 
+    #Postpaid_Packages .modal-content {
+        width: 100%;
+    }
+
+    .Postpaid_Packages_list li {
+        flex: 0 0 31%;
+        margin: 3px 3px;
+    }
+
+    .subscribed_postpaid , .price_postpaid {
+        margin: 0 0 9px 0;
+    }
     .drop_menu:before{
         border-width: 14px;
         top: -14px;
@@ -581,6 +593,13 @@
     div.dataTables_wrapper div.dataTables_filter{text-align: right;}
     .widgetbtns.bottom_position{
         position: inherit;
+    }
+    .modal .modal-content .modal-body{padding-bottom:70px;}
+    .modal .modal-content .modal-body .popup_btns{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     }
 
 }

@@ -1121,7 +1121,7 @@ canvas {
     position: relative;
     left: -16px;
     border-top: solid 3px var(--lightGray);
-    background: rgba(234, 234, 234, 0.1);
+    background: rgb(253, 253, 253);
 }
 .modal .modal-content .modal-footer .btns, .modal .modal-content .modal-body .popup_btns .btns {
     width: auto !important;
@@ -1389,7 +1389,105 @@ h4 {
     color: #282828;
 }
 
+.Postpaid_Packages_list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.Postpaid_Packages_list li {
+    border-radius: 4px;
+    border: solid 2px #dddddd;
+    text-align:  center;
+    padding-top:  6px;
+    flex: 0 0 16%;
+    margin: 15px 14px;
+}
+
+ul.Postpaid_Packages_list li img {
+    width: 73px;
+}
+
+#Postpaid_Packages .modal-content {
+    width:  766px;
+}
+
+.Postpaid_detils ul {
+    margin-left:  30px;
+    font-size: 15px;
+}
+
+
+.Postpaid_detils ul li {
+    width: 100%;
+}
+
+.Postpaid_detils h3 {
+    color: var(--blackGray);
+}
+.Postpaid_detils_table_ul .stripe_list {
+    margin: 0 !important;
+}
+
+.Postpaid_detils_table_ul feature {
+    width: 80% !important;
+}
+
+
+.Postpaid_detils_table_ul li {
+    width: 100%;
+    padding:   10px 8px;
+    display:  flex;
+}
+
+.Postpaid_detils
+.accordion_body {
+    padding:  0px;
+}
+
+.Postpaid_detils_table_ul li span {
+    flex: 1;
+}
+
+.Postpaid_detils_table_ul {
+    margin: 20px 0;
+}
+
+#Postpaid_Packages .modal-body {
+    max-height: 522px;
+}
+.Postpaid_detils_table_ul .accordion_body .feature {
+    color:  var(--purple);
+}
+
+.Postpaid_detils .accordion_header {
+    color: var(--blackGray);
+}
+
+.Postpaid_Packages_list {
+    cursor: pointer;
+}
+
+.Postpaid_Packages_list .active h6{
+    color:  var(--pink);
+}
+
+.Postpaid_Packages_list .active {
+    border-color: var(--pink);
+}
+
+.Postpaid_Packages_list .active .price_postpaid{
+    display: none;
+}
+
+.subscribed_postpaid {
+    display: none;
+}
+
+.Postpaid_Packages_list .active .subscribed_postpaid {
+    display: block;
+}
 .table_icon i{
     font-size: 3rem;
     color: var(--purple);

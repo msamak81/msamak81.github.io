@@ -181,7 +181,7 @@
 
     .btns {
         width: 100%;
-        line-height: 2;
+        line-height: 1.5;
         font-size: 1.4rem;
     }
 
@@ -202,10 +202,13 @@
     }
 
     .bootstrap-select > .dropdown-toggle:after {
-        top: 3px;
+        top: 5px;
         right: 29px;
     }
-
+    #widgetspanel .panel_container .item .widgetcontent {
+        padding-left:30px;
+        padding-right:30px;
+    }
     .seperatorbrdr:after, .widgetcontent.billing .flex-sm-full.seperatorbrdr:after {
         width: calc(100% - 30px);
         height: 1px;
@@ -469,7 +472,7 @@
         border-top: 0;
     }
 
-    .widgetcontent {
+    .widgetcontainer h1 + .widgetcontent {
         height: calc(100% - 45px);
     }
     header.sticky + main.mainsection {
@@ -491,6 +494,94 @@
         font-size: 3.2rem;
         margin-bottom: 0;
     }
+    #panel {
+        width:100%;
+        top: 63px;
+        transform: translate(0, -4px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    #panel:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-bottom: 14px solid var(--purple);
+        top: -14px;
+        left: 100%;
+        margin-left: -60px;
+        z-index: -1;
+    }
+    body.open_widgets #panel {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0px);
+    }
+    body.open_widgets header {
+        position: fixed !important;
+        top: 0;
+    }
+    .accounts .filter-option-inner-inner {
+        line-height: 1.4;
+    }
+    body.open_widgets div#subheader {
+        display:none;
+    }
+    #widgetspanel .panel_container {
+        height: calc(100vh - 170px);
+    }
+    #widgetspanel {
+        padding: 0 20px 30px;
+    }
+    #widgetspanel .paneltitle {
+        padding: 30px 20px 10px;
+        margin-left: -20px;
+        margin-right: -20px;
+        background-color: var(--purple);
+    }
+    #widgetspanel .paneltitle * {
+        color:#fff;
+    }
+    #panel .paneltitle i {
+        top: 30px;
+        right: 35px;
+    }
+    #widgetspanel .panel_container .scroll {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    #panel .btnWrap {
+        flex-flow: nowrap;
+        width: 100%;
+    }
+
+    .bill_details.owl-carousel .owl-nav{top: -40px;}
+    .owl-carousel.bill_details {
+        margin: 0 -20px;
+        width: calc(100% + 40px);}
+    .accordion_header{
+        padding:8px;
+    }
+
+    .drop_menu:before{
+        border-width: 14px;
+        top: -14px;
+        right: 14px;
+    }
+    .drop_menu:after{
+        border-width: 17px;
+        top: -17px;
+        right: 11px;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter{text-align: right;}
+    .widgetbtns.bottom_position{
+        position: inherit;
+    }
 
 }
 
@@ -507,6 +598,7 @@
     }
 
 }
+
 
 
 @media (max-width:320px) {

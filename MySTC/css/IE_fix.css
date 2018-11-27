@@ -1,0 +1,65 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    main, .wrapper{
+        max-width:1001px;
+    }
+    .curvedbtns{
+        border-radius:35px;
+    }
+
+    .snav ul li a,
+    .borderedbtns,
+    #header .mainheader .control > ul > li > span,
+    #header .mainheader .control > ul > li > a > span,
+    #header .nav ul li.active a,
+    h1
+    {
+        color: #712c81;
+    }
+
+    .purplebg{
+        background: #712c81;
+    }
+
+    input[type='text'], input[type='search'], input[type='password'], input[type='number'], input[type='date'], input[type='email'], input[type="tel"], select{
+        border-radius:35px;
+        border-color:#acafb1;
+        color:#712c81;
+    }
+
+    .dounghtchart:before{
+        border-color:#712c81;
+
+    }
+
+    .numberdisplay h2,
+    a
+    {
+        color:#d73474;
+    }
+    .dounghtchart.freebies:before {
+        border-color: #d73474;
+    }
+    .graybg,
+    #header .subheader
+    {
+        background-color:#f6f7f8;
+    }
+
+    .widgetcontent h4{
+        color:#7b7b7b;
+    }
+
+    .widgetcontent{
+        padding: 16px 10px;
+        border-radius: 8px;
+    }
+
+    .btns{
+        transition: all 210ms ease-in-out;
+    }
+    no-padding{
+        padding:0;
+    }
+
+}
+

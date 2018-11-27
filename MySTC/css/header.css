@@ -13,7 +13,7 @@ header {
     height: 107px;
     padding: 25px 0;
     background-color: #fff;
-    border: solid 0.5px #dadbdd;
+    border-bottom: solid 0.5px #dadbdd;
 }
 .widgets_btn {
     cursor: pointer;

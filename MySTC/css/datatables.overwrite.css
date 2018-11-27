@@ -1,0 +1,83 @@
+.data_tables_holder{margin-bottom:30px;}
+table.dataTable{margin-top: 15px !important;width:100%;}
+table.dataTable thead>tr>th{
+    padding: 11px;
+    background: #fff;
+    font-family: 'stc-regular';
+    font-size: 1.8rem;
+}
+table.dataTable tbody>tr>td{
+    padding: 11px;
+    background: #fff;
+    color: var(--grayText);
+    font-size: 1.5rem;
+}
+table.dataTable tbody>tr.even>td{background: #fbfbfb;}
+table.dataTable tbody > tr.dtrg-group >td
+{
+    background-color: #f5f6f7 ;
+}
+.page-item.active .page-link{
+    background: var(--pink);
+    border-color: var(--pink);
+}
+.page-link, .page-link:hover{color:var(--pink);outline:0 !important}
+.paginate_button.page-item.next a, .paginate_button.page-item.previous a{
+    font-size: 0;
+    color: var(--pink);
+}
+.paginate_button.page-item.disabled a{
+    color: var(--gray);
+}
+.paginate_button.page-item.next a:before,
+.paginate_button.page-item.previous a:before{
+    content:'';
+    font-size: 1.3rem;
+    font-family: 'mystc3' !important;
+    display: block;
+    min-height: 16px;
+    margin-top: 4px;
+}
+
+.paginate_button.page-item.next a:before{ content:'\f101';}
+.paginate_button.page-item.previous a:before{ content:'\f100';}
+.dataTables_info, .dataTables_length, .dataTables_filter{
+    font-size: 1.3rem;
+    color: var(--gray);
+}
+table.dataTable tbody>tr>td.dataTables_empty{
+    color: var(--purple);
+    font-size: 1.8rem;
+}
+.custom-select{
+    border-radius: 35px;
+    min-width: 60px;
+    font-size: 1.3rem;
+    margin: 0 8px;
+}
+table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after{
+    bottom:1rem;
+}
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after{
+    left:0.4rem;
+    right:auto;
+}
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before{
+    left:1.2rem;
+    right:auto;
+}
+table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting{
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.filter-table-options li{border-bottom: solid 1px rgba(214, 214, 214, .64);margin-bottom: 4px;width: 100%;}
+.filter-table-options li:last-child{border:none;margin-bottom:0}
+.filter-table-options li label {
+    justify-content: space-between;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+.filter-table-options li label .option_label{color: var(--grayText);text-align: initial;flex: 1;font-size: 1.8rem;}
+.filter-table-options li label .option_icon{font-size: 3rem;margin-left: 10px;}

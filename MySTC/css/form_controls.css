@@ -644,13 +644,14 @@ input[type='radio'],  input[type='checkbox'] {
 input[type='radio'] + label,  input[type='checkbox'] + label{position: relative;display: flex;align-items: center;width: 100%;}
 input[type='radio'] + label:before,  input[type='checkbox'] + label:before {
     content: "";
-    width: 20px;
+    min-width: 20px;
     height: 20px;
     border-radius: 50%;
     margin-right: 10px;
     box-shadow: inset 0 0 0 1px var(--lightGray);
     transition-timing-function: cubic-bezier(0,.89,.44,1);
     transition-duration: .3s;
+    max-height: 20px;
 }
 
 input[type='checkbox'] + label:before{border-radius:5px;}

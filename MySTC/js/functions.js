@@ -9,6 +9,7 @@ $(document).ready(function(){
     $("#panel").load("../../templates/templates.html #widgetspanel");
     $(window).on('load',function(){
         if ( $('.dounghtcanvas').length ) generateDounght();
+
     })
 
     $(window).on('load',function(){
@@ -511,21 +512,28 @@ $(document).ready(function(){
         $('.filter-table-options input:checkbox').click(function(){
                 console.log($(this).val());
         });
+   }
+
+   // calling bootstrap modal content from Ajax
+    $("#modal").on("show.bs.modal", function(e) {
+        var link = $(e.relatedTarget);
+        console.log(link.attr("href"))
+        $(this).find(".modal-body").load(link.attr("href"));
+        if ( $('.showContent').length ) showContent();
+    });
 
 
+        // call the functions only if the item is placed in the page
+        if ( $('.owl-carousel').length ) generateCarousel();
+        if ( $('.dounghtcanvas').length ) generateDounght();
+        if ( $('.piecharts').length ) generatePie();
+        if ( $('.barcharts').length ) generateBar();
+        if ( $('.showContent').length ) showContent();
+        if ( $('.add_card').length )  addNewCC();
+        if ( $('.accordion_parent').length ) accordions();
+        if ( $('.data_tables').length ) generateTables();
 
 
-    }
-
-    // call the functions only if the item is placed in the page
-    if ( $('.owl-carousel').length ) generateCarousel();
-    if ( $('.dounghtcanvas').length ) generateDounght();
-    if ( $('.piecharts').length ) generatePie();
-    if ( $('.barcharts').length ) generateBar();
-    if ( $('.showContent').length ) showContent();
-    if ( $('.add_card').length )  addNewCC();
-    if ( $('.accordion_parent').length ) accordions();
-    if ( $('.data_tables').length ) generateTables();
 
 
 

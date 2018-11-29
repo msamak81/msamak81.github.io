@@ -58,15 +58,17 @@ select.selectpicker {
     text-align: right;
     white-space: nowrap;
     background-color: #fff !important;
-    border-color: var(--darkGray) !important;
+    border-color: var(--purple) !important;
     border-radius: var(--curved);
     color: var(--purple);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     outline: none !important;
-    padding: 0.1rem 2.1rem;
+    padding: 0.4rem 1.1rem;
     min-height: 35px;
 }
-
+.bootstrap-select > .dropdown-toggle.bs-placeholder{
+    border-color:var(--darkGray) !important;
+}
 .bootstrap-select > .dropdown-toggle:after {
     font-family: 'mystc3' !important;
     border: none !important;
@@ -421,7 +423,10 @@ select.selectpicker {
 .accounts .bootstrap-select .dropdown-menu li a:active .text-muted {
     color:var(--purple) !important;
 }
-
+.accounts .bootstrap-select > .dropdown-toggle {
+    font-size: 1.8rem;
+    padding: 0 1.4rem;
+}
 
 .bootstrap-select .dropdown-menu li:last-child {
     border-bottom: none
@@ -687,3 +692,4 @@ input[type='radio']:checked + label:after,  input[type='checkbox']:checked + lab
     color: #fff;
     transform: scale(1);
 }
+

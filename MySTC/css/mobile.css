@@ -167,6 +167,7 @@
     .qitaf_tiers {
         height: 195px;
         max-width: 290px;
+        margin: 10px auto;
     }
 
     .nav_list a {
@@ -205,9 +206,10 @@
         top: 5px;
         right: 29px;
     }
+
     #widgetspanel .panel_container .item .widgetcontent {
-        padding-left:30px;
-        padding-right:30px;
+        padding-left:10px;
+        padding-right:10px;
     }
     .seperatorbrdr:after, .widgetcontent.billing .flex-sm-full.seperatorbrdr:after {
         width: calc(100% - 30px);
@@ -530,14 +532,15 @@
     body.open_widgets div#subheader {
         display:none;
     }
+
     #widgetspanel .panel_container {
         height: calc(100vh - 170px);
     }
     #widgetspanel {
-        padding: 0 20px 30px;
+        padding: 0 10px 30px;
     }
     #widgetspanel .paneltitle {
-        padding: 30px 20px 10px;
+        padding: 30px 30px 10px;
         margin-left: -20px;
         margin-right: -20px;
         background-color: var(--purple);
@@ -549,16 +552,30 @@
         top: 30px;
         right: 35px;
     }
-    #widgetspanel .panel_container .scroll {
+    #widgetspanel .panel_container {
+        margin: 0 -5px;
+    }
+    #widgetspanel .panel_container .item {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    /* #widgetspanel .panel_container .scroll {
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-    }
+    } */
     #panel .btnWrap {
         flex-flow: nowrap;
         width: 100%;
     }
-
+    #widgetspanel .panel_container .item:not(.addwidget) .widgetcontent::after {
+        opacity: 1;
+        visibility: visible;
+        color: var(--pink);
+        font-size: 18px;
+        top: 20px;
+        left: 20px;
+    }
     .bill_details.owl-carousel .owl-nav{top: -40px;}
     .owl-carousel.bill_details {
         margin: 0 -20px;
@@ -602,6 +619,10 @@
         width: 100%;
     }
 
+    .qitaf_tiers .qitaf_expire{
+        margin-top: -50px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -613,7 +634,7 @@
     }
 
     .modal-dialog {
-        max-width: 590px;
+        max-width: 100%;
     }
 
 }

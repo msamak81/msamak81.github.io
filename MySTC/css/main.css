@@ -187,8 +187,8 @@ h1 {
 }
 
 .widgetmargins {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
 }
 
 .seperatorbrdr {
@@ -603,22 +603,31 @@ canvas {
 
 .qitaf_tiers {
     background: transparent no-repeat center center;
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     font-weight: bold;
     color: #fff !important;
     width: 100%;
-    height: 112px;
-    margin: 10px auto;
+    height: 175px;
+    margin: 30px auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-size: 100%;
     flex: 0 0 100%;
-    max-width: 166px;
-    padding-top: 16px;
+    max-width: 266px;
+    padding-top: 50px;
     border-radius: 12px;
     font-family: 'stc-regular';
     position: relative;
+    flex-wrap: wrap;
+}
+.qitaf_tiers .qitaf_expire{
+    display: block;
+    font-size: 1.3rem;
+    flex: 1 1 100%;
+    text-align: center;
+    margin-top: -40px;
+    font-family: inherit;
 }
 
 .qitaf_tiers .hint {
@@ -671,9 +680,11 @@ canvas {
     margin: 0 -3px;
     display: flex;
     flex-flow: wrap;
+    flex:1;
 }
 
-#panel .btnWrap .col-md-6 {
+#panel .btnWrap .col-md-6,
+#panel .btnWrap .col-md-12 {
     padding: 0 3px !important;
 
 }
@@ -721,6 +732,7 @@ canvas {
     flex-basis: 50%;
     justify-content: center;
     flex-direction: column;
+    max-width: 50%;
 }
 
 #widgetspanel .panel_container .item .widgetcontent {
@@ -737,7 +749,7 @@ canvas {
 
 #widgetspanel .panel_container .item .widgetcontent .widgettitle {
     margin-bottom: 10px;
-    height: 45px;
+    height: 65px;
 }
 
 #widgetspanel .panel_container .item .widgetcontent .widgettitle h3 {
@@ -789,12 +801,16 @@ canvas {
     transition: all 210ms ease;
 }
 
-#widgetspanel .panel_container .item .widgetcontent:hover::before,
-#widgetspanel .panel_container .item .widgetcontent:hover::after {
-    opacity: 0.9;
-    visibility: visible;
+@media (min-width:992px) {
+    #widgetspanel .panel_container .item .widgetcontent:hover::before,
+    #widgetspanel .panel_container .item .widgetcontent:hover::after {
+        opacity: 0.9;
+        visibility: visible;
+    }
 }
-
+#widgetspanel .numberdisplay {
+    padding: 24px 0 0;
+}
 .addwidget .widgetcontent {
     z-index: 999;
 }
@@ -1021,7 +1037,7 @@ canvas {
 
 .bottom_position {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     margin: 0 auto;
     display: flex;
     width: 100%;
@@ -1071,6 +1087,7 @@ canvas {
     max-width: calc(100% - 34px);
     margin: 0 auto;
     top: 60px;
+    width: 560px;
 }
 
 .modal .modal-content {
@@ -1100,8 +1117,9 @@ canvas {
     background: #fff;
     overflow: auto;
     overflow-x: hidden;
-    max-height: 460px;
+    max-height: 420px;
     border-radius: 0 0 10px 10px;
+    padding-bottom: 71px;
 }
 
 .modal .modal-content .modal-footer, .modal .modal-content .modal-body .popup_btns {
@@ -1110,16 +1128,16 @@ canvas {
     border-color: var(--lightGray);
 }
 .modal .modal-content .modal-body .popup_btns{
-    width: calc(100% + 32px);
+    width: calc(100%);
     margin-bottom: 0;
     padding: 4px 10px;
     text-align: right;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: -14px;
-    position: relative;
-    left: -16px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
     border-top: solid 3px var(--lightGray);
     background: rgb(253, 253, 253);
 }
@@ -1409,7 +1427,7 @@ ul.Postpaid_Packages_list li img {
     width: 73px;
 }
 
-#Postpaid_Packages .modal-content {
+#Postpaid_Packages {
     width:  766px;
 }
 
@@ -1547,4 +1565,27 @@ ul.Postpaid_Packages_list li img {
     transform: translate(0,  0);
     opacity: 1;
     visibility: visible;
+}
+
+table.display_table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 1px;
+}
+
+table.display_table thead th {
+    font-family: 'stc-regular';
+    background: var(--grayBG);
+    padding: 8px 15px;
+    font-size: 1.6rem;
+    color: var(--blackGray);
+}
+table.display_table tbody td {
+    background: #fff;
+    padding: 8px 15px;
+    font-size: 1.4rem;
+    color: var(--grayText);
+}
+table.display_table tbody tr:nth-of-type(even) td {
+    background: #fbfcfb;
 }

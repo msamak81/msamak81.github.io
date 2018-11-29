@@ -622,6 +622,9 @@
     .qitaf_tiers .qitaf_expire{
         margin-top: -50px;
     }
+    .page-link{
+        line-height:1.5;
+    }
 
 }
 

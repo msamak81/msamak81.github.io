@@ -1589,3 +1589,6 @@ table.display_table tbody td {
 table.display_table tbody tr:nth-of-type(even) td {
     background: #fbfcfb;
 }
+.page-link{
+    line-height:1.4;
+}

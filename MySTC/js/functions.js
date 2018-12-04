@@ -544,7 +544,6 @@ $(document).ready(function(){
     });
 
 
-
     // call the functions only if the item is placed in the page
     if ( $('.owl-carousel').length ) generateCarousel();
     if ( $('.dounghtcanvas').length ) generateDounght();
@@ -596,6 +595,11 @@ $(window).on('load', function(){
     $('.widgets_btn, .profile, .account .dropdown_list').on('click', function(e){
             e.stopPropagation();
     });
+
+    $('#widgetspanel .panel_container .item:not(.addwidget) .widgetcontent::after').click(function(){
+        console.log('hello');
+    })
+
 
 
     $('header #accounts').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {

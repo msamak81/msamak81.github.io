@@ -1259,7 +1259,13 @@
         flex-flow: nowrap;
         width: 100%;
     }
-    #widgetspanel .panel_container .item:not(.addwidget) .widgetcontent::after {
+    #widgetspanel .panel_container .item:not(.addwidget) .widgetcontent span.delete_widget{
+        opacity:1;
+        visibility: visible;
+        width: 35px;
+        height: 35px;
+    }
+    #widgetspanel .panel_container .item:not(.addwidget) .widgetcontent span.delete_widget::after {
         opacity: 1;
         visibility: visible;
         color: var(--pink);

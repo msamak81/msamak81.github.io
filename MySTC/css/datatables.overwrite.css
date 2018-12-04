@@ -1,5 +1,5 @@
 .data_tables_holder{margin-bottom:30px;}
-table.dataTable{margin-top: 15px !important;width:100%;}
+table.dataTable{margin-top: 15px !important;width:100% !important;}
 table.dataTable thead>tr>th{
     padding: 11px;
     background: #fff;

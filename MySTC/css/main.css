@@ -771,8 +771,15 @@ canvas {
 #widgetspanel .panel_container .item:not(.addwidget) .widgetcontent {
     overflow: hidden;
 }
-
-#widgetspanel .panel_container .item:not(.addwidget) .widgetcontent::before {
+#widgetspanel .panel_container .item:not(.addwidget) .widgetcontent span.delete_widget{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999991;
+}
+#widgetspanel .panel_container .item:not(.addwidget) .widgetcontent span.delete_widget::before {
     content: '';
     position: absolute;
     background: var(--purple);
@@ -786,7 +793,7 @@ canvas {
     z-index: 999991;
 }
 
-#widgetspanel .panel_container .item:not(.addwidget) .widgetcontent::after {
+#widgetspanel .panel_container .item:not(.addwidget) .widgetcontent span.delete_widget::after {
     font-family: 'mystc3' !important;
     speak: none;
     font-style: normal;
@@ -810,8 +817,8 @@ canvas {
 }
 
 @media (min-width:992px) {
-    #widgetspanel .panel_container .item .widgetcontent:hover::before,
-    #widgetspanel .panel_container .item .widgetcontent:hover::after {
+    #widgetspanel .panel_container .item .widgetcontent:hover span.delete_widget::before,
+    #widgetspanel .panel_container .item .widgetcontent:hover span.delete_widget::after {
         opacity: 0.9;
         visibility: visible;
     }
@@ -1085,11 +1092,13 @@ canvas {
 }
 
 /* Modal classes */
+.modal-backdrop.show{z-index:9999}
 .modal {
     max-width: calc(100% - 14px);
     margin: 0 auto;
     top: 60px;
     width: 560px;
+    z-index:99991;
 }
 
 .modal .modal-content {

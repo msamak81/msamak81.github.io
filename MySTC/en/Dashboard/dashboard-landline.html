@@ -54,7 +54,7 @@
 
                 </div>
 
-                <div class="col widgetmargins seperatorbrdr ">
+                <div class="col widgetmargins seperatorbrdr">
                     <div class="same_height">
                     <h3 class="widgettitle text-center">Current Bill</h3>
                     <div class="numberdisplay">
@@ -69,7 +69,7 @@
                         </a>
                         <h4>Bill issued 19 days ago</h4>
                     </div>
-                    <div class="widgetbtns text-center bottom_position">
+                    <div class="widgetbtns text-center">
                         <a class="btns purplebg text-white curvedbtns" data-toggle="modal" data-target="#payment"  href="#">Pay Bill</a>
                     </div>
                     </div>
@@ -109,7 +109,7 @@
 
                     </a>
                     <div class="widgetbtns text-center">
-                        <a href="#" class="btns purplebg text-white curvedbtns">Transfer Points</a>
+                        <a href="#" class="btns purplebg text-white curvedbtns"  data-toggle="modal" data-target="#qitafTransfer">Transfer Points</a>
                         <a href="#" class="btns borderedbtns">History</a>
                     </div>
 
@@ -340,10 +340,8 @@
                         </div>
                         <div class="col-12">
                             <p>Register your payment information for easy payment in the future</p>
-                            <p>
-                                <input type="checkbox" name="saved_cards" id="saved_cards" value="save"/>
-                                <label for="saved_cards">Save This Card</label>
-                            </p>
+                            <button type="button" class="btns curvedbtns purplebg text-white">Save this card</button>
+
 
                         </div>
                     </div>
@@ -367,25 +365,39 @@
                 </button>
             </div>
             <div class="modal-body">
-                <ul class="Postpaid_Packages_list">
-                    <li class='showContent Postpaid_50' data-show=".fiber_50" >
-                        <img src="../../imgs/packages/fiber-50.png" title="fiber 50">
-                        <h6 class="price_postpaid"> 50SR/Month </h6>
-                        <h6 class="subscribed_postpaid"> Subscribed </h6>
-                    </li>
-                    <li class='showContent Postpaid_100 active' data-show=".fiber_100" >
-                        <img src="../../imgs/packages/fiber-100.png"  title="fiber 100">
-                        <h6 class="price_postpaid"> 100SR/Month </h6>
-                        <h6 class="subscribed_postpaid"> Subscribed </h6>
-                    </li>
-                    <li class='showContent Postpaid_200' data-show=".fiber_200"  title="fiber 300">
-                        <img src="../../imgs/packages/fiber-300.png">
-                        <h6 class="price_postpaid"> 300SR/Month </h6>
-                        <h6 class="subscribed_postpaid"> Subscribed </h6>
-                    </li>
+                <h3 class="blackGray_text">Landline Packages</h3>
+                <div class="owl-carousel Postpaid_Packages_list" id="packages_change" data-items-desktop="5"
+                     data-items-tablet="3" data-items-mobile="1" data-nav="true">
+
+                    <div class="item">
+                        <div class="package-item showContent" data-show=".fiber_50">
+                            <img src="../../imgs/packages/fiber-50.png" title="fiber 50">
+                            <h6 class="price_postpaid"> 50SR/Month </h6>
+                            <h6 class="subscribed_postpaid"> Subscribed </h6>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="package-item showContent active current" data-show=".fiber_100">
+                            <img src="../../imgs/packages/fiber-100.png"  title="fiber 100">
+                            <h6 class="price_postpaid"> 100SR/Month </h6>
+                            <h6 class="subscribed_postpaid"> Subscribed </h6>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="package-item showContent" data-show=".fiber_300">
+                            <img src="../../imgs/packages/fiber-300.png"  title="fiber 300">
+                            <h6 class="price_postpaid"> 300SR/Month </h6>
+                            <h6 class="subscribed_postpaid"> Subscribed </h6>
+                        </div>
+
+                    </div>
 
 
-                </ul>
+                </div>
+
+
                 <div class="Postpaid_detils fiber_50 hiddenContent hidden ">
                     <h3> Fiber 50 Unlimited </h3>
                     <ul>
@@ -452,8 +464,8 @@
                     </div>
 
                 </div>
-                <div class="Postpaid_detils fiber_200 hiddenContent hidden ">
-                    <h3> Fiber 200 Unlimited</h3>
+                <div class="Postpaid_detils fiber_300 hiddenContent hidden ">
+                    <h3> Fiber 300 Unlimited</h3>
                     <ul>
                         <li> - Unlimted calling minutes within STC network. </li>
                         <li> - 2000 SMS within STC network every month. </li>
@@ -492,6 +504,49 @@
         </div>
     </div>
 </div>
+
+
+<!-- Qitaf Transfer -->
+<div class="modal no-scroll fade" id="qitafTransfer" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Transfer Points</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body no-scroll">
+                <form id="transferQiatf">
+                    <div class="row">
+
+                        <div class="col-lg-6 form-input">
+                            <label>Transfer To</label>
+                            <input type="text" name="mobile" id="qitaf_mobile" placeholder="Postpaid Number" />
+                        </div>
+                        <div class="col-lg-6 form-input">
+                            <label>Number of Points</label>
+                            <select name="amount" id="points_amount" class="selectpicker" title="Amount">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="300">300</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="popup_btns justify-content-end">
+                        <button type="button" class="btns curvedbtns pinkbg text-white">Transfer</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 
 
 

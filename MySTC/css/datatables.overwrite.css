@@ -81,3 +81,6 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
 }
 .filter-table-options li label .option_label{color: var(--grayText);text-align: initial;flex: 1;font-size: 1.8rem;}
 .filter-table-options li label .option_icon{font-size: 3rem;margin-left: 10px;}
+.dataTables_wrapper .col-sm-12 {
+    padding:0
+}

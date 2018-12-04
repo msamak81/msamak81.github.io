@@ -58,27 +58,30 @@ header {
 }
 #header .nav ul li a {
     color: var(--gray);
-    font-weight: bold;
+    font-weight: normal;
     font-size: 2.1rem;
-    font-family:"stc-bold";
+    font-family: "stc-regular";
     position: relative;
 }
 #header .nav ul li.active a {
     color: var(--purple);
 
 }
-#header .nav ul li a:before {
+#header .nav ul li a:before, #header .snav li a:before{
     content:'';
     position: absolute;
     width:100%;
     height: 0px;
     background: var(--purple);
     left:0;
-    bottom: 2px;
+    bottom: 0px;
     transition: var(--transition);
 }
 #header .mainheader .nav ul li:hover a:before,
-#header .mainheader .nav ul li.active a:before  {
+#header .mainheader .nav ul li.active a:before,
+#header .snav li:hover a:before,
+#header .snav li.active a:before
+{
     height: 4px;
 }
 #header .mainheader .search {
@@ -104,7 +107,7 @@ header {
     line-height: 36px !important;
     height: 36px;
     width: 213px;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     letter-spacing: 0px;
     font-family: Arial;
@@ -122,7 +125,7 @@ header {
 #header .mainheader .control > ul > li > a > span {
     font-size: 27px;
     color:var(--purple);
-    font-weight: 600;
+    font-weight: normal;
     padding: 0 14px;
     display: block;
     cursor: pointer;
@@ -163,14 +166,19 @@ header {
 .snav ul li:first-child a {
     margin-left: 0;
 }
+.snav ul, .snav ul li {height:100%}
 .snav ul li a {
     color:var(--purple);
     width:100%;
     text-align: center;
     padding: 0;
-    display: block;
+    display: flex;
     margin: 0 15px;
     min-width: 60px;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position:relative;
 }
 .snav ul li a i {
     font-size:34px;
@@ -269,3 +277,5 @@ header {
 .dropdown_list ul li a span {
     line-height: 50px;
 }
+
+header a, .tabscontainer .nav-tabs li a, a.curvedbtns {opacity:1 !important}

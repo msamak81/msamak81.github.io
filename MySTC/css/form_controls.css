@@ -273,7 +273,9 @@ select.selectpicker {
 
 .bootstrap-select .dropdown-toggle .filter-option-inner {
     padding-right: 5px;
-    margin-top: 3px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
@@ -492,9 +494,10 @@ select.selectpicker {
 
 .bootstrap-select .no-results {
     padding: 3px;
-    background: #f5f5f5;
+    background: transparent;
     margin: 0 5px;
     white-space: nowrap;
+    text-align: center;
 }
 
 .bootstrap-select.fit-width .dropdown-toggle .filter-option {

@@ -61,7 +61,7 @@
                                         <div class=" circlechartscontainer seperatorbrdr">
 
                                             <div class="dounghtchart ">
-                                                <a href="#" title="Local Internet" class="details_btns">Details</a>
+                                                <a href="#" title="Local Internet" class="details_btns" data-toggle="modal" data-target=".usageModal">Details</a>
                                                 <canvas id="local-internet" class="dounghtcanvas internetcharts" width="140" height="140"  data-source="localinternet" data-type="packages"></canvas>
                                                 <div class="chartvalues numberdisplay">
                                                     <div>
@@ -182,7 +182,6 @@
                 <div class="col-lg-12 ">
                     <h3 class="widgettitle text-center">Current balance</h3>
                     <div class="numberdisplay ">
-                        <a class="showContent" href="#" data-show="#balance_recharge">
                         <h2>
                             <span class="mainnumber">400</span>
                             <span class="secondnumber">
@@ -190,10 +189,9 @@
                                 <i class="numberabbr">SR</i>
                             </span>
                         </h2>
-                        </a>
                         <h4>Disconnects in 11 days</h4>
                     </div>
-                    <div class="tabscontainer col-sm-hidden hiddenContent "  id="balance_recharge">
+                    <div class="tabscontainer tabs_top_margin"  id="balance_recharge">
                         <ul class="nav nav-tabs" id="budget-controls-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="budget-recharge-tab" data-toggle="tab" href="#budget-recharge" role="tab" aria-controls="budget-recharge" aria-selected="true">Recharge</a>
@@ -317,7 +315,7 @@
 
                     </a>
                     <div class="widgetbtns text-center">
-                        <a href="#" class="btns purplebg text-white curvedbtns">Transfer Points</a>
+                        <a href="#" class="btns purplebg text-white curvedbtns"  data-toggle="modal" data-target="#qitafTransfer">Transfer Points</a>
                         <a href="#" class="btns borderedbtns">History</a>
                     </div>
 
@@ -407,164 +405,389 @@
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="payment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+<!-- Qitaf Transfer -->
+<div class="modal no-scroll fade" id="qitafTransfer" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">My Payments Details</h5>
+                <h5 class="modal-title">Transfer Points</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body no-scroll">
+                <form id="transferQiatf">
+                    <div class="row">
+
+                        <div class="col-lg-6 form-input">
+                            <label>Transfer To</label>
+                            <input type="text" name="mobile" id="qitaf_mobile" placeholder="Postpaid Number" />
+                        </div>
+                        <div class="col-lg-6 form-input">
+                            <label>Number of Points</label>
+                            <select name="amount" id="points_amount" class="selectpicker" title="Amount">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="300">300</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="popup_btns justify-content-end">
+                        <button type="button" class="btns curvedbtns pinkbg text-white">Transfer</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Data Usage -->
+<div class="modal fade usageModal wizards" id="usageModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="headerlabel2">Usage</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <div class="saved_cards hiddenContent">
-                <p class="gray_text">
-                    You can pay through credit card, and you can edit the amount of the bill
-                </p>
-                <div class="form-input width_60">
-                    <input type="text" placeholder="amount to pay"/>
-                </div>
-                <h6>Minimum payment SR1, Max payment SR200000</h6>
-                <h3 class="black_text">Saved Cards</h3>
-                <div class="list_view ">
-                    <ul>
-                        <li>
-                            <input type="radio" name="saved_cards" id="sabb" value="sabb"/>
-                            <label for="sabb" class="list_item">
-                                <span class="list_icon">
-                                    <img src="../../imgs/logos/visa.png" title="Visa"/>
+                <div class="wizard">
+                    <div class="step">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>Local Internet</h6>
+                                <div class="owl-carousel internetusage" id="internetUSage1" data-items-desktop="3"
+                                     data-items-tablet="3" data-items-mobile="2" data-nav="true">
+                                    <div class="item">
+                                        <div class="widgetcontent graybg">
+                                            <h3 class="widgettitle text-center">Local Internet</h3>
+                                            <div class=" circlechartscontainer seperatorbrdr">
+
+                                                <div class="dounghtchart">
+                                                    <a href="#" title="Local Internet" class="details_btns">Details</a>
+                                                    <canvas id="local-internet01" class="dounghtcanvas internetcharts"
+                                                            width="140" height="140" data-source="localinternet"
+                                                            data-type="packages"></canvas>
+                                                    <div class="chartvalues numberdisplay">
+                                                        <div>
+                                                            <h2>
+                                                                <span class="mainnumber">Unlimited</span>
+                                                                <span class="secondnumber">
+                                                                        <i class="numberabbr"></i>
+                                                                    </span>
+                                                            </h2>
+                                                            <h4>15 GB Expired in 30 days</h4>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="widgetcontent graybg">
+                                            <h3 class="widgettitle text-center">Local Internet</h3>
+                                            <div class=" circlechartscontainer seperatorbrdr">
+
+                                                <div class="dounghtchart">
+                                                    <a href="#" title="Local Internet" class="details_btns">Details</a>
+                                                    <canvas id="local-internet014" class="dounghtcanvas internetcharts"
+                                                            width="140" height="140" data-source="localinternet"
+                                                            data-type="packages"></canvas>
+                                                    <div class="chartvalues numberdisplay">
+                                                        <div>
+                                                            <h2>
+                                                                <span class="mainnumber">Unlimited</span>
+                                                                <span class="secondnumber">
+                                                                        <i class="numberabbr"></i>
+                                                                    </span>
+                                                            </h2>
+                                                            <h4>15 GB Expired in 30 days</h4>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="widgetcontent graybg">
+                                            <h3 class="widgettitle text-center">Local Internet</h3>
+                                            <div class=" circlechartscontainer seperatorbrdr">
+
+                                                <div class="dounghtchart">
+                                                    <a href="#" title="Local Internet" class="details_btns">Details</a>
+                                                    <canvas id="local-internet010" class="dounghtcanvas internetcharts"
+                                                            width="140" height="140" data-source="localinternet"
+                                                            data-type="packages"></canvas>
+                                                    <div class="chartvalues numberdisplay">
+                                                        <div>
+                                                            <h2>
+                                                                <span class="mainnumber">Unlimited</span>
+                                                                <span class="secondnumber">
+                                                                        <i class="numberabbr"></i>
+                                                                    </span>
+                                                            </h2>
+                                                            <h4>15 GB Expired in 30 days</h4>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="widgetcontent graybg">
+                                            <h3 class="widgettitle text-center">Local Internet</h3>
+                                            <div class=" circlechartscontainer seperatorbrdr">
+
+                                                <div class="dounghtchart">
+                                                    <a href="#" title="Local Internet" class="details_btns">Details</a>
+                                                    <canvas id="local-internet011" class="dounghtcanvas internetcharts"
+                                                            width="140" height="140" data-source="localinternet"
+                                                            data-type="packages"></canvas>
+                                                    <div class="chartvalues numberdisplay">
+                                                        <div>
+                                                            <h2>
+                                                                <span class="mainnumber">Unlimited</span>
+                                                                <span class="secondnumber">
+                                                                        <i class="numberabbr"></i>
+                                                                    </span>
+                                                            </h2>
+                                                            <h4>15 GB Expired in 30 days</h4>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="widgetcontent graybg">
+                                            <h3 class="widgettitle text-center">Add Package</h3>
+                                            <a href="#" class="btns addnewbtn" data-step="next"><i class="icon-add"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="text-center">Total Remaining: <span>13.8GB</span></h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>WiFi Internet</h6>
+                                <div class="owl-carousel internetusage" id="internetUSage2" data-items-desktop="3"
+                                     data-items-tablet="3" data-items-mobile="2" data-nav="true">
+                                    <div class="item">
+                                        <div class="widgetcontent graybg">
+                                            <h3 class="widgettitle text-center">Local Internet</h3>
+                                            <div class=" circlechartscontainer seperatorbrdr">
+
+                                                <div class="dounghtchart">
+                                                    <a href="#" title="Local Internet" class="details_btns">Details</a>
+                                                    <canvas id="local-internet012" class="dounghtcanvas internetcharts"
+                                                            width="140" height="140" data-source="localinternet"
+                                                            data-type="packages"></canvas>
+                                                    <div class="chartvalues numberdisplay">
+                                                        <div>
+                                                            <h2>
+                                                                <span class="mainnumber">Unlimited</span>
+                                                                <span class="secondnumber">
+                                                                        <i class="numberabbr"></i>
+                                                                    </span>
+                                                            </h2>
+                                                            <h4>15 GB Expired in 30 days</h4>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="widgetcontent graybg">
+                                            <h3 class="widgettitle text-center">Roaming Internet</h3>
+                                            <a href="#" class="btns addnewbtn" data-step="next"><i
+                                                    class="icon-add"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="text-center">Total Remaining: <span>12.0GB</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h6>ONE-TIME PURCHASE</h6>
+                        <div class="col-md-12">
+                            <div class="pitems owl-carousel" id="internetUSage3" data-items-desktop="5"
+                                 data-items-tablet="5" data-items-mobile="3" data-nav="true">
+                                <div class="item selected" data-package="package3gb">
+                                    <div class="package-item">
+                                        <span class="circle_icons purplebg"><img src="../../imgs/icons/Internet/Data SIM Prepaid/ic_QuickNet_3gb_1m_Lite.png" alt="" /></span>
+                                        <h6>50SR/1Month</h6>
+                                    </div>
+                                </div>
+                                <div class="item" data-package="package22gb">
+                                    <div class="package-item">
+                                        <span class="circle_icons purplebg"><img src="../../imgs/icons/Internet/Data SIM Prepaid/ic_QuickNet_22gb_3m_Lite.png" alt="" /></span>
+                                        <h6>100SR/3Month</h6>
+                                    </div>
+                                </div>
+                                <div class="item" data-package="package55gb">
+                                    <div class="package-item">
+                                        <span class="circle_icons purplebg"><img src="../../imgs/icons/Internet/Data SIM Prepaid/ic_QuickNet_55gb_3m_Lite.png" alt="" /></span>
+                                        <h6>150SR/3Month</h6>
+                                    </div>
+                                </div>
+                                <div class="item" data-package="package330gb">
+                                    <div class="package-item">
+                                        <span class="circle_icons purplebg"><img src="../../imgs/icons/Internet/Data SIM Prepaid/ic_QuickNet_330gb_6m_Lite.png" alt="" /></span>
+                                        <h6>200SR/6Month</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="packagesDetails">
+                            <div id="package3gb" class="package-details">
+                                <h6>3GB Internet Package</h6>
+                                <p class="purple_text col-md-12">High speed internet on your mobile<br />This
+                                    package will be not be renewed when it expires</p>
+                                <b>PACKAGE DETAILS</b>
+                                <div class="col-md-12">
+                                    <table class="display_table package_details">
+                                        <tr>
+                                            <td><span class="purple_text">Data Allowance</span></td>
+                                            <td>3GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="purple_text">Package Validity</span></td>
+                                            <td>1 Month</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="purplebg text-white text-center">50SR</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div id="package22gb" class="package-details">
+                                <h6>22GB Internet Package</h6>
+                                <p class="purple_text col-md-12">High speed internet on your mobile<br />This
+                                    package will be not be renewed when it expires</p>
+                                <b>PACKAGE DETAILS</b>
+                                <div class="col-md-12">
+                                    <table class="display_table package_details">
+                                        <tr>
+                                            <td><span class="purple_text">Data Allowance</span></td>
+                                            <td>3GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="purple_text">Package Validity</span></td>
+                                            <td>1 Month</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="purplebg text-white text-center">50SR</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div id="package55gb" class="package-details">
+                                <h6>55GB Internet Package</h6>
+                                <p class="purple_text col-md-12">High speed internet on your mobile<br />This
+                                    package will be not be renewed when it expires</p>
+                                <b>PACKAGE DETAILS</b>
+                                <div class="col-md-12">
+                                    <table class="display_table package_details">
+                                        <tr>
+                                            <td><span class="purple_text">Data Allowance</span></td>
+                                            <td>3GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="purple_text">Package Validity</span></td>
+                                            <td>1 Month</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="purplebg text-white text-center">50SR</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div id="package330gb" class="package-details">
+                                <h6>330GB Internet Package</h6>
+                                <p class="purple_text col-md-12">High speed internet on your mobile<br />This
+                                    package will be not be renewed when it expires</p>
+                                <b>PACKAGE DETAILS</b>
+                                <div class="col-md-12">
+                                    <table class="display_table package_details">
+                                        <tr>
+                                            <td><span class="purple_text">Data Allowance</span></td>
+                                            <td>3GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="purple_text">Package Validity</span></td>
+                                            <td>1 Month</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="purplebg text-white text-center">50SR</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup_btns btn-wrapper">
+                            <button class="btns curvedbtns btnGray" data-step="prev">Back</button>
+                            <button class="btns pinkbg text-white curvedbtns" data-step="next">Purchase</button>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="align-content-center text-center confirm">
+                            <div>
+                                <div class="icon">
+                                    <span class="circle_icons purplebg"><img src="../../imgs/icons/Internet/Data SIM Prepaid/ic_QuickNet_3gb_1m_Lite.png" alt="" /></span>
+                                    <h6>50sr/Month</h6>
+                                </div>
+                                <h1>Are you sure you would like to purchase?</h1>
+                            </div>
+                        </div>
+                        <div class="popup_btns btn-wrapper">
+                            <button class="btns curvedbtns btnGray" data-step="prev">Back</button>
+                            <button class="btns pinkbg text-white curvedbtns" data-step="next">Yes</button>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="row black_text">
+                            <div class="col-3 col-md-4 col-lg-12 text-center">
+                                <span class="circle_icons">
+                                    <i class="icon-check"></i>
                                 </span>
-                                <span class="list_lables">
-                                    <span class="list_title">SABB</span>
-                                    <span class="list_descripion">****6543 <i>Expiry date: 10/2019</i></span>
-                                </span>
+                            </div>
+                            <div class="col-9 col-md-8 col-lg-12 text-center">
+                                <h4>Thank you.. Your request has been submitted successful.</h4>
+                            </div>
 
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" name="saved_cards" id="alinma" value="alinma"/>
-                            <label for="alinma"  class="list_item">
-                                <span class="list_icon">
-                                    <img src="../../imgs/logos/mastercard.png" title="Master Card"/>
-                                </span>
-                                <span class="list_lables">
-                                    <span class="list_title">Alinma</span>
-                                    <span class="list_descripion">****6541 <i>Expiry date: 10/2019</i></span>
-                                </span>
-                            </label>
-                        </li>
 
-                    </ul>
-                </div>
-                    <h4>
-                        <a href="#" class="add_card showContent" data-show=".newCC_type" data-hide=".saved_cards"><i class="icon-plus1"></i>Add New Credit Card</a>
-                    </h4>
 
-                    <h6>
-                        by clicking "Pay", you are agreeing <a href="#">the Terms and conditions</a>
-                    </h6>
+                        </div>
 
-                    <div class="popup_btns justify-content-end">
-                        <button type="button" class="btns curvedbtns pinkbg text-white">Pay</button>
-                    </div>
-                </div>
-                <div class="hidden newCC_type">
-                    <h3 class="black_text">Payment Method</h3>
-                    <div class="row payment_methods">
-                        <div class="col">
-                            <input type="radio" id="newcc_master" value="new_master" name="newCC_options" class="cc_options"/>
-                            <label for="newcc_master">
-                                <img src="../../imgs/logos/mastercard.png" title="Master Card"/>
-                                <span>Master Card</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <input type="radio" id="newcc_visa" value="new_visa" name="newCC_options" class="cc_options"/>
-                            <label for="newcc_visa">
-                                <img src="../../imgs/logos/visa.png" title="Visa"/>
-                                <span>Visa</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <input type="radio" id="newcc_amex" value="new_amex" name="newCC_options" class="cc_options"/>
-                            <label for="newcc_amex">
-                                <img src="../../imgs/logos/amex.png" title="Mada"/>
-                                <span>American Express</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <input type="radio" id="newcc_mada" value="new_mada" name="newCC_options" class="cc_options"/>
-                            <label for="newcc_mada">
-                                <img src="../../imgs/logos/mada.png" title="Mada"/>
-                                <span>Mada</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="popup_btns">
-                        <button type="button" class="btns curvedbtns bg-white blackGray_text bordered showContent"  data-show=".saved_cards" data-hide=".newCC_type">Back</button>
-                        <button type="button" class="btns curvedbtns pinkbg text-white showContent select_payment_method" disabled data-show=".newCC_details" data-hide=".newCC_type">Next</button>
+
                     </div>
 
                 </div>
-                <div class="hidden newCC_details">
-                    <h3 class="black_text">Card Details</h3>
-                    <div class="row card_details">
-                        <div class="col flex-fill">
-                            <input type="tel" id="cc-number" class="newcc_no" autocomplete="cc-number" placeholder="Credit card number" required>
-                        </div>
-                        <div class="col">
-                            <input type="tel" id="cc-exp" class="newcc_expiry" autocomplete="cc-exp" placeholder="Expiry date" required>
-                        </div>
-                        <div class="col">
-                            <input type="tel" id="cc-cvc" class="newcc_ccv" autocomplete="off" placeholder="CCV" required>
-                        </div>
-                    </div>
-
-                    <div class="popup_btns">
-                        <button type="button" class="btns curvedbtns bg-white blackGray_text bordered showContent" data-show=".newCC_type" data-hide=".newCC_details">Back</button>
-                        <button type="button" class="btns curvedbtns pinkbg text-white showContent newCC_added_btn" data-show=".payment_summary" data-hide=".newCC_details">Pay</button>
-                    </div>
-                </div>
-                <div class="hidden payment_summary">
-                    <div class="row black_text">
-                        <div class="col-3 col-md-4 col-lg-12 text-center">
-                            <span class="circle_icons">
-                                <i class="icon-check"></i>
-                            </span>
-                        </div>
-                        <div class="col-9 col-md-8 col-lg-12">
-                            <h4>Thank you.. Your payment was successful.</h4>
-                            <h4><span>Amount Paid:</span> <span class="pink_text amount_display">263.30 SAR</span></h4>
-                        </div>
-
-                        <div class="col-12">
-                            <p>For your records, please keep a copy of your payment reference number: <span class="pink_text" id="bill_reference">STC-31232394829</span></p>
-                            <p>
-                                This transaction will show on your bank statement with reference number: <span class="pink_text" id="bank_reference">STC-394920039402</span>
-                            </p>
-
-                            <hr/>
-                        </div>
-                        <div class="col-12">
-                            <p>Register your payment information for easy payment in the future</p>
-                            <p>
-                                <input type="checkbox" name="saved_cards" id="saved_cards" value="save"/>
-                                <label for="saved_cards">Save This Card</label>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
             </div>
+
         </div>
     </div>
 </div>
-
-
 
 
 <!-- Javascript libraries imports -->

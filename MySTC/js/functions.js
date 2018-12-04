@@ -10,7 +10,7 @@ $(document).ready(function(){
     $(window).on('load',function(){
         if ( $('.dounghtcanvas').length ) generateDounght();
 
-    })
+    });
 
     $(window).on('load',function(){
         if ( $(this).width() < 993 ) {
@@ -168,7 +168,7 @@ $(document).ready(function(){
         });
     }
 
-// dounght charts configuration
+    // dounght charts configuration
     function generateDounght(){
         var dounghtItem = $('.dounghtcanvas');
         dounghtItem.each(function(index,ele){
@@ -203,7 +203,7 @@ $(document).ready(function(){
                         enabled:false,
                     },
                     animation: {
-                        animateScale: true,
+                        animateScale: false,
                         animateRotate: true
                     },
                     cutoutPercentage : 87,
@@ -268,7 +268,7 @@ $(document).ready(function(){
         })
     };
 
-//bar charts configuration
+    //bar charts configuration
     function generateBar() {
         var barchartItem = $('.barcharts');
 
@@ -346,6 +346,8 @@ $(document).ready(function(){
         })
     }
 
+
+    
 // common function to show divs
     function showContent(){
         var item = $('.showContent');
@@ -522,24 +524,36 @@ $(document).ready(function(){
         if ( $('.showContent').length ) showContent();
     });
 
-
-        // call the functions only if the item is placed in the page
+    $('.usageModal').on('shown.bs.modal', function () {
         if ( $('.owl-carousel').length ) generateCarousel();
         if ( $('.dounghtcanvas').length ) generateDounght();
-        if ( $('.piecharts').length ) generatePie();
-        if ( $('.barcharts').length ) generateBar();
-        if ( $('.showContent').length ) showContent();
-        if ( $('.add_card').length )  addNewCC();
-        if ( $('.accordion_parent').length ) accordions();
-        if ( $('.data_tables').length ) generateTables();
+    });
+
+    // internet packages
+    $('.package-details').addClass('hidden');
+    $('.package-details:first').removeClass('hidden');
+    $('.pitems .item').on('click', function(){
+        var details = $(this).data('package'),
+            pdetails = $('.package-details');
+
+        $('.pitems .item').removeClass('selected');
+        $(this).addClass('selected');
+
+        $('.package-details').addClass('hidden');
+        $('div#'+ details).removeClass('hidden');
+    });
 
 
 
-
-
-
-
-
+    // call the functions only if the item is placed in the page
+    if ( $('.owl-carousel').length ) generateCarousel();
+    if ( $('.dounghtcanvas').length ) generateDounght();
+    if ( $('.piecharts').length ) generatePie();
+    if ( $('.barcharts').length ) generateBar();
+    if ( $('.showContent').length ) showContent();
+    if ( $('.add_card').length )  addNewCC();
+    if ( $('.accordion_parent').length ) accordions();
+    if ( $('.data_tables').length ) generateTables();
 });
 // END of document.ready() function
 
@@ -565,7 +579,6 @@ $(window).on('scroll', function(){
     }
 });
 // remove on deploy
-
 $(window).on('load', function(){
     $('header .profile').on('click', function(){
         $('body').removeClass('open_widgets');
@@ -583,15 +596,70 @@ $(window).on('load', function(){
     $('.widgets_btn, .profile, .account .dropdown_list').on('click', function(e){
             e.stopPropagation();
     });
-    // $('#panel').on('click', function(event){
-    //     if(!$(event.target).is('.addwidget')){
-    //         event.stopPropagation()
-    //     }
-    // });
+
+
+    $('header #accounts').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+        var val = $(this).find('option').eq(clickedIndex).data('type');
+
+        if(val == 'prepaid'){
+           window.location.href ='../Dashboard/dashboard-prepaid.html';
+        }
+        else if(val == 'postpaid'){
+            window.location.href ='../Dashboard/dashboard.html';
+
+        }
+        else if(val == 'landline'){
+            window.location.href ='../Dashboard/dashboard-landline.html';
+        }
+        else if(val == 'quicknet_prepaid'){
+            window.location.href ='../Dashboard/dashboard-quicknet-prepaid.html';
+
+        }
+        else if(val == 'quicknet_postpaid'){
+            window.location.href ='../Dashboard/dashboard-quicknet-postpaid.html';
+
+
+        }
+
+    });
+});
 
 
 
-    // $('#panel .form-input').on('click', function(event){
-    //     event.P
-    // });
+// wizard
+function wizardInit() {
+    $('.wizard .step').addClass('hidden');
+    $('.wizard .step:first-child').removeClass('hidden');
+
+    $('.wizard .btns').on('click', function(){
+        var ctrlValue = $(this).data('step'),
+        current = $('.step:not(.hidden)');
+
+        if( ctrlValue === 'next' ) {
+            console.log('next')
+            current.addClass('hidden').next('.step').removeClass('hidden');
+        } else {
+            console.log('prev')
+            current.addClass('hidden').prev('.step').removeClass('hidden');
+        }
+    });
+
+    $('.bckPackages').on('click', function(){
+        $('.wizard .step').addClass('hidden');
+        $('.wizard .step:first').removeClass('hidden');
+    });
+}
+$(window).on('load',function(){
+    if ( $('.wizard').length ) wizardInit();
+
+    $(".wizards").on("hidden.bs.modal", function(e) {
+        $('.wizard .step').addClass('hidden');
+        $('.wizard .step:first-child').removeClass('hidden');
+    });
+
+
+    // bootstrap popover
+    $('[data-toggle="popover"]').popover({
+        trigger: 'focus'
+    })
 });

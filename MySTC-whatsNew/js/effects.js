@@ -121,7 +121,7 @@
     Revealer.prototype._addLayers = function() {
         this.revealerWrapper = document.createElement('div');
         this.revealerWrapper.className = 'revealer';
-        classie.add(bodyEl, this.options.effect);
+        $(bodyEl).addClass(this.options.effect);
         var  strHTML = '';
         for(var i = 0; i < this.options.nmbLayers; ++i) {
             var bgcolor = typeof this.options.bgcolor === 'string' ? this.options.bgcolor : (this.options.bgcolor instanceof Array && this.options.bgcolor[i] ? this.options.bgcolor[i] : '#fff');
@@ -182,8 +182,8 @@
         this.revealerWrapper.style.opacity = 1;
 
         // add direction and animate classes to parent
-        classie.add(this.revealerWrapper, 'revealer--' + direction || 'revealer--right');
-        classie.add(this.revealerWrapper, 'revealer--animate');
+        $(this.revealerWrapper).addClass('revealer--' + direction || 'revealer--right');
+        $(this.revealerWrapper).addClass('revealer--animate');
 
         // track the end of the animation for all layers
         var self = this, layerscomplete = 0;
@@ -191,8 +191,8 @@
             onEndAnimation(layer, function() {
                 ++layerscomplete;
                 if( layerscomplete === self.options.nmbLayers ) {
-                    classie.remove(self.revealerWrapper, 'revealer--' + direction || 'revealer--right');
-                    classie.remove(self.revealerWrapper, 'revealer--animate');
+                    $(self.revealerWrapper).removeClass( 'revealer--' + direction || 'revealer--right');
+                   $(self.revealerWrapper).removeClass('revealer--animate');
 
                     self.revealerWrapper.style.opacity = 0;
                     self.isAnimating = false;
@@ -216,7 +216,7 @@
      * destroy method
      */
     Revealer.prototype.destroy = function() {
-        classie.remove(bodyEl, this.options.effect);
+        $(bodyEl).addClass(this.options.effect);
         window.removeEventListener('resize', this.debounceResize);
         bodyEl.removeChild(this.revealerWrapper);
     };
@@ -225,9 +225,10 @@
 
 })(window);
 
+var pages
 // Call page transition effect
 (function() {
-    var pages = [].slice.call(document.querySelectorAll('.pages > .page')),
+    pages = [].slice.call(document.querySelectorAll('.pages > .page')),
         currentPage = 0,
 
         revealerOpts = {
@@ -236,11 +237,12 @@
             // bg color of each layer
             bgcolor : ['#290b22', '#c71f70', '#e79b14', '#fff'],
             // effect classname
-            effect : 'anim--effect-4',
+            effect : 'anim--effect-3',
             onStart : function(direction) {
                 // next page gets class page--animate-[direction]
                 var nextPage = pages[currentPage === 0 ? 1 : 0];
-                classie.add(nextPage, 'page--animate-' + direction);
+
+                $(nextPage).addClass('page--animate-' + direction);
             },
             onEnd : function(direction) {
                 // remove class page--animate-[direction] from next page
@@ -257,22 +259,7 @@
 
     }, false);
 
-    $('.start_view').bind('click', function(event){
 
-            $('body').addClass('dark');
-             reveal('bottom');
-
-             return false;
-
-    });
-    $('.back_home').bind('click', function(event){
-
-            $('body').removeClass('dark');
-             reveal('top');
-
-             return false;
-
-    });
 
     // $(window).bind('mousewheel DOMMouseScroll', function(event){
     //     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
@@ -297,19 +284,19 @@
     // });
 
 
-
-
-    // triggers the effect by calling instance.reveal(direction, callbackTime, callbackFn)
-    function reveal(direction) {
-        var callbackTime = 750,
-            callbackFn = function() {
-                classie.remove(pages[currentPage], 'page--current');
-                currentPage = currentPage === 0 ? 1 : 0;
-                classie.add(pages[currentPage], 'page--current');
-            };
-
-        revealer.reveal(direction, callbackTime, callbackFn);
-    }
-
-
 })();
+
+// triggers the effect by calling instance.reveal(direction, callbackTime, callbackFn)
+function reveal(direction) {
+    var callbackTime = 750,
+        callbackFn = function() {
+           $(pages[currentPage]).removeClass('page--current');
+            currentPage = currentPage === 0 ? 1 : 0;
+            $(pages[currentPage]).addClass('page--current');
+        };
+
+    revealer.reveal(direction, callbackTime, callbackFn);
+}
+
+
+

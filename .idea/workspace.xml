@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="committing updates">
+      <change afterPath="$PROJECT_DIR$/MySTC-whatsNew/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySTC-whatsNew/css/custom_charts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySTC-whatsNew/images/charts_patters.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySTC-whatsNew/inner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySTC-whatsNew/scroll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/MySTC-whatsNew/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/images/preloader.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/images/stars-3d-bg-map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/images/stars-3d-bg.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySTC-whatsNew/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/index_3d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/js/anime.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/js/effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/MySTC-whatsNew/js/effects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/MySTC-whatsNew/js/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/js/jquery.paroller.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/js/tilt.jquery.js" beforeDir="false" />
     </list>
     <ignored path="msamak81.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,26 +39,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/scroll.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="180" column="32" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="32" />
+            <state relative-caret-position="3045">
+              <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="1176" column="1" selection-start-line="1173" selection-end-line="1176" selection-end-column="1" />
               <folding>
-                <element signature="n#svg#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#svg#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#43164#43777#2" expanded="true" />
+                <element signature="e#45244#45415#2" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index_3d.html">
+        <entry file="file://$USER_HOME$/Desktop/swiper-master/demos/270-mousewheel-control.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="735">
+              <caret line="49" column="12" selection-start-line="11" selection-start-column="3" selection-end-line="49" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1710">
+              <caret line="211" selection-start-line="211" selection-end-line="211" />
+              <folding>
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/animations.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1965">
+              <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19500">
+              <caret line="1300" column="1" selection-start-line="1300" selection-start-column="1" selection-end-line="1300" selection-end-column="1" />
+              <folding>
+                <element signature="e#43177#43790#2" expanded="true" />
+                <element signature="e#45268#45439#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,28 +109,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="3180">
+              <caret line="212" column="56" selection-start-line="189" selection-start-column="7" selection-end-line="212" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/main.css">
+        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/effects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1278">
-              <caret line="1194" column="12" lean-forward="true" selection-start-line="1194" selection-start-column="12" selection-end-line="1194" selection-end-column="12" />
-              <folding>
-                <element signature="e#43346#43959#2" expanded="true" />
-                <element signature="e#45613#45784#2" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="23" column="31" selection-end-line="442" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1305">
+              <caret line="87" column="20" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/effects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3660">
+              <caret line="244" column="38" selection-start-line="244" selection-end-line="245" />
             </state>
           </provider>
         </entry>
@@ -79,29 +148,47 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log</find>
-      <find>logo</find>
-      <find>suppport</find>
-      <find>Modernizr</find>
-      <find>CursorFx</find>
-      <find>cursor</find>
-      <find>next</find>
-      <find>onNavPrevClickHandler</find>
-      <find>click</find>
-      <find>classie</find>
-      <find>svg</find>
-      <find>animated_sections</find>
-      <find>bgColor</find>
-      <find>canvas</find>
-      <find>inLeft</find>
-      <find>inRight</find>
       <find>inle</find>
+      <find>layou</find>
+      <find>back_home</find>
+      <find>inLeft</find>
+      <find>header</find>
+      <find>head</find>
+      <find>#c82d81</find>
+      <find>#81408f</find>
+      <find>fill</find>
+      <find>bar</find>
+      <find>inLe</find>
+      <find>gl</find>
+      <find>l</find>
+      <find>#gl</find>
+      <find>fake</find>
+      <find>stars</find>
+      <find>#stars</find>
+      <find>.fill</find>
+      <find>particles-js</find>
+      <find>space_chart_cont</find>
+      <find>sum</find>
+      <find>o</find>
+      <find>total</find>
+      <find>charts</find>
+      <find>row</find>
+      <find>bar_chart</find>
+      <find>count</find>
+      <find>fadeIn</find>
+      <find>currentMonth</find>
+      <find>charts_options</find>
     </findStrings>
+    <replaceStrings>
+      <replace>var(--secondry)</replace>
+      <replace>var(--main)</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,7 +206,6 @@
         <option value="$PROJECT_DIR$/esales/css/main_v2.css" />
         <option value="$PROJECT_DIR$/esales/index-2.html" />
         <option value="$PROJECT_DIR$/MySTC-whatsNew/js/tilt.jquery.js" />
-        <option value="$PROJECT_DIR$/MySTC-whatsNew/js/effects.js" />
         <option value="$PROJECT_DIR$/MySTC-whatsNew/css/base.css" />
         <option value="$PROJECT_DIR$/MySTC-whatsNew/css/slider.css" />
         <option value="$PROJECT_DIR$/MySTC-whatsNew/js/demo.js" />
@@ -127,25 +213,35 @@
         <option value="$PROJECT_DIR$/MySTC-whatsNew/js/stars.js" />
         <option value="$PROJECT_DIR$/MySTC-whatsNew/js/star_parallax.js" />
         <option value="$PROJECT_DIR$/MySTC-whatsNew/index-tilt.html" />
-        <option value="$PROJECT_DIR$/MySTC-whatsNew/css/main.css" />
-        <option value="$PROJECT_DIR$/MySTC-whatsNew/js/functions.js" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/inner_2.html" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/css/animations.css" />
         <option value="$PROJECT_DIR$/MySTC-whatsNew/index_3d.html" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/inner.html" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/css/custom_charts.css" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/js/functions.js" />
         <option value="$PROJECT_DIR$/MySTC-whatsNew/index.html" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/css/main.css" />
+        <option value="$PROJECT_DIR$/../../../Cloud folders/STC/STC Dropbox/Designs/Front End/NewSTC/js/scripts.js" />
+        <option value="$PROJECT_DIR$/../../../Cloud folders/STC/STC Dropbox/Designs/Front End/NewSTC/ON DEMAND/on demand.html" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/js/effects.js" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/effects.js" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/css/main.css" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/functions.js" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/index.html" />
+        <option value="$PROJECT_DIR$/MySTC-whatsNew/scroll.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="833" />
-    <option name="y" value="180" />
-    <option name="width" value="854" />
-    <option name="height" value="877" />
+    <option name="y" value="23" />
+    <option name="width" value="1707" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,36 +264,46 @@
               <item name="msamak81.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Msamak81" type="462c0819:PsiDirectoryNode" />
               <item name="MySTC-whatsNew" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="msamak81.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Msamak81" type="462c0819:PsiDirectoryNode" />
               <item name="MySTC-whatsNew" type="462c0819:PsiDirectoryNode" />
+              <item name="swiperVersion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msamak81.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Msamak81" type="462c0819:PsiDirectoryNode" />
+              <item name="MySTC-whatsNew" type="462c0819:PsiDirectoryNode" />
+              <item name="swiperVersion" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MySTC-whatsNew/css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/MySTC-whatsNew/images" />
       <recent name="$PROJECT_DIR$/MySTC-whatsNew" />
+      <recent name="$PROJECT_DIR$/MySTC-whatsNew/images" />
       <recent name="$PROJECT_DIR$/MySTC-whatsNew/css" />
       <recent name="$PROJECT_DIR$/MySTC-whatsNew/js" />
       <recent name="$PROJECT_DIR$/esales/css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/MySTC-whatsNew/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -212,7 +318,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index-tilt.html">
+  <component name="RunManager" selected="JavaScript Debug.scroll.html">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
@@ -223,19 +329,19 @@
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
-    <configuration name="index-tilt.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/MySTC-whatsNew/index-tilt.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="index_3d.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/MySTC-whatsNew/index_3d.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/GDP_Reports/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/Fiber/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="index.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/MySTC-whatsNew/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/MySTC-whatsNew/swiperVersion/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="inner_2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/MySTC-whatsNew/inner_2.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="inner.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/MySTC-whatsNew/inner.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="scroll.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/MySTC-whatsNew/scroll.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -248,19 +354,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.index.html (1)" />
-      <item itemvalue="JavaScript Debug.index.html (2)" />
       <item itemvalue="JavaScript Debug.index.html (3)" />
-      <item itemvalue="JavaScript Debug.index_3d.html" />
-      <item itemvalue="JavaScript Debug.index-tilt.html" />
+      <item itemvalue="JavaScript Debug.inner_2.html" />
+      <item itemvalue="JavaScript Debug.inner.html" />
+      <item itemvalue="JavaScript Debug.scroll.html" />
+      <item itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index-tilt.html" />
+        <item itemvalue="JavaScript Debug.scroll.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html (3)" />
-        <item itemvalue="JavaScript Debug.index_3d.html" />
-        <item itemvalue="JavaScript Debug.index.html (2)" />
-        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.inner.html" />
+        <item itemvalue="JavaScript Debug.inner_2.html" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +387,13 @@
       <workItem from="1551559356517" duration="9000" />
       <workItem from="1551586884606" duration="9408000" />
       <workItem from="1551719445392" duration="4338000" />
-      <workItem from="1551759529967" duration="6791000" />
+      <workItem from="1551759529967" duration="29110000" />
+      <workItem from="1552137756310" duration="36423000" />
+      <workItem from="1552646341042" duration="12616000" />
+      <workItem from="1552882532146" duration="10863000" />
+      <workItem from="1553001799748" duration="2402000" />
+      <workItem from="1553145444010" duration="500000" />
+      <workItem from="1553410742972" duration="450000" />
     </task>
     <task id="LOCAL-00001" summary="committing updates">
       <created>1462715625891</created>
@@ -332,21 +444,35 @@
       <option name="project" value="LOCAL" />
       <updated>1551861195806</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="committing updates">
+      <created>1551861305086</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551861305086</updated>
+    </task>
+    <task id="LOCAL-00009" summary="committing updates">
+      <created>1551861370269</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551861370269</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48447000" />
+    <option name="totallyTimeSpent" value="134020000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24300906" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.8704039" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.44752476" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -379,24 +505,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="committing updates" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../MySTC_Team/UI_Kit/en/UI_KIT.html" />
-    <entry file="file://$PROJECT_DIR$/../../MySTC_Team/js/common_js.js" />
-    <entry file="file://$PROJECT_DIR$/../../MySTC_Team/js/custom_select_config.js" />
-    <entry file="file://$PROJECT_DIR$/../../MySTC_Team/register.html" />
-    <entry file="file://$PROJECT_DIR$/esales/index-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="176" column="61" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esales/css/main_v2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="292" selection-start-line="292" selection-end-line="292" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/esales/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1113">
@@ -461,58 +569,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/tilt.jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1293">
-          <caret line="311" column="5" selection-start-line="311" selection-start-column="5" selection-end-line="311" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/star_parallax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/tilt.jquery.js" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/star_parallax.js" />
     <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/jquery.parallaxify.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../Cloud folders/STC/STC Dropbox/Designs/Front End/eChannels Portfolio/new/css/styles.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/stars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="171" column="54" selection-start-line="171" selection-start-column="54" selection-end-line="171" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/Stats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="396" selection-start-line="4" selection-start-column="396" selection-end-line="4" selection-end-column="396" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/effects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1293">
-          <caret line="263" column="48" selection-start-line="263" selection-start-column="34" selection-end-line="263" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/stars.js" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/Stats.js" />
     <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/images/fill.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/revealer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/images/fill.png" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/revealer.js" />
     <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/revealer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -520,54 +591,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/main.css">
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index-tilt.html" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/fonts/font-awesome/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1278">
-          <caret line="1194" column="12" lean-forward="true" selection-start-line="1194" selection-start-column="12" selection-end-line="1194" selection-end-column="12" />
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/download.svg" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/images/space_charts_bg.svg" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/images/stars-3d-bg-map.jpg" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/images/map.jpg" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/images/map2.jpg" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index_new.html" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/Stable/index.html" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index--.html" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index_3d.html" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/inner_2.html" />
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/custom_charts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="347" column="67" selection-start-line="347" selection-start-column="67" selection-end-line="347" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="167" column="49" selection-start-line="167" selection-start-column="49" selection-end-line="167" selection-end-column="49" />
           <folding>
-            <element signature="e#43346#43959#2" expanded="true" />
-            <element signature="e#45613#45784#2" expanded="true" />
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#svg#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#svg#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#section#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#1;n#section#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#1;n#section#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#section#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/inner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Cloud folders/STC/STC Dropbox/Designs/Front End/NewSTC/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Cloud folders/STC/STC Dropbox/Designs/Front End/NewSTC/ON DEMAND/on demand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="281" column="33" lean-forward="true" selection-start-line="281" selection-start-column="33" selection-end-line="281" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Cloud folders/STC/STC Dropbox/Designs/Front End/MySTC3/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/scroll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3045">
+          <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/swiper-master/demos/270-mousewheel-control.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="12" selection-start-line="11" selection-start-column="3" selection-end-line="49" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/animations.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1965">
+          <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19500">
+          <caret line="1300" column="1" selection-start-line="1300" selection-start-column="1" selection-end-line="1300" selection-end-column="1" />
+          <folding>
+            <element signature="e#43177#43790#2" expanded="true" />
+            <element signature="e#45268#45439#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="3180">
+          <caret line="212" column="56" selection-start-line="189" selection-start-column="7" selection-end-line="212" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/js/effects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="31" selection-end-line="442" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/effects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3660">
+          <caret line="244" column="38" selection-start-line="244" selection-end-line="245" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="1176" column="1" selection-start-line="1173" selection-end-line="1176" selection-end-column="1" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index-tilt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="87" column="48" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index_3d.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="180" column="32" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="32" />
-          <folding>
-            <element signature="n#svg#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#svg#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#43164#43777#2" expanded="true" />
+            <element signature="e#45244#45415#2" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,14 @@
+{
+  "short_name": "Shazam Quran",
+  "name": "STC Shazam Quran App.",
+  "icons": [
+    {
+      "src": "app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}

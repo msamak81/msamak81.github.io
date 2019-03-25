@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="committing updates">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/New Version/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/MySTC-whatsNew/New Version/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/MySTC-whatsNew/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuranApp/css/shazam.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuranApp/css/shazam.css" afterDir="false" />
     </list>
     <ignored path="msamak81.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
-              <caret line="149" column="66" lean-forward="true" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
+              <caret line="149" column="66" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -96,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/New Version/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -143,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
-              <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
               <folding>
                 <element signature="n#style#0;n#span#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#2;n#div#0;n#!!top" expanded="true" />
@@ -760,7 +757,7 @@
     <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
-          <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
           <folding>
             <element signature="n#style#0;n#span#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#div#0;n#!!top" expanded="true" />
@@ -774,7 +771,7 @@
     <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/swiperVersion/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
-          <caret line="149" column="66" lean-forward="true" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
+          <caret line="149" column="66" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -786,7 +783,7 @@
     <entry file="file://$PROJECT_DIR$/MySTC-whatsNew/New Version/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>

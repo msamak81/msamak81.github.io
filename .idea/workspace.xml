@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="committing updates">
-      <change beforePath="$PROJECT_DIR$/QuranApp/css/shazam.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuranApp/css/shazam.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuranApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/QuranApp/index.html" afterDir="false" />
     </list>
     <ignored path="msamak81.github.io.iws" />
     <ignored path=".idea/workspace.xml" />

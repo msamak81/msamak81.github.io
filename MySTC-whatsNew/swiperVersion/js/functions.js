@@ -170,7 +170,7 @@
                     duration: 1000,
                     easing: 'swing',
                     step: function (now) {
-                        $(this).text(Math.ceil(now));
+                        $(this).text(Math.ceil(now).toLocaleString('en'));
                     }
                 });
                 return false
@@ -205,7 +205,7 @@
                     duration: 1000,
                     easing: 'swing',
                     step: function (now) {
-                        $(this).text(Math.ceil(now));
+                        $(this).text(Math.ceil(now).toLocaleString('en'));
                     }
                 });
 

@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Ionic App</title>
+    <meta charset="UTF-8">
+    <title>Shazam Quran App.</title>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  <base href="/QuranApp/" />
-
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-tap-highlight" content="no" />
-
-  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
-
-  <!-- add to homescreen for ios -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="css/shazam.css" rel="stylesheet" type="text/css"/>
 </head>
-
 <body>
-  <app-root></app-root>
-<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="es2015-polyfills.js" nomodule></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="cordova.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+<div class="shazam_cont isalmic_pattern">
+    <div class="app_sections start">
+        <h1 class="animated expose" style="--delay:250ms;--duration:700ms">
+            <span>اضغط للإستماع ومعرفة اسم القارئ والسورة</span>
+        </h1>
+        <button type="button" class="btns btns_circle btns_pulse animated fadeIn" style="--delay:300ms;--duration:700ms" data-show="listen">
+            <i class="icon-mic"></i>
+        </button>
+    </div>
 
+    <div class="app_sections listen">
+        <h1 class="animated expose" style="--delay:250ms;--duration:700ms">
+            <span class="loading">جاري الاستماع<span>.</span><span>.</span><span>.</span></span>
+        </h1>
+        <button type="button" class="btns btns_circle btns_ripple animated fadeIn" style="--delay:300ms;--duration:700ms" data-show="results">
+            <span style="--delay:0s;"></span>
+            <span style="--delay:4s;"></span>
+            <span style="--delay:8s;"></span>
+            <i class="icon-stop"></i>
+
+        </button>
+    </div>
+
+    <div class="app_sections noresults">
+        <h1 class="animated expose" style="--delay:250ms;--duration:700ms">
+            <span>لم يتم العثور<br/> علي نتائج</span>
+        </h1>
+        <button type="button"  class="btns btns_circle btns_pulse animated fadeIn" style="--delay:300ms;--duration:700ms" >
+            <i class="icon-mic"></i>
+        </button>
+    </div>
+
+    <div class="app_sections results results_c2">
+        <div class="recieter_info">
+            <img src="images/abdulbasit-abdulsamad.jpg" class="animated expose" style="--delay:300ms;--duration:700ms"/>
+            <h2 class="animated expose" style="--delay:350ms;--duration:700ms">عبد الباسط عبد  الصمد</h2>
+            <h3 class="animated expose" style="--delay:400ms;--duration:700ms">سورة آل عمران</h3>
+        </div>
+        <button type="button" class="btns btns_circle  animated expose" style="--delay:450ms;--duration:700ms" data-show="start">
+            <i class="icon-home"></i>
+        </button>
+    </div>
+
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script>
+    $(function(){
+        setTimeout(function(){
+            $('.app_sections:first-child').addClass('current');
+        },500);
+
+        $('.btns').click(function(){
+            $('.app_sections').removeClass('current');
+            var showId= $(this).data('show');
+
+            $('.'+showId).addClass('current');
+
+        })
+    })
+</script>
+</body>
 </html>

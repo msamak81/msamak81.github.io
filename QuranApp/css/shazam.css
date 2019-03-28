@@ -115,8 +115,11 @@ body {
     line-height: 1.6;
     position: absolute;
     top: 30vmin;
-    width: 90%;
+    width: 100%;
     text-align: center;
+    left:0;
+    padding:15px;
+    box-sizing: border-box;
 }
 
 .app_sections.spalsh {
@@ -240,6 +243,9 @@ body {
     position: absolute;
     width: 100%;
     top: 30vmin;
+    left:0;
+    padding:15px;
+    box-sizing: border-box;
 }
 
 .results.results_c2 .recieter_info img {

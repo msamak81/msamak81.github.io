@@ -107,13 +107,16 @@ body {
 
 }
 .app_sections h1 {
-    font-family: "stc-regular";
+    font-family: "stc-light";
     font-size: 9vmin;
     color: #fff;
-    position: relative;
     z-index: 10;
-    margin-bottom: 50vmin;
+    margin-bottom: 0;
     line-height: 1.6;
+    position: absolute;
+    top: 30vmin;
+    width: 90%;
+    text-align: center;
 }
 
 .app_sections.spalsh {
@@ -234,6 +237,9 @@ body {
 
 .results.results_c2 .recieter_info {
     margin-bottom: 20vmin;
+    position: absolute;
+    width: 100%;
+    top: 30vmin;
 }
 
 .results.results_c2 .recieter_info img {
@@ -311,7 +317,7 @@ body {
 
 .btns.btns_pulse {
     box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
-    animation: pulse2 1.7s linear infinite, innerbeat 1.7s linear infinite;
+    animation: pulse2 1.7s cubic-bezier(.74,.54,.3,.7) infinite, innerbeat 1.7s cubic-bezier(.74,.54,.3,.7) infinite ;
 }
 
 .btns.btns_ripple {

@@ -69,13 +69,15 @@
 
 /* =================================*/
 /* Main Shazam theme classes - added by Mohammad Samak - 19-03-2019 */
-body{
-    padding: 0;
+body {
     margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
+    text-rendering: geometricPrecision;
     direction: rtl;
 }
+
 .shazam_cont {
     width: 100%;
     height: 100vh;
@@ -96,8 +98,8 @@ body{
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s cubic-bezier(0.475, 0.425, 0, 0.995);
-    transition-delay: 10ms;
+    transition: all 1.5s cubic-bezier(0.475, 0.425, 0, 0.995);
+    transition-delay: .6s;
     transition-duration: 250ms;
     box-sizing: border-box;
 }
@@ -105,37 +107,89 @@ body{
 .app_sections h1 {
     font-family: "stc-regular";
     font-size: 9vmin;
-    background: linear-gradient(to left, #613a84, #6a3c84 6%, #763e83 11%, #894181 27%, #9e427c 42%, #b4487c 52%, #ca4c7a 64%, #ce6476 74%, #d4786f 87%, #d98a65);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
     position: relative;
     z-index: 10;
-    margin-bottom: 40vmin;
+    margin-bottom: 50vmin;
     line-height: 1.6;
 }
 
+.app_sections.spalsh {
+    z-index: 10;
+    justify-content: center;
+}
+
+.app_sections.spalsh:before {
+    content: '';
+    background: #7e00ba;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.475, 0.425, 0, 0.995);
+    transition-delay: 100ms;
+    transition-duration: 400ms;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.app_sections.spalsh svg {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.5s cubic-bezier(0.475, 0.425, 0, 0.995);
+    transition-delay: 300ms;
+    transition-duration: 400ms;
+    height: 60vmin;
+    width: auto;
+    max-height: 165px;
+}
+
+.app_sections.spalsh svg #logo {
+    fill: rgba(255, 255, 255, 0);
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+
+}
+
+.app_sections.spalsh.current:before {
+    opacity: 1;
+}
+
+.app_sections.spalsh.current svg {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.app_sections.spalsh.current svg #logo{
+    animation: offset 2s linear forwards, fill 2s ease-in-out forwards;
+    animation-delay: .5s;
+}
 .isalmic_pattern {
-    background: #fff url("../images/islamic_bg.svg") no-repeat bottom left;
+    background: #32004a url("../images/islamic_bg.svg") no-repeat bottom left;
     background-size: 100%;
 }
 
 .isalmic_pattern:before {
     content: '';
-    background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(to bottom, #c7c7c7, #c7c7c7);
+    background-image: linear-gradient(36deg, #7e00ba, rgba(50, 0, 74, 0.88));
     width: 100%;
     height: 100%;
     position: absolute;
     display: block;
     left: 0;
     top: 0;
-    z-index: 0;
-    opacity: 0.3;
+    z-index: -1;
+    opacity: 1;
 }
 
 .results .recieter_info h2 {
     font-family: "stc-bold";
     font-size: 9vmin;
-    color: #712c81;
+    color: white;
     line-height: 1.3;
     position: relative;
     margin: 0;
@@ -144,7 +198,7 @@ body{
 .results .recieter_info h3 {
     font-family: "stc-regular";
     font-size: 8vmin;
-    color: #4d4d4d;
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.3;
     position: relative;
     margin: 5px 0 20px;
@@ -189,41 +243,73 @@ body{
 .btns {
     text-align: center;
     font-size: 6vmin;
-    color: #fff;
+    color: #e94b5b;
     width: 90%;
     margin: 0 auto;
     position: relative;
     border-radius: 7px;
-    background-image: linear-gradient(136deg, #a546bc, #712c81);
     outline: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
+}
+
+.btns:before {
+    background-image: linear-gradient(182deg, #ffffff, #dad7d7 64%, #dddddd);
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.btns i {
+    background-image: linear-gradient(35deg, #f68294, #e94b5b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    position: relative;
 }
 
 .btns:hover, .btns:active, .btns.activated {
     color: #fff;
-    --color-activated: unset;
 }
 
 .btns.btns_circle {
     width: 43vmin;
     height: 43vmin;
-    font-size: 13vmin;
+    font-size: 14vmin;
     max-width: 145px;
     max-height: 145px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns.btns_circle:before {
+    border-radius: 50%;
+}
+
+.btns.btns_circle:after {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(to bottom, #ffffff, #7c7c7c);
+    content: '';
+    z-index: -1;
     border-radius: 50%;
 }
 
 .btns.btns_pulse {
-    box-shadow: 0 0 0 rgba(126, 51, 144, 0.6);
-    animation: pulse2 2.1s ease-in-out infinite 0s, pulseShadow 2.1s cubic-bezier(0.475, 0.425, 0, 0.995) infinite 2.4s;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
+    animation: pulse2 1.7s linear infinite, innerbeat 1.7s linear infinite;
 }
 
 .btns.btns_ripple {
     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
-    animation: pulse 1.7s ease-in-out infinite, pulseShadow 1.7s cubic-bezier(0.475, 0.425, 0, 0.995) infinite 1.9s;
+    animation: pulse 1.7s ease-in-out infinite;
     overflow: visible;
 }
 
@@ -234,11 +320,12 @@ body{
     width: 90%;
     height: 90%;
     opacity: 0;
-    border: 1px solid #9a40ae;
     border-radius: 50%;
     display: block;
     animation: anim-ripple 1.7s ease-in-out infinite;
     animation-delay: var(--delay);
+    z-index: -1;
+    background-image: linear-gradient(to top, rgba(252, 252, 252, 0.26), rgba(247, 247, 247, 0));
 }
 
 .loading {
@@ -247,7 +334,7 @@ body{
 }
 
 .loading span {
-    -webkit-text-fill-color: #ce6476;
+    -webkit-text-fill-color: #fff;
     animation: dot 1.5s infinite;
     margin: 0 3px;
     opacity: 0;
@@ -305,7 +392,6 @@ body{
 
 .animated.expose {
     transform: scale(0) translateZ(-1px);
-    opacity: 0;
 }
 
 .animated.expandInDown {
@@ -316,6 +402,12 @@ body{
 .current {
     opacity: 1;
     visibility: visible;
+}
+
+.current .animated {
+    transition: all 0.5s cubic-bezier(0.475, 0.425, 0, 0.995);
+    transition-delay: var(--delay);
+    transition-duration: var(--duration);
 }
 
 .current .slideDown, .current .slideInUp {
@@ -329,7 +421,6 @@ body{
 
 .current .expose {
     transform: scale(1) translateZ(0);
-    opacity: 1;
 }
 
 .current .expandInDown {
@@ -340,29 +431,44 @@ body{
 /* Custom keyframes animation for shazamQuran - added by mohammad Samak - 19-03-2019*/
 @keyframes pulse {
     0% {
-        transform: scale(0.9);
-    }
-    70% {
         transform: scale(1);
     }
+    70% {
+        transform: scale(1.1);
+    }
     100% {
-        transform: scale(0.9);
+        transform: scale(1);
     }
 }
 
 @keyframes pulse2 {
+
+
     0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3), 0 0 0 0px rgba(255, 255, 255, 0.2);
         transform: scale(0.9);
     }
-    15% {
-        transform: scale(1);
+
+    45% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3), 0 0 0 0px rgba(255, 255, 255, 0.2);
+
     }
-    70% {
-        transform: scale(1);
+    76% {
+        transform: scale(0.96);
     }
     100% {
-        transform: scale(0.9);
+        box-shadow: 0 0 0 20vmin rgba(255, 255, 255, 0), 0 0 0 10vmin rgba(255, 255, 255, 0);
+        transform: scale(.9);
     }
+
+}
+@keyframes innerbeat {
+    0% {transform: scale(1);}
+    10% {transform: scale(1);}
+    50% {transform: scale(1.15);}
+    60% {transform: scale(1.05);}
+    75% {transform: scale(1.1);}
 }
 
 @keyframes anim-ripple {
@@ -418,6 +524,18 @@ body{
         opacity: 0;
     }
 }
+@keyframes offset {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    to {
+        fill: #fff;
+        stroke-width: 0;
+    }
+}
 
 @keyframes topToBottom {
     0% {
@@ -449,13 +567,15 @@ body{
 
 @keyframes pulseShadow {
     0% {
-        box-shadow: 0 0 0 0 rgba(126, 51, 144, 0.6);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
     }
     70% {
-        box-shadow: 0 0 0 10vmin rgba(126, 51, 144, 0);
+        box-shadow: 0 0 0 20vmin rgba(255, 255, 255, 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(126, 51, 144, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
 }
+
+
 

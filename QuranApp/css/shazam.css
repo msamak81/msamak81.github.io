@@ -108,7 +108,7 @@ body {
 }
 .app_sections h1 {
     font-family: "stc-light";
-    font-size: 9vmin;
+    font-size: 8vmin;
     color: #fff;
     z-index: 10;
     margin-bottom: 0;
@@ -118,7 +118,7 @@ body {
     width: 100%;
     text-align: center;
     left:0;
-    padding:15px;
+    padding: 15px 30px;
     box-sizing: border-box;
 }
 
@@ -200,21 +200,24 @@ body {
 }
 
 .results .recieter_info h2 {
-    font-family: "stc-bold";
-    font-size: 9vmin;
+    font-family: "stc-regular";
+    font-size: 8vmin;
     color: white;
     line-height: 1.3;
     position: relative;
     margin: 0;
+    font-weight: normal;
 }
 
 .results .recieter_info h3 {
-    font-family: "stc-regular";
-    font-size: 8vmin;
+    font-family: "stc-light";
+    font-size: 5vmin;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.3;
     position: relative;
     margin: 5px 0 20px;
+    margin-top: 15px;
+    font-weight: 600;
 }
 
 .results.results_c1 img {
@@ -544,13 +547,20 @@ body {
     }
 }
 @keyframes offset {
-    to {
+    0% {
+        stroke-dashoffset: 400;
+
+    }
+    100% {
         stroke-dashoffset: 0;
     }
 }
 
 @keyframes fill {
-    to {
+    0% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
         fill: #fff;
         stroke-width: 0;
     }

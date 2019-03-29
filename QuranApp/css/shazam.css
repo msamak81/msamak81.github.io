@@ -178,8 +178,6 @@ body {
 }
 
 .app_sections.spalsh.current svg #logo{
-    animation: fill 2s ease-in-out forwards;
-    animation-delay: .5s;
 }
 .isalmic_pattern {
     background: #32004a url("../images/islamic_bg.svg") no-repeat bottom left;

@@ -178,7 +178,7 @@ body {
 }
 
 .app_sections.spalsh.current svg #logo{
-    animation: offset 2s linear forwards, fill 2s ease-in-out forwards;
+    animation: fill 2s ease-in-out forwards;
     animation-delay: .5s;
 }
 .isalmic_pattern {

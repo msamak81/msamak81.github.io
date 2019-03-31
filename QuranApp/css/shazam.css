@@ -153,7 +153,7 @@ body {
     transition-duration: 400ms;
     height: 60vmin;
     width: auto;
-    max-height: 165px;
+    max-height: 185px;
 }
 
 .app_sections.spalsh svg #logo {

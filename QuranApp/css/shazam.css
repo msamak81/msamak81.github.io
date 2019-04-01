@@ -120,6 +120,7 @@ body {
     padding:15px 55px;
     box-sizing: border-box;
     font-weight: bold;
+    letter-spacing: -0.5px;
 }
 
 .app_sections.spalsh {

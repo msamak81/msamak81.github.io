@@ -201,12 +201,14 @@ body {
 .results .recieter_info h2 {
     font-family: "stc-regular";
     font-size: 8vmin;
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff;
     line-height: 1.5;
     position: relative;
     margin: 0;
     font-weight: normal;
     padding: 0 30px;
+    opacity: 0.8;
+    letter-spacing: -0.5px;
 }
 
 .results .recieter_info h3 {
@@ -218,6 +220,7 @@ body {
     margin: 5px 0 20px;
     font-weight: bold;
     padding: 0 30px;
+    letter-spacing: -0.5px;
 }
 
 .results.results_c1 img {

@@ -107,7 +107,7 @@ body {
 
 }
 .app_sections h1 {
-    font-family: "stc-light";
+    font-family: "stc-bold";
     font-size: 7vmin;
     color:#fff;
     z-index: 10;
@@ -120,7 +120,6 @@ body {
     padding:15px 55px;
     box-sizing: border-box;
     font-weight: bold;
-    letter-spacing: -1px;
 }
 
 .app_sections.spalsh {
@@ -201,13 +200,12 @@ body {
 .results .recieter_info h2 {
     font-family: "stc-regular";
     font-size: 8vmin;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.5;
     position: relative;
     margin: 0;
     font-weight: normal;
     padding: 0 30px;
-    opacity: 0.8;
 }
 
 .results .recieter_info h3 {

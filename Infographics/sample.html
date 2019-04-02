@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+        }
+        .fs_divs{
+            position: absolute;
+            width: 100%;
+            height:100%;
+
+        }
+        .fs_item{
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:200px;
+            background:red;
+            color:#fff
+        }
+        .fs_item:nth-of-type(2){  background:green;}
+        .fs_item:nth-of-type(3){  background:blue;}
+        .fs_item:nth-of-type(4){  background:purple;}
+
+    </style>
+</head>
+
+<body>
+<div class="fs_divs">
+    <div class="fs_item">
+        1
+    </div>
+    <div class="fs_item">
+        2
+    </div>
+    <div class="fs_item">
+        3
+    </div>
+    <div class="fs_item">
+        4
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function(){
+        $('body').bind('mousewheel', function(e, delta){
+            if(e.originalEvent.wheelDelta/120 > 0) {
+                this.scrollTop -= (delta * 30);
+            }
+            else{
+                this.scrollTop = (delta * 30);
+                console.log('scroll Down');
+            }
+        });
+    })
+</script>
+</body>
+</html>

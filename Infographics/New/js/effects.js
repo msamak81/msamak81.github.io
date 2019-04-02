@@ -259,55 +259,6 @@ var pages
 
     }, false);
 
-
-
-    // $(window).bind('mousewheel DOMMouseScroll', function(event){
-    //     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-    //         // scroll up
-    //
-    //         $('body').addClass('dark switch-Layout');
-    //         reveal('bottom');
-    //         setTimeout(function () {
-    //             $('.sections .section:first-child').addClass('current');
-    //             $('.nav_holder, header.ip-header').addClass('current');
-    //
-    //             // Animate Statistics Numbers
-    //             $('.count').each(function () {
-    //                 $(this).parent().addClass('filled');
-    //                 $(this).prop('Counter',0).animate({
-    //                     Counter: sum
-    //                 }, {
-    //                     duration: 1000,
-    //                     easing: 'swing',
-    //                     step: function (now) {
-    //                         $(this).text(Math.ceil(now));
-    //                     }
-    //                 });
-    //
-    //
-    //             });
-    //
-    //         }, 1000); // Execute something() 1 second later.
-    //
-    //
-    //     }
-    //     else {
-    //         $('.sections .section:first-child').removeClass('current');
-    //         $('.nav_holder, header.ip-header').removeClass('current');
-    //F
-    //         setTimeout(function () {
-    //
-    //             $('body').removeClass('dark switch-Layout');
-    //             reveal('top');
-    //
-    //
-    //         }, 500); // Execute something() 1 second later.
-    //
-    //
-    //     }
-    // });
-
-
 })();
 
 // triggers the effect by calling instance.reveal(direction, callbackTime, callbackFn)

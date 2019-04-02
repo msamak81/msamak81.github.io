@@ -51,6 +51,7 @@ body {
     /* background: #f2f2f2; */
     font-family: stc-light, sans-serif;
     font-size: 14px;
+    text-rendering: geometricPrecision;
 }
 
 .stars_bg {
@@ -1040,7 +1041,7 @@ ul.nav_steps li.active:after {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
 }
 .section_content {
     width: 100%;
@@ -1054,6 +1055,8 @@ ul.nav_steps li.active:after {
     padding: 75px;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    z-index: 99;
 }
 
 
@@ -1158,6 +1161,29 @@ ul.nav_steps li.active:after {
 .gradient_bg:before {
     background: #652a75;
     background-image: radial-gradient(ellipse at 500% 0, #652a75 50%, #290b22 80%, #dc2c5a 100%);
+}
+.bg-space:before{
+    background : linear-gradient(231deg, #5f2270, #290b22 75%, #dc2c5a);
+    transition-delay: var(--delay);
+    transition-duration: var(--duration);
+    transition: all 0.8s cubic-bezier(0.43, 0.195, 0.02, 1);
+    transform-origin: 0% 50% 0px;
+    transform: scale3d(0, 1, 1);
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bg-space:after{
+    background: linear-gradient(231deg,transparent, transparent 75%, #dc2c5a);
+    position: absolute;
+    left: 0;
+    top: 0;
+    content:"";
+    z-index: 200;
+}
+.current .bg-space:before{
+    transform: scale(1);
 }
 
 .height_70 {
@@ -1297,7 +1323,7 @@ ul.nav_steps li.active:after {
 .current_release {
     color: #f5cb66;
     font-size: 21px;
-    font-family: stc-light;
+    font-family: stc-bold;
     text-transform: uppercase;
     letter-spacing: 6px;
     font-weight: normal;
@@ -1318,6 +1344,8 @@ ul.nav_steps li.active:after {
 }
 .row {
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 .stats_content{
     display: flex;
@@ -1327,12 +1355,12 @@ ul.nav_steps li.active:after {
 }
 .stats_content h4{
     color: #000;
-    font-size: 23px;
+    font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 10px;
     font-weight: bold;
     display: table;
-    margin: 0 0 50px;
+    margin: 0 0 100px;
     padding: 0;
 }
 .stats_content h4 .release_name{
@@ -1340,23 +1368,33 @@ ul.nav_steps li.active:after {
     margin-bottom: 10px;
 }
 .stats_content h4 .year{
-    font-size: 12px;
+    font-size: 21px;
     display: block;
+    font-family: stc-light;
+    color: rgba(255,255,255, 0.4);
+    padding: 10px;
+    border-radius: 80px;
+    text-align: center;
 }
 .stats_content h2 {
-    font-size: 50px;
+    font-size: 80px;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--main);
     letter-spacing: 10px;
-    margin: 0;
+    margin: 0 0 40px;
     padding: 0;
 }
 .stats_content .text {
-    font-size: 20px;
-    letter-spacing: 5px;
+    font-size: 30px;
+    letter-spacing: 1px;
     line-height: 2;
     margin-top: 15px;
+    max-width: 90%;
 }
 
+.white_text *{
+    color: #fff;
+    --main: #fff;
+}
 

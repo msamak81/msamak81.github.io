@@ -1,0 +1,236 @@
+@media (max-width: 1440px) {
+    .bar_charts .chart_item .chart_bg .values h2 {
+        font-size: 3.7vmin;
+        writing-mode: vertical-rl;
+        position: absolute;
+        bottom: -214%;
+        left: 20px;
+        transform: rotate(-180deg);
+        color: #000000;
+    }
+    .second_value {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1001px) {
+
+}
+
+@media (max-width: 992px) {
+    .ip-header {
+        min-height: 200px;
+    }
+
+    .title {
+        margin-top: -50px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+
+    .title h3 {
+        font-size: 20px;
+        letter-spacing: 15px;
+        margin-top: 20px;
+    }
+
+    nav.releases {
+        flex-wrap: wrap;
+    }
+
+    nav.releases a {
+        margin-bottom: 10px;
+    }
+
+    .ip-header .ip-logo svg {
+        min-height: 50px;
+        height: 30%;
+    }
+
+    .loaded .logo {
+        max-height: 150px;
+        margin-top: -50px;
+    }
+
+    .loaded .ip-header .ip-logo svg {
+        max-width: 200px;
+    }
+
+    #earth {
+        width: 340%;
+        height: 100%;
+        left: -20%;
+        bottom: -57%;
+    }
+
+    #horizon {
+        bottom: -24%;
+    }
+
+    #horizon .glow {
+        top: -30%;
+        width: 200%;
+        left: -70%;
+    }
+
+    #moon {
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        margin-left: 0;
+        top: 40%;
+    }
+
+    .star_parallax {
+        opacity: 0.3;
+    }
+
+    .stars_holder {
+        margin-left: 0;
+    }
+
+    .stats_content {
+        height: 45%;
+        padding: 20px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .stats_content .text {
+        font-size: 17px;
+        max-width: 100%;
+    }
+
+    .stats_content h4 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .stats_content h4 .release_name {
+    }
+
+    .stats_content h4 .year {
+        font-size: 12px;
+    }
+
+    .stats_content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .stats_content .stars_holder {
+        opacity: 0.3;
+    }
+
+    .diff_val i:nth-of-type(1) {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        position: absolute;
+        left: calc(30% - 9px);
+        top: -20px;
+    }
+
+    .diff_val i:nth-of-type(2) {
+        font-size: 18px;
+        margin-top: -45px;
+        margin-right: 50%;
+        position: absolute;
+        color: #fff;
+    }
+
+    .diff_val {
+        margin-top: 13px;
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 90px);
+        top: 90px;
+        left: 0;
+        display: block;
+    }
+
+    .bar_charts {
+        min-height: 102%;
+        width: calc(100% - 0px);
+        padding: 20px;
+        margin: 10px 0 20px 0;
+    }
+
+    .bar_charts .chart_item {
+        margin: 59% 0 20px 25px;
+        width: calc(100% / 3.5);
+        max-width: 90px;
+        box-sizing: border-box;
+        min-width: 100px;
+    }
+
+    .bar_charts .chart_item:first-child {
+        margin-left: 0
+    }
+
+    .bar_charts .chart_item .chart_bg .values {
+        position: absolute;
+        width: calc(100% + 2px);
+        top: 0;
+        left: -1px;
+    }
+
+    .bar_charts .chart_item .chart_bg .values h3 {
+        font-size: 11px;
+        color: #fff;
+        width: calc(100% - 20px);
+        position: absolute;
+        top: 5px;
+        left: 0;
+        padding: 10px;
+    }
+
+    .bar_charts .chart_item .chart_bg .values h3 .year {
+        font-size: 13px;
+    }
+    .bar_charts .chart_item .chart_bg .values h2 {
+        font-size: 5.2vmin;
+        bottom: -178%;
+        left: 20px;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+
+
+@media (min-width: 1920px){
+    .bar_charts .chart_item .chart_bg .values h2{
+        font-size: 3.4vmin;
+    }
+    .diff_val{
+        margin-top:-110px;
+    }
+    .diff_val i:nth-of-type(1){
+        width:110px;
+        height:110px;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+

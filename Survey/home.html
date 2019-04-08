@@ -39,8 +39,7 @@
             <form name="signup_survey" id="signup_survey" method="post" action="#" class="survey_form" >
 
                 <input type="hidden" class="submitted_date" name="submitted_date" id="submitted_date"/>
-                <input type="hidden" class="submitted_browser" name="submitted_browser" id="submitted_browser"/>
-                <input type="hidden" class="submitted_app" name="submitted_app" id="submitted_app"/>
+
 
                 <div class="questions_cont">
                     <div class="page brief" data-section="مقدمة">
@@ -220,7 +219,7 @@
 
                             </div>
                         </div>
-                        <div class=" question_holder">
+                        <div class=" question_holder evaluation">
 
                             <h3>
                                 What was your grade in the last official annual evaluation?
@@ -248,7 +247,7 @@
                                     <label>5</label>
                                 </p>
                                 <p>
-                                    <input type="radio" class="survey_options" value="evalution_no"/>
+                                    <input type="radio" class="survey_options" value="no_evalution"/>
                                     <label> I didn’t get my grade yet</label>
                                 </p>
                             </div>
@@ -2589,7 +2588,7 @@
                         <div class=" question_holder">
                             <h3>If you’re leaving your job, what is the main reason that might cause you to do it?
                             </h3>
-                            <textarea type="text" class="comments_textarea" name="work_reasons"
+                            <textarea type="text" class="comments_textarea required" name="work_reasons"
                                       id="work_reasons" placeholder="Reasons" rows="2" maxlength="255"></textarea>
                             <div class="char_counter">
                                 <span class="current"></span>/
@@ -2601,7 +2600,7 @@
                             <h3>
                                 If you’re thinking about moving to a different company, what is the main benefit that would be attracted to?
                             </h3>
-                            <textarea type="text" class="comments_textarea" name="other_benefits"
+                            <textarea type="text" class="comments_textarea required" name="other_benefits"
                                       id="other_benefits" placeholder="Other benefits" rows="2"
                                       maxlength="255"></textarea>
                             <div class="char_counter">
@@ -2614,7 +2613,7 @@
                             <h3>
                                 In your opinion, what is the best benefit that the company currently offers you other than the salary?
                             </h3>
-                            <textarea type="text" class="comments_textarea" name="current_benefit"
+                            <textarea type="text" class="comments_textarea required" name="current_benefit"
                                       id="current_benefit" placeholder="Best benefit " rows="2"
                                       maxlength="255"></textarea>
                             <div class="char_counter">
@@ -2626,7 +2625,7 @@
                         <div class=" question_holder">
                             <h3>Name one benefit that if offered by the company it would make you stay for a long period of time?
                             </h3>
-                            <textarea type="text" class="comments_textarea" name="new_benefit" id="new_benefit"
+                            <textarea type="text" class="comments_textarea required" name="new_benefit" id="new_benefit"
                                       placeholder="New benefit" rows="2" maxlength="255"></textarea>
                             <div class="char_counter">
                                 <span class="current"></span>/

@@ -220,7 +220,7 @@
 
                             </div>
                         </div>
-                        <div class=" question_holder">
+                        <div class=" question_holder evaluation">
 
                             <h3>
                                 ما هي الدرجة التي حصلت عليها في آخر تقييم رسمي لك؟
@@ -248,7 +248,7 @@
                                     <label>٥</label>
                                 </p>
                                 <p>
-                                    <input type="radio" class="survey_options" value="evalution_no"/>
+                                    <input type="radio" class="survey_options" value="no_evalution"/>
                                     <label> لم أحصل على تقييم بعد</label>
                                 </p>
                             </div>
@@ -341,7 +341,7 @@
                             <div class="row row_radios">
                                 <div class="col-lg-7 col-md-7 col-xs-12">
                                     <h3>
-                                        بشكل عام، بيئة العمل في إدارات شركة STC الأخرى (غير إدارتي) مرضية </h3>
+                                        بشكل عام، بيئة العمل مرضية في إدارات شركة STC الأخرى (غير إدارتي)</h3>
 
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-xs-2">
@@ -1705,7 +1705,7 @@
                         <div class=" question_holder bordered">
                             <div class="row row_radios">
                                 <div class="col-lg-7 col-md-7 col-xs-12">
-                                    <h3> بشكل عام، فإني أشعر بالرضى في وظيفتي </h3>
+                                    <h3> بشكل عام، أشعر بالرضا في وظيفتي </h3>
 
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-xs-2">
@@ -2583,7 +2583,7 @@
                         <div class=" question_holder">
                             <h3>إذا كنت ستترك عملك الحالي لأي سبب، ما هو السبب الرئيسي الذي يمكن أن يجعلك تفعل ذلك؟
                             </h3>
-                            <textarea type="text" class="comments_textarea " name="work_reasons"
+                            <textarea type="text" class="comments_textarea required" name="work_reasons"
                                       id="work_reasons" placeholder="أسبابك" rows="2" maxlength="255"></textarea>
                             <div class="char_counter">
                                 <span class="current"></span>/
@@ -2595,7 +2595,7 @@
                             <h3>إذا كنت ستذهب لمقر عمل جديد في المستقبل، ما هي الميزة الرئيسية التي قد تجذبك للشركة
                                 الجديدة؟
                             </h3>
-                            <textarea type="text" class="comments_textarea " name="other_benefits"
+                            <textarea type="text" class="comments_textarea required" name="other_benefits"
                                       id="other_benefits" placeholder="اذكر الميزة الاخرى" rows="2"
                                       maxlength="255"></textarea>
                             <div class="char_counter">
@@ -2607,7 +2607,7 @@
                         <div class=" question_holder">
                             <h3>في رأيك ما هي أفضل ميزة تقدمها الشركة حاليا غير الراتب؟
                             </h3>
-                            <textarea type="text" class="comments_textarea " name="current_benefit"
+                            <textarea type="text" class="comments_textarea required" name="current_benefit"
                                       id="current_benefit" placeholder=" افضل ميزة حالية" rows="2"
                                       maxlength="255"></textarea>
                             <div class="char_counter">
@@ -2620,7 +2620,7 @@
                             <h3>أذكر ميزة واحدة غير متواجدة حالياً إذا قُدمت لك يمكن أن تكون سبب في استمرارك للعمل في
                                 الشركة لفترة طويلة؟
                             </h3>
-                            <textarea type="text" class="comments_textarea " name="new_benefit" id="new_benefit"
+                            <textarea type="text" class="comments_textarea required" name="new_benefit" id="new_benefit"
                                       placeholder="ميزة جديدة" rows="2" maxlength="255"></textarea>
                             <div class="char_counter">
                                 <span class="current"></span>/
@@ -4032,10 +4032,12 @@
 
 
                         </div>
-                        <div class=" question_holder bordered">
+                        <div class=" question_holder bordered is_evaluated">
                             <div class="row row_radios">
                                 <div class="col-lg-7 col-md-7 col-xs-12">
-                                    <h3> أشعر بالرضا عن الزيادة السنوية التي حصلت عليها بناء على تقييم المدير لي</h3>
+                                    <h3>
+                                        أشعر بالرضا عن الزيادة السنوية التي حصلت عليها بناء على تقييم المدير لي (أجب إذا سبق أن حصل على تقييم)
+                                    </h3>
 
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-xs-2">
@@ -4595,10 +4597,10 @@
 
 
                         </div>
-                        <div class=" question_holder bordered">
+                        <div class=" question_holder bordered is_evaluated">
                             <div class="row row_radios">
                                 <div class="col-lg-7 col-md-7 col-xs-12">
-                                    <h3>التقييم السنوي عادل في رأيي</h3>
+                                    <h3> التقييم السنوي عادل في رأيي (أجب إذا سبق أن حصل على تقييم)</h3>
 
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-xs-2">

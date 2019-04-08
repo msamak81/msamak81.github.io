@@ -90,17 +90,21 @@ $(function () {
     // Next Button Functions
     $('.next_btn').click(function () {
 
-        btn_disables ('.page:visible')
-
-        var $this = $(this);
-
+        $("body").scrollTop(0);
         survey_nav('next');
+
+
+        if ( $('.page:visible .required').length ) required_textboxs('.current_page');
+        if ( $('.page:visible .survey_options').length )  checkChecked('.current_page');
+
+        btn_disables ('.current_page');
+
+
         survey_progress();
-        checkChecked('.current_page')
 
 
         if ($('.last').is(':visible')) {
-            $this.hide().next('.submit').show();
+            $(this).hide().next('.submit').show();
 
         }
 
@@ -114,9 +118,12 @@ $(function () {
     $('.prev_btn').click(function () {
 
         survey_nav('prev');
+        $("body").scrollTop(0);
         survey_progress();
-        checkChecked('.current_page')
-        // required_textboxs('.current_page')
+
+        if ( $('.page:visible .required').length ) required_textboxs('.current_page');
+        if ( $('.page:visible .survey_options').length )  checkChecked('.current_page');
+
 
         if ($('.brief').is(':visible')) {
             $('.next_btn').prop('disabled', false);
@@ -154,10 +161,8 @@ $(function () {
             }
 
             // validate that the textarea has value to enable the next button
-            if ($(this).hasClass('required')){
-
+            if ($(e).hasClass('required')){
                 required_textboxs('.page:visible')
-
             }
         });
 
@@ -193,10 +198,34 @@ $(function () {
         })
     })
     $(".survey_options").click(function(){
-        checkChecked('.current_page')
+
+        var evaluated = true,
+            val = $(this).val();
+
+        // disable evaluation options if teh employee didn't get evaluation
+
+        if($(this).parents('.question_holder').hasClass('evaluation')){
+
+            if( val == "no_evalution"){
+                evaluated = false;
+                $('.is_evaluated').addClass('not_evaluated').find('p .survey_options').addClass('optional').prop('disabled', true);
+            }
+            else{
+
+
+                $('.is_evaluated').removeClass('not_evaluated').find('p .survey_options').removeClass('optional').prop('disabled', false);
+            }
+
+            // console.log(evaluated, val)
+        }
+
+
+            checkChecked('.current_page')
+
+
 
         // validate that the textarea has value to enable the next button
-        $('.required').change(function () {
+        $('.required').blur(function () {
             required_textboxs('.page:visible')
         });
     })
@@ -233,7 +262,7 @@ $(function () {
 
         $.ajax({
             type: 'GET',
-            dataType: 'json',
+            dataType: 'jsonp',
             url: 'https://script.google.com/macros/s/AKfycbxbPI2PjoDT_GViRw2O9ELYA93VBW2MSaWLjqa4dlljtmCbVOs/exec',
             data: formData,
             success: function (data, status, error) {
@@ -301,22 +330,14 @@ function survey_nav(item) {
 // function to validate that at least one option is selected
 function checkChecked(item){
     var check = true;
-    $(item).find("p:visible .survey_options").each(function(){
+    $(item).find("p:visible .survey_options").not('.optional').each(function(){
 
         var name = $(this).attr("name");
 
-        if($("p:visible .survey_options[name="+name+"]:checked").length == 0){
+        if($("p:visible .survey_options[name="+name+"]:checked").not('.optional').length == 0){
             check = false;
         }
 
-        var option_count = $(item).find("p:visible .survey_options").length,
-            required_count = $(item).find('.required').length;
-
-        if( option_count == 0 && required_count == 0){
-            check=true
-        }
-
-        // console.log(option_count, required_count)
     });
 
     if(check){
@@ -328,18 +349,17 @@ function checkChecked(item){
 }
 
 function required_textboxs(item){
-    var valid= true
+    var  check= true
 
     $(item).find(".required").each(function(){
         var value = $(this).val();
-        // console.log(name)
-
-        if(value.length == 0){
-            valid = false;
+        if (!$.trim(value)) {
+            // textarea is empty or contains only white-space
+            check = false;
         }
     });
 
-    if(valid){
+    if(check){
         $('.next_btn').prop('disabled',false)
     }else{
         $('.next_btn').prop('disabled',true)
@@ -352,31 +372,8 @@ function required_textboxs(item){
 function survey_progress() {
 
     var percentage = (pageNo / pages.not('.brief').length)*100;
-    console.log(percentage)
+    // console.log(percentage)
     $('.survey_progress .section span').css('width', percentage +'%');
-
-    // if (percentage > 33  && percentage < 40 ) {
-    //
-    //     $('.survey_progress .sec_1').addClass('active');
-    //
-    //     $(".notifications").show().find(".notification_part_1").fadeIn();
-    //     setTimeout(function () {
-    //         $(".notifications").fadeOut().find(".notification_part_1").fadeOut();
-    //     }, 2000);
-    // }
-    // else if (percentage >60 && percentage < 70) {
-    //     $('.survey_progress .sec_2').addClass('active');
-    //     $(".notifications").show().find(".notification_part_2").fadeIn();
-    //     setTimeout(function () {
-    //         $(".notifications").fadeOut().find(".notification_part_2").fadeOut();
-    //     }, 2000);
-    //
-    // } else if (percentage == 100) {
-    //     $('.survey_progress .section').addClass('active');
-    // }
-    // else if ($('.thanks_msg').is(':visible')) {
-    //     $('.survey_progress .section ').addClass('active');
-    // }
 
 }
 

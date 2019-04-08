@@ -858,9 +858,12 @@ section.main {
 .conditions_divs .survey_options{
     display: none;
 }
+.not_evaluated{
 
-
-
+}
+.not_evaluated h3,  input:disabled, input:disabled + label{
+    opacity:0.4
+}
 
 
 

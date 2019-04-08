@@ -371,7 +371,7 @@ input[type="radio"]:checked + label::after {
 }
 
 input[type="radio"]:disabled + label {
-    opacity: 0.65;
+    opacity: 0.3;
 }
 
 input[type="radio"]:disabled + label::before {
@@ -862,7 +862,8 @@ section.main {
 
 }
 .not_evaluated h3,  input:disabled, input:disabled + label{
-    opacity:0.4
+    opacity:0.4;
+    text-decoration: line-through;
 }
 
 

@@ -90,14 +90,13 @@ $(function () {
     // Next Button Functions
     $('.next_btn').click(function () {
 
-        // btn_disables ('.page:visible')
+        btn_disables ('.page:visible')
 
         var $this = $(this);
 
         survey_nav('next');
         survey_progress();
-        // checkChecked('.current_page')
-
+        checkChecked('.current_page')
 
 
         if ($('.last').is(':visible')) {

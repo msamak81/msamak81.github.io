@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign Up Survey</title>
+    <title>Employees’ Satisfaction Survey</title>
 
     <link href="css/bootstrap.css" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -34,13 +34,6 @@
 </header>
 
 <section class="main">
-    <div class="pattern_gradient bottom_seperator  animated fadeInDown">
-        <div class="container">
-            <h1>Sign Up Survey</h1>
-
-        </div>
-
-    </div>
     <div class="container">
         <div class="col-lg-12">
             <form name="signup_survey" id="signup_survey" method="post" action="#" class="survey_form" >
@@ -53,15 +46,14 @@
                     <div class="page brief" data-section="مقدمة">
                         <div class=" question_holder animated fadeInRight ">
 
-                            <h1>استبيان تقييم مدى الرضا الوظيفي</h1>
+                            <h1>employees’ satisfaction survey</h1>
 
 
                             <p>
-                                يهدف هذا الاستبيان إلى قياس مدى الرضا الوظيفي لموظفي شركة حلول بهدف حل أي تحديات قد تواجه الموظفين وإيمانا منا بإيجاد حلول لتحسين ظروف العمل في الشركة. الاستبيان يستغرق حوالي ١٥ دقيقة. هذا الاستبيان لمصلحتك فنرجو منك الإجابة عن الأسئلة بمصداقية وبصراحة تامة فرأيك مهم جدا لنا! علما بأن النتائج سرية للغاية وتأخذ بمجموعها ولن يتم النظر في نتائجك الفردية أو مشاركتها لأي زميل أو مدير أو مسؤول أو جهة داخل الشركة أو خارجها.
-                            </p>
+                                This survey aims to measure employees’ satisfaction within eChannels, and also to understand the challenges employees’ face, in order to improve employee satisfaction. Your feedback is valuable so make sure to answer the questions with total honesty. This survey takes about 20 minutes to complete, and the outcome aims to benefit you as an employee. We care greatly about your opinion and your answers will be taken seriously. Note that your individual answers will remain anonymous and results will be reported in combination with all participants. Individual answers will not be shared with any colleague, manager, or department inside or outside the company. Keep in mind that your name is not required in the survey.                            </p>
                             <p>
 
-                                نقدر لكم مشاركتكم في هذا الاستبيان، يرجى الضغط على زر “التالي” للبدء.
+                                Thank you for your time to take this survey. Please press the "Next" button to start.
                             </p>
 
 
@@ -76,7 +68,7 @@
                                 What is your nationality?
                             </h3>
 
-                            <div class="flex cols  cols_2">
+                            <div class="flex cols  cols_4">
 
                                 <p>
                                     <input type="radio" class="survey_options" value="saudi"/>
@@ -96,7 +88,7 @@
                                 Is this your first official job?
                             </h3>
 
-                            <div class="flex cols cols_2">
+                            <div class="flex cols cols_4">
 
                                 <p>
                                     <input type="radio" class="survey_options" value="first_job"/>
@@ -177,10 +169,12 @@
                             </div>
 
                         </div>
+                    </div>
+                    <div class="page" data-section="Opening Question">
                         <div class=" question_holder">
 
                             <h3>
-                               How long have you been working for eChannels?                            </h3>
+                                How long have you been working for eChannels?                            </h3>
 
                             <div class="flex cols cols_4">
 
@@ -212,7 +206,7 @@
                                 What branch are you working at?
                             </h3>
 
-                            <div class="flex cols  cols_2">
+                            <div class="flex cols  cols_4">
 
                                 <p>
                                     <input type="radio" class="survey_options" value="mursalat"/>
@@ -1578,7 +1572,7 @@
                                 Do you participate in workplace activities?
                             </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>Yes</label>
@@ -2284,7 +2278,7 @@
                                 Have you experienced a problem or delay regarding financial matters (salary, compensation, increase, etc.)?
                             </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>Yes</label>
@@ -2595,7 +2589,7 @@
                         <div class=" question_holder">
                             <h3>If you’re leaving your job, what is the main reason that might cause you to do it?
                             </h3>
-                            <textarea type="text" class="comments_textarea required" name="work_reasons"
+                            <textarea type="text" class="comments_textarea" name="work_reasons"
                                       id="work_reasons" placeholder="Reasons" rows="2" maxlength="255"></textarea>
                             <div class="char_counter">
                                 <span class="current"></span>/
@@ -2607,7 +2601,7 @@
                             <h3>
                                 If you’re thinking about moving to a different company, what is the main benefit that would be attracted to?
                             </h3>
-                            <textarea type="text" class="comments_textarea required" name="other_benefits"
+                            <textarea type="text" class="comments_textarea" name="other_benefits"
                                       id="other_benefits" placeholder="Other benefits" rows="2"
                                       maxlength="255"></textarea>
                             <div class="char_counter">
@@ -2620,7 +2614,7 @@
                             <h3>
                                 In your opinion, what is the best benefit that the company currently offers you other than the salary?
                             </h3>
-                            <textarea type="text" class="comments_textarea required" name="current_benefit"
+                            <textarea type="text" class="comments_textarea" name="current_benefit"
                                       id="current_benefit" placeholder="Best benefit " rows="2"
                                       maxlength="255"></textarea>
                             <div class="char_counter">
@@ -2632,7 +2626,7 @@
                         <div class=" question_holder">
                             <h3>Name one benefit that if offered by the company it would make you stay for a long period of time?
                             </h3>
-                            <textarea type="text" class="comments_textarea required" name="new_benefit" id="new_benefit"
+                            <textarea type="text" class="comments_textarea" name="new_benefit" id="new_benefit"
                                       placeholder="New benefit" rows="2" maxlength="255"></textarea>
                             <div class="char_counter">
                                 <span class="current"></span>/
@@ -3038,7 +3032,7 @@
                             <h3>
                                 Have you taken or attempted any personal initiatives for eChannels or other departments? </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>Yes</label>
@@ -3097,7 +3091,7 @@
                             <h3>
                                 Are you satisfied with the training opportunities provided by the company? </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>Yes</label>
@@ -3133,7 +3127,7 @@
                                 Did you receive any training from experienced staff at the beginning of your work here?
                             </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>Yes</label>
@@ -4790,8 +4784,8 @@
 
                 </div>
                 <div class="section sec_1"><span></span></div>
-                <div  class="section sec_2"><span></span></div>
-                <div  class="section sec_3"><span></span></div>
+<!--                <div  class="section sec_2"><span></span></div>-->
+<!--                <div  class="section sec_3"><span></span></div>-->
                  </div>
             <div class="container btns_holder">
                 <input type="button" class="btns-bg prev_btn" value="Previous" style="display: none"/>

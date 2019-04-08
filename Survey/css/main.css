@@ -173,8 +173,9 @@ h3 {
 
 .survey_form {
     position: relative;
+    height: 100%;
 }
-
+.col-lg-12{height:100%;}
 .questions_cont {
     background: #fff;
     box-shadow: 1px 1px 11px -3px rgba(0, 0, 0, 0.3);
@@ -462,6 +463,14 @@ button[disabled], input[disabled] {
 
 .thanks_msg {
     text-align: center;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    left: 0;
+    top: 0;
 }
 
 .thanks_msg i {
@@ -564,8 +573,8 @@ button[disabled], input[disabled] {
 }
 
 .survey_progress .section {
-    width: calc(33.333% - 2px);
-    background: #eceaea;
+    width: 100%;
+    background: #f1eded;
     height: 100%;
     margin: 2px 1px;
     float: left;
@@ -845,6 +854,15 @@ section.main {
 .row.row_radios .col-lg-7{
     padding:0;
 }
+.conditions_divs .survey_options{
+    display: none;
+}
+
+
+
+
+
+
 @media (max-width: 991px) {
     body{
         background:#fff;
@@ -915,6 +933,7 @@ section.main {
     .thanks_msg p {
         width: 100%;
         margin-top: 10px;
+        flex: unset !important;
     }
 
     .thanks_msg h2 {
@@ -922,7 +941,8 @@ section.main {
     }
 
     .thanks_msg {
-        margin-top: -10px
+        margin-top: 0;
+        height: 100%;
     }
 
     .buttons_cont {
@@ -1014,5 +1034,7 @@ section.main {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .container{height:100%;}
 
 }
+

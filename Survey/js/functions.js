@@ -35,16 +35,22 @@ $(function () {
         })
         $(ele).find('label').wrapInner("<span></span>");
 
-        $(ele).find('.conditions_divs .survey_options').each(function (i, e) {
-            $(e).attr({
-                'name': pages_class + "_sub",
-                'id': pages_class + "_sub" + i
-            });
-            var options_name = $(e).attr('name'),
-                id = $(e).attr('id')
-            $(e).addClass(options_name + '_options')
+        $(ele).find('.conditions_divs').each(function (i, e) {
 
-            $(e).next('label').attr('for', id)
+            var c = i;
+
+            $(e).find('.survey_options').each(function(i,e){
+                $(e).attr({
+                    'name': pages_class + "_sub_"+ c,
+                    'id': pages_class + "_sub_" + c + '_'+ i
+                });
+                var options_name = $(e).attr('name'),
+                    id = $(e).attr('id')
+                $(e).addClass(options_name + '_options')
+
+                $(e).next('label').attr('for', id)
+
+            })
         });
 
 
@@ -84,12 +90,13 @@ $(function () {
     // Next Button Functions
     $('.next_btn').click(function () {
 
-        btn_disables ('.page:visible')
+        // btn_disables ('.page:visible')
 
         var $this = $(this);
 
         survey_nav('next');
         survey_progress();
+        // checkChecked('.current_page')
 
 
 
@@ -108,8 +115,9 @@ $(function () {
     $('.prev_btn').click(function () {
 
         survey_nav('prev');
-        checkChecked('.page:visible')
-        required_textboxs('.page:visible')
+        survey_progress();
+        checkChecked('.current_page')
+        // required_textboxs('.current_page')
 
         if ($('.brief').is(':visible')) {
             $('.next_btn').prop('disabled', false);
@@ -145,12 +153,17 @@ $(function () {
                 var char = max - len;
                 $(this).next('.char_counter').find('.current').text(char);
             }
+
+            // validate that the textarea has value to enable the next button
+            if ($(this).hasClass('required')){
+
+                required_textboxs('.page:visible')
+
+            }
         });
 
-        // validate that the textarea has value to enable the next button
-        $(e).blur(function () {
-            required_textboxs('.page:visible')
-        });
+
+
 
     });
 
@@ -181,10 +194,10 @@ $(function () {
         })
     })
     $(".survey_options").click(function(){
-        checkChecked('.page:visible')
+        checkChecked('.current_page')
 
         // validate that the textarea has value to enable the next button
-        $('.required').blur(function () {
+        $('.required').change(function () {
             required_textboxs('.page:visible')
         });
     })
@@ -194,7 +207,7 @@ $(function () {
     $('.submit_btn').on('click', function () {
 
         $('.btns-bg,  .questions_numbers').hide()
-        $('.page:visible').hide().next().show();
+        $('.page:visible').hide().next().show().addClass('cols');
 
 
         user_device_info();
@@ -289,13 +302,22 @@ function survey_nav(item) {
 // function to validate that at least one option is selected
 function checkChecked(item){
     var check = true;
-    $(item).find(".survey_options").each(function(){
-        var name = $(this).attr("name");
-        console.log(name)
+    $(item).find("p:visible .survey_options").each(function(){
 
-        if($(".survey_options[name="+name+"]:checked").length == 0){
+        var name = $(this).attr("name");
+
+        if($("p:visible .survey_options[name="+name+"]:checked").length == 0){
             check = false;
         }
+
+        var option_count = $(item).find("p:visible .survey_options").length,
+            required_count = $(item).find('.required').length;
+
+        if( option_count == 0 && required_count == 0){
+            check=true
+        }
+
+        // console.log(option_count, required_count)
     });
 
     if(check){
@@ -311,7 +333,7 @@ function required_textboxs(item){
 
     $(item).find(".required").each(function(){
         var value = $(this).val();
-        console.log(name)
+        // console.log(name)
 
         if(value.length == 0){
             valid = false;
@@ -330,30 +352,32 @@ function required_textboxs(item){
 // funcgtion to create progress bar
 function survey_progress() {
 
-    var percentage = (pageNo / pages.length)*100;
+    var percentage = (pageNo / pages.not('.brief').length)*100;
+    console.log(percentage)
+    $('.survey_progress .section span').css('width', percentage +'%');
 
-    if (percentage >= 33 && percentage < 66 ) {
-
-        $('.survey_progress .sec_1').addClass('active');
-
-        $(".notifications").show().find(".notification_part_1").fadeIn();
-        setTimeout(function () {
-            $(".notifications").fadeOut().find(".notification_part_1").fadeOut();
-        }, 5000);
-    }
-    else if (percentage >= 66 && percentage < 100) {
-        $('.survey_progress .sec_2').addClass('active');
-        $(".notifications").show().find(".notification_part_2").fadeIn();
-        setTimeout(function () {
-            $(".notifications").fadeOut().find(".notification_part_2").fadeOut();
-        }, 5000);
-
-    } else if (percentage == 100) {
-        $('.survey_progress .section').addClass('active');
-    }
-    else if ($('.thanks_msg').is(':visible')) {
-        $('.survey_progress .section ').addClass('active');
-    }
+    // if (percentage > 33  && percentage < 40 ) {
+    //
+    //     $('.survey_progress .sec_1').addClass('active');
+    //
+    //     $(".notifications").show().find(".notification_part_1").fadeIn();
+    //     setTimeout(function () {
+    //         $(".notifications").fadeOut().find(".notification_part_1").fadeOut();
+    //     }, 2000);
+    // }
+    // else if (percentage >60 && percentage < 70) {
+    //     $('.survey_progress .sec_2').addClass('active');
+    //     $(".notifications").show().find(".notification_part_2").fadeIn();
+    //     setTimeout(function () {
+    //         $(".notifications").fadeOut().find(".notification_part_2").fadeOut();
+    //     }, 2000);
+    //
+    // } else if (percentage == 100) {
+    //     $('.survey_progress .section').addClass('active');
+    // }
+    // else if ($('.thanks_msg').is(':visible')) {
+    //     $('.survey_progress .section ').addClass('active');
+    // }
 
 }
 

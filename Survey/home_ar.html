@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>استبيان الموظفين</title>
+    <title>استبيان تقييم مدى الرضا الوظيفي</title>
 
     <link href="css/bootstrap.css" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -44,13 +44,9 @@
                             <h1>استبيان تقييم مدى الرضا الوظيفي</h1>
 
 
-                            <p>يهدف هذا الاستبيان إلى قياس مدى الرضا الوظيفي لموظفي شركة حلول بهدف حل أي تحديات قد تواجه
-                                الموظفين وإيمانا منا بإيجاد حلول لتحسين ظروف العمل في الشركة. الاستبيان يستغرق حوالي ١٥
-                                دقيقة. هذا الاستبيان لمصلحتك فنرجوا منك الإجابة عن الأسئلة بمصداقية وبصراحة تامة فرأيك
-                                مهم
-                                جدا لنا! علما بأن النتائج سرية للغاية وتأخذ بمجموعها ولن يتم النظر في نتائجك الفردية أو
-                                مشاركتها لأي زميل أو مدير أو مسؤول أو جهة داخل الشركة أو خارجها.
-                                .</p>
+                            <p>
+                                يهدف هذا الاستبيان إلى قياس مدى الرضا الوظيفي لموظفي شركة حلول، ولحل أي تحديات قد تواجه الموظفين، وإيمانا منا لتحسين ظروف العمل في الشركة. الاستبيان يستغرق حوالي 20 دقيقة، نرجو منك الإجابة عن الأسئلة بمصداقية وبصراحة تامة فرأيك مهم جداً لنا! علماً بأن النتائج سرية للغاية وتؤخذ بمجموعها ولن يتم النظر في نتائجك الفردية أو مشاركتها لأي زميل أو مدير أو مسؤول أو جهة داخل الشركة أو خارجها. علما بأن اسمك غير مطلوب في الاستبيان
+                            </p>
                             <p>
 
                                 نقدر لكم مشاركتكم في هذا الاستبيان، يرجى الضغط على زر “التالي” للبدء.
@@ -68,7 +64,7 @@
                                 ماهي جنسيتك؟
                             </h3>
 
-                            <div class="flex cols  cols_2">
+                            <div class="flex cols  cols_4">
 
                                 <p>
                                     <input type="radio" class="survey_options" value="saudi"/>
@@ -88,7 +84,7 @@
                                 هل هذه أول وظيفة رسمية لك؟
                             </h3>
 
-                            <div class="flex cols cols_2">
+                            <div class="flex cols cols_4">
 
                                 <p>
                                     <input type="radio" class="survey_options" value="first_job"/>
@@ -169,6 +165,11 @@
                             </div>
 
                         </div>
+
+                    </div>
+
+                    <div class="page" data-section=" أسئلة افتتاحية">
+
                         <div class=" question_holder">
 
                             <h3>
@@ -205,7 +206,7 @@
                                 في أي فرع تعمل بشكل رئيسي؟
                             </h3>
 
-                            <div class="flex cols  cols_2">
+                            <div class="flex cols  cols_4">
 
                                 <p>
                                     <input type="radio" class="survey_options" value="mursalat"/>
@@ -1566,7 +1567,7 @@
                                 هل تشارك في أنشطة ترفيهية في العمل؟
                             </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>نعم</label>
@@ -2271,7 +2272,7 @@
                                 هل واجهت مشكلة في تأخر الأمور المالية (راتب، تعويض، زيادة، وغيرها)؟
                             </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>نعم</label>
@@ -2582,7 +2583,7 @@
                         <div class=" question_holder">
                             <h3>إذا كنت ستترك عملك الحالي لأي سبب، ما هو السبب الرئيسي الذي يمكن أن يجعلك تفعل ذلك؟
                             </h3>
-                            <textarea type="text" class="comments_textarea required" name="work_reasons"
+                            <textarea type="text" class="comments_textarea " name="work_reasons"
                                       id="work_reasons" placeholder="أسبابك" rows="2" maxlength="255"></textarea>
                             <div class="char_counter">
                                 <span class="current"></span>/
@@ -2594,7 +2595,7 @@
                             <h3>إذا كنت ستذهب لمقر عمل جديد في المستقبل، ما هي الميزة الرئيسية التي قد تجذبك للشركة
                                 الجديدة؟
                             </h3>
-                            <textarea type="text" class="comments_textarea required" name="other_benefits"
+                            <textarea type="text" class="comments_textarea " name="other_benefits"
                                       id="other_benefits" placeholder="اذكر الميزة الاخرى" rows="2"
                                       maxlength="255"></textarea>
                             <div class="char_counter">
@@ -2606,7 +2607,7 @@
                         <div class=" question_holder">
                             <h3>في رأيك ما هي أفضل ميزة تقدمها الشركة حاليا غير الراتب؟
                             </h3>
-                            <textarea type="text" class="comments_textarea required" name="current_benefit"
+                            <textarea type="text" class="comments_textarea " name="current_benefit"
                                       id="current_benefit" placeholder=" افضل ميزة حالية" rows="2"
                                       maxlength="255"></textarea>
                             <div class="char_counter">
@@ -2619,7 +2620,7 @@
                             <h3>أذكر ميزة واحدة غير متواجدة حالياً إذا قُدمت لك يمكن أن تكون سبب في استمرارك للعمل في
                                 الشركة لفترة طويلة؟
                             </h3>
-                            <textarea type="text" class="comments_textarea required" name="new_benefit" id="new_benefit"
+                            <textarea type="text" class="comments_textarea " name="new_benefit" id="new_benefit"
                                       placeholder="ميزة جديدة" rows="2" maxlength="255"></textarea>
                             <div class="char_counter">
                                 <span class="current"></span>/
@@ -3024,7 +3025,7 @@
                             <h3>
                                 هل قدمت أو حاولت القيام بمبادرة شخصية لإدارة eChannels أو للإدارات الأخرى؟ </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>نعم</label>
@@ -3083,7 +3084,7 @@
                             <h3>
                                 هل أنت راض عن الفرص التدريبية المقدمة من الشركة؟ </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>نعم</label>
@@ -3119,7 +3120,7 @@
                                 هل تلقيت أي تدريب من موظفين ذوي خبرة في بداية عملك؟
                             </h3>
 
-                            <div class="flex cols  cols_2 conditions_inputs">
+                            <div class="flex cols  cols_4 conditions_inputs">
                                 <p>
                                     <input type="radio" class="survey_options" value="yes"/>
                                     <label>نعم</label>
@@ -4766,8 +4767,8 @@
 
                         </div>
                         <div class="section sec_1"><span></span></div>
-                        <div class="section sec_2"><span></span></div>
-                        <div class="section sec_3"><span></span></div>
+<!--                        <div class="section sec_2"><span></span></div>-->
+<!--                        <div class="section sec_3"><span></span></div>-->
                     </div>
 
                     <div class="container btns_holder">

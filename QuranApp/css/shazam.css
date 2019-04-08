@@ -180,6 +180,26 @@ body {
 
 .app_sections.spalsh.current svg #logo{
 }
+.splash_logo {
+    color: #fff;
+    font-family: 'stc-light';
+    font-size: 6vmin;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+}
+.splash_logo img{
+    max-width: 75px;
+    padding: 10px;
+}
+.splash_logo h6{
+    margin: 0 10px;
+}
 .isalmic_pattern {
     background: #32004a url("../images/islamic_bg.svg") no-repeat bottom left;
     background-size: 100%;
@@ -329,7 +349,7 @@ body {
 
 .btns.btns_pulse {
     box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
-    animation: pulse2 1.7s cubic-bezier(.74,.54,.3,.7) infinite, innerbeat 1.7s cubic-bezier(.74,.54,.3,.7) infinite ;
+    animation: pulse2 1.7s cubic-bezier(.74,.54,.3,.7) infinite ;
 }
 
 .btns.btns_ripple {
@@ -470,21 +490,18 @@ body {
 
 
     0% {
-        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3), 0 0 0 0px rgba(255, 255, 255, 0.2);
-        transform: scale(0.9);
+        transform: scale(1);
     }
 
     45% {
-        transform: scale(1.1);
-        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3), 0 0 0 0px rgba(255, 255, 255, 0.2);
+        transform: scale(1.3);
 
     }
     76% {
-        transform: scale(0.96);
+        transform: scale(1.1);
     }
     100% {
-        box-shadow: 0 0 0 20vmin rgba(255, 255, 255, 0), 0 0 0 10vmin rgba(255, 255, 255, 0);
-        transform: scale(.9);
+        transform: scale(1);
     }
 
 }

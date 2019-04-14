@@ -237,50 +237,56 @@
 
     });
 
+    $(window).on('load',function()
+    {
+        var width = $(this).width();
+        if(width < 993)
+        {
+            console.log('Responsive Mode')
+            $('.stars1, .stars2, .stars3').remove();
 
+        }
+        else{
 
+            $('.stars_bg .stars_holder').append('<div class="stars1"/><div class="stars2"/><div class="stars3"/>')
 
+            var i,
+                size,
+                color,
+                width = $(window).width(),
+                height = $(window).height();
 
+            for (i = 1; i <= 100; i++) {
+                size = Math.ceil(3*Math.random());
+                $('.star_parallax').append('<div class="star" data-parallaxify-range="' + Math.round(100*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
+            }
 
+            for (i = 1; i <= 30; i++) {
+                size = Math.ceil(5*Math.random()) + 2;
+                $('.star_parallax').append('<div class="star" data-parallaxify-range="' + Math.round(400*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
+            }
 
+            for (i = 1; i <= 15; i++) {
+                size = Math.ceil(5*Math.random()) + 5;
+                color = 'rgba(' + Math.round(256*Math.random()) + ', ' + Math.round(256*Math.random()) + ', ' + Math.round(256*Math.random()) + ', ' + (Math.round(100*Math.random())/100) + ')';
+                $('.star_parallax').append('<div class="star" data-parallaxify-range="' + Math.round(600*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px; background: ' + color + '; box-shadow: 0px 0px 10px ' + color + ';"></div>');
+            }
 
+            $.parallaxify({
+                positionProperty: 'transform',
+                responsive: true,
+                motionType: 'natural',
+                mouseMotionType: 'gaussian',
+                motionAngleX: 70,
+                motionAngleY: 70,
+                alphaFilter: 0.5,
+                adjustBasePosition: true,
+                alphaPosition: 0.025,
+            });
 
+        }
 
-    // Star background parallax
-    var i,
-        size,
-        color,
-        width = $(window).width(),
-        height = $(window).height();
-
-    for (i = 1; i <= 100; i++) {
-        size = Math.ceil(3*Math.random());
-        $('.star_parallax').append('<div class="star" data-parallaxify-range="' + Math.round(100*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
-    }
-
-    for (i = 1; i <= 30; i++) {
-        size = Math.ceil(5*Math.random()) + 2;
-        $('.star_parallax').append('<div class="star" data-parallaxify-range="' + Math.round(400*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
-    }
-
-    for (i = 1; i <= 15; i++) {
-        size = Math.ceil(5*Math.random()) + 5;
-        color = 'rgba(' + Math.round(256*Math.random()) + ', ' + Math.round(256*Math.random()) + ', ' + Math.round(256*Math.random()) + ', ' + (Math.round(100*Math.random())/100) + ')';
-        $('.star_parallax').append('<div class="star" data-parallaxify-range="' + Math.round(600*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px; background: ' + color + '; box-shadow: 0px 0px 10px ' + color + ';"></div>');
-    }
-
-    $.parallaxify({
-        positionProperty: 'transform',
-        responsive: true,
-        motionType: 'natural',
-        mouseMotionType: 'gaussian',
-        motionAngleX: 70,
-        motionAngleY: 70,
-        alphaFilter: 0.5,
-        adjustBasePosition: true,
-        alphaPosition: 0.025,
     });
-
 
     // Fake loader function
     var  container = $('#wrap' );

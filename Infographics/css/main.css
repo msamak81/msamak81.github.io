@@ -60,7 +60,6 @@ body {
     height: 100%;
     background: radial-gradient(ellipse at 500% 0, #652a75 50%, #290b22 80%, #dc2c5a 100%);
     z-index: -2;
-    /*transform: matrix(1, 0, 0, 1, 0, -400);*/
 }
 
 .stars1 {
@@ -1359,7 +1358,7 @@ ul.nav_steps li.active:after {
 
 .swiper-container, .swiper-container-features {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
 }

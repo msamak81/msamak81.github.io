@@ -1067,7 +1067,7 @@ ul.nav_steps li.active:after {
 }
 
 .height_semi {
-    height: 50%;
+    height: 50vh;
 }
 
 .height_semi + .section_content {

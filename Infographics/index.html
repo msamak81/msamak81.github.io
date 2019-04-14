@@ -11,7 +11,12 @@
     <link href="css/custom_charts.css" rel="stylesheet"/>
     <link href="css/effects.css" rel="stylesheet"/>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/swiper.css" rel="stylesheet"/>
+
     <link href="css/main.css" rel="stylesheet"/>
+
+    <link href="css/mobile.css" rel="stylesheet"/>
+
 </head>
 <body>
 <div id="wrap" class="">
@@ -67,134 +72,332 @@
             </svg>
         </div>
     </header>
-
-    <div class="nav_holder">
-        <a href="#" class="back_home" title="Go Back to home">
-            <svg height='300px' width='300px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" version="1.1" x="0px" y="0px"><title>top</title><desc>Created with Sketch.</desc><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon points="52.3157895 41.3157895 69.6842105 58.6842105 67.3684211 61 50 43.6315789 32.6315789 61 30.3157895 58.6842105 47.6842105 41.3157895 50 39"></polygon></g></svg>
-        </a>
-        <ul class="nav_steps">
-            <li class="active">
-                <span>Revenue</span>
-            </li>
-            <li>
-                <span>e-Payments</span>
-            </li>
-            <li>
-                <span>Active Users</span>
-            </li>
-            <li>
-                <span>Features</span>
-            </li>
-        </ul>
-    </div>
-
-    <div class="pages">
-        <div class="page page--current" id="first-page">
-
-            <div class="stars_bg">
-                <div class="stars"></div>
-
-                <div class="stars_holder">
-                    <div class='stars1'></div>
-                    <div class='stars2'></div>
-                    <div class='stars3'></div>
-                    <div class="particles-js" id="particles_star"></div>
-                    <div id="stars" class="star_parallax">
-                        <div class="star"></div>
-                    </div>
-
-                    <div id='moon'>
-                        <div class='craterCon'>
-                            <div class='craters'></div>
-                        </div>
-                        <div class='glow'></div>
-                    </div>
-
-                    <div id='horizon'>
-                        <div class='glow'></div>
-                    </div>
-                    <div id='earth'></div>
-                </div>
-
-
-                <div class="title">
-
-                    <nav class="releases">
-                        <a href="#" title="Altair" data-release="altair" class="active">Altair</a>
-                        <a href="#" title="Birdun" data-release="birdun">Birdun</a>
-                        <a href="#" title="Capella" data-release="capella" >Capella</a>
-                        <a href="#" title="Dorado" data-release="dorado" >Dorado</a>
-                        <a href="#" title="Enif" data-release="enif" >Enif</a>
-                        <a href="#" title="Fornax" data-release="fornax">Fornax</a>
-                    </nav>
-
-
-                    <h1>Whats New in MySTC</h1>
-                    <h3 class="current_release">
-                        <span class="month"></span>
-                        <span class="year"></span>
-                    </h3>
-
-                </div>
-
-            </div>
-
-            <div class="mouse" style="visibility: inherit; opacity: 1;"></div>
-
-            <a href="#" class="start_view" title="Start Infographics">Start</a>
-
+    <div class="main_menu">
+        <div class="menu_icon">
+            <div class="c015 c012"><div class="c016"><span class="c018 c0112 c019"></span><span class="c018 c0112 c0110"></span><span class="c018 c0112 c0111"></span></div></div>
         </div>
-        <div class="page">
-            <div class="sections">
-                    <section class="section gray_bg" id="Revenue">
+        <div class="menu_items animated expandInDown" style="--delay:0ms;--duration: .8s">
+            <nav class="animated fadeIn" style="--delay:300ms;--duration: .8s">
+                <a class="nav_item home" title="Home" data-slide="0">Home</a>
+                <a class="nav_item revenue" title="Revenue" data-slide="1">Revenue</a>
+                <a class="nav_item epayments" title="E-Payments" data-slide="2">E-Payments</a>
+                <a class="nav_item acive_users" title="Active Users" data-slide="3">Active Users</a>
+                <a class="nav_item new_features" title="New Features" data-slide="4">New Features</a>
+            </nav>
+        </div>
+    </div>
+    <div class="pages">
 
-                        <div class="section_header bgs gradient_bg height_semi animated expandInDown" style="--delay:90ms;--duration:.8s">
-                            <div class="stars"></div>
-                            <div id="stars2" class="star_parallax">
+        <!-- Swiper -->
+        <div class="swipers swiper-container">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide ">
+                    <section class="section current">
+                    <div class="stars_bg">
+                        <div class="stars"></div>
+
+                        <div class="stars_holder">
+                            <div class='stars1'></div>
+                            <div class='stars2'></div>
+                            <div class='stars3'></div>
+                            <div class="particles-js" id="particles_star"></div>
+                            <div id="stars" class="star_parallax">
                                 <div class="star"></div>
                             </div>
-                            <div class="header_content">
-                                <h3 class="current_release"><span class="month"></span><span class="year"></span> </h3>
-                                <h1 class="white_text big_titles">
-                                    <span class="count total_revenue"></span>
-                                    <span class="abbr">SAR</span>
-                                </h1>
+
+                            <div id='moon'>
+                                <div class='craterCon'>
+                                    <div class='craters'></div>
+                                </div>
+                                <div class='glow'></div>
                             </div>
+
+                            <div id='horizon'>
+                                <div class='glow'></div>
+                            </div>
+                            <div id='earth'></div>
+                        </div>
+
+
+                        <div class="title">
+
+                            <nav class="releases">
+                                <a href="#" title="Altair" data-release="altair">Altair</a>
+                                <a href="#" title="Birdun" data-release="birdun">Birdun</a>
+                                <a href="#" title="Capella" data-release="capella" >Capella</a>
+                                <a href="#" title="Dorado" data-release="dorado" >Dorado</a>
+                                <a href="#" title="Enif" data-release="enif" >Enif</a>
+                                <a href="#" title="Fornax" data-release="fornax">Fornax</a>
+                            </nav>
+
+
+                            <h1>Whats New in MySTC</h1>
+
+                            <h3 class="current_release">
+                                <span class="month"></span>
+                                <span class="year"></span>
+                            </h3>
 
                         </div>
 
-                        <div class="section_content" style="--delay:100ms;--duration:.5s">
-                            <div class="row height_full">
-                                <div class="col-6">
-                                    <div class="animated_sections">
-                                        <div class="charts bar_charts" data-source="chart_val" id="revenue_chart" style="--delay:180ms;--duration:.8s"></div>
+                    </div>
 
-                                    </div>
-
-                                </div>
-                                <div class="col-6">
-                                    <div class="content">
-
-                                        <div class="section_title animated fadeIn" data-letter="R" style="--delay:300ms;--duration:.8s" >
-                                            <h2>Revenue</h2>
-                                        </div>
-                                        <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s" >
-                                            MySTC App. achieves SAR 1.148 Billions as revenue for the last quarter.
-                                        </p>
-                                        <h3 class="chart_option_title animated slideInUp" style="--delay:380ms;--duration:.8s">
-                                            Display revenue by month and compare it with Previous month.
-                                        </h3>
-                                        <nav class="charts_options animated slideInUp" id="revenue_charts_key" style="--delay:390ms;--duration:.8s" ></nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mouse animated slideInUp" style="visibility: inherit; opacity: 1; --delay:300ms;--duration:.8s"></div>
+                    <div class="scroll_msg animated slideInUp " style="--delay:320ms;--duration:.8s">Scroll, swipe or use your keyboard to start your experience</div>
                     </section>
+
+                </div>
+                <div class=" swiper-slide ">
+                    <section class="section bgs dotted_bg" id="Revenue">
+                        <div class="row">
+                            <div class="col-lg-5 stats_content bgs bg-space white_text animated fadeIn">
+
+                                <div class="stars_holder">
+                                    <!--<div class="particles-js" id="particles_star"></div>-->
+                                    <div class="star_parallax">
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="content">
+                                    <h2>Revenue</h2>
+                                    <h4 class="current_release">
+                                        <span class="release_name"></span>
+                                        <span class="year"></span>
+                                    </h4>
+
+                                    <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s">
+                                        MySTC App. achieves SAR 1.148 Billions as revenue for the last quarter.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="charts bar_charts" id="revenue_chart"  data-source="revenue_new" data-past="revenue_last" data-prev="355000000" ></div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+                <div class="swiper-slide ">
+                    <section class="section bgs dotted_bg" id="Payments">
+                        <div class="row flex-row-reverse" >
+                            <div class="col-lg-5 stats_content bgs bg-space white_text animated fadeIn">
+
+                                <div class="stars_holder">
+                                    <!--<div class="particles-js" id="particles_star"></div>-->
+                                    <div class="star_parallax">
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    <h2>e-Payments</h2>
+
+                                    <h4 class="current_release">
+                                        <span class="release_name"></span>
+                                        <span class="year"></span>
+                                    </h4>
+
+                                    <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s">
+                                        MySTC App. achieves SAR 1.148 Billions as revenue for the last quarter.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="charts bar_charts vertical" id="Payment_chart"  data-source="payment_val" data-past="payment_last" data-prev="355000000" ></div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+                <div class=" swiper-slide ">
+                    <section class="section bgs dotted_bg" id="users">
+                        <div class="row" >
+                            <div class="col-lg-12 height_semi stats_content bgs bg-space white_text animated fadeIn">
+
+                                <div class="stars_holder">
+                                    <!--<div class="particles-js" id="particles_star"></div>-->
+                                    <div class="star_parallax">
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    <h2>Active Users</h2>
+                                    <h4 class="current_release">
+                                        <span class="release_name"></span>
+                                        <span class="year"></span>
+                                    </h4>
+
+                                    <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s">
+                                        MySTC App. achieves SAR 1.148 Billions as revenue for the last quarter.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-12 height_semi active_users animated fadeIn">
+<!--                                <div class="charts bar_charts users" id="users_chart"  data-source="payment_val" data-past="payment_last" data-prev="355000000" ></div>-->
+
+                                <div class="users_divs">
+                                    <div class="user_div animated slideInUp" style="--delay:320ms;--duration:.8s">
+                                    <div class="chart_title">
+                                        <h1>
+                                            <i class="fa fa-apple"></i>
+                                            <span>iOS</span>
+                                        </h1>
+                                        <h2>
+                                            <span class="hint">Total Users</span>
+                                            <span class="count users_count ios_users" data-count="0" ></span>
+                                            <span class="abbr"></span>
+                                        </h2>
+
+                                    </div>
+                                    <div class="stats charts users" data-source="ios" id="users_ios"></div>
+                                </div>
+                                    <div class="user_div  animated slideInUp" style="--delay:350ms;--duration:.8s">
+                                        <div class="chart_title">
+                                            <h1>
+                                                <i class="fa fa-android"></i>
+                                                <span>Android</span>
+                                            </h1>
+                                            <h2>
+                                                <span class="hint">Total Users</span>
+                                                <span class="count users_count android_users" data-count="0"></span>
+                                                <span class="abbr"></span>
+                                            </h2>
+
+                                        </div>
+                                        <div class="stats charts users" data-source="android" id="users_android" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+                <div class=" swiper-slide ">
+                    <section class="section bgs dotted_bg">
+                        <!-- inner swiper for new features -->
+                        <div class="swipers swiper-container-features">
+                            <div class="swiper-wrapper">
+                                <div class=" swiper-slide">
+                                    <section class="section bgs dotted_bg">
+                                    <div class="row" >
+                                        <div class="col-lg-5  stats_content bgs bg-space white_text animated fadeIn">
+
+                                            <div class="stars_holder">
+                                                <!--<div class="particles-js" id="particles_star"></div>-->
+                                                <div class="star_parallax">
+                                                    <div class="star"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="content">
+                                                <h2 class="animated slideInDown" style="--delay:250ms;--duration:.8s">New features</h2>
+
+                                                <h4 class="current_release animated slideInDown" style="--delay:270ms;--duration:.8s">
+                                                    <span class="release_name"></span>
+                                                    <span class="year"></span>
+                                                </h4>
+
+                                                <h3 class="feature_title animated slideInDown" data-no="01" style="--delay:300ms;--duration:.8s"><span>Landline Temporary Suspension</span></h3>
+                                                <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s">
+                                                    Users can temporarily suspend their landlines and reactivate it any time
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-7  animated fadeIn">
+
+                                            <div class="video_cont">
+                                                <video title="features" muted playsinline  class="features_video animated growth" id="landline_suspension" style="--delay:330ms;--duration: 100ms;">
+                                                    <source type="video/mp4" src="videos/deactivate%20landline.mp4">
+                                                </video>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    </section>
+
+                                </div>
+                                <div class=" swiper-slide ">
+                                    <section class="section bgs dotted_bg">
+                                        <div class="row" >
+                                            <div class="col-lg-5  stats_content bgs bg-space white_text animated fadeIn">
+
+                                                <div class="stars_holder">
+                                                    <!--<div class="particles-js" id="particles_star"></div>-->
+                                                    <div class="star_parallax">
+                                                        <div class="star"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="content">
+
+                                                    <h2  class="animated slideInDown" style="--delay:250ms;--duration:.8s">New features</h2>
+
+                                                    <h4 class="current_release animated slideInDown" style="--delay:270ms;--duration:.8s">
+                                                        <span class="release_name"></span>
+                                                        <span class="year"></span>
+                                                    </h4>
+
+                                                    <h3 class="feature_title animated slideInDown" data-no="02" style="--delay:300ms;--duration:.8s"><span>Direct Payment Deregistration</span></h3>
+                                                    <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s">
+                                                        Users now have access to deregister their devices to buy from Google service
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-7  animated fadeIn">
+
+                                                <div class="video_cont">
+                                                    <video title="features" muted playsinline  class="features_video animated growth" id="mySim" style="--delay:330ms;--duration: 100ms;">
+                                                        <source type="video/mp4" src="videos/Dpayment%20DeReg.mp4">
+                                                    </video>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+
+                                    </section>
+
+                                </div>
+                            </div>
+
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination-features"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+
+
+                    </section>
+
+                </div>
+
+
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
 
-    </div>
 
+
+    </div>
 
 </div>
 
@@ -204,6 +407,7 @@
 <script src="js/jquery.parallaxify.js" type="text/javascript"></script>
 <script src="js/particles.min.js" type="text/javascript"></script>
 <script src="js/effects.js" type="text/javascript"></script>
+<script src="js/swiper.js" type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script>
 
 </body>

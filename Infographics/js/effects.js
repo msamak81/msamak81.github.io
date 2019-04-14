@@ -238,18 +238,8 @@ var pages
             bgcolor : ['#290b22', '#c71f70', '#e79b14', '#fff'],
             // effect classname
             effect : 'anim--effect-3',
-            onStart : function(direction) {
-                // next page gets class page--animate-[direction]
-                var nextPage = pages[currentPage === 0 ? 1 : 0];
-
-                $(nextPage).addClass('page--animate-' + direction);
-            },
-            onEnd : function(direction) {
-                // remove class page--animate-[direction] from next page
-                var nextPage = pages[currentPage === 0 ? 1 : 0];
-                nextPage.className = 'page';
-            }
         };
+
     revealer = new Revealer(revealerOpts);
 
     $('#first-page').bind('touchmove', function(e) {
@@ -258,55 +248,6 @@ var pages
         e.preventDefault();
 
     }, false);
-
-
-
-    // $(window).bind('mousewheel DOMMouseScroll', function(event){
-    //     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-    //         // scroll up
-    //
-    //         $('body').addClass('dark switch-Layout');
-    //         reveal('bottom');
-    //         setTimeout(function () {
-    //             $('.sections .section:first-child').addClass('current');
-    //             $('.nav_holder, header.ip-header').addClass('current');
-    //
-    //             // Animate Statistics Numbers
-    //             $('.count').each(function () {
-    //                 $(this).parent().addClass('filled');
-    //                 $(this).prop('Counter',0).animate({
-    //                     Counter: sum
-    //                 }, {
-    //                     duration: 1000,
-    //                     easing: 'swing',
-    //                     step: function (now) {
-    //                         $(this).text(Math.ceil(now));
-    //                     }
-    //                 });
-    //
-    //
-    //             });
-    //
-    //         }, 1000); // Execute something() 1 second later.
-    //
-    //
-    //     }
-    //     else {
-    //         $('.sections .section:first-child').removeClass('current');
-    //         $('.nav_holder, header.ip-header').removeClass('current');
-    //F
-    //         setTimeout(function () {
-    //
-    //             $('body').removeClass('dark switch-Layout');
-    //             reveal('top');
-    //
-    //
-    //         }, 500); // Execute something() 1 second later.
-    //
-    //
-    //     }
-    // });
-
 
 })();
 

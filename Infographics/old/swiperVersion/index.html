@@ -11,10 +11,19 @@
     <link href="css/custom_charts.css" rel="stylesheet"/>
     <link href="css/effects.css" rel="stylesheet"/>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/swiper.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
 
-    <link href="css/mobile.css" rel="stylesheet"/>
+    <style>
 
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
 </head>
 <body>
 <div id="wrap" class="">
@@ -71,98 +80,131 @@
         </div>
     </header>
 
-    <div class="nav_holder">
-        <a href="#" class="back_home" title="Go Back to home">
-            <svg height='300px' width='300px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" version="1.1" x="0px" y="0px"><title>top</title><desc>Created with Sketch.</desc><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon points="52.3157895 41.3157895 69.6842105 58.6842105 67.3684211 61 50 43.6315789 32.6315789 61 30.3157895 58.6842105 47.6842105 41.3157895 50 39"></polygon></g></svg>
-        </a>
-    </div>
-
     <div class="pages">
-        <div class="page page--current" id="first-page">
 
-            <div class="stars_bg">
-                <div class="stars"></div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide">
+                    <div class="stars_bg">
+                        <div class="stars"></div>
 
-                <div class="stars_holder">
-                    <div class='stars1'></div>
-                    <div class='stars2'></div>
-                    <div class='stars3'></div>
-                    <div class="particles-js" id="particles_star"></div>
-                    <div id="stars" class="star_parallax">
-                        <div class="star"></div>
-                    </div>
+                        <div class="stars_holder">
+                            <div class='stars1'></div>
+                            <div class='stars2'></div>
+                            <div class='stars3'></div>
+                            <div class="particles-js" id="particles_star"></div>
+                            <div id="stars" class="star_parallax">
+                                <div class="star"></div>
+                            </div>
 
-                    <div id='moon'>
-                        <div class='craterCon'>
-                            <div class='craters'></div>
-                        </div>
-                        <div class='glow'></div>
-                    </div>
-
-                    <div id='horizon'>
-                        <div class='glow'></div>
-                    </div>
-                    <div id='earth'></div>
-                </div>
-
-
-                <div class="title">
-
-                    <nav class="releases">
-                        <a href="#" title="Altair" data-release="altair" class="active">Altair</a>
-                        <a href="#" title="Birdun" data-release="birdun">Birdun</a>
-                        <a href="#" title="Capella" data-release="capella" >Capella</a>
-                        <a href="#" title="Dorado" data-release="dorado" >Dorado</a>
-                        <a href="#" title="Enif" data-release="enif" >Enif</a>
-                        <a href="#" title="Fornax" data-release="fornax">Fornax</a>
-                    </nav>
-
-
-                    <h1>Whats New in MySTC</h1>
-                    <h3>march 2019</h3>
-
-                </div>
-
-            </div>
-
-            <div class="mouse" style="visibility: inherit; opacity: 1;"></div>
-
-            <a href="#" class="start_view" title="Start Infographics">Start</a>
-
-        </div>
-        <div class="page">
-            <div class="sections">
-                <section class="section bgs dotted_bg" id="Revenue">
-                    <div class="row">
-                        <div class="col-lg-5 stats_content bgs bg-space white_text">
-
-                            <div class="stars_holder">
-                                <!--<div class="particles-js" id="particles_star"></div>-->
-                                <div class="star_parallax">
-                                    <div class="star"></div>
+                            <div id='moon'>
+                                <div class='craterCon'>
+                                    <div class='craters'></div>
                                 </div>
+                                <div class='glow'></div>
                             </div>
 
-                            <div class="content">
-                                <h4 class="current_release">
-                                    <span class="release_name"></span>
-                                    <span class="year"></span>
-                                </h4>
-                                <h2>Revenue</h2>
-                                <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s">
-                                    MySTC App. achieves SAR 1.148 Billions as revenue for the last quarter.
-                                </p>
+                            <div id='horizon'>
+                                <div class='glow'></div>
                             </div>
+                            <div id='earth'></div>
+                        </div>
+
+
+                        <div class="title">
+
+                            <nav class="releases">
+                                <a href="#" title="Altair" data-release="altair" class="active">Altair</a>
+                                <a href="#" title="Birdun" data-release="birdun">Birdun</a>
+                                <a href="#" title="Capella" data-release="capella" >Capella</a>
+                                <a href="#" title="Dorado" data-release="dorado" >Dorado</a>
+                                <a href="#" title="Enif" data-release="enif" >Enif</a>
+                                <a href="#" title="Fornax" data-release="fornax">Fornax</a>
+                            </nav>
+
+
+                            <h1>Whats New in MySTC</h1>
+                            <h3>march 2019</h3>
 
                         </div>
-                        <div class="col-lg-7">
-                            <div class="charts bar_charts" id="revenue_chart"  data-source="revenue_new" data-past="revenue_last" data-prev="355000000" ></div>
 
-                        </div>
                     </div>
 
-                </section>
+                    <div class="mouse" style="visibility: inherit; opacity: 1;"></div>
+
+                </div>
+                <div class=" swiper-slide">
+                    <section class="section bgs dotted_bg" id="Revenue">
+                        <div class="row">
+                            <div class="col-lg-5 stats_content bgs bg-space white_text">
+
+                                <div class="stars_holder">
+                                    <!--<div class="particles-js" id="particles_star"></div>-->
+                                    <div class="star_parallax">
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    <h4 class="current_release">
+                                        <span class="release_name"></span>
+                                        <span class="year"></span>
+                                    </h4>
+                                    <h2>Revenue</h2>
+                                    <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s">
+                                        MySTC App. achieves SAR 1.148 Billions as revenue for the last quarter.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="charts bar_charts" id="revenue_chart"  data-source="revenue_new" data-past="revenue_last" data-prev="355000000" ></div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+                <div class=" swiper-slide">
+                    <section class="section bgs dotted_bg" id="Payments">
+                        <div class="row">
+                            <div class="col-lg-5 stats_content bgs bg-space white_text">
+
+                                <div class="stars_holder">
+                                    <!--<div class="particles-js" id="particles_star"></div>-->
+                                    <div class="star_parallax">
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    <h4 class="current_release">
+                                        <span class="release_name"></span>
+                                        <span class="year"></span>
+                                    </h4>
+                                    <h2>Revenue</h2>
+                                    <p class="text animated fadeIn" style="--delay:320ms;--duration:.8s">
+                                        MySTC App. achieves SAR 1.148 Billions as revenue for the last quarter.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="charts bar_charts" id="Payment_chart"  data-source="payment_val" data-past="revenue_last" data-prev="355000000" ></div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+
 
         </div>
 
@@ -174,13 +216,16 @@
 
 <script src="js/modernizr-custom.js"></script>
 <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-<script src="js/tilt.jquery.js"></script>
-<script src="js/anime.min.js"></script>
 <script src="js/jquery.parallaxify.js" type="text/javascript"></script>
 <script src="js/particles.min.js" type="text/javascript"></script>
 <script src="js/effects.js" type="text/javascript"></script>
-<script src="js/Chart.min.js" type="text/javascript"></script>
+<script src="js/swiper.js" type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script>
+
+<!-- Initialize Swiper -->
+<script>
+
+</script>
 
 </body>
 </html>

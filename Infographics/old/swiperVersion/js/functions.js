@@ -85,8 +85,10 @@
 
     // Custom bar chart function
         var chart_val= [378500000, 416000000, 357000000 ],
-         payment_val= [128500000, 316000000, 257000000 ],
-         users_val= [578500000, 216000000, 657000000 ],
+         payment_val= [56700000, 58900000, 561000000 ],
+         users_val_ios= [2500000, 2600000, 2300000 ],
+         users_val_android= [1300000, 1500000, 1300000 ],
+
             chart_label = currentReleaseMonths,
         // sum = chart_val.reduce(function(a, b) { return a + b; }, 0);
             current = chart_val[2],

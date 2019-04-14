@@ -165,12 +165,12 @@
             preVal =$(this).data('prev') ,
             compare_val = max_val + .5 * max_val,
             bar_chart_new,
-         sum = data_src.reduce(function(a, b) { return a + b; }, 0);
+            sum = data_src.reduce(function(a, b) { return a + b; }, 0);
 
 
 
         $.each(data_src, function(key, value) {
-            var val_percentage = value / compare_val * 100;
+            var val_percentage = Math.round(value / compare_val * 100);
 
             setTimeout(function(){
                 var difference,
@@ -225,7 +225,7 @@
                     ' <h2><span class="abbr">sar</span><span class="count ">'+Math.ceil(data_src_last[key]).toLocaleString('en')+'</span></h2>' +
                     '</div>'+
                     '</div>'+
-                    '</div>';
+                    '<div class="chart_icons"></div></div>';
             }
 
 

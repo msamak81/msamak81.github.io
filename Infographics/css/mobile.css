@@ -233,7 +233,16 @@
         position: absolute;
         color: #fff;
     }
-
+    .charts.payments .chart_item .chart_bg .values:before{
+        height: calc(155% + 54px);
+    }
+    .charts.payments:after{
+        height: 100px;
+        bottom: 25px;
+        width: calc(71% + 90px);
+        left: -14px;
+        display: none;
+    }
     .video_cont {
         align-items: flex-start;
     }

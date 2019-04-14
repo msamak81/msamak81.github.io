@@ -402,6 +402,23 @@
     color:green;
 }
 
+.charts.payments:after{content:'';background: #f7f3f3;width: calc(100% + 90px);height: 200px;display: block;position: absolute;left: -80px;bottom: 0;transform: skewX(0deg) scale(0);z-index: -1;border: solid 1px #f3f3f3;border-radius: 8px;transform-origin: bottom;transition: all 0.8s cubic-bezier(0.43, 0.195, 0.02, 1);}
+.charts.payments .chart_item:after {
+    content:'';
+    background:red;
+
+}
+.charts.payments .chart_item .chart_bg .values:before{
+    height: calc(200% + 50px);
+    border-radius: 10px;
+}
+.charts.payments .chart_item .diff_val .compare_percent, .charts.payments .second_value {
+    color:#fff
+}
+
+.current .charts.payments:after{
+    transform: skewX(-20deg) scale(1);
+}
 
 /* Active users custoom chart*/
 .active_users {

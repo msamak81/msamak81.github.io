@@ -24,6 +24,7 @@
     .mouse{
     }
     .users_divs .user_div .stats .stat{
+    margin-bottom: calc(20% - 57px);
     }
     .users_divs .user_div .chart_title{
         margin-bottom: 20px;
@@ -325,12 +326,16 @@
     }
 
     .users_divs .user_div .stats .stat .stat_graph {
-        height: 3vmin;
+        height: 2.5vmin;
     }
     .users_divs .user_div  .stats .stat .stat_heading .diff{font-size: 4vmin;}
     .menu_items nav{
         font-size: 6vmin;
     }
+    .main_menu .menu_icon{
+    right: 15px;
+    top: 15px;
+}
 
 }
 

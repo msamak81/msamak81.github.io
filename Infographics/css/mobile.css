@@ -1,4 +1,5 @@
-@media (max-width: 1440px) {
+
+    @media (max-width: 1440px) {
     .bar_charts .chart_item .chart_bg .values h2 {
         font-size: 3.7vmin;
         /* writing-mode: vertical-rl; */
@@ -24,7 +25,7 @@
     .mouse{
     }
     .users_divs .user_div .stats .stat{
-    margin-bottom: calc(20% - 57px);
+        /* margin-bottom: 30px; */
     }
     .users_divs .user_div .chart_title{
         margin-bottom: 20px;
@@ -33,349 +34,345 @@
 
 }
 
-@media (max-width: 1001px) {
+    @media (max-width: 1001px) {  }
 
-}
+    @media (max-width: 992px) {
+        .stars_bg {
+            transform: none;
+        }
 
-@media (max-width: 992px) {
-    .stars_bg {
-        transform: none;
+        .ip-header {
+            min-height: 200px;
+        }
+
+        .title {
+            margin-top: -50px;
+        }
+
+        .title h1 {
+            font-size: 40px;
+            letter-spacing: 10px;
+        }
+
+        .title h3 {
+            font-size: 20px;
+            letter-spacing: 15px;
+            margin-top: 20px;
+        }
+
+        nav.releases {
+            flex-wrap: wrap;
+        }
+
+        nav.releases a {
+            margin-bottom: 10px;
+        }
+
+        .ip-header .ip-logo svg {
+            min-height: 50px;
+            height: 30%;
+        }
+
+        .loaded .logo {
+            max-height: 100px;
+            margin-top: 0px !important;
+        }
+
+        .loaded .ip-header .ip-logo svg {
+            max-width: 230px;
+        }
+
+        .loaded .ip-header.current .ip-logo svg {
+            max-width: 110px;
+        }
+
+        #earth {
+            width: 340%;
+            height: 100%;
+            left: -20%;
+            bottom: -57%;
+        }
+
+        #horizon {
+            bottom: -24%;
+        }
+
+        #horizon .glow {
+            top: -30%;
+            width: 200%;
+            left: -70%;
+        }
+
+        #moon {
+            width: 80px;
+            height: 80px;
+            left: 50%;
+            margin-left: 0;
+            top: 40%;
+        }
+
+        .star_parallax {
+            opacity: 0.3;
+        }
+
+        .stars_holder {
+            margin-left: 0;
+        }
+
+        .stats_content {
+            height: 45%;
+            padding: 20px;
+        }
+
+        .content {
+            padding: 10px;
+            margin-top: 80px;
+        }
+
+        .stats_content .text {
+            font-size: 17px;
+            max-width: 100%;
+            /* margin: 0; */
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+
+        .stats_content h4 {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .stats_content h4 .release_name {
+        }
+
+        .stats_content h4 .year {
+            font-size: 12px;
+        }
+
+        .stats_content h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .stats_content .stars_holder {
+            opacity: 0.3;
+        }
+
+        .diff_val i:nth-of-type(1) {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            position: absolute;
+            left: calc(30% - 9px);
+            top: -6%;
+        }
+
+        .diff_val i:nth-of-type(2) {
+            font-size: 18px;
+            margin-top: 55px;
+            margin-right: 50%;
+            position: absolute;
+        }
+
+        .diff_val {
+            margin-top: 13px;
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 90px);
+            top: 46%;
+            left: 0;
+            display: block;
+        }
+
+        .bar_charts {
+            min-height: 140%;
+            width: calc(100% - 0px);
+            padding: 20px;
+            margin: 10px 0 20px 0;
+            top: -40%;
+        }
+
+        .bar_charts .chart_item {
+            margin: 0 0 20px 25px;
+            width: calc(100% / 3.5);
+            max-width: 90px;
+            box-sizing: border-box;
+            min-width: 100px;
+        }
+
+        .bar_charts .chart_item:first-child {
+            margin-left: 0
+        }
+
+        .bar_charts .chart_item .chart_bg .values {
+            position: absolute;
+            width: calc(100% + 2px);
+            top: 0;
+            left: -1px;
+            /* height: 100%; */
+        }
+
+        .bar_charts .chart_item .chart_bg .values h3 {
+            font-size: 11px;
+            color: #fff;
+            width: calc(100% - 20px);
+            position: absolute;
+            top: 5px;
+            left: 0;
+            padding: 10px;
+        }
+
+        .bar_charts .chart_item .chart_bg .values h3 .year {
+            font-size: 13px;
+        }
+
+        .bar_charts .chart_item .chart_bg .values h2 {
+            font-size: 5.2vmin;
+            bottom: 30px;
+            left: 20px;
+            position: absolute;
+            color: #fff;
+        }
+        .charts.payments .chart_item .chart_bg .values:before{
+            height: calc(155% + 54px);
+        }
+        .charts.payments:after{
+            height: 100px;
+            bottom: 25px;
+            width: calc(71% + 90px);
+            left: -14px;
+            display: none;
+        }
+        .video_cont {
+            align-items: flex-start;
+        }
+
+        .video_cont video {
+            height: 80%;
+            max-height: 460px;
+        }
+
+        .scroll_msg {
+            bottom: 40px;
+            font-size: 2.8vmin;
+        }
+
+        .mouse {
+            bottom: 80px;
+        }
+
+        .stats_content h3 {
+            font-size: 6vmin;
+            padding-left: 80px;
+            margin-bottom: 0;
+        }
+
+        .stats_content h3:before {
+            font-size: 15.5vmin;
+        }
+
+        .active_users {
+            padding: 0 15px;
+        }
+
+        .users_divs {
+            /* flex-wrap: wrap; */
+            max-width: unset;
+        }
+
+        .users_divs .user_div .chart_title {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .users_divs .user_div {
+            flex: 0 0 calc(50% - 5px);
+            max-width: calc(50% - 5px);
+            margin: 0 11px 0 0;
+            max-height: 100%;
+            padding: 10px;
+        }
+
+        .users_divs .user_div .chart_title h1 {
+            font-size: 7vmin;
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+        }
+        .users_divs .user_div .charts {
+            height: calc(100% - 155px);
+        }
+
+        .users_divs .user_div .chart_title h2 {
+            font-size: 10vmin;
+            flex: 0 0 100%;
+        }
+
+        .users_divs .user_div .chart_title h2 .hint {
+            font-size: 2.9vmin;
+        }
+
+        .users_divs .user_div .stats .stat {
+            /* margin-bottom: 6vmin; */
+        }
+
+        .users_divs .user_div .stats .stat .stat_heading {
+        }
+
+        .users_divs .user_div .stats .stat .stat_heading h4 {
+            font-size: 3.5vmin;
+            margin: 0;
+        }
+
+        .users_divs .user_div .stats .stat .stat_heading .val {
+            font-size: 4vmin;
+        }
+
+        .users_divs .user_div .stats .stat .stat_graph {
+            height: 2.5vmin;
+        }
+        .users_divs .user_div  .stats .stat .stat_heading .diff{font-size: 4vmin;}
+        .menu_items nav{
+            font-size: 6vmin;
+        }
+        .main_menu .menu_icon{
+            right: 15px;
+            top: 15px;
+        }
+
     }
 
-    .ip-header {
-        min-height: 200px;
+    @media (max-width: 992px) {
+
     }
 
-    .title {
-        margin-top: -50px;
+    @media (max-width: 320px) {
+        .loaded .ip-header .ip-logo svg {
+            max-width: 160px;
+        }
+        .loaded .logo {
+            margin-top: -60px !important;
+        }
+        .loaded .ip-header.current .logo  {
+            margin-top: -10px !important;
+        }
     }
 
-    .title h1 {
-        font-size: 40px;
-        letter-spacing: 10px;
+    @media (max-width: 375px) {
+
     }
 
-    .title h3 {
-        font-size: 20px;
-        letter-spacing: 15px;
-        margin-top: 20px;
+    @media (min-width: 1920px){
+        .bar_charts .chart_item .chart_bg .values h2{
+            font-size: 3.4vmin;
+        }
+        .diff_val{
+            margin-top:-110px;
+        }
+        .diff_val i:nth-of-type(1){
+            width:110px;
+            height:110px;
+        }
     }
 
-    nav.releases {
-        flex-wrap: wrap;
-    }
-
-    nav.releases a {
-        margin-bottom: 10px;
-    }
-
-    .ip-header .ip-logo svg {
-        min-height: 50px;
-        height: 30%;
-    }
-
-    .loaded .logo {
-        max-height: 100px;
-        margin-top: 0px !important;
-    }
-
-    .loaded .ip-header .ip-logo svg {
-        max-width: 230px;
-    }
-
-    .loaded .ip-header.current .ip-logo svg {
-        max-width: 110px;
-    }
-
-    #earth {
-        width: 340%;
-        height: 100%;
-        left: -20%;
-        bottom: -57%;
-    }
-
-    #horizon {
-        bottom: -24%;
-    }
-
-    #horizon .glow {
-        top: -30%;
-        width: 200%;
-        left: -70%;
-    }
-
-    #moon {
-        width: 80px;
-        height: 80px;
-        left: 50%;
-        margin-left: 0;
-        top: 40%;
-    }
-
-    .star_parallax {
-        opacity: 0.3;
-    }
-
-    .stars_holder {
-        margin-left: 0;
-    }
-
-    .stats_content {
-        height: 45%;
-        padding: 20px;
-    }
-
-    .content {
-        padding: 10px;
-        margin-top: 80px;
-    }
-
-    .stats_content .text {
-        font-size: 17px;
-        max-width: 100%;
-        /* margin: 0; */
-        line-height: 1.4;
-        margin-top: 10px;
-    }
-
-    .stats_content h4 {
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .stats_content h4 .release_name {
-    }
-
-    .stats_content h4 .year {
-        font-size: 12px;
-    }
-
-    .stats_content h2 {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-
-    .stats_content .stars_holder {
-        opacity: 0.3;
-    }
-
-    .diff_val i:nth-of-type(1) {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        position: absolute;
-        left: calc(30% - 9px);
-        top: -6%;
-    }
-
-    .diff_val i:nth-of-type(2) {
-        font-size: 18px;
-        margin-top: 55px;
-        margin-right: 50%;
-        position: absolute;
-    }
-
-    .diff_val {
-        margin-top: 13px;
-        position: absolute;
-        width: 100%;
-        height: calc(100% - 90px);
-        top: 46%;
-        left: 0;
-        display: block;
-    }
-
-    .bar_charts {
-        min-height: 140%;
-        width: calc(100% - 0px);
-        padding: 20px;
-        margin: 10px 0 20px 0;
-        top: -40%;
-    }
-
-    .bar_charts .chart_item {
-        margin: 0 0 20px 25px;
-        width: calc(100% / 3.5);
-        max-width: 90px;
-        box-sizing: border-box;
-        min-width: 100px;
-    }
-
-    .bar_charts .chart_item:first-child {
-        margin-left: 0
-    }
-
-    .bar_charts .chart_item .chart_bg .values {
-        position: absolute;
-        width: calc(100% + 2px);
-        top: 0;
-        left: -1px;
-        /* height: 100%; */
-    }
-
-    .bar_charts .chart_item .chart_bg .values h3 {
-        font-size: 11px;
-        color: #fff;
-        width: calc(100% - 20px);
-        position: absolute;
-        top: 5px;
-        left: 0;
-        padding: 10px;
-    }
-
-    .bar_charts .chart_item .chart_bg .values h3 .year {
-        font-size: 13px;
-    }
-
-    .bar_charts .chart_item .chart_bg .values h2 {
-        font-size: 5.2vmin;
-        bottom: 30px;
-        left: 20px;
-        position: absolute;
-        color: #fff;
-    }
-    .charts.payments .chart_item .chart_bg .values:before{
-        height: calc(155% + 54px);
-    }
-    .charts.payments:after{
-        height: 100px;
-        bottom: 25px;
-        width: calc(71% + 90px);
-        left: -14px;
-        display: none;
-    }
-    .video_cont {
-        align-items: flex-start;
-    }
-
-    .video_cont video {
-        height: 80%;
-        max-height: 460px;
-    }
-
-    .scroll_msg {
-        bottom: 40px;
-        font-size: 2.8vmin;
-    }
-
-    .mouse {
-        bottom: 80px;
-    }
-
-    .stats_content h3 {
-        font-size: 6vmin;
-        padding-left: 80px;
-        margin-bottom: 0;
-    }
-
-    .stats_content h3:before {
-        font-size: 15.5vmin;
-    }
-
-    .active_users {
-        padding: 0 15px;
-    }
-
-    .users_divs {
-        /* flex-wrap: wrap; */
-        max-width: unset;
-    }
-
-    .users_divs .user_div .chart_title {
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-
-    .users_divs .user_div {
-        flex: 0 0 calc(50% - 5px);
-        max-width: calc(50% - 5px);
-        margin: 0 11px 0 0;
-        max-height: 100%;
-        padding: 10px;
-    }
-
-    .users_divs .user_div .chart_title h1 {
-        font-size: 7vmin;
-        flex: 0 0 100%;
-        margin-bottom: 20px;
-    }
-
-    .users_divs .user_div .chart_title h2 {
-        font-size: 10vmin;
-        flex: 0 0 100%;
-    }
-
-    .users_divs .user_div .chart_title h2 .hint {
-        font-size: 2.9vmin;
-    }
-
-    .users_divs .user_div .stats .stat {
-        margin-bottom: 6vmin;
-    }
-
-    .users_divs .user_div .stats .stat .stat_heading {
-    }
-
-    .users_divs .user_div .stats .stat .stat_heading h4 {
-        font-size: 3.5vmin;
-        margin: 0;
-    }
-
-    .users_divs .user_div .stats .stat .stat_heading .val {
-        font-size: 4vmin;
-    }
-
-    .users_divs .user_div .stats .stat .stat_graph {
-        height: 2.5vmin;
-    }
-    .users_divs .user_div  .stats .stat .stat_heading .diff{font-size: 4vmin;}
-    .menu_items nav{
-        font-size: 6vmin;
-    }
-    .main_menu .menu_icon{
-    right: 15px;
-    top: 15px;
-}
-
-}
-
-
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 320px) {
-    .loaded .ip-header .ip-logo svg {
-        max-width: 160px;
-    }
-    .loaded .logo {
-        margin-top: -60px !important;
-    }
-    .loaded .ip-header.current .logo  {
-        margin-top: -10px !important;
-    }
-}
-
-@media (max-width: 375px) {
-
-}
-
-
-
-@media (min-width: 1920px){
-    .bar_charts .chart_item .chart_bg .values h2{
-        font-size: 3.4vmin;
-    }
-    .diff_val{
-        margin-top:-110px;
-    }
-    .diff_val i:nth-of-type(1){
-        width:110px;
-        height:110px;
-    }
-}
-
-@media (min-width: 992px) {
-
-}
+    @media (min-width: 992px) {}
 

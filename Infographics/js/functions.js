@@ -199,6 +199,8 @@
                 if (difference > 0){
                     diff_icon = "fa-arrow-up";
                     diff_status = "positive";
+                    difference = "+" + difference;
+
                 }
                 else {
                     diff_icon = "fa-arrow-down";
@@ -210,7 +212,7 @@
                 $(e).parents('.user_div').find('.users_count').next('.abbr').text(MoneyFormat(sum, "str") )
 
                 bar_chart_new = '<div class="stat animated fadeIn" style="--val:'+val_percentage+'%;--delay:400ms;--duration:.8s;"><div class="stat_heading"><h4>'+chart_label[key]+'</h4>' +
-                                '<span class="diff '+diff_status+'">'+difference+'%</span><span class="val">'+ MoneyFormat(value, "full")+'</span></div>'+
+                                '<span class="diff '+diff_status+'"><i class="fa '+diff_icon+'"></i>'+difference+'%</span><span class="val">'+ MoneyFormat(value, "full")+'</span></div>'+
                                 '<div class="stat_graph"><span class="bg animated" style="--val:'+val_percentage+'%;--delay:460ms;--duration:.8s;"></span></div></div>';
 
             }

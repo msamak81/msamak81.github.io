@@ -363,7 +363,7 @@
 
     @media (min-width: 1920px){
         .bar_charts .chart_item .chart_bg .values h2{
-            font-size: 3.4vmin;
+            /*font-size: 3.4vmin;*/
         }
         .diff_val{
             margin-top:-110px;

@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>MySTC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/gridstack.css"/>
+    <link rel="stylesheet" href="css/morph_search.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select.css"/>
+    <link rel="stylesheet" href="css/chat.css"/>
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/form_inputs.css">
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/lodash.min.js"></script>
+    <script type="text/javascript" src="js/gridstack.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/snap.svg-min.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/share.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
+    <script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+<div class="content-wrap">
+    <header class="animated fadeIn">
+        <div class="main_content">
+            <div class="row">
+                <div class="col-lg-2"><a href="http://www.stc.com.sa" class="stc_logo">STC</a></div>
+                <div class="col-lg-4 col-lg-offset-6">
+                    <div class="col-lg-8 user_display"><a href="#" class=" user_display_btn "> <img
+                            src="images/user_defualt_img.jpg" alt="User Image"/> <span>
+            <h3 class="welcome_msg"></h3>
+            <h4>Mohammad Samak</h4>
+            </span> <span class="glyphicon glyphicon-menu-down"></span> </a></div>
+                    <div class="col=lg-4 language_select"><a href="#"> <span>العربية</span> <span
+                            class="glyphicon glyphicon-globe"></span></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-default top_menu animated fadeIn ">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>Dashboard</a>
+                    </li>
+                    <li><a href="#" class="accounts_selection">Select Account</a></li>
+                    <li><a href="#">E-Services</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- account menu -->
+
+    <section class="main_content">
+        <div class="row">
+            <!-- left side menu -->
+            <div class="col-lg-2">
+                <h2 class="submenu_title animated fadeInUp">Dashboard <i class="fa fa-bars"></i></h2>
+                <section class="submenu_cont animated fadeInUp">
+                    <nav class="cl-effect-5">
+                        <a href="#" class="active"><i class="fa fa-th-large"></i><span data-hover="My Bookmarks">My Bookmarks</span></a>
+                        <a href="#"><i class="fa fa-credit-card"></i><span
+                                data-hover="My Payments">My Payments</span></a>
+                        <a href="#"><i class="fa fa-file-text-o"></i><span data-hover="My Bills">My Bills</span></a>
+                        <a href="#" class="qitaf_circle"><i class="fa fa-circle"></i><span data-hover="Qitaf">Qitaf</span></a>
+
+                    </nav>
+                </section>
+
+            </div>
+            <!-- main content div -->
+            <div class="col-lg-10">
+                <h1 class="title animated fadeInLeft"> My Bookmarks</h1>
+
+                <div class="grid-stack dashboard" data-gs-width="12" data-gs-animate="yes">
+                    <!-- =================  First Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInLeft" data-gs-x="0" data-gs-y="0"
+                         data-gs-width="2" data-gs-height="2" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+                            <!-- Widget data container div -->
+                            <a class="widget_setting_btn" href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                            <div class="widget_cont">
+                                <h4>0534343963</h4>
+
+                                <h2>qitaf</h2>
+
+                                <h1>180</h1> <h5>Points</h5>
+                                <h6>Qitaf silver category</h6>
+                            </div>
+
+                            <!-- widget setting menu div container -->
+                            <div class="widget_settings animated">
+                                <div class="edit_widget_btn">
+                                <a href="#" class=" widget_settings_btns edit"><i class="fa fa-pencil-square-o"></i></a>
+                                <a href="#" class=" widget_settings_btns remove"><i class="fa fa-trash-o"></i></a>
+                                <a href="#" class="widget_back_btn animated"><i class="fa fa-long-arrow-left"></i> Back</a>
+                                <a href="#" class="widget_done_btn animated"><i class="fa fa-check"></i> Done</a>
+                              </div>
+                                <!-- Edit widget container div -->
+                                <div class="edit_widget_cont">
+                                    <label class="select-label">Service Number</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+                                    <label class="select-label">Widget</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+
+                                </div>
+
+                                <!-- Remove widget container div -->
+                                <div class="remove_widget_cont">
+                                    <h3>Are you sure you want to remove this bookmark</h3>
+                                    <a href="#" class="remove_widget_btn remove"> Yes</a>
+                                    <a href="#" class="remove_widget_btn cancel"> No</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =================  Second Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInLeft" data-gs-x="2" data-gs-y="0"
+                         data-gs-width="4" data-gs-height="2" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+                            <!-- Widget data container div -->
+                            <a class="widget_setting_btn" href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                            <div class="widget_cont">
+                                <h4>0534343963</h4>
+
+                                <h2>Last bill</h2>
+
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1>262.46</h1> <h5>SR</h5>
+                                    </div>
+                                    <div class="col-lg-4 animated ">
+                                        <div href="#" class="pink_circle_btns btns_shadow top_negative_10"><i
+                                                class="fa fa-check"></i></div>
+                                        <label class="pink uppercase">Paid</label>
+                                    </div>
+                                </div>
+                                <h6>Bill issued : 25 days ago </h6>
+                            </div>
+
+                            <!-- widget setting menu div container -->
+                            <div class="widget_settings animated">
+                                <div class="edit_widget_btn">
+                                    <a href="#" class=" widget_settings_btns edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="#" class=" widget_settings_btns remove"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="widget_back_btn animated"><i class="fa fa-long-arrow-left"></i> Back</a>
+                                    <a href="#" class="widget_done_btn animated"><i class="fa fa-check"></i> Done</a>
+                                </div>
+
+                                <!-- Edit widget container div -->
+                                <div class="edit_widget_cont">
+                                    <label class="select-label">Service Number</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+                                    <label class="select-label">Widget</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+
+                                </div>
+
+                                <!-- Remove widget container div -->
+                                <div class="remove_widget_cont">
+                                    <h3>Are you sure you want to remove this bookmark</h3>
+                                    <a href="#" class="remove_widget_btn remove"> Yes</a>
+                                    <a href="#" class="remove_widget_btn cancel"> No</a>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- =================  Third Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInDown" data-gs-x="6" data-gs-y="0"
+                         data-gs-width="2" data-gs-height="4" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+
+                            <!-- Widget data container div -->
+                            <a class="widget_setting_btn" href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                            <div class="widget_cont">
+                                <h4>0553434776</h4>
+
+                                <h2>Local Internet</h2>
+
+                                <div class="row">
+                                    <canvas id="local_internet" width="140" height="140"
+                                            class="circle_charts"></canvas>
+                                    <div class="remaining_values animated fadeIn">
+                                        <h5>Remaining</h5>
+
+                                        <h1>265</h1>
+                                        <h5>MB</h5>
+                                    </div>
+
+                                </div>
+
+                                <h6>Expiration date : <span class="purple bold">23 - 05-2015</span></h6>
+                                <h6>Bill issued : 25 days ago </h6>
+                            </div>
+
+                            <!-- widget setting menu div container -->
+                            <div class="widget_settings animated">
+                                <div class="edit_widget_btn">
+                                    <a href="#" class=" widget_settings_btns edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="#" class=" widget_settings_btns remove"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="widget_back_btn animated"><i class="fa fa-long-arrow-left"></i> Back</a>
+                                    <a href="#" class="widget_done_btn animated"><i class="fa fa-check"></i> Done</a>
+                                </div>
+
+                                <!-- Edit widget container div -->
+                                <div class="edit_widget_cont">
+                                    <label class="select-label">Service Number</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+                                    <label class="select-label">Widget</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+
+                                </div>
+
+                                <!-- Remove widget container div -->
+                                <div class="remove_widget_cont">
+                                    <h3>Are you sure you want to remove this bookmark</h3>
+                                    <a href="#" class="remove_widget_btn remove"> Yes</a>
+                                    <a href="#" class="remove_widget_btn cancel"> No</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- =================  Fourth Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInRight" data-gs-x="8" data-gs-y="0"
+                         data-gs-width="4" data-gs-height="2" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+
+                            <!-- Widget data container div -->
+                            <a class="widget_setting_btn" href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                            <div class="widget_cont">
+                                <h4>My Phone</h4>
+
+                                <h2>Unbilled amount</h2>
+
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1>300.99</h1> <h5>SR</h5>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div href="#" class="purple_circle_btns btns_shadow">
+                                            <label class="bold">9</label><label>calls</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6>Bill issued : 25 days ago </h6>
+
+                            </div>
+
+                            <!-- widget setting menu div container -->
+                            <div class="widget_settings animated">
+                                <div class="edit_widget_btn">
+                                    <a href="#" class=" widget_settings_btns edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="#" class=" widget_settings_btns remove"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="widget_back_btn animated"><i class="fa fa-long-arrow-left"></i> Back</a>
+                                    <a href="#" class="widget_done_btn animated"><i class="fa fa-check"></i> Done</a>
+                                </div>
+
+                                <!-- Edit widget container div -->
+                                <div class="edit_widget_cont">
+                                    <label class="select-label">Service Number</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+                                    <label class="select-label">Widget</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+
+                                </div>
+
+                                <!-- Remove widget container div -->
+                                <div class="remove_widget_cont">
+                                    <h3>Are you sure you want to remove this bookmark</h3>
+                                    <a href="#" class="remove_widget_btn remove"> Yes</a>
+                                    <a href="#" class="remove_widget_btn cancel"> No</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- =================  Fifth Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInLeft" data-gs-x="0"
+                         data-gs-y="2" data-gs-width="4" data-gs-height="2" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+
+                            <!-- Widget data container div -->
+                            <a class="widget_setting_btn" href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                            <div class="widget_cont">
+                                <h4>Second Phone</h4>
+
+                                <h2>User Minutes</h2>
+
+                                <div class="row">
+                                    <div class="col-lg-6 ">
+                                        <canvas id="used_minutes" width="90" height="90"
+                                                class="circle_charts small_charts"></canvas>
+                                       
+                                    </div>
+                                    <div class="col-lg-6 top_positive_30 ">
+                                        <h6>Used Minutes : <span class="purple bold">200</span></h6>
+                                        <h6>Remaining Minutes : <span class="purple bold">300</span></h6>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- widget setting menu div container -->
+                            <div class="widget_settings animated">
+                                <div class="edit_widget_btn">
+                                    <a href="#" class=" widget_settings_btns edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="#" class=" widget_settings_btns remove"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="widget_back_btn animated"><i class="fa fa-long-arrow-left"></i> Back</a>
+                                    <a href="#" class="widget_done_btn animated"><i class="fa fa-check"></i> Done</a>
+                                </div>
+
+                                <!-- Edit widget container div -->
+                                <div class="edit_widget_cont">
+                                    <label class="select-label">Service Number</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+                                    <label class="select-label">Widget</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963</option>
+                                        <option value="business" data-class="icon-mobile">0551234567</option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677</option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001</option>
+                                    </select>
+
+                                </div>
+
+                                <!-- Remove widget container div -->
+                                <div class="remove_widget_cont">
+                                    <h3>Are you sure you want to remove this bookmark</h3>
+                                    <a href="#" class="remove_widget_btn remove"> Yes</a>
+                                    <a href="#" class="remove_widget_btn cancel"> No</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- =================  sixth Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInLeft" data-gs-x="4"
+                         data-gs-y="2" data-gs-width="2" data-gs-height="2" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+
+                            <!-- Widget data container div -->
+                            <a class="widget_setting_btn" href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                            <div class="widget_cont">
+                                <h4>0534343963</h4>
+
+                                <h2>Your Next Bill</h2>
+                                <h5>after</h5>
+
+                                <h1>5</h1> <h5>Days</h5>
+                                <h6>Last Bill Date : <span class="purple bold">01-04-2015</span></h6>
+                            </div>
+
+                            <!-- widget setting menu div container -->
+                            <div class="widget_settings animated">
+                                <div class="edit_widget_btn">
+                                    <a href="#" class=" widget_settings_btns edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="#" class=" widget_settings_btns remove"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="widget_back_btn animated"><i class="fa fa-long-arrow-left"></i> Back</a>
+                                    <a href="#" class="widget_done_btn animated"><i class="fa fa-check"></i> Done</a>
+                                </div>
+
+                                <!-- Edit widget container div -->
+                                <div class="edit_widget_cont">
+                                    <label class="select-label">Service Number</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963
+                                        </option>
+                                        <option value="business" data-class="icon-mobile">0551234567
+                                        </option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677
+                                        </option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001
+                                        </option>
+                                    </select>
+                                    <label class="select-label">Widget</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963
+                                        </option>
+                                        <option value="business" data-class="icon-mobile">0551234567
+                                        </option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677
+                                        </option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001
+                                        </option>
+                                    </select>
+
+                                </div>
+
+                                <!-- Remove widget container div -->
+                                <div class="remove_widget_cont">
+                                    <h3>Are you sure you want to remove this bookmark</h3>
+                                    <a href="#" class="remove_widget_btn remove"> Yes</a>
+                                    <a href="#" class="remove_widget_btn cancel"> No</a>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- =================  Seventh Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInRight" data-gs-x="8"
+                         data-gs-y="2" data-gs-width="4" data-gs-height="2" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+
+                            <!-- Widget data container div -->
+                            <a class="widget_setting_btn" href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                            <div class="widget_cont">
+                                <h4>Second Phone</h4>
+
+                                <h2>User Minutes</h2>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h1>300.99</h1> <h5>SR</h5>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h6>Used Minutes : <span class="purple bold">200</span></h6>
+                                        <h6>Remaining Minutes : <span class="purple bold">300</span></h6>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- widget setting menu div container -->
+                            <div class="widget_settings animated">
+                                <div class="edit_widget_btn">
+                                    <a href="#" class=" widget_settings_btns edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="#" class=" widget_settings_btns remove"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="widget_back_btn animated"><i class="fa fa-long-arrow-left"></i> Back</a>
+                                    <a href="#" class="widget_done_btn animated"><i class="fa fa-check"></i> Done</a>
+                                </div>
+
+                                <!-- Edit widget container div -->
+                                <div class="edit_widget_cont">
+                                    <label class="select-label">Service Number</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963
+                                        </option>
+                                        <option value="business" data-class="icon-mobile">0551234567
+                                        </option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677
+                                        </option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001
+                                        </option>
+                                    </select>
+                                    <label class="select-label">Widget</label>
+                                    <select class="selectpicker show-tick form-control">
+                                        <option value="sightseeing" data-class="icon-mobile">0534343963
+                                        </option>
+                                        <option value="business" data-class="icon-mobile">0551234567
+                                        </option>
+                                        <option value="honeymoon" data-class="icon-mobile">0555556677
+                                        </option>
+                                        <option value="food" data-class="icon-mobile">0504443332</option>
+                                        <option value="shopping" data-class="icon-mobile">0550000001
+                                        </option>
+                                    </select>
+
+                                </div>
+
+                                <!-- Remove widget container div -->
+                                <div class="remove_widget_cont">
+                                    <h3>Are you sure you want to remove this bookmark</h3>
+                                    <a href="#" class="remove_widget_btn remove"> Yes</a>
+                                    <a href="#" class="remove_widget_btn cancel"> No</a>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed_widgets">
+                    <div class="grid-stack fixed" data-gs-width="12" data-gs-animate="yes"
+                         data-gs-no-resize="yes">
+                        <div class="grid-stack-item animated fadeInRight" data-gs-x="0" data-gs-y="0"
+                             data-gs-width="2" data-gs-height="2">
+                            <div class="grid-stack-item-content">
+
+                                <div class="widget_cont">
+                                    <h4>General</h4>
+
+                                    <h2>SMS Remaining</h2>
+
+                                    <div class="row">
+                                        <div class="col-lg-7">
+                                            <h1>25</h1> <h5>SMS</h5>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <a href="#" class="purple_circle_btns btns_shadow"><i
+                                                    class="fa fa-paper-plane"></i></a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="grid-stack-item  animated fadeInRight" data-gs-x="2" data-gs-y="0"
+                             data-gs-width="4" data-gs-height="2">
+                            <div class="grid-stack-item-content">
+                                <div class="widget_cont">
+                                    <h4>General</h4>
+
+                                    <h2>Get kiosk pin code</h2>
+
+                                    <div class="row">
+
+                                        <div class="col-lg-8">
+                                            <label class="select-label">Travel Type</label>
+                                            <select class="selectpicker show-tick form-control">
+                                                <option value="sightseeing" data-class="icon-mobile">
+                                                    0534343963
+                                                </option>
+                                                <option value="business" data-class="icon-mobile">
+                                                    0551234567
+                                                </option>
+                                                <option value="honeymoon" data-class="icon-mobile">
+                                                    0555556677
+                                                </option>
+                                                <option value="food" data-class="icon-mobile">0504443332
+                                                </option>
+                                                <option value="shopping" data-class="icon-mobile">
+                                                    0550000001
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4">
+
+                                            <a href="#" class="pink_circle_btns btns_shadow"><i
+                                                    class="fa fa-paper-plane"></i></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="grid-stack-item  animated fadeInLeft" data-gs-x="6" data-gs-y="0"
+                             data-gs-width="2" data-gs-height="2">
+                            <div class="grid-stack-item-content">
+                                <div class="widget_cont">
+                                    <h4>General</h4>
+
+                                    <h2>Offers</h2>
+                                    <a href="#" class="purple_circle_btns btns_shadow offers"><i
+                                            class="fa fa-gift"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="grid-stack-item  animated fadeInLeft" data-gs-x="8" data-gs-y="0"
+                             data-gs-width="4" data-gs-height="2">
+                            <div class="grid-stack-item-content">
+
+                                <div class="widget_cont">
+                                    <h4>General</h4>
+
+                                    <h2>Create new landline</h2>
+
+                                    <div class="row">
+                                        <div class="col-lg-3"><a href="#"
+                                                                 class="pink_circle_btns btns_shadow">Jood
+                                            1</a></div>
+                                        <div class="col-lg-3"><a href="#"
+                                                                 class="pink_circle_btns btns_shadow">Jood
+                                            2</a></div>
+                                        <div class="col-lg-3"><a href="#"
+                                                                 class="pink_circle_btns btns_shadow">Jood
+                                            3</a></div>
+                                        <div class="col-lg-3"><a href="#"
+                                                                 class="pink_circle_btns btns_shadow">Jood
+                                            Net</a></div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="add_widget btns_shadow animated bounceIn"><i class="fa fa-pencil"></i></div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+</div>
+<footer>
+    <div class="main_content">
+        <div class="chat_cont ">
+            <a class="chat_icon animated fadeInUp" href="#" title="Live Chat"><i class="fa fa-weixin"></i></a>
+        </div>
+        <div class="share animated fadeInUp">
+            <button class="share-toggle-button" title="STC Social media"><i class="share-icon fa fa-share-alt"></i>
+            </button>
+            <ul class="share-items">
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-facebook"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-twitter"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-google-plus"></i>
+                </a></li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-youtube"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-foursquare"></i>
+                </a></li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-instagram"></i> </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</footer>
+
+
+<!-- Hidden Inline Popups -->
+<div class="overlay"></div>
+<!-- ======= Accounts list popup ======= -->
+<div id="accounts" class="morphsearch account_list">
+    <form class="morphsearch-form">
+        <input class="morphsearch-input" type="search" placeholder="Search Accounts ..."/>
+        <button class="morphsearch-submit" type="submit">Search</button>
+    </form>
+    <div class="morphsearch-content">
+        <div class="dummy-column">
+            <h2>Postpaid Accounts</h2>
+            <a href="#" class="dummy-media-object" >0534343963</a> <a href="#" class="dummy-media-object" >0534343963</a> <a href="#" class="dummy-media-object" >0534343963</a> </div>
+        <div class="dummy-column">
+            <h2>Prepaid Accounts</h2>
+            <a href="#" class="dummy-media-object" >0534343963</a> <a href="#" class="dummy-media-object" >0534343963</a> </div>
+        <div class="dummy-column">
+            <h2>Landline Accounts</h2>
+            <a href="#" class="dummy-media-object" >0534343963</a> <a href="#" class="dummy-media-object" >0534343963</a> <a href="#" class="dummy-media-object" >0534343963</a> <a href="#" class="dummy-media-object" >0534343963</a> </div>
+    </div>
+    <!-- /morphsearch-content -->
+    <span class="morphsearch-close"></span> </div>
+
+<!--  ========== User profile popup =============== -->
+<div id="user" class="morphsearch user_profile">
+    <div class="morphsearch-content">
+        <div class="dummy-column user_data">
+           <img class="user_profile" src="images/user_defualt_img.jpg" alt="user profile"/>
+            <h3 class="welcome_msg"></h3>
+            <h2>Mohammad Samak</h2>
+            <nav>
+                <a href="#" class="profile_menu personal animated active"><i class="fa fa-user"></i> Personal Settings</a>
+                <a href="#" class="profile_menu animated password"> <i class="fa fa-cog"></i> Change Password</a>
+                <a href="#" class="profile_menu animated social"><i class="fa fa-share-alt"></i>Social Settings</a>
+                <a href="#" class="profile_menu animated payment"><i class="fa fa-credit-card"></i>Payment Method</a>
+                <a href="#" title="sign out" class="profile_menu animated sign_out"><i class="fa fa-lock"></i> Sign Out</a>
+            </nav>
+        </div>
+        <div class="dummy-column profile_divs">
+            <h2 class="titles animated  "><i class="fa fa-user"></i><span> Personal Settings</span></h2>
+
+           <div class="profile_div_cont row personal_div animated slideInRight ">
+                <div class="row form_controls">
+
+               <div class="col-lg-12 input input--hoshi">
+
+					<input class="input__field input__field--hoshi" type="text" id="email" placeholder="Enter your email address"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
+                        <span class="input__label-content input__label-content--hoshi">Email</span>
+                    </label>
+
+
+               </div>
+               <div class="col-lg-6 input input--hoshi">
+                   <div class="input input--hoshi">
+                   <input class="input__field input__field--hoshi" type="text" id="phone_no"  placeholder="your phone number"/>
+                   <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="phone_no">
+                       <span class="input__label-content input__label-content--hoshi">Phone Number</span>
+                   </label>
+                    </div>
+
+               </div>
+               <div class="col-lg-6 input input--hoshi">
+
+                   <input class="input__field input__field--hoshi" type="text" id="contact_no" placeholder="your primary contact  number" />
+                   <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="contact_no">
+                       <span class="input__label-content input__label-content--hoshi">Primary Contact Number</span>
+                   </label>
+
+
+               </div>
+               <div class="col-lg-12">
+                   <div class="checkbox checkbox-primary">
+                       <input id="notifyme" type="checkbox" checked="">
+                       <label for="notifyme">
+                           Notify me when bill is available
+                       </label>
+                   </div>
+
+
+               </div>
+               <div class="col-lg-12 top_positive_30">
+                   <button class="btn btn-primary">Update</button>
+                   <button class="btn cancel">cancel</button>
+
+               </div>
+                </div>
+           </div>
+
+
+            <div class="profile_div_cont row password_div animated">
+                <div class="row form_controls">
+
+                    <div class="col-lg-12 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="password" id="Current_Password" placeholder="your current password"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="Current_Password" >
+                            <span class="input__label-content input__label-content--hoshi">Current Password</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="password" id="newpassword1" placeholder="Enter new password"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="newpassword1">
+                                <span class="input__label-content input__label-content--hoshi">Phone Number</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="password" id="newpassword2" placeholder="Confirm new password"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="newpassword2">
+                            <span class="input__label-content input__label-content--hoshi">Primary Contact Number</span>
+                        </label>
+
+
+                    </div>
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profile_div_cont row social_div animated">
+                <div class="row form_controls">
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="facebook" placeholder="Facebook account"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="facebook" >
+                            <span class="input__label-content input__label-content--hoshi">Facebook Account</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="twitter" placeholder="Twitter Account"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="twitter">
+                                <span class="input__label-content input__label-content--hoshi">Twitter Account</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="Google_Plus" placeholder="Google plus account"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="Google_Plus">
+                            <span class="input__label-content input__label-content--hoshi">Google Plus  Account</span>
+                        </label>
+
+
+                    </div>
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profile_div_cont row payment_div animated">
+
+                <div class="row form_controls">
+                    <div class="col-lg-12 credit_cards">
+                        <label class="select-label">Card Type</label>
+                            <input type="radio" name="credit_cards" id="visa_card" vlaue="visa"/> <label for="visa_card"><i class="fa fa-cc-visa" ></i></label>
+                            <input type="radio" name="credit_cards" id="master_card" vlaue="master"/> <label  for="master_card"><i class="fa fa-cc-mastercard"></i></label>
+                            <input type="radio" name="credit_cards" id="amex_card" vlaue="amex"/> <label for="amex_card"> <i class="fa fa-cc-amex" ></i></label>
+
+                    </div>
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="card_name" placeholder="Your name at the Card"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="card_name" >
+                            <span class="input__label-content input__label-content--hoshi">Name on Card</span>
+                        </label>
+
+
+                    </div>
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="card_number" placeholder="Card Number"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="card_number" >
+                            <span class="input__label-content input__label-content--hoshi">Card Number</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <label class="select-label">Expiration Month</label>
+                                <select class="selectpicker show-tick form-control">
+
+                                    <option value="01" > JAN   </option>
+                                    <option value="02" > FEB   </option>
+                                    <option value="03" > MAR   </option>
+                                    <option value="04" > APR   </option>
+                                    <option value="05" > MAY   </option>
+                                    <option value="06" > JUN   </option>
+                                    <option value="07" > JUL   </option>
+                                    <option value="08" > AUG   </option>
+                                    <option value="09" > SEP   </option>
+                                    <option value="10" > OCT   </option>
+                                    <option value="11" > NOV   </option>
+                                    <option value="12" > DEC   </option>
+
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <label class="select-label">Expiration Year</label>
+                                <select class="selectpicker show-tick form-control">
+
+                                    <option value="01" > 2015   </option>
+                                    <option value="02" > 2016   </option>
+                                    <option value="03" > 2017   </option>
+                                    <option value="04" > 2018   </option>
+                                    <option value="05" > 2019   </option>
+                                    <option value="06" > 2020   </option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="ccv" placeholder="CCV"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ccv">
+                                <span class="input__label-content input__label-content--hoshi">CCV</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- /morphsearch-content -->
+    <span class="morphsearch-close"></span>
+</div>
+
+
+<!-- Chat container -->
+
+<div class="chat-wrap chat_window ">
+
+    <div class="chat_cont">
+        <div class="chat-window btns_shadow">
+            <div class="chat-messages">
+                <ol class="chat-messages-list">
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            Hey
+                        </div>
+                    </li>
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            this is a demonstration of the gooey effect on a chat window
+                        </div>
+                    </li>
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            inspired by <a href="https://dribbble.com/shots/1901175-Chat-Animation">this dribbble
+                            shot</a> by <a href="https://dribbble.com/antalik">Jakub Antalík</a>
+                        </div>
+                    </li>
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            please type something on the field below
+                        </div>
+                    </li>
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            oh and press enter :0
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="chat-input-bar">
+                <div class="chat-info-container">
+
+                </div>
+                <div class="chat-effect-container">
+                    <div class="chat-effect-bar"></div>
+                </div>
+                <div class="chat-input-wrapper">
+                    <button class="chat-input-tool">
+                        <i class="icon icon-camera"></i>
+                    </button>
+                    <div class="chat-input" contenteditable></div>
+                    <button class="chat-send">
+                        <i class="fa fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Add Widget panel div container -->
+<div class="add_widget_div animated ">
+    <div class="add_widget_cont ">
+        <span class="close_widget animated bounceInDown ">X</span>
+
+        <h1 class="animated fadeInLeft">Add new Widget</h1>
+
+        <div class="row animated fadeInUp bototm_positive_10">
+            <div class="col-lg-12 ">
+
+                <label>Service Number</label>
+                <select class="selectpicker show-tick form-control">
+                    <option>Select from list</option>
+                    <option>0534343963</option>
+                    <option>0112338876</option>
+                    <option>0551234567</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="row animated fadeInUp bototm_positive_10">
+            <div class="col-lg-12 ">
+
+                <label>Widget</label>
+                <select class="selectpicker show-tick form-control">
+                    <option>Select from list</option>
+                    <option>0534343963</option>
+                    <option>0112338876</option>
+                    <option>0551234567</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row animated fadeInUp bototm_positive_10">
+            <div class="col-lg-12 ">
+
+                <label>Position</label>
+                <select class="selectpicker show-tick form-control">
+                    <option>Select from list</option>
+                    <option>0534343963</option>
+                    <option>0112338876</option>
+                    <option>0551234567</option>
+                    <option>0534343963</option>
+                    <option>0112338876</option>
+                    <option>0551234567</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row animated fadeInUp bototm_positive_10">
+            <div class="col-lg-12 ">
+
+                <button class="add_widget btns_shadow animated bounceIn"><i class="fa fa-plus"></i></button>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+/* Clear fix */
+.clear {
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 1px;
+	height: 0px;
+	line-height: 0
+}
+
+
+
+
+/**
+ * TABS
+ *
+ * -------------------------------------------------------------------------------------------------
+ */
+.tabs > DIV {
+	padding: 10px;
+}
+
+
+
+.tabs UL.horizontal {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	border-bottom: solid 5px #E5E5E5;
+	height: 50px;
+}
+
+.tabs LI {
+	border-bottom: 4px solid #E5E5E5;
+	margin: 5px 10px 0 0;
+	display: inline-block;
+	transition: all ease 0.3s;
+	height: 100%;
+}
+
+.tabs ul li A {
+	color: #ccc;
+	display: block;
+	font-size: 13px;
+	font-weight: 300;
+	padding: 14px 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.tabs LI:hover {
+	background: transparent;
+	color: #e486ab;
+}
+.tabs LI:hover A {
+	color: #e486ab;
+}
+
+.tabs LI.active {
+	background: transparent;
+	border-bottom: 4px solid #E486AB !important;
+	color: #e486ab;
+}
+
+.tabs LI.active A {
+	color: #8d569a !important;
+}
+
+a {}
+
+.link {
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 48px;
+	margin-top: 20px;
+	margin-left: 6px;
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.anchorLink {
+	border-bottom: 1px dashed white;
+	color: white;
+	text-decoration: none;
+}
+
+.anchorLink:hover {
+	text-decoration: none;
+	border-bottom: none;
+	color: inherit;
+}
+
+.screenshot {
+	position: absolute;
+	clip: rect(0 0 0 0);
+}
+
+.prev,
+.next {
+	color: #a0cac0 !important;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.prev:hover,
+.next:hover {
+	color: white !important;
+}
+
+.logo {
+	margin-top: -6px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.button {
+	background-color: #a0cac0;
+	border: none;
+	border-bottom: 4px solid #68a697;
+	color: #FFFFFF;
+	border-radius: 0;
+	font-size: 14px;
+	letter-spacing: 2px;
+	height: 48px;
+	line-height: 48px;
+}
+
+.button:hover {
+	background: #93b7ae;
+	color: #FFF;
+	border-bottom-color: #68a697;
+}
+.tabs_cont {background:#fff;border-radius:3px;}

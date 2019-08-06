@@ -1,0 +1,2754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>MySTC</title>
+    <link rel="stylesheet" href="../../css/datatables.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../css/animate.css"/>
+    <link rel="stylesheet" href="../../css/gridstack.css"/>
+    <link rel="stylesheet" href="../../css/morph_search.css"/>
+    <link rel="stylesheet" href="../../css/select2.css"/>
+    <link rel="stylesheet" href="../../css/chat.css"/>
+    <link rel="stylesheet" href="../../css/form_inputs.css">
+    <link rel="stylesheet" href="../../css/owl.carousel.css">
+    <link rel="stylesheet" href="../../css/owl.theme.css" >
+    <link rel="stylesheet" href="../../css/owl.theme.css" >
+    <link rel="stylesheet" href="../../css/multi-select.css" >
+    <link rel="stylesheet" href="../../css/ion.rangeSlider.css"   />
+    <link rel="stylesheet" href="../../css/ion.rangeSlider.skinFlat.css" />
+
+    <link rel="stylesheet" href="../../css/main.css"/>
+
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../js/datatables.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/lodash.min.js"></script>
+    <script type="text/javascript" src="../../js/gridstack.js"></script>
+    <script type="text/javascript" src="../../js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="../../js/classie.js"></script>
+    <script type="text/javascript" src="../../js/select2.full.min.js"></script>
+    <script type="text/javascript" src="../../js/custom_select_config.js"></script>
+
+    <script type="text/javascript" src="../../js/snap.svg-min.js"></script>
+    <script type="text/javascript" src="../../js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../js/share.js"></script>
+    <script type="text/javascript" src="https://my.stc.com.sa/wps/contenthandler/dav/fs-type1/themes/csa2.7002.stc.online/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../js/chat.js"></script>
+    <script type="text/javascript" src="../../js/Chart.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="../../js/charts_global.js"></script>
+    <script type="text/javascript" src="../../js/datatables_config.js"></script>
+    <script type="text/javascript" src="../../js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/owl.carousel.min.js"></script>
+    <!--  Date and time picker  and its locale -->
+    <script type="text/javascript" src="../../js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap-material-datetimepicker.js"></script>
+    <script type="text/javascript" src="../../js/jquery.multi-select.js"></script>
+    <!-- ION Range slider -->
+    <script src="../../js/ion.rangeSlider.min.js" type="text/javascript"></script>
+
+    <!-- form validation -->
+    <script type="text/javascript" src="../../js/parsley.js"></script>
+
+    <script type="text/javascript" src="../../js/common_js.js"></script>
+    <script type="text/javascript" src="../../js/ind_custom.js"></script>
+
+
+</head>
+<body>
+<header class="animated fadeIn" data-delay="1000">
+    <div class="main_content">
+        <div class="row">
+            <div class="col-lg-2"><a href="http://www.stc.com.sa" class="stc_logo">STC</a></div>
+            <div class="col-lg-1 col-lg-offset-9">
+
+                <div class="col=lg-4 language_select"><a href="#"> <span>العربية</span> <span
+                        class="glyphicon glyphicon-globe"></span></a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="content-wrap">
+
+    <header class="animated fadeIn main_menu">
+
+        <div class="row main_content">
+
+            <div class="user_display"><a href="#" class=" user_display_btn ">
+                <img src="../../images/user_defualt_img.jpg" alt="User Image"/>
+            <span>
+                <h3 class="welcome_msg"></h3>
+                <h4>Mohammad Samak</h4>
+            </span>
+                <span class="glyphicon glyphicon-menu-down"></span> </a>
+            </div>
+
+            <div class="col-lg-9">
+                <nav class="navbar navbar-default top_menu animated fadeIn ">
+
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>Dashboard</a>
+                                </li>
+
+                                <li><a href="#">Store</a></li>
+                                <li><a href="#">Help & Support</a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <!-- /.navbar-collapse -->
+
+
+
+                    <!-- /.container-fluid -->
+
+                </nav>
+            </div>
+                <!-- Select Account and service number settings -->
+            <div class="account_cont col-lg-3">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary accounts_selection">
+                        <span class="service_no">05343443963</span>
+                        <span class="service_label">Mohammad Samak</span>
+                    </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-cog"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu service_no_setting animated bounceIn">
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4>Enable data Roaming</h4>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input  type="checkbox" data-label-text="Roaming" class="switch_btns" 	data-size="small" data-animate="true" >
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4>Preferred Language</h4>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <input  type="checkbox" data-label-text="Language" class="switch_btns" 	data-size="small" data-animate="true" data-on-text="AR" data-off-text="EN" >
+                                </div>
+                                <div class="col-lg-12">
+                                 <h6>Change your sms notification language</h6>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Social Media</h4>
+
+                                </div>
+                                <div class="col-lg-12 social_setting">
+                                   <div class="col-lg-8">
+
+                                       <div class="input input--hoshi input_icon">
+                                           <input class="input__field input__field--hoshi" type="text" id="social_twitter" placeholder="Facebook account"/>
+                                           <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="social_twitter">
+                                               <i class="fa fa-twitter"></i>
+                                               <span class="input__label-content input__label-content--hoshi">Twitter Account</span>
+                                           </label>
+                                       </div>
+                                   </div>
+                                    <div class="col-lg-4">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-check"></i></button>
+                                            <button type="button" class="btn btn-default"><i class="fa fa-remove"></i></button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-12 social_setting">
+                                    <div class="col-lg-8">
+
+                                        <div class="input input--hoshi input_icon">
+                                            <input class="input__field input__field--hoshi" type="text" id="social_facebook" placeholder="Facebook account"/>
+                                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="social_facebook">
+                                                <i class="fa fa-facebook-f"></i>
+                                                <span class="input__label-content input__label-content--hoshi">Facebook Account</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-check"></i></button>
+                                            <button type="button" class="btn btn-default"><i class="fa fa-remove"></i></button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+    <!-- account menu -->
+
+    <section class="main_content">
+
+        <div class="row">
+        <!-- left side menu -->
+        <div class="col-lg-2">
+            <h2 class="submenu_title animated fadeInUp">Menu <i class="fa fa-bars"></i></h2>
+            <section class="submenu_cont animated fadeInUp">
+                <nav class="cl-effect-5">
+                    <a href="#" class="active"><i class="fa fa-th-large"></i><span data-hover="My Bookmarks">My Bookmarks</span></a>
+                    <a href="#"><i class="fa fa-credit-card"></i><span
+                            data-hover="My Payments">My Payments</span></a>
+                    <a href="#"><i class="fa fa-file-text-o"></i><span data-hover="My Bills">My Bills</span></a>
+                    <a href="#" class="qitaf_circle"><i class="fa fa-circle"></i><span data-hover="Qitaf">Qitaf</span></a>
+
+                </nav>
+            </section>
+
+        </div>
+
+
+        <div class="col-lg-10  white_bg border_radius">
+            <h1>MySTC UI KIT Elements</h1>
+            <div class="row">
+
+                <h2 class="pink">Form Elements</h2>
+
+                <div class="col-lg-12">
+
+                    <h3>Text Inputs</h3>
+
+                    <div class="col-lg-3">
+
+
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="label" placeholder="Default"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="label">
+                                <span class="input__label-content input__label-content--hoshi">Default</span>
+                            </label>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-lg-3">
+
+
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="disabled" placeholder="disabled" disabled/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="disabled">
+                                <span class="input__label-content input__label-content--hoshi">Disabled</span>
+                            </label>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-lg-3">
+
+                        <div class="input input--hoshi input_icon">
+                            <input class="input__field input__field--hoshi" type="text" id="icon_input" placeholder="icon input"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="icon_input">
+                                <i class="fa fa-facebook-f"></i>
+                                <span class="input__label-content input__label-content--hoshi">Icon Input</span>
+                            </label>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3">
+
+
+                        <div class="input input--hoshi input_icon">
+                            <input class="input__field input__field--hoshi" type="text" id="icon_input_disabled" placeholder="disabled icon input" disabled/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="icon_input_disabled">
+                                <i class="fa fa-facebook-f"></i>
+                                <span class="input__label-content input__label-content--hoshi">Disabled icon input</span>
+                            </label>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <h3> Text area</h3>
+                    <div class="col-lg-12">
+                        <div class="input input--hoshi">
+                            <textarea class="input__field input__field--hoshi" id="textarea"
+                                      placeholder="textarea"></textarea>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="textarea">
+                                <span class="input__label-content input__label-content--hoshi">textarea</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="input input--hoshi">
+                            <textarea class="input__field input__field--hoshi" id="textarea_disabled"
+                                      placeholder="disabled textarea" disabled></textarea>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                                   for="textarea_disabled">
+                                <span class="input__label-content input__label-content--hoshi">disabled textarea</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-lg-3">
+                    <h3>Checkboxs</h3>
+
+                    <div class="col-lg-12">
+                        <div class="checkbox checkbox-primary">
+                            <input id="checkbox" type="checkbox">
+                            <label for="checkbox">default</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class=" checkbox checkbox-primary">
+                            <input id="checkbox_checked" type="checkbox" checked>
+                            <label for="checkbox_checked">Checked</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class=" checkbox checkbox-primary">
+                            <input id="checkbox_disabled" type="checkbox" disabled>
+                            <label for="checkbox_disabled">disabled</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class=" checkbox checkbox-primary">
+                            <input id="checkbox_checked_disabled" type="checkbox" checked disabled>
+                            <label for="checkbox_checked_disabled">Checked Disabled</label>
+                        </div>
+                    </div>
+</div>
+                <div class="col-lg-3">
+
+                    <h3>Radios</h3>
+
+                    <div class="col-lg-12">
+                        <div class=" radio radio-primary">
+                            <input id="radio" type="radio">
+                            <label for="radio">default</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class=" radio radio-primary">
+                            <input id="radio_checked" type="radio" checked>
+                            <label for="radio_checked">checked</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class=" radio radio-primary ">
+                            <input id="radio_disabled" type="radio" disabled>
+                            <label for="radio_disabled">disabled</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class=" radio radio-primary ">
+                            <input id="radio_checked_disabled" type="radio" checked disabled>
+                            <label for="radio_checked_disabled">disabled checked</label>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-lg-3">
+                    <h3>Switches</h3>
+                    <div class="col-lg-12">
+                        <input  type="checkbox" data-label-text="Lang" class="switch_btns" 	data-size="small" data-animate="true" data-on-text="En" data-off-text="Ar">
+                    </div>
+                    <div class="col-lg-12">
+                        <input  type="checkbox" data-label-text="Label" class="switch_btns" data-size="mini" readonly>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <input type="checkbox" class="switch_btns" data-size="large" >
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="checkbox" class="switch_btns"  data-inverse="true">
+                    </div>
+
+
+                </div>
+                <div class="col-lg-12">
+                    <h3>Date and Time Picker | <a href="https://github.com/T00rk/bootstrap-material-datetimepicker">Documention</a> | <a href="http://momentjs.com/">Localization</a></h3>
+
+                    <div class="col-lg-3">
+                        <h4 class="pink">Date Only</h4>
+                        <div class="input input--hoshi input_icon">
+                            <input class="input__field input__field--hoshi date_picker" type="text" id="date" placeholder="Pick date"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="date">
+                                <i class="fa fa-calendar"></i>
+                                <span class="input__label-content input__label-content--hoshi">Select Date</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="pink">Time Only</h4>
+                        <div class="input input--hoshi input_icon">
+                            <input class="input__field input__field--hoshi time_picker" type="text" id="time" placeholder="Pick time"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="time">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="input__label-content input__label-content--hoshi">Select Time</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="pink">Date & Time</h4>
+                        <div class="input input--hoshi input_icon">
+                            <input class="input__field input__field--hoshi date_time_picker" type="text" id="date_time" placeholder="Pick date and time"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="date_time">
+                                <i class="fa fa-calendar"></i>
+                                <span class="input__label-content input__label-content--hoshi">Select  date & Time</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="pink">Arabic locale Date & Time</h4>
+                        <div class="input input--hoshi input_icon">
+                            <input class="input__field input__field--hoshi date_time_picker_ar" type="text" id="date_time_ar" placeholder="Pick date and time"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="date_time_ar">
+                                <i class="fa fa-calendar"></i>
+                                <span class="input__label-content input__label-content--hoshi">Arabic date & Time</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="col-lg-6">
+                    <h3>Uplaod File</h3>
+                    <label for="upload_file">Uplaod a file </label>
+                        <input type="file"  name="upload_file" id="upload_file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                        <label for="upload_file"><i class="fa fa-upload"></i>
+                        <span>Upload file </span>
+                        <strong>Choose a file&hellip;</strong></label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <h3>Dropdown | <a href="https://select2.github.io/examples.html">Documention</a>  </h3>
+
+                    <div class="col-lg-3">
+                        <h4 class="pink">Dropdown</h4>
+                        <select class="custom_select">
+                            <option>Select from list</option>
+                            <option>option 1</option>
+                            <option>option 2</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="pink">Multiple Dropdown</h4>
+                        <select class="custom_select multiple" multiple>
+                            <option>Select from list</option>
+                            <option>option 1</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                            <option>option 4</option>
+                            <option>option 5</option>
+                            <option>option 6</option>
+
+
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="pink">With placeholder</h4>
+                        <select class="custom_select placeholder" >
+                            <option></option>
+                            <option>option 1</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                            <option>option 4</option>
+                            <option>option 5</option>
+                            <option>option 6</option>
+
+
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="pink">Disabled</h4>
+                        <select class="custom_select" disabled>
+                            <option>Select from list</option>
+                            <option>option 1</option>
+                            <option>option 2</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        <h4 class="pink">Tagging enabled</h4>
+                        <select class="custom_select tagging" multiple>
+                            <option selected>option 1</option>
+                            <option>option 2</option>
+                            <option selected>option 3</option>
+                            <option>option 4</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h4 class="pink">Flags Template dropdown</h4>
+                        <select class="custom_select flags">
+
+                            <option value="germany">Germany</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="italy">Italy</option>
+                            <option value="france">France</option>
+                            <option value="turkey">Turkey</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="greece">Greece</option>
+                            <option value="belgium">Belgium</option>
+                            <option value="spain">Spain</option>
+                            <option value="swiss">Swiss</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="pink">RTL Enabled</h4>
+                        <select class="custom_select rtl" >
+                            <option>اختر من القائمة</option>
+                            <option>الاختيار الاول</option>
+                            <option>الاختيار الثاني</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        <h3>Side by Side multiselect | <a href="http://loudev.com/#demos">Documentation</a> </h3><!--<a href="http://crlcu.github.io/multiselect/#demo-zero-configuration">Documentation</a>-->
+
+                        <select multiple="multiple" id="my-select" name="my-select[]">
+                            <option value='elem_1'>elem 1</option>
+                            <option value='elem_2'>elem 2</option>
+                            <option value='elem_3'>elem 3</option>
+                            <option value='elem_4'>elem 4</option>
+                            <option value='elem_100'>elem 100</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="col-lg-6">
+                            <h3>Range Slider | <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html">Documentation</a> </h3>
+                            <input type="text" id="range" value="" name="range" class="range-slider" />
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="col-lg-8">
+                        <h3> buttons</h3>
+                        <div class="col-lg-3">
+                            <input  type="button" class="btn btn-primary" value="Primary Button" />
+                        </div>
+                        <div class="col-lg-3">
+                            <input  type="button" class="btn cancel" value="Cancel Button" />
+                        </div>
+
+                        <div class="col-lg-3">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">action</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <input  type="button" class="btn btn-primary" value="Disabled " disabled />
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3> Button group</h3>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-default active"><i class="fa fa-trash"></i></button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-download"></i></button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-file"></i></button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i></button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-remove"></i></button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-12">
+                    <h3> Form Validation | <a href="http://parsleyjs.org/doc/index.html">Documentation</a></h3>
+                    <form role="form"  id="ind_reg_form" data-parsley-validate="" >
+                        <div class="row  animated fadeInDown">
+
+
+                            <div class="col-lg-6 mobile_no animated fadeInLeft">
+                                <div class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi" id="ind_mobile_no" name="ind_mobile_no" placeholder="Mobile number"  type="text" required="" data-parsley-error-message="Custom Validation message" />
+
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ind_mobile_no">
+                                        <span class="input__label-content input__label-content--hoshi">Mobile Number</span>
+                                    </label>
+
+                                </div>
+                                <h6>Mobile number must be registered under your ID. Your password will be sent to you by SMS.</h6>
+                            </div>
+                            <div class="col-lg-6 landline_no  animated fadeInRight">
+                                <div class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi" id="ind_landline_no" name="ind_landline_no"  placeholder="Landline number"  required=""/>
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ind_mobile_no">
+                                        <span class="input__label-content input__label-content--hoshi">Landline Number</span>
+                                    </label>
+                                </div>
+                                <h6>Land number must be registered under your ID.</h6>
+
+                            </div>
+                            <div class="col-lg-6">
+
+                                <div class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi" type="text" id="ind_id_number" name="ind_id_number" placeholder="Your ID Number" required=""/>
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ind_id_number">
+                                        <span class="input__label-content input__label-content--hoshi">ID Number</span>
+                                    </label>
+                                </div>
+                                <h6>ID Number can Be: Sadui National  ID, IQAMA ID, Diplomatic Passport, or Ordinary Passport</h6>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi"  id="ind_email" name="ind_email" placeholder="Your Email"  type="email"   required=""/>
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ind_email">
+                                        <span class="input__label-content input__label-content--hoshi">Email</span>
+                                    </label>
+                                </div>
+                                <h6>email address must have @ sign</h6>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi" type="text" id="ind_username" name="ind_username" placeholder="Username"   />
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ind_username">
+                                        <span class="input__label-content input__label-content--hoshi">Username</span>
+                                    </label>
+                                </div>
+                                <h6>Your password MUST NOT BE the same as your username, ONLY consist of English letters, numbers, underscores and dashes, and MUST BE between 6 and 20 characters long.</h6>
+
+                            </div>
+                            <div class="col-lg-6   animated fadeInRight">
+                                <div class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi" type="text" id="ind_password" name="ind_password" placeholder="Password"  required=""/>
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ind_password">
+                                        <span class="input__label-content input__label-content--hoshi">Password</span>
+                                    </label>
+                                </div>
+                                <h6>Your password MUST NOT BE the same as your username, ONLY consist of English letters, numbers, underscores and dashes, and MUST BE between 8 and 20 characters long.</h6>
+
+
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <div class="checkbox checkbox-primary">
+                                    <input id="ind_terms" name="ind_terms" type="checkbox"  required="">
+                                    <label for="ind_terms">I agree to the <a href="#"><b>terms and conditions</b></a> of this site</label>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-12 btns top_brdr">
+                                <div class="col-lg-3">
+                                    <button class="btn btn-primary" type="submit">Next</button>
+                                </div>
+                                <div class="col-lg-3">
+                                    <button class="btn cancel">Cancel</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <h2 class="pink">Javascript Elements</h2>
+
+                <div class="col-lg-6">
+                    <h3>Tabs</h3>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active animated fadeIn" id="home">
+                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                        </div>
+                        <div role="tabpanel" class="tab-pane animated fadeIn" id="profile">
+                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                        </div>
+                        <div role="tabpanel" class="tab-pane animated fadeIn" id="messages">
+                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                        </div>
+                        <div role="tabpanel" class="tab-pane animated fadeIn" id="settings">
+                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Accordion</h3>
+                    <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="accordion_h4_1">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                       href="#accordion_panel_1" aria-expanded="true" aria-controls="accordion_panel_1">
+                                        Accordion Header 1
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="accordion_panel_1" class="panel-collapse collapse in" role="tabpanel"
+                                 aria-labelledby="ind_stc_account_h4">
+                                <div class="panel-body">
+                                   content of the first accordion panel
+                                </div>
+
+                            </div>
+
+                            <div class="panel-heading" role="tab" id="accordion_h4_2">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                       data-parent="#accordion" href="#accordion_panel_2" aria-expanded="false"
+                                       aria-controls="accordion_panel_2">
+                                        Accordion Header 2
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="accordion_panel_2" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="ind_otp_h4">
+                                <div class="panel-body">
+                                    content of the first accordion panel
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                    <h3>Charts</h3>
+                <div class="col-lg-12">
+
+
+                    <div class="col-lg-3">
+                        <h4 class="pink">Circle</h4>
+
+                            <canvas id="local_internet" width="140" height="140"
+                                    class="circle_charts main_circle_charts"></canvas>
+                            <div class="remaining_values animated fadeIn">
+                                <h5>Remaining</h5>
+
+                                <h1 class="pink">265</h1>
+                                <h5>MB</h5>
+                            </div>
+
+
+                    </div>
+                    <div class="col-lg-5">
+                        <h4 class="pink">Bars</h4>
+                        <canvas id="top_10" width="390" height="180" class="bar_chart top_10_accounts"></canvas>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h4 class="pink">Radar</h4>
+
+                        <canvas id="calls_destination" width="450" height="180" class="radar_chart top_10_accounts"></canvas>
+
+                    </div>
+                    </div>
+                <div class="col-lg-12">
+
+                    <div class="col-lg-3 align-center">
+                        <h4 class="pink">Doughnut Chart</h4>
+                        <canvas width="170" height="170" id="accounts_summary_chart" class="summary_chart"></canvas>
+
+
+
+                        <div class="remaining_values animated fadeIn doughnuts ">
+                            <h5>Accounts Summary</h5>
+
+                        </div>
+                        <div class="chart_map">
+                            <h6>Mobile</h6>
+                            <h6>Landline</h6>
+                            <h6>Data</h6>
+                            <h6>Postpaid</h6>
+                            <h6>Quicknet</h6>
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 quicknet_packages_charts roaming_packages">
+                        <h4 class="pink">Free Pies charts samples</h4>
+                        <canvas id="circle" width="100" height="100" class="circle_charts free_pies quicknet_packages_roaming"></canvas>
+                        <div class="remaining_values animated fadeIn">
+                            <h5>Remaining</h5>
+
+                            <h1>234</h1>
+                            <h5>MB</h5>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="col-lg-12">
+                    <h4>Data Tables</h4>
+                    <table id="table" class="display accounts_tables  " cellspacing="0"
+                           width="100%">
+                        <thead>
+                        <tr>
+                            <th width="1%">Actions</th>
+                            <th width="30%">Account</th>
+                            <th width="29%">Current Bill</th>
+                            <th width="30%">Bill Total Due</th>
+                            <th width="10%">remove</th>
+
+
+
+
+                        </tr>
+                        </thead>
+
+
+                        <tbody>
+                        <tr class="mobile animated fadeInUp">
+                            <td width="1%">
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_1" type="checkbox">
+                                    <label for="account_1"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                               <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="10%">
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_2" type="checkbox">
+                                    <label for="account_2"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_3" type="checkbox">
+                                    <label for="account_3"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_4" type="checkbox">
+                                    <label for="account_4"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_5" type="checkbox">
+                                    <label for="account_5"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_6" type="checkbox">
+                                    <label for="account_6"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_7" type="checkbox">
+                                    <label for="account_7"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_8" type="checkbox">
+                                    <label for="account_8"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_9" type="checkbox">
+                                    <label for="account_9"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_10" type="checkbox">
+                                    <label for="account_10"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+
+                        <tr class="mobile animated fadeInUp">
+                            <td>
+
+                                <div class="checkbox checkbox-primary">
+                                    <input id="account_11" type="checkbox">
+                                    <label for="account_11"></label>
+
+                                </div>
+                            </td>
+                            <td width="30%">
+                                <h1>4356789031</h1>
+                            </td>
+                            <td width="29%">
+                                <h6>Current Bill</h6>
+
+                                <h3>432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td width="30%">
+                                <h6>Bill Total Due</h6>
+
+                                <h3 class="pink">432,88K</h3>
+                                <h5>SAR</h5>
+
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default "><i class="fa fa-trash"></i></button>
+
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="col-lg-3">
+                        <h3>Modal Window </h3>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            Launch demo modal
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Modal Content
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn cancel" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-lg-5">
+                        <h3>Progress bar </h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                70%
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                <span class="sr-only">45% Complete</span>
+                                50%
+                            </div>
+                        </div>
+                        <h3>Panels</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel title</h3>
+                            </div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Custom Scrollbar</h3>
+                        <h4>Nice Scroll |  <a href="https://github.com/inuyaksa/jquery.nicescroll" target="_blank">Documentation</a> </h4>
+                        <div class="nice_scroll">
+                            THIS IS A SIMPLE SCROLLABLE DIV
+                            <h2> Package Description </h2>
+                            <p>Release Date: August 10, 2010</p>
+                            <p>The <a title="http://www.openprinting.org/show_driver.cgi?driver=hpijs" rel="nofollow" href="http://www.openprinting.org/show_driver.cgi?driver=hpijs">HPIJS</a> driver is the free, <a title="http://hplipopensource.com/hplip-web/index.html" rel="nofollow" href="http://hplipopensource.com/hplip-web/index.html">open-source driver</a> issued by HP for their DeskJet and LaserJet printers. For most <a title="" href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/macosx/hpijs#Printers">supported printers</a>,   this driver produces output quality equivalent to the proprietary HP   drivers. In photo mode, with photo paper, the output quality is very   high, especially for the HP DeskJet 990C and later models, which   auto-detect the paper type in hardware. Photo printing is fully   supported in the newer 6- and 7-ink models.</p>
+                            <p>A major advantage of using this driver over those supplied by HP is   the direct interface between HPIJS and the native CUPS spooler, which   allows printing from any printer over any available connection such as   USB, AppleTalk, TCP/IP (via LPD and IPP), HP JetDirect, and shared   windows printers via SAMBA. Additionally, this driver utilizes the   existing Mac OS X USB &quot;backend&quot; and thus does not install any software   that might interfere with standard USB operation.</p>
+                            <p>Please note:</p>
+                            <ul class="styledUl">
+                                <li>HP does not provide any support for HPLIP or HPIJS on the Mac OS X platform.</li>
+                                <li><a href="http://www.linuxfoundation.org/en/OpenPrinting/MacOSX/hpijs-USB">Several HP USB devices</a> may not print successfully over the standard Mac OS X USB &quot;backend&quot;. Please <a href="http://www.linuxfoundation.org/en/OpenPrinting/MacOSX/hpijs-USB">see this note</a> for more information.</li>
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="col-lg-4">
+                        <h3>Thumbnails</h3>
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="../../images/user_defualt_img.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Thumbnail label</h4>
+                                    <p>...</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="../../images/user_defualt_img.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Thumbnail label</h4>
+                                    <p>...</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                        <div class="col-lg-6">
+                            <h3>OWL Carousel</h3>
+                            <div class="carousel_cont single sim_details">
+                                <div class="item active">
+
+                                    <h1 class="quick_Pckg_title">SIM 1 Details</h1>
+                                    <div class="col-lg-4 animated fadeInDown">
+                                        <div class="sim_icon top_positive_15 white"></div>
+                                        <h6>899660117000000093</h6>
+                                    </div>
+                                    <div class="col-lg-8 animated bounceIn">
+                                        <div class="col-lg-5">
+                                            <h6>PIN 1</h6>
+                                            <h1>6635</h1>
+                                            <h6>PIN 2</h6>
+                                            <h1>3904</h1>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <h6>PUK 1</h6>
+                                            <h1>95211780</h1>
+                                            <h6>PUK 2</h6>
+                                            <h1>88036623</h1>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <h1 class="quick_Pckg_title">SIM 2 Details</h1>
+                                    <div class="col-lg-4 animated fadeInDown">
+                                        <div class="sim_icon top_positive_15 white"></div>
+                                        <h6>899660117000000093</h6>
+                                    </div>
+                                    <div class="col-lg-8 animated bounceIn">
+                                        <div class="col-lg-5">
+                                            <h6>PIN 1</h6>
+                                            <h1>6635</h1>
+                                            <h6>PIN 2</h6>
+                                            <h1>3904</h1>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <h6>PUK 1</h6>
+                                            <h1>95211780</h1>
+                                            <h6>PUK 2</h6>
+                                            <h1>88036623</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h3>Bootstrap Carousel</h3>
+                            <div id="internet_roaming_packages" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <div class=" quicknet_packages_charts internet roaming_packages">
+
+                                            <div class="col-lg-5">
+                                                <canvas id="quicknet_roaming_internet" width="100" height="100" class="circle_charts quicknet_packages_roaming"></canvas>
+                                                <div class="remaining_values animated fadeIn">
+                                                    <h5>Remaining</h5>
+
+                                                    <h1>234</h1>
+                                                    <h5>MB</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 top_positive_15">
+                                                <h1 class="quick_Pckg_title">Internet Roaming 1GB</h1>
+                                                <h6>Expiration Date : <span class="purple bold">12/11/2015</span></h6>
+                                                <h6>Last Update : 12/11/2015</h6>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class=" quicknet_packages_charts internet roaming_packages">
+
+                                            <div class="col-lg-5">
+                                                <canvas id="quicknet_roaming_internet_2" width="100" height="100" class="circle_charts quicknet_packages_roaming"></canvas>
+                                                <div class="remaining_values animated fadeIn">
+                                                    <h5>Remaining</h5>
+
+                                                    <h1>234</h1>
+                                                    <h5>MB</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 top_positive_15">
+                                                <h1 class="quick_Pckg_title">Internet Roaming 500MB</h1>
+                                                <h6>Expiration Date : <span class="purple bold">12/11/2015</span></h6>
+                                                <h6>Last Update : 12/11/2015</h6>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#internet_roaming_packages" role="button" data-slide="prev" >
+                                    <i class="fa fa-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#internet_roaming_packages" role="button" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>Loading Spinners</h3>
+                                <div class="col-lg-6">
+                                    <div class="loadSpinner" >
+                                        <div class="loader-inner ball-spin-fade-loader">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="loadSpinner small" >
+                                        <div class="loader-inner ball-spin-fade-loader">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+           </div>
+            <hr/>
+
+            <div class="row">
+
+
+                <h2 class="pink">Basic  Elements</h2>
+
+                <div class="col-lg-12">
+
+                    <h3>Typography</h3>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Heading 1</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <h1>Lorem Ipsum is simply</h1>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Heading 2</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <h2>Lorem Ipsum is simply </h2>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Heading 3</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <h3>Lorem Ipsum is simply dummy text</h3>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Heading 4</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Heading 5</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <h5>Lorem Ipsum is simply dummy text</h5>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Heading 6</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <h6>Lorem Ipsum is simply dummy text</h6>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Paragraph</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Qoute</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <blockquote>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <small>Mohammad Samak, STC</small>
+                            </blockquote>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Pink Text color</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <h1 class="pink">Lorem Ipsum is simply</h1>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Gradient Text color</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <h1 class="gradient_icon text">Lorem Ipsum is simply</h1>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Black Text color</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Orange Text Color</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <blockquote class="orange">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <small>Mohammad Samak, STC</small>
+                            </blockquote>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Success Messages</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="msgs success_msg">Congrats, Success Submittion</div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Error Messages</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="msgs error_msg">Sorry, Error Occurs</div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Alert Messages</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                           <div class="msgs alert_msg">Alert, Alert is here</div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+
+                            <h6>Info Messages</h6>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="msgs info_msg">Info, Info message</div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="col-lg-4">
+
+                            <h3>Un order List</h3>
+
+                            <ul class="styledUl">
+                                <li>Proin nec eros accumsan, varius diam eu, fringilla lectus.</li>
+                                <li>Fusce nec quam interdum, posuere massa ut, suscipit tellus.</li>
+                                <li>Praesent eget sem eu leo maximus varius.</li>
+                                <li>Fusce ac magna aliquet, finibus eros non, pretium ante.</li>
+                                <li>Curabitur malesuada ante id dictum egestas.</li>
+                            </ul>
+
+
+
+
+
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Number List</h3>
+
+                        <ol class="styledUl">
+                            <li>Proin nec eros accumsan, varius diam eu, fringilla lectus.</li>
+                            <li>Fusce nec quam interdum, posuere massa ut, suscipit tellus.</li>
+                            <li>Praesent eget sem eu leo maximus varius.</li>
+                            <li>Fusce ac magna aliquet, finibus eros non, pretium ante.</li>
+                            <li>Curabitur malesuada ante id dictum egestas.</li>
+                        </ol>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Numbering design</h3>
+                        <dl class="numbering_list">
+
+                            <dt>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</dt>
+                            <dd>1,000,000</dd>
+
+                            <dt>What is the air-speed velocity of an unladen swallow?</dt>
+                            <dd>What do you mean? An African or European swallow?</dd>
+
+                            <dt>Why did the chicken cross the road?</dt>
+                            <dd>To get to the other side</dd>
+
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="col-lg-12">
+                        <h3>Hyper Links</h3>
+
+                        <div class="col-lg-6">
+                            <a href="#" >Normal Link</a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <a href="#" class="link_icon"><i class="fa fa-user-plus"></i>Link with icon</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 icons_sample">
+                        <h3>Glyphs [ <span class="pink">Icon Set</span> ] </h3>
+                        <h6>We are going to use font awesome as our icon library and here is some sample and you can find the whole set  <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">HERE</a></h6>
+                        <div class="col-lg-3">
+                           <span class="fa fa-remove gradient_icon font_0"><i class="fa fa-remove "></i></span>
+                        </div>
+                        <div class="col-lg-3">
+                            <span class="fa fa-search gradient_icon font_0"><i class="fa fa-search"></i></span>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <span class="fa fa-object-group gradient_icon font_0"><i class="fa fa-object-group"></i></span>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa fa-file"></i>
+                        </div>
+                        <div class="col-lg-3">
+                            <span class="fa fa-trash gradient_icon font_0"><i class="fa fa-trash"></i></span>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa fa-bitbucket"></i>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa fa-inbox"></i>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa fa-archive"></i>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa fa-paper-plane"></i>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa fa-headphones"></i>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="col-lg-7">
+                    <h3>Tables</h3>
+                   <table class="static_tables">
+
+
+                            <tr>
+                                <th>Header</th>
+                                <th>Header</th>
+                                <th>Header</th>
+
+                            </tr>
+
+
+                       <tr>
+                           <td>Data</td>
+                           <td>Data</td>
+                           <td>Data</td>
+
+                       </tr>
+                       <tr>
+                           <td>Data</td>
+                           <td>Data</td>
+                           <td>Data</td>
+
+                       </tr>
+                       <tr>
+                           <td>Data</td>
+                           <td>Data</td>
+                           <td>Data</td>
+
+                       </tr>
+                       <tr>
+                           <td>Data</td>
+                           <td>Data</td>
+                           <td>Data</td>
+
+                       </tr>
+
+
+
+
+                   </table>
+
+                </div>
+
+                <div class="col-lg-12">
+                    <h3>Grid Systems</h3>
+
+
+                    <div class="col-lg-12 bototm_positive_15">
+                        <h4 class="pink bold">Bootstrap Grid System</h4>
+                        <h6>we are using Bootstrap 12 Column grid system and you can find the documentation <a href="http://getbootstrap.com/css/#grid" target="_blank"> Here</a></h6>
+
+                            <div class="row border_sample">
+                                <div class="col-lg-3 ">3 columns width</div>
+                                <div class="col-lg-2 ">2 columns width</div>
+                                <div class="col-lg-4 ">4 columns width</div>
+                                <div class="col-lg-2">2 columns width</div>
+                                <div class="col-lg-1">1 columns width</div>
+                                <div class="col-lg-12">12 columns width</div>
+                                <div class="col-lg-4">4 columns width</div>
+                                <div class="col-lg-8">8 columns width</div>
+                            </div>
+
+                    </div>
+
+                    <div class="col-lg-12" style="background:#f2f2f2;padding:5px">
+                        <h4 class="pink bold">Grid Stack System</h4>
+                        <h6>we are using Grid Stack system for the dashboard layout  and you can find the documentation <a href="https://github.com/troolee/gridstack.js" target="_blank"> Here</a></h6>
+
+                        <div class="grid-stack fixed" data-gs-width="12" data-gs-animate="yes">
+                            <!-- =================  First Widget =================== -->
+                            <div class="grid-stack-item animation-target " data-gs-x="0" data-gs-y="0"
+                                 data-gs-width="2" data-gs-height="2" data-gs-auto-position="true">
+                                <div class="grid-stack-item-content">
+                                    <div class="widget_cont">
+                                        2 column width and 2 rows height
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- =================  Second Widget =================== -->
+                            <div class="grid-stack-item animation-target animated fadeInLeft" data-gs-x="2" data-gs-y="0"
+                                 data-gs-width="4" data-gs-height="2" data-gs-auto-position="true">
+                                <div class="grid-stack-item-content">
+
+                                    <div class="widget_cont">
+                                        4 column width and 2 rows height
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- =================  Third Widget =================== -->
+                            <div class="grid-stack-item animation-target animated fadeInDown" data-gs-x="6" data-gs-y="0"
+                                 data-gs-width="2" data-gs-height="4" data-gs-auto-position="true">
+                                <div class="grid-stack-item-content">
+
+
+                                    <div class="widget_cont">
+                                        2 column width and 4 rows height
+
+                                    </div>
+
+                                 </div>
+                            </div>
+
+                            <!-- =================  Fourth Widget =================== -->
+                            <div class="grid-stack-item animation-target animated fadeInRight" data-gs-x="8" data-gs-y="0"
+                                 data-gs-width="4" data-gs-height="2" data-gs-auto-position="true">
+                                <div class="grid-stack-item-content">
+                                    <div class="widget_cont">
+                                        4 column width and 2 rows height
+
+                                    </div>
+                                    </div>
+                                </div>
+
+
+                            <!-- =================  Fifth Widget =================== -->
+                            <div class="grid-stack-item animation-target animated fadeInLeft" data-gs-x="0"
+                                 data-gs-y="2" data-gs-width="4" data-gs-height="2" data-gs-auto-position="true">
+                                <div class="grid-stack-item-content">
+
+                                    <div class="widget_cont">
+                                        4 column width and 2 rows height
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- =================  sixth Widget =================== -->
+                            <div class="grid-stack-item animation-target animated fadeInLeft" data-gs-x="4"
+                                 data-gs-y="2" data-gs-width="2" data-gs-height="2" data-gs-auto-position="true">
+                                <div class="grid-stack-item-content">
+
+                                    <div class="widget_cont">
+                                        2 column width and 2 rows height
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- =================  Seventh Widget =================== -->
+                            <div class="grid-stack-item animation-target animated fadeInRight" data-gs-x="8"
+                                 data-gs-y="2" data-gs-width="4" data-gs-height="2" data-gs-auto-position="true">
+                                <div class="grid-stack-item-content">
+
+                                    <div class="widget_cont">
+                                        4 column width and 2 rows height
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <hr/>
+            <div class="row">
+                <h2>STC Special Componenets</h2>
+                <div class="col-lg-12">
+                    <h3>STC Postpaid Packages</h3>
+                    <div class="col-lg-2">
+                        <div class="packg_icon packg_30">
+                            <div class="packg_top">Postpaid</div>
+                            <div class="packg_bottom">
+                                30
+                                <h5>  <span>SR </span> <span> ريال</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="packg_icon packg_100">
+                            <div class="packg_top">Postpaid</div>
+                            <div class="packg_bottom">
+                                100
+                                <h5>  <span>SR </span> <span> ريال</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="packg_icon packg_200">
+                            <div class="packg_top">Postpaid</div>
+                            <div class="packg_bottom">
+                                200
+                                <h5>  <span>SR </span> <span> ريال</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="packg_icon packg_400">
+                            <div class="packg_top">Postpaid</div>
+                            <div class="packg_bottom">
+                                400
+                                <h5>  <span>SR </span> <span> ريال</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="packg_icon packg_1000">
+                            <div class="packg_top">Postpaid</div>
+                            <div class="packg_bottom">
+                                1000
+                              <h5>  <span>SR </span> <span> ريال</span></h5>
+                            </div>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+</div>
+
+
+    </section>
+
+    <div class="chat_cont chat_icon_cont">
+        <a class="chat_icon animated fadeInUp" href="#" title="Live Chat"><i class="fa fa-weixin"></i></a>
+    </div>
+</div>
+<footer>
+    <div class="main_content">
+
+        <div class="share animated fadeInUp">
+            <button class="share-toggle-button" title="STC Social media"><i class="share-icon fa fa-share-alt"></i>
+            </button>
+            <ul class="share-items">
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-facebook"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-twitter"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-google-plus"></i>
+                </a></li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-youtube"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-foursquare"></i>
+                </a></li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-instagram"></i> </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</footer>
+
+
+<!-- Hidden Inline Popups -->
+<div class="overlay"></div>
+<!-- ======= Accounts list popup ======= -->
+<div id="accounts" class="morphsearch account_list">
+    <form class="morphsearch-form">
+        <input class="morphsearch-input" type="search" placeholder="Search Accounts ..." value="dd"/>
+        <button class="morphsearch-submit" type="submit">Search</button>
+    </form>
+    <div class="morphsearch-content">
+        <div class="dummy-column">
+            <h2>Postpaid Accounts</h2>
+
+            <div class="dummy-media-object row accounts_items">
+                <div class="col-lg-10  account_no_cont">
+                    <div class="col-lg-12 service_no_display">
+                        <h3>0534343963</h3>
+
+                    </div>
+                    <div class="col-lg-12 service_no_label">
+                        <div class="input input--hoshi service_lable_input">
+                            <input class="input__field input__field--hoshi" type="text" value="Mohammad Samak"
+                                   readonly/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                                <span class="input__label-content input__label-content--hoshi">Service Label</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 service_label_edit">
+                    <button title="Edit Label" class="edit"><i class="fa fa-edit"></i></button>
+                    <button title="Save Label" class="save"><i class="fa fa-check"></i></button>
+                    <button title="Cancel " class="cancel"><i class="fa fa-remove"></i></button>
+
+                </div>
+            </div>
+
+            <div class="dummy-media-object row accounts_items">
+                <div class="col-lg-10  account_no_cont">
+                    <div class="col-lg-12 service_no_display">
+                        <h3>0554343984</h3>
+                    </div>
+                    <div class="col-lg-12 service_no_label">
+                        <div class="input input--hoshi service_lable_input">
+                            <input class="input__field input__field--hoshi" type="text" value="My mobile"
+                                   readonly/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                                <span class="input__label-content input__label-content--hoshi">Service Label</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 service_label_edit">
+                    <button title="Edit Label" class="edit"><i class="fa fa-edit"></i></button>
+                    <button title="Save Label" class="save"><i class="fa fa-check"></i></button>
+                    <button title="Cancel " class="cancel"><i class="fa fa-remove"></i></button>
+
+                </div>
+            </div>
+            <div class="dummy-media-object row accounts_items">
+                <div class="col-lg-10  account_no_cont">
+                    <div class="col-lg-12 service_no_display">
+                        <h3>0501234567</h3>
+                    </div>
+                    <div class="col-lg-12 service_no_label">
+                        <div class="input input--hoshi service_lable_input">
+                            <input class="input__field input__field--hoshi" type="text" value="Second mobile"
+                                   readonly/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                                <span class="input__label-content input__label-content--hoshi">Service Label</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 service_label_edit">
+                    <button title="Edit Label" class="edit"><i class="fa fa-edit"></i></button>
+                    <button title="Save Label" class="save"><i class="fa fa-check"></i></button>
+                    <button title="Cancel " class="cancel"><i class="fa fa-remove"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="dummy-column">
+            <h2>Prepaid Accounts</h2>
+
+            <div class="dummy-media-object row accounts_items">
+                <div class="col-lg-10  account_no_cont">
+                    <div class="col-lg-12 service_no_display">
+                        <h3>0556783433</h3>
+                    </div>
+                    <div class="col-lg-12 service_no_label">
+                        <div class="input input--hoshi service_lable_input">
+                            <input class="input__field input__field--hoshi" type="text" value="My Sawa"
+                                   readonly/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                                <span class="input__label-content input__label-content--hoshi">Service Label</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 service_label_edit">
+                    <button title="Edit Label" class="edit"><i class="fa fa-edit"></i></button>
+                    <button title="Save Label" class="save"><i class="fa fa-check"></i></button>
+                    <button title="Cancel " class="cancel"><i class="fa fa-remove"></i></button>
+
+                </div>
+            </div>
+            <div class="dummy-media-object row accounts_items">
+                <div class="col-lg-10  account_no_cont">
+                    <div class="col-lg-12 service_no_display">
+                        <h3>0536658234</h3>
+                    </div>
+                    <div class="col-lg-12 service_no_label">
+                        <div class="input input--hoshi service_lable_input">
+                            <input class="input__field input__field--hoshi" type="text" value="Family Sawa"
+                                   readonly/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                                <span class="input__label-content input__label-content--hoshi">Service Label</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 service_label_edit">
+                    <button title="Edit Label" class="edit"><i class="fa fa-edit"></i></button>
+                    <button title="Save Label" class="save"><i class="fa fa-check"></i></button>
+                    <button title="Cancel " class="cancel"><i class="fa fa-remove"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="dummy-column">
+            <h2>Landline Accounts</h2>
+
+            <div class="dummy-media-object row accounts_items">
+                <div class="col-lg-10  account_no_cont">
+                    <div class="col-lg-12 service_no_display">
+                        <h3>0119873345</h3>
+                    </div>
+                    <div class="col-lg-12 service_no_label">
+                        <div class="input input--hoshi service_lable_input">
+                            <input class="input__field input__field--hoshi" type="text" value="My Landline"
+                                   readonly/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                                <span class="input__label-content input__label-content--hoshi">Service Label</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 service_label_edit">
+                    <button title="Edit Label" class="edit"><i class="fa fa-edit"></i></button>
+                    <button title="Save Label" class="save"><i class="fa fa-check"></i></button>
+                    <button title="Cancel " class="cancel"><i class="fa fa-remove"></i></button>
+
+                </div>
+            </div>
+
+            <div class="dummy-media-object row accounts_items">
+                <div class="col-lg-10  account_no_cont">
+                    <div class="col-lg-12 service_no_display">
+                        <h3>0127764454</h3>
+                    </div>
+                    <div class="col-lg-12 service_no_label">
+                        <div class="input input--hoshi service_lable_input">
+                            <input class="input__field input__field--hoshi" type="text" value="Jeddah Landline"
+                                   readonly/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                                <span class="input__label-content input__label-content--hoshi">Service Label</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 service_label_edit">
+                    <button title="Edit Label" class="edit"><i class="fa fa-edit"></i></button>
+                    <button title="Save Label" class="save"><i class="fa fa-check"></i></button>
+                    <button title="Cancel " class="cancel"><i class="fa fa-remove"></i></button>
+
+                </div>
+            </div>
+            <div class="dummy-media-object row accounts_items">
+                <div class="col-lg-10  account_no_cont">
+                    <div class="col-lg-12 service_no_display">
+                        <h3>0119873434</h3>
+                    </div>
+                    <div class="col-lg-12 service_no_label">
+                        <div class="input input--hoshi service_lable_input">
+                            <input class="input__field input__field--hoshi" type="text" value="Work Landline"
+                                   readonly/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                                <span class="input__label-content input__label-content--hoshi">Service Label</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 service_label_edit">
+                    <button title="Edit Label" class="edit"><i class="fa fa-edit"></i></button>
+                    <button title="Save Label" class="save"><i class="fa fa-check"></i></button>
+                    <button title="Cancel " class="cancel"><i class="fa fa-remove"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /morphsearch-content -->
+    <span class="morphsearch-close"></span></div>
+
+<!--  ========== User profile popup =============== -->
+<div id="user" class="morphsearch user_profile">
+    <div class="morphsearch-content">
+        <div class="dummy-column user_data">
+            <img class="user_profile" src="../../images/user_defualt_img.jpg" alt="user profile"/>
+
+            <h3 class="welcome_msg"></h3>
+
+            <h2>Mohammad Samak</h2>
+            <nav>
+                <a href="#" class="profile_menu personal animated active"><i class="fa fa-user"></i> Personal
+                    Settings</a>
+                <a href="#" class="profile_menu animated password"> <i class="fa fa-cog"></i> Change Password</a>
+                <a href="#" class="profile_menu animated social"><i class="fa fa-share-alt"></i>Social Settings</a>
+                <a href="#" class="profile_menu animated payment"><i class="fa fa-credit-card"></i>Payment Method</a>
+                <a href="#" title="sign out" class="profile_menu animated sign_out"><i class="fa fa-lock"></i> Sign Out</a>
+            </nav>
+        </div>
+        <div class="dummy-column profile_divs">
+            <h2 class="titles animated  "><i class="fa fa-user"></i><span> Personal Settings</span></h2>
+
+            <div class="profile_div_cont row personal_div animated slideInRight ">
+                <div class="row form_controls">
+
+                    <div class="col-lg-12 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="email_2"
+                               placeholder="Enter your email address"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email_2">
+                            <span class="input__label-content input__label-content--hoshi">Email</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="phone_no"
+                                   placeholder="your phone number"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="phone_no">
+                                <span class="input__label-content input__label-content--hoshi">Phone Number</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="contact_no"
+                               placeholder="your primary contact  number"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="contact_no">
+                            <span class="input__label-content input__label-content--hoshi">Primary Contact Number</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="checkbox checkbox-primary">
+                            <input id="notifyme" type="checkbox" checked="">
+                            <label for="notifyme">
+                                Notify me when bill is available
+                            </label>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile_div_cont row password_div animated">
+                <div class="row form_controls">
+
+                    <div class="col-lg-12 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="password" id="Current_Password"
+                               placeholder="your current password"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                               for="Current_Password">
+                            <span class="input__label-content input__label-content--hoshi">Current Password</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="password" id="newpassword1"
+                                   placeholder="Enter new password"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                                   for="newpassword1">
+                                <span class="input__label-content input__label-content--hoshi">Phone Number</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="password" id="newpassword2"
+                               placeholder="Confirm new password"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="newpassword2">
+                            <span class="input__label-content input__label-content--hoshi">Primary Contact Number</span>
+                        </label>
+
+
+                    </div>
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profile_div_cont row social_div animated">
+                <div class="row form_controls">
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="facebook"
+                               placeholder="Facebook account"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="facebook">
+                            <span class="input__label-content input__label-content--hoshi">Facebook Account</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="twitter"
+                                   placeholder="Twitter Account"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="twitter">
+                                <span class="input__label-content input__label-content--hoshi">Twitter Account</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="Google_Plus"
+                               placeholder="Google plus account"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="Google_Plus">
+                            <span class="input__label-content input__label-content--hoshi">Google Plus  Account</span>
+                        </label>
+
+
+                    </div>
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profile_div_cont row payment_div animated">
+
+                <div class="row form_controls">
+                    <div class="col-lg-12 credit_cards">
+                        <label class="select-label">Card Type</label>
+                        <input type="radio" name="credit_cards" id="visa_card" vlaue="visa"/> <label for="visa_card"><i
+                            class="fa fa-cc-visa"></i></label>
+                        <input type="radio" name="credit_cards" id="master_card" vlaue="master"/> <label
+                            for="master_card"><i class="fa fa-cc-mastercard"></i></label>
+                        <input type="radio" name="credit_cards" id="amex_card" vlaue="amex"/> <label for="amex_card"> <i
+                            class="fa fa-cc-amex"></i></label>
+
+                    </div>
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="card_name"
+                               placeholder="Your name at the Card"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="card_name">
+                            <span class="input__label-content input__label-content--hoshi">Name on Card</span>
+                        </label>
+
+
+                    </div>
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="card_number"
+                               placeholder="Card Number"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="card_number">
+                            <span class="input__label-content input__label-content--hoshi">Card Number</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <label class="select-label">Expiration Month</label>
+                                <select class="selectpicker show-tick form-control">
+
+                                    <option value="01"> JAN</option>
+                                    <option value="02"> FEB</option>
+                                    <option value="03"> MAR</option>
+                                    <option value="04"> APR</option>
+                                    <option value="05"> MAY</option>
+                                    <option value="06"> JUN</option>
+                                    <option value="07"> JUL</option>
+                                    <option value="08"> AUG</option>
+                                    <option value="09"> SEP</option>
+                                    <option value="10"> OCT</option>
+                                    <option value="11"> NOV</option>
+                                    <option value="12"> DEC</option>
+
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <label class="select-label">Expiration Year</label>
+                                <select class="selectpicker show-tick form-control">
+
+                                    <option value="01"> 2015</option>
+                                    <option value="02"> 2016</option>
+                                    <option value="03"> 2017</option>
+                                    <option value="04"> 2018</option>
+                                    <option value="05"> 2019</option>
+                                    <option value="06"> 2020</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="ccv" placeholder="CCV"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ccv">
+                                <span class="input__label-content input__label-content--hoshi">CCV</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- /morphsearch-content -->
+    <span class="morphsearch-close"></span>
+</div>
+
+
+<!-- Chat container -->
+
+<div id="genesys_webchat" class="ChatUI OverlayMode" style="display:none">
+    <div class="msgs_cont">
+        <div class="chat_overlay" style="display:none"> </div>
+        <div class="error_msg msgs chat_msgs animated slideInDown" style="display:none">
+
+            <span>error messages</span>
+        </div>
+    </div>
+
+
+    <div class="loading" style="display:none;">
+        <div class="chat_overlay"> </div>
+        <div class="loader">
+            <div class="loader-inner ball-spin-fade-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="title i18n" data-message="ChatTitle">Chat Support</div>
+    <div class="end i18n" data-message="ChatEnd" id="endChatBTN" style="display: none;">End Chat</div>
+    <div class="close i18n" data-message="ChatClose" style="display: block;">Close</div>
+
+    <div class="form" style="display: block;">
+        <form>
+            <label>
+                <span class="i18n" data-message="ChatFormFirstName">First Name</span>
+                <span class="required">*</span>
+                <input name="firstname" id="firstname" />
+            </label>
+            <label>
+                <span class="i18n" data-message="ChatFormLastName">Last Name</span>
+                <span class="required">*</span>
+                <input name="lastname" id="lastname" />
+            </label>
+            <label>
+                <span class="i18n" data-message="ChatFormNickname">Nickname</span>
+                <span class="required">*</span>
+                <input name="nickname" id="nickname" />
+            </label>
+            <label>
+                <span class="i18n" data-message="ChatFormSubject">Subject</span>
+                <input name="subject" id="subject" />
+            </label>
+            <label>
+                <span class="i18n" data-message="ChatFormEmail">Email</span>
+                <input name="email" id="email" />
+            </label>
+        </form>
+        <button class="submit i18n" data-message="ChatFormSubmit" id="startChatBTN">Start Chat</button>
+    </div>
+    <div class="transcript" style="display: none;">
+    </div>
+    <div class="input-container" style="display: none;">
+        <div class="chat-input-bar">
+            <div class="chat-info-container">
+
+            </div>
+            <div class="chat-effect-container">
+                <div class="chat-effect-bar"></div>
+            </div>
+            <textarea class="input i18n disabled" data-message="ChatInputPlaceholder" data-message-type="placeholder" placeholder="Type your message here and hit return..." disabled="disabled"></textarea>
+            <button class="send i18n" data-message="ChatSend"></button>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- Add Widget panel div container -->
+<div class="add_widget_div animated ">
+    <div class="add_widget_cont ">
+        <span class="close_widget animated bounceInDown ">X</span>
+
+        <h1 class="animated fadeInLeft">Add new Widget</h1>
+
+        <div class="row animated fadeInUp bototm_positive_10">
+            <div class="col-lg-12 ">
+
+                <label>Service Number</label>
+                <select class="selectpicker show-tick form-control">
+                    <option>Select from list</option>
+                    <option>0534343963</option>
+                    <option>0112338876</option>
+                    <option>0551234567</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="row animated fadeInUp bototm_positive_10">
+            <div class="col-lg-12 ">
+
+                <label>Widget</label>
+                <select class="selectpicker show-tick form-control">
+                    <option>Select from list</option>
+                    <option>0534343963</option>
+                    <option>0112338876</option>
+                    <option>0551234567</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row animated fadeInUp bototm_positive_10">
+            <div class="col-lg-12 ">
+
+                <label>Position</label>
+                <select class="selectpicker show-tick form-control">
+                    <option>Select from list</option>
+                    <option>0534343963</option>
+                    <option>0112338876</option>
+                    <option>0551234567</option>
+                    <option>0534343963</option>
+                    <option>0112338876</option>
+                    <option>0551234567</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row animated fadeInUp bototm_positive_10">
+            <div class="col-lg-12 ">
+
+                <button class="add_widget btns_shadow animated bounceIn"><i class="fa fa-plus"></i></button>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- custom file input -->
+<script type="text/javascript" src="../../js/custom-file-input.js"></script>
+</body>
+</html>

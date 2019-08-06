@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>STC MyBusiness</title>
+    <link rel="stylesheet" href="css/datatables.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/gridstack.css"/>
+    <link rel="stylesheet" href="css/morph_search.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select.css"/>
+    <link rel="stylesheet" href="css/chat.css"/>
+    <link rel="stylesheet" href="css/tabs.css">
+
+    <link rel="stylesheet" href="css/form_inputs.css">
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/datatables.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/lodash.min.js"></script>
+    <script type="text/javascript" src="js/gridstack.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/snap.svg-min.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/share.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
+    <script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="js/charts_global.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/datatables_config.js"></script>
+</head>
+<body>
+<div class="content-wrap">
+    <header class="animated fadeIn">
+        <div class="main_content">
+            <div class="row">
+                <div class="col-lg-2"><a href="http://www.stc.com.sa" class="stc_logo">STC</a></div>
+                <div class="col-lg-4 col-lg-offset-6">
+                    <div class="col-lg-8 user_display"><a href="#" class=" user_display_btn "> <img
+                            src="images/user_defualt_img.jpg" alt="User Image"/> <span>
+            <h3 class="welcome_msg"></h3>
+            <h4>Abdullah Al Zuhair</h4>
+            </span> <span class="glyphicon glyphicon-menu-down"></span> </a></div>
+                    <div class="col=lg-4 language_select"><a href="#"> <span>العربية</span> <span
+                            class="glyphicon glyphicon-globe"></span></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-default top_menu animated fadeIn ">
+        <div class="main_content">
+            <div class="col-lg-9">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html"><span class="glyphicon glyphicon-th-large"
+                                                                          aria-hidden="true"></span>Dashboard</a>
+                            </li>
+                            <li class="active"><a href="accounts_list.html">Accounts</a></li>
+                            <li><a href="billing.html">Billing</a></li>
+                            <li><a href="#">Help & Support</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </div>
+            <div class="col-lg-3 quick_access_cont">
+
+                <form action="" autocomplete="on">
+                    <input id="quickaccess" name="search" type="text" placeholder="Quick access for accounts & Services"
+                           class="auto_complete quick_access">
+                    <button id="quickaccess_submit" value="" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- account menu -->
+
+    <section class="main_content">
+        <div class="row">
+            <!-- left side menu -->
+            <div class="col-lg-2">
+                <h2 class="submenu_title animated fadeInUp"> <a href="accounts_list.html" class="back_btn animated fadeInRight"><i class="fa fa-angle-left"></i></a>01234567890</h2>
+                <section class="submenu_cont animated fadeInUp">
+                    <nav class="cl-effect-5">
+                        <a href="accounts_list.html" class="active"><i class="fa fa-th-large"></i><span
+                                data-hover="My Bookmarks">Dashboard</span></a>
+                        <a href="accounts_list.html"><i class="fa fa-list-ul"></i><spans data-hover="My Payments">Accounts List</spans></a>
+                        <a href="bill_page.html?account"><i class="fa fa-file-text-o"></i><span
+                                data-hover="My Bills">Billing</span></a>
+                        <a href="#" class="qitaf_circle"><i class="fa fa-circle"></i><span data-hover="Qitaf">Qitaf</span></a>
+
+                    </nav>
+                </section>
+
+            </div>
+            <!-- main content div -->
+            <div class="col-lg-10">
+
+                <h1 class="title animated fadeInLeft">Dashboard </h1>
+
+
+                <div class="grid-stack fixed bottom_negative_6" data-gs-width="12" data-gs-animate="yes">
+
+                    <!-- =================  first Widget =================== -->
+
+                    <div class="grid-stack-item animation-target animated fadeInLeft" data-gs-x="0" data-gs-y="0"
+                         data-gs-width="6" data-gs-height="3" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+
+                            <!-- Widget data container div -->
+
+                            <div class="widget_cont">
+
+                                <h2>Account Information</h2>
+
+                                <div class="col-sm-8">
+                                    <div class="row account_summary_border">
+
+                                        <div class="col-sm-6">
+                                            <h6>Total Services</h6>
+
+                                            <h1>100 </h1><h5>Service</h5>
+                                        </div>
+                                        <div class="col-sm-6">
+
+                                            <h6>Amount Due</h6>
+
+                                            <h1 class="bold">50,717K </h1><h5>SAR</h5>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="row account_icons">
+                                        <h3 class="sub_title"><i class="fa fa-bar-chart"></i> Top 5 Services</h3>
+
+                                        <div class="col-sm-6 animated fadeInLeft">
+
+                                            <a href="service_page.html" class="services_top_links">
+                                                <i class="fa fa-mobile"></i>
+                                                <span>543334322</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-sm-6 animated fadeInLeft">
+
+
+                                            <a href="service_page.html" class="services_top_links">
+                                                <i class="fa fa-mobile"></i>
+                                                <span>435678901</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-sm-6 animated fadeInLeft">
+
+                                            <a href="service_page.html" class="services_top_links">
+                                                <i class="fa fa-mobile"></i>
+                                                <span>432567895</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-sm-6 animated fadeInRight">
+
+
+                                            <a href="service_page.html" class="services_top_links">
+                                                <i class="fa fa-mobile"></i>
+                                                <span>332445996</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-sm-6 animated fadeInRight">
+
+
+                                            <a href="service_page.html" class="services_top_links">
+                                                <i class="fa fa-mobile"></i>
+                                                <span>332422341</span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-4 align-center">
+                                    <canvas width="150" height="150" id="accounts_Postpaid_chart"
+                                            class="mobile_chart"></canvas>
+
+
+                                    <div class="remaining_values animated fadeIn doughnuts small ">
+                                        <h5>top 5 services</h5>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- =================  Second Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInRight " data-gs-x="7" data-gs-y="0"
+                         data-gs-width="6" data-gs-height="2" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+                            <!-- Widget data container div -->
+
+                            <div class="widget_cont">
+
+                                <h2>Billing Information</h2>
+
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <div class="col-lg-3">
+                                            <h6>Previous Bill</h6>
+
+                                            <h1>48,50K </h1><h5>SAR</h5>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h6>Current Bill</h6>
+
+                                            <h1>2,195K </h1><h5>SAR</h5>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h6>Discounts</h6>
+
+                                            <h1>-70.13 </h1><h5>SAR</h5>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h6>Network Fees</h6>
+
+                                            <h1>2133.40 </h1><h5>SAR</h5>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-lg-2 animated ">
+                                        <a href="#"
+                                           class="pink_circle_btns btns_shadow center_btn top_negative_25"><i
+                                            <i class="fa fa-credit-card"></i></a>
+                                        <label class="pink uppercase">Pay</label>
+                                    </div>
+
+                                </div>
+                                <h6>Bill issued : 25 days ago </h6>
+                            </div>
+                            <a class="widget_more_details" href="bill_page.html?account" title="see more details"><i
+                                    class="fa fa-ellipsis-h"></i></a>
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- =================  sixth Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInUp" data-gs-x="7"
+                         data-gs-y="3" data-gs-width="4" data-gs-height="1" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+
+                            <!-- Widget data container div -->
+
+
+                            <div class="widget_cont">
+
+                                <h2>Sub Admin(s)</h2>
+
+                                <div class="row sub_users_list large">
+                                    <h3>
+                                        <span class="users_item"> <i class="fa fa-user purple"></i>Ahmed Ali </span>
+                                            <span class="user_action_menu">
+                                                <a href="#" title="Delete User"><i class="fa fa-trash-o"></i></a>
+                                                <a href="#" title="Edit User"><i class="fa fa-pencil"></i></a>
+                                            </span>
+                                    </h3>
+                                    <h3>
+                                        <span class="users_item"> <i class="fa fa-user purple"></i>Ahmed Ali </span>
+                                            <span class="user_action_menu">
+                                                <a href="#" title="Delete User"><i class="fa fa-trash-o"></i></a>
+                                                <a href="#" title="Edit User"><i class="fa fa-pencil"></i></a>
+                                            </span>
+                                    </h3>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- =================  Seventh Widget =================== -->
+                    <div class="grid-stack-item animation-target animated fadeInDown" data-gs-x="10"
+                         data-gs-y="3" data-gs-width="2" data-gs-height="1" data-gs-auto-position="true">
+                        <div class="grid-stack-item-content">
+
+                            <!-- Widget data container div -->
+
+
+                            <div class="widget_cont ">
+
+                                <a href="files/bill_details.pdf" class="add_service" title="Download all bills">
+                                    <i class="fa fa-file-pdf-o"></i>
+                                    Download All Bills
+                                </a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                    <!--<h1 class="title top_positive_15 bottom_negative_6 animated fadeInLeft">Service List</h1>-->
+                    <div class="content_margin">
+                        <div class="row">
+                            <div class="select_all animated bounceIn">
+                                <div class="checkbox checkbox-primary">
+                                    <input id="select_all" type="checkbox" class="select_all_chks">
+                                    <label for="select_all">Select All Services</label>
+
+                                </div>
+                            </div>
+                            <div class="tables_btns">
+
+                                <a href="#" class="add_widget btns_shadow  animated fadeInRight  download_tbl_btn"
+                                   title="Export Datatable"><i class="fa fa-download"></i></a>
+
+
+                            </div>
+
+                            <table id="all_accounts" class="display accounts_tables services_tbl " cellspacing="0"
+                                   width="100%">
+                                <thead>
+                                <tr>
+                                    <th width="1%">actions</th>
+                                    <th width="24%">Service</th>
+                                    <th width="15%">Package</th>
+                                    <th width="15%">Amount Due</th>
+                                    <th width="15%">Internet</th>
+                                    <th width="15%">Credit Limit</th>
+                                    <th width="15%">Status</th>
+
+
+                                </tr>
+                                </thead>
+
+
+                                <tbody>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_1" type="checkbox">
+                                            <label for="pay_1"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="24%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0534343963</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 150</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>6,88K</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>156</h3> <h5>MB</h5> / <h3>1</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>250</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i> Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_2" type="checkbox">
+                                            <label for="pay_2"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%">
+                                        <a href="service_page.html" title="Account Details"><h1><i
+                                                class="fa fa-mobile"></i>0500103259
+                                        </h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 100</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>1900</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>250</h3> <h5>MB</h5> / <h3>1</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>150</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i> Active</h3>
+                                    </td>
+
+
+                                </tr>
+
+
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_3" type="checkbox">
+                                            <label for="pay_3"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0500141682</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 100</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>430</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>340</h3> <h5>MB</h5> / <h3>2</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>600</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state disconnected"><i class="fa fa-ban"></i>Disconnected</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_4" type="checkbox">
+                                            <label for="pay_4"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0503229760</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 50</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>1200</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>20</h3> <h5>MB</h5> / <h3>500</h3> <h5>MB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>150</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_5" type="checkbox">
+                                            <label for="pay_5"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0504907393</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Jawal Business 400</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>980,88</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>450</h3> <h5>MB</h5> / <h3>Unlimited</h3> <h5></h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>250</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_6" type="checkbox">
+                                            <label for="pay_6"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0557268458</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 150</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>234,90</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>450</h3> <h5>MB</h5> / <h3>1</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>250</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_7" type="checkbox">
+                                            <label for="pay_7"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0554194513</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 100</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>712,34</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>50</h3> <h5>MB</h5> / <h3>250</h3> <h5>MB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>250</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                         <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_8" type="checkbox">
+                                            <label for="pay_8"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0557943769</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Jawal Business 20</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>321,78</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>450</h3> <h5>MB</h5> / <h3>1</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>250</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                         <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_9" type="checkbox">
+                                            <label for="pay_9"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>831041950095</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 50</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>432,30</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>12</h3> <h5>MB</h5> / <h3>250</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>250</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state disconnected"><i class="fa fa-ban"></i>Disconnected</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_10" type="checkbox">
+                                            <label for="pay_10"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0550248540</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 150</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>3214,00</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>450</h3> <h5>MB</h5> / <h3>500</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>250</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_11" type="checkbox">
+                                            <label for="pay_11"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0550768742</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Jawal Business 100</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>256,57</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>343</h3> <h5>MB</h5> / <h3>1</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>250</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_12" type="checkbox">
+                                            <label for="pay_12"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>0550768803</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 150</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>543,01</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>456</h3> <h5>MB</h5> / <h3>1</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>550</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_13" type="checkbox">
+                                            <label for="pay_13"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>831041840598</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 150</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>654,21</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>40</h3> <h5>MB</h5> / <h3>250</h3> <h5>MB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>350</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_14" type="checkbox">
+                                            <label for="pay_14"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>831041945245</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 150</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>234,00</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>01</h3> <h5>MB</h5> / <h3>500</h3> <h5>MB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>450</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                <tr class=" animated fadeInUp">
+                                    <td width="1%">
+
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="pay_15" type="checkbox">
+                                            <label for="pay_15"></label>
+
+                                        </div>
+                                    </td>
+                                    <td width="25%"><a href="service_page.html" title="Account Details"><h1><i
+                                            class="fa fa-mobile"></i>5020827183</h1></a></td>
+                                    <td width="15%">
+                                        <h6>Package</h6>
+
+                                        <h3>Flex 50</h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Amount Due</h6>
+
+                                        <a href="bill_page.html?service" title="View Bill Details"><h3>32,09</h3></a>
+                                        <h5>SAR</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Internet</h6>
+
+                                        <h3>371</h3> <h5>MB</h5> / <h3>1</h3> <h5>GB</h5>
+
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Credit Limit</h6>
+
+                                        <h3>150</h3> <h5>SAR</h5>
+                                    </td>
+                                    <td width="15%">
+                                        <h6>Service Status</h6>
+
+                                        <h3 class="services_state active"><i class="fa fa-check"></i>Active</h3>
+                                    </td>
+
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+</div>
+
+    </section>
+</div>
+<footer>
+    <div class="main_content">
+        <div class="chat_cont ">
+            <a class="chat_icon animated fadeInUp" href="#" title="Live Chat"><i class="fa fa-weixin"></i></a>
+        </div>
+        <div class="share animated fadeInUp">
+            <button class="share-toggle-button" title="STC Social media"><i class="share-icon fa fa-share-alt"></i>
+            </button>
+            <ul class="share-items">
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-facebook"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-twitter"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-google-plus"></i>
+                </a></li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-youtube"></i> </a>
+                </li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-foursquare"></i>
+                </a></li>
+                <li class="share-item"><a href="#" class="share-button"> <i class="share-icon fa fa-instagram"></i> </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</footer>
+
+
+<!-- Hidden Inline Popups -->
+<div class="overlay"></div>
+
+<!--  ========== User profile popup =============== -->
+<div id="user" class="morphsearch user_profile">
+    <div class="morphsearch-content">
+        <div class="dummy-column user_data">
+            <img class="user_profile" src="images/user_defualt_img.jpg" alt="user profile"/>
+
+            <h3 class="welcome_msg"></h3>
+
+            <h2>Abdullah Al Zuhair</h24>
+            <nav>
+                <a href="#" class="profile_menu personal animated active"><i class="fa fa-user"></i> Personal
+                    Settings</a>
+                <a href="#" class="profile_menu animated password"> <i class="fa fa-cog"></i> Change Password</a>
+                <a href="#" class="profile_menu animated notification"><i class="fa fa-bell"></i>Notification
+                    Settings</a>
+                <a href="#" class="profile_menu animated payment"><i class="fa fa-credit-card"></i>Payment Method</a>
+                <a href="#" title="sign out" class="profile_menu animated sign_out"><i class="fa fa-sign-out"></i> Sign
+                    Out</a>
+            </nav>
+        </div>
+        <div class="dummy-column profile_divs">
+            <h2 class="titles animated  "><i class="fa fa-user"></i><span> Personal Settings</span></h2>
+
+            <div class="profile_div_cont row personal_div animated slideInRight ">
+                <div class="row form_controls">
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="firstname"
+                               placeholder="Enter your first name"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="firstname">
+                            <span class="input__label-content input__label-content--hoshi">First Name</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="lastname"
+                                   placeholder="Enter your last name"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="lastname">
+                                <span class="input__label-content input__label-content--hoshi">Last Name</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="title"
+                               placeholder="Enter your tilte"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="title">
+                            <span class="input__label-content input__label-content--hoshi">Title</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="email"
+                               placeholder="Enter your email"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
+                            <span class="input__label-content input__label-content--hoshi">Email</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <label>Language</label>
+
+                        <div class="col-lg-6">
+                            <div class="radio radio-primary ">
+                                <input id="ar_lang" type="radio" name="lang_select">
+                                <label for="ar_lang"> العربية </label>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="radio radio-primary ">
+                                <input id="en_lang" type="radio" checked="" name="lang_select">
+                                <label for="en_lang"> English </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">save</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile_div_cont row password_div animated">
+                <div class="row form_controls">
+
+                    <div class="col-lg-12 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="password" id="Current_Password"
+                               placeholder="your current password"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                               for="Current_Password">
+                            <span class="input__label-content input__label-content--hoshi">Current Password</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="password" id="newpassword1"
+                                   placeholder="Enter new password"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                                   for="newpassword1">
+                                <span class="input__label-content input__label-content--hoshi">New Password</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="password" id="newpassword2"
+                               placeholder="Confirm new password"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="newpassword2">
+                            <span class="input__label-content input__label-content--hoshi">Confirm New Password</span>
+                        </label>
+
+
+                    </div>
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">save</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profile_div_cont row notification_div animated noscrolling">
+                <div class="row form_controls">
+                    <div class="col-lg-12">
+                        <h3>Mobile Notifications / Text SMS</h3>
+                    </div>
+                </div>
+                <div class="row form_controls account_summary_border">
+
+                    <div class="col-lg-6 ">
+                        <h4>Mobile Phone</h4>
+
+                        <div class="checkbox checkbox-primary">
+                            <input id="sms_notify" type="checkbox" checked="">
+                            <label for="sms_notify">
+                                Enable Text Message Notifications
+                            </label>
+                        </div>
+                        <select class="selectpicker show-tick form-control">
+
+                            <option value="01"> 0534343963</option>
+                            <option value="02"> 0551234567</option>
+                            <option value="03"> 0502324431</option>
+                            <option value="04"> 0539808764</option>
+
+
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="row form_controls">
+                    <div class="col-lg-12">
+                        <h3>General Notifications settings</h3>
+                    </div>
+                </div>
+                <div class="row form_controls">
+                    <div class="col-lg-6 ">
+                        <h4>Push Notification</h4>
+
+                        <div class="checkbox checkbox-primary">
+                            <input id="push_notification" type="checkbox" checked="">
+                            <label for="push_notification">
+                                Enable Browser Notification
+                            </label>
+                        </div>
+                        <div class="download_app">
+                            <p>
+                                Download the STC MyBusiness App for iPhone,iPod Touch or Android device and receive
+                                advanced updates through Push Notifications instead of plain text messages
+                            </p>
+                            <a href="#" class="btn add_widget btns_shadow" title="Download MyBusiness App"><i
+                                    class="fa fa-download"></i> </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h4>Notify me when</h4>
+
+                        <div class="checkbox checkbox-primary">
+                            <input id="request" type="checkbox" checked="">
+                            <label for="request">
+                                I receive a request
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-primary">
+                            <input id="credit_limit" type="checkbox">
+                            <label for="credit_limit">
+                                An account reaches 90 % of its credit limit
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-primary">
+                            <input id="bill_issued" type="checkbox">
+                            <label for="bill_issued">
+                                When Bill issued
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-primary">
+                            <input id="email_notification" type="checkbox">
+                            <label for="email_notification">
+                                General promotions,updates, news about STC or general
+                                promotions for partner campaigns and services by Email, and SMS
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row form_controls">
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Save</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profile_div_cont row payment_div animated noscrolling">
+
+                <div class="row form_controls">
+                    <div class="col-lg-12 credit_cards">
+                        <label class="select-label">Card Type</label>
+                        <input type="radio" name="credit_cards" id="visa_card" vlaue="visa"/> <label for="visa_card"><i
+                            class="fa fa-cc-visa"></i></label>
+                        <input type="radio" name="credit_cards" id="master_card" vlaue="master"/> <label
+                            for="master_card"><i class="fa fa-cc-mastercard"></i></label>
+                        <input type="radio" name="credit_cards" id="amex_card" vlaue="amex"/> <label for="amex_card"> <i
+                            class="fa fa-cc-amex"></i></label>
+
+                    </div>
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="card_name"
+                               placeholder="Your name at the Card"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="card_name">
+                            <span class="input__label-content input__label-content--hoshi">Name on Card</span>
+                        </label>
+
+
+                    </div>
+
+                    <div class="col-lg-6 input input--hoshi">
+
+                        <input class="input__field input__field--hoshi" type="text" id="card_number"
+                               placeholder="Card Number"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="card_number">
+                            <span class="input__label-content input__label-content--hoshi">Card Number</span>
+                        </label>
+
+
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <label class="select-label">Expiration Month</label>
+                                <select class="selectpicker show-tick form-control">
+
+                                    <option value="01"> JAN</option>
+                                    <option value="02"> FEB</option>
+                                    <option value="03"> MAR</option>
+                                    <option value="04"> APR</option>
+                                    <option value="05"> MAY</option>
+                                    <option value="06"> JUN</option>
+                                    <option value="07"> JUL</option>
+                                    <option value="08"> AUG</option>
+                                    <option value="09"> SEP</option>
+                                    <option value="10"> OCT</option>
+                                    <option value="11"> NOV</option>
+                                    <option value="12"> DEC</option>
+
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <label class="select-label">Expiration Year</label>
+                                <select class="selectpicker show-tick form-control">
+
+                                    <option value="01"> 2015</option>
+                                    <option value="02"> 2016</option>
+                                    <option value="03"> 2017</option>
+                                    <option value="04"> 2018</option>
+                                    <option value="05"> 2019</option>
+                                    <option value="06"> 2020</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6 input input--hoshi">
+                        <div class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="text" id="ccv" placeholder="CCV"/>
+                            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="ccv">
+                                <span class="input__label-content input__label-content--hoshi">CCV</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-12 top_positive_30">
+                        <button class="btn btn-primary">Save</button>
+                        <button class="btn cancel">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- /morphsearch-content -->
+    <span class="morphsearch-close"></span>
+</div>
+
+
+<!-- Chat container -->
+
+<div class="chat-wrap chat_window ">
+    <div class="chat_cont">
+        <div class="chat-window btns_shadow">
+            <div class="chat-messages">
+                <ol class="chat-messages-list">
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            Hey
+                        </div>
+                    </li>
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            this is a demonstration of the gooey effect on a chat window
+                        </div>
+                    </li>
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            inspired by <a href="https://dribbble.com/shots/1901175-Chat-Animation">this dribbble
+                            shot</a> by <a href="https://dribbble.com/antalik">Jakub Antalík</a>
+                        </div>
+                    </li>
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            please type something on the field below
+                        </div>
+                    </li>
+                    <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble">
+                            oh and press enter :0
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="chat-input-bar">
+                <div class="chat-info-container">
+
+                </div>
+                <div class="chat-effect-container">
+                    <div class="chat-effect-bar"></div>
+                </div>
+                <div class="chat-input-wrapper">
+                    <button class="chat-input-tool">
+                        <i class="icon icon-camera"></i>
+                    </button>
+                    <div class="chat-input" contenteditable></div>
+                    <button class="chat-send">
+                        <i class="fa fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

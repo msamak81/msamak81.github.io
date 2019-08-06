@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>downarrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="downarrow" fill-rule="nonzero" fill="#666666">
+            <path d="M1.06699444,7 C1.33982636,7 1.61265827,7.10416612 1.82099052,7.31249837 L16.0000833,21.4917579 L30.1791762,7.31249837 C30.5958406,6.89583388 31.2708371,6.89583388 31.6875016,7.31249837 C32.1041661,7.72916287 32.1041661,8.40415935 31.6875016,8.82082385 L16.7542461,23.7542461 C16.3375816,24.1709106 15.6624184,24.1709106 15.2457539,23.7542461 L0.312498372,8.82082385 C-0.104166124,8.40415935 -0.104166124,7.72916287 0.312498372,7.31249837 C0.521163952,7.10416612 0.79416253,7 1.06699444,7 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

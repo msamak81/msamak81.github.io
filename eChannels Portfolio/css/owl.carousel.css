@@ -1,0 +1,183 @@
+/*
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.owl-pagination {
+    float: left;
+    margin-top: 10px;
+}
+.box .owl-pagination {
+		float:none;
+		margin:20px auto 0;
+		text-align:center;
+	}
+.parallax .owl-pagination {
+		float:right !important;
+		margin:0 !important;
+		text-align:right;
+	}
+.owl-page {
+     	-webkit-box-sizing:content-box;
+		   -moz-box-sizing:content-box;
+		   		box-sizing:content-box;
+		-webkit-border-radius:50%;
+		   -moz-border-radius:50%;
+				border-radius:50%;
+      	background-color: rgba(0, 0, 0, 0);
+      	-webkit-transition: opacity 0.3s ease;
+      			transition: opacity 0.3s ease;
+	  	width:13px;
+		height:13px;
+	  	border:1px solid #fff;
+	  	float:left;
+		position:relative;
+		margin:0 2px;
+ }
+.box .owl-page {
+		border-color:rgba(0,0,0,0.3);
+		float: none;
+    	display: inline-table;
+	}
+.parallax .owl-page {
+	  	border:1px solid #fff !important;
+		float:left !important;
+		display:block;
+	}
+.owl-page:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		  -webkit-border-radius:50%;
+			 -moz-border-radius:50%;
+				  border-radius:50%;
+		background-color: #FFF;
+		-webkit-transform: scale(0);
+				transform: scale(0);
+		-webkit-transform-origin: 50% 50%;
+				transform-origin: 50% 50%;
+		-webkit-transition: -webkit-transform 0.3s ease;
+				transition: transform 0.3s ease;
+}
+.box .owl-page:after {}
+.box .owl-page.active {border-color:#fff;}
+.parallax .owl-page:after {background-color:#fff;}
+
+
+.owl-page:hover:after,
+.owl-page.active:after{
+    	-webkit-transform: scale(1.2);
+  				transform: scale(1.2);
+}
+
+.owl-prev, .owl-next {
+    float: left;
+    padding: 5px;
+    font-family: 'ionicons';
+    position: relative;
+    text-indent: -9999px;
+    width: 30px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    opacity: 0.8;
+}
+.owl-prev:hover, .owl-nex:hover {
+    opacity:1;
+}
+.owl-prev:before,
+.owl-next:before {
+        font-size: 13px;
+        content: '\f3d1';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+        text-align: center;
+        text-indent: initial;
+		-webkit-transition: all 0.4s ease;
+		   -moz-transition: all 0.4s ease;
+			-ms-transition: all 0.4s ease;
+			 -o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+
+	}
+.owl-prev:before {
+		content:'\f3d2';
+	}
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+

@@ -325,17 +325,6 @@
             .then(function (blob) {
                 window.saveAs(blob, name +"-"+ date);
             });
-
-
-    }
-    document.addEventListener('click', printMousePos, true);
-
-    function printMousePos(e) {
-        var cursorX = e.pageX;
-        var cursorY = e.pageY;
-        console.log( "x: " + cursorX + ", y: " + cursorY);
-
-
     }
 </script>
 <script>

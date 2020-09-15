@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="committing updates">
-      <change beforePath="$PROJECT_DIR$/jojo/.idea/Jojo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/images/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/images/chorecharts.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/images/egis2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/images/smile.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/js/FileSaver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jojo/js/dom-to-image.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chore/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/chore/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chore/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chore/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +128,7 @@
       <recent name="$PROJECT_DIR$/MySTC-whatsNew/css" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.test.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
@@ -135,7 +145,7 @@
     <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/dc/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="scroll.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/Infographics/scroll.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/chore/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/QuranApp/test.html" useBuiltInWebServerPort="true">
@@ -155,18 +165,18 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.index.html (1)" />
-      <item itemvalue="JavaScript Debug.scroll.html" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
       <item itemvalue="JavaScript Debug.test.html" />
       <item itemvalue="Node.js.functions.js" />
+      <item itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="Node.js.functions.js" />
-        <item itemvalue="JavaScript Debug.scroll.html" />
       </list>
     </recent_temporary>
   </component>
@@ -216,14 +226,7 @@
       <workItem from="1555583424038" duration="40000" />
       <workItem from="1555583540837" duration="2143000" />
       <workItem from="1555660695838" duration="3000" />
-      <workItem from="1600203144757" duration="89000" />
-    </task>
-    <task id="LOCAL-00004" summary="committing updates">
-      <created>1462907913888</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1462907913888</updated>
+      <workItem from="1600203144757" duration="3838000" />
     </task>
     <task id="LOCAL-00005" summary="committing updates">
       <created>1550733122991</created>
@@ -561,11 +564,29 @@
       <option name="project" value="LOCAL" />
       <updated>1555324569710</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="committing updates">
+      <created>1600203265898</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1600203265899</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -581,5 +602,11 @@
     <MESSAGE value="-- infographics" />
     <MESSAGE value="committing updates" />
     <option name="LAST_COMMIT_MESSAGE" value="committing updates" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1600203267588">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1600203267588" />
   </component>
 </project>

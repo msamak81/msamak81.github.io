@@ -245,6 +245,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 button{
     background: #29abc0;
@@ -256,7 +258,7 @@ button{
     outline: 0;
     transition: all ease-in-out 300ms;
     cursor:pointer;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .submit{
     background: #639b3a;
@@ -323,3 +325,29 @@ button:hover{
     height: 32px;
 
 }
+
+.status{
+    margin: 15px;
+    width: 720px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    transform: scale(0) translateY(-40px);
+    opacity: 0;
+    transition: all ease-in-out 300ms;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    box-shadow: 3px 3px 8px 4px rgba(2,0,0,0.2);
+}
+.status.show{transform: scale(1) translateY(0px);opacity: 1;padding:15px;}
+.status.success{
+    background: #d5f69f;
+    color: #5e9432;
+}
+.status.error{
+    background: #fad3ce;
+    color: #cb0a03;
+}
+

@@ -241,6 +241,9 @@
         </form>
     </div>
 </div>
+<div class="status">
+    <span></span>
+</div>
 <div class="print-btn">
     <div>
         <button class="submit">Save Chore</button>
@@ -354,11 +357,21 @@
         // serialize form input to send it to cookies
         $('.submit').click(function (){
             var dataString = $('.chore-form').serialize();
-            console.log(dataString)
-            Cookies.set('choreCookies', dataString)
+            Cookies.set('choreCookies', dataString);
+            $('.status').addClass('success show').find('span').text('Your Chore Chart has been saved successfully.');
+
+            setTimeout(function(){
+                $('.status').removeClass('show success')
+            },3000)
+
         })
         $('.reset').click(function(){
-            Cookies.remove('choreCookies')
+            Cookies.remove('choreCookies');
+            $('.status').addClass('error show').find('span').text('Your Chore Chart has been cleared successfully.');
+                $('.checkbox input').val('on').prop('checked', false);
+            setTimeout(function(){
+                $('.status').removeClass('show error')
+            },3000)
         })
 
 

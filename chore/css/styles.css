@@ -123,6 +123,56 @@ body{
     padding: 5px;
     box-sizing: border-box;
 }
+.checkbox input + label:before{
+    content:'';
+    opacity:0;
+    transform:scale(1);
+    background:url('../images/star-A+.svg') no-repeat center center;
+    transition: all ease-in-out 300ms;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+}
+
+.checkbox input:checked + label:before{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* change rating icon based on checkbox value */
+.checkbox input[value="1"] + label:before{
+    background-image:url('../images/star-F.svg');
+}
+.checkbox input[value="2"] + label:before{
+    background-image:url('../images/star-B.svg');
+}
+.checkbox input[value="3"] + label:before{
+    background-image:url('../images/star-A.svg');
+}
+.checkbox input[value="4"] + label:before{
+    background-image:url('../images/star-A+.svg');
+}
+.checkbox input[value="5"] + label:before{
+    background-image:url('../images/star.svg');
+}
+.checkbox input[value="trophy"] + label:before{
+    background-image:url('../images/trophy.svg');
+}
+.checkbox input[value="happy"] + label:before{
+    background-image:url('../images/smile.svg');
+}
+.checkbox input[value="love"] + label:before{
+    background-image:url('../images/love.svg');
+}
+.checkbox input[value="sad"] + label:before{
+    background-image:url('../images/sad.svg');
+}
+.checkbox input[value="angry"] + label:before{
+    background-image:url('../images/angry.svg');
+}
+
+
 .checkbox input + label img{
     max-height: 32px;
     opacity: 0;
@@ -131,7 +181,6 @@ body{
 .checkbox input:checked + label img{
     opacity: 1;
 }
-
 .smiley-text{
     display: flex;
     justify-content: center;
@@ -173,7 +222,7 @@ body{
     align-self: flex-end;
     position: absolute;
     right: 4px;
-    bottom: -10px;
+    bottom: 0;
     align-items: center;
     justify-content: center;
 }
@@ -194,7 +243,7 @@ body{
     margin: 30px 0 20px;
     text-align: center;
 }
-.print-btn button{
+button{
     background: #29abc0;
     border: solid 2px #29abc0;
     padding: 15px;
@@ -205,7 +254,15 @@ body{
     transition: all ease-in-out 300ms;
     cursor:pointer;
 }
-.print-btn button:hover{
+.submit{
+    background: #e79a0e;
+    border: solid 2px #e29626;
+}
+.reset{
+    background: #ffca1b;
+    border: solid 2px #f9c635;
+}
+button:hover{
     background: #fff;
     color: #29abc0;
 }
@@ -216,7 +273,7 @@ body{
     top: 250px;
     transition: all .5s cubic-bezier(.42,-0.3,.78,1.25);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     background: #ffffff;
     transform: scale(0);
@@ -229,6 +286,8 @@ body{
     margin-top: 0;
     margin-left: 0;
     /* border: solid 2px #efce4a; */
+    max-width: 282px;
+    flex-flow: row wrap;
 }
 .rating-stars.show {
     opacity: 1;
@@ -245,7 +304,7 @@ body{
     top: -20px;
 }
 .rating-stars span{
-    margin: 0 5px;
+    margin: 5px;
     cursor: pointer;
     border:solid 2px transparent;
     transition: all .5s cubic-bezier(.42,-0.3,.78,1.25);

@@ -351,3 +351,16 @@ button:hover{
     color: #cb0a03;
 }
 
+.subject-input, .description-input {
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 3px;
+}
+.description-input{
+    font-size: 12px;
+    font-weight: normal;
+}

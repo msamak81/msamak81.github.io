@@ -37,7 +37,9 @@
                         <tbody>
                         <tr>
                             <td>
-                                <span>Spelling</span> <br/>(video, CW & HW)
+                                <input type="text" class="subject-input" name="subject-1-name" id="subject-1-name" value="Spelling"/>
+                                <input type="text" class="description-input" name="desc-1-name" id="desc-1-name" value="(video, CW & HW)"/>
+
                             </td>
                             <td>
                                 <div class="checkbox">
@@ -83,7 +85,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <span>Grammar</span>  <br/>(video, CW & HW)
+                                <input type="text" class="subject-input" name="subject-2-name" id="subject-2-name" value="Grammar"/>
+                                <input type="text" class="description-input" name="desc-2-name" id="desc-2-name" value="(video, CW & HW)"/>
                             </td>
                             <td>
                                 <div class="checkbox">
@@ -129,7 +132,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <span>Reading</span> <br/>(video, CW &  HW)
+                                <input type="text" class="subject-input" name="subject-3-name" id="subject-3-name" value="Reading"/>
+                                <input type="text" class="description-input" name="desc-3-name" id="desc-3-name" value="(video, CW & HW)"/>
                             </td>
                             <td>
                                 <div class="checkbox">
@@ -175,7 +179,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <span>Writing</span> <br/>(video, CW & HW)
+                                <input type="text" class="subject-input" name="subject-4-name" id="subject-4-name" value="Writing"/>
+                                <input type="text" class="description-input" name="desc-4-name" id="desc-4-name" value="(video, CW & HW)"/>
                             </td>
                             <td>
                                 <div class="checkbox">
@@ -221,7 +226,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <span>Social Studies</span> <br/>(video, CW & HW)
+                                <input type="text" class="subject-input" name="subject-5-name" id="subject-5-name" value="Social Studies"/>
+                                <input type="text" class="description-input" name="desc-5-name" id="desc-5-name" value="(video, CW & HW)"/>
                             </td>
                             <td>
                                 <div class="checkbox">
@@ -318,19 +324,19 @@
         <img src="images/star.svg" alt="Happy" title="Happy"/>
     </span>
     <span data-value="trophy">
-        <img src="images/trophy.svg" alt="Happy" title="Happy"/>
+        <img src="images/trophy.svg" alt="Trophy" title="Trophy"/>
     </span>
     <span data-value="love">
-        <img src="images/love.svg" alt="Happy" title="Happy"/>
+        <img src="images/love.svg" alt="Love" title="Love"/>
     </span>
     <span data-value="happy">
         <img src="images/smile.svg" alt="Happy" title="Happy"/>
     </span>
     <span data-value="sad">
-        <img src="images/sad.svg" alt="Happy" title="Happy"/>
+        <img src="images/sad.svg" alt="Sad" title="Sad"/>
     </span>
     <span data-value="angry">
-        <img src="images/angry.svg" alt="Happy" title="Happy"/>
+        <img src="images/angry.svg" alt="Angry" title="Angry"/>
     </span>
 
 </div>
@@ -425,6 +431,7 @@
 
         // Read cookies once page load
         cookieData = Cookies.get('choreCookies');
+        console.log(cookieData)
         // if cookie exists continue
         if (cookieData != null) {
             // split cookieData string into an array of fields and their values
@@ -448,10 +455,33 @@
         })
 
         // relace %20 in name to be space
-        var name = $('#name-input').val().replace(/%20/g, " ");
-        $('#name-input').val(name);
 
 
+        String.prototype.replaceAll = function(search, replacement) {
+            var target = this;
+            return target.replace(new RegExp(search, 'g'), replacement);
+        };
+
+        function replaceAll(str, map){
+            for(key in map){
+                str = str.replaceAll(key, map[key]);
+            }
+            return str;
+        }
+        var map = {
+            '%20' : ' ',
+            '%2C' : ',',
+            '%26' : '&'
+        };
+
+        var name = $('#name-input').val();
+        $('#name-input').val(replaceAll(name, map));
+
+        $('.subject-input, .description-input').each(function(i,e){
+              //  var subjectName = $(e).val().replace(/%20/g, " ").replace(/%2C/g,",").replace(/%26/g,"&");
+                var subjectName = $(e).val();
+                $(e).val(replaceAll(subjectName, map));
+            })
     })
 
 </script>

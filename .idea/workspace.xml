@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="committing updates">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+    <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="adding values to cookie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chore/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/chore/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chore/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chore/index.html" afterDir="false" />
@@ -43,53 +42,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>app</find>
-      <find>count</find>
-      <find>chart_val</find>
-      <find>window.webkitStorageInfo</find>
-      <find>cols_2</find>
-      <find>activities</find>
-      <find>no_initiatives_text</find>
-      <find>other</find>
-      <find>is_evaluated</find>
-      <find>brief</find>
-      <find>textarea</find>
-      <find>texta</find>
-      <find>btn_disables</find>
-      <find>.row_radios label span</find>
-      <find>required</find>
-      <find>spalsh</find>
-      <find>.splash_logo h6</find>
-      <find>space</find>
-      <find>stats</find>
-      <find>logo</find>
-      <find>diff</find>
-      <find>chart_label</find>
-      <find>.ip-header</find>
-      <find>Menu_items</find>
-      <find>swiper-button-prev</find>
-      <find>fill</find>
-      <find>swiper</find>
-      <find>vh</find>
-      <find>calc</find>
-      <find>animated</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>var(--secondry)</replace>
-      <replace>var(--main)</replace>
-      <replace>results</replace>
-      <replace>cols_4</replace>
-      <replace>menu_items</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
   </component>
   <component name="ProjectId" id="1hZ07yS8E2GBwyjfL1LJI51OPAK" />
   <component name="ProjectViewState">
@@ -226,63 +180,7 @@
       <workItem from="1555583424038" duration="40000" />
       <workItem from="1555583540837" duration="2143000" />
       <workItem from="1555660695838" duration="3000" />
-      <workItem from="1600203144757" duration="3838000" />
-    </task>
-    <task id="LOCAL-00005" summary="committing updates">
-      <created>1550733122991</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1550733122991</updated>
-    </task>
-    <task id="LOCAL-00006" summary="committing updates">
-      <created>1550733684853</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1550733684853</updated>
-    </task>
-    <task id="LOCAL-00007" summary="committing updates">
-      <created>1551861195806</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1551861195806</updated>
-    </task>
-    <task id="LOCAL-00008" summary="committing updates">
-      <created>1551861305086</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1551861305086</updated>
-    </task>
-    <task id="LOCAL-00009" summary="committing updates">
-      <created>1551861370269</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1551861370269</updated>
-    </task>
-    <task id="LOCAL-00010" summary="committing updates">
-      <created>1553504754128</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1553504754128</updated>
-    </task>
-    <task id="LOCAL-00011" summary="committing updates">
-      <created>1553505007520</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1553505007520</updated>
-    </task>
-    <task id="LOCAL-00012" summary="committing updates">
-      <created>1553505033720</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1553505033720</updated>
+      <workItem from="1600203144757" duration="12474000" />
     </task>
     <task id="LOCAL-00013" summary="committing updates">
       <created>1553505067744</created>
@@ -571,7 +469,63 @@
       <option name="project" value="LOCAL" />
       <updated>1600203265899</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="committing updates">
+      <created>1600209230801</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1600209230801</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Adding rating stars options">
+      <created>1600209681209</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1600209681209</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Adding rating stars options">
+      <created>1600209793279</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1600209793279</updated>
+    </task>
+    <task id="LOCAL-00057" summary="adding values to cookie">
+      <created>1600254851963</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1600254851963</updated>
+    </task>
+    <task id="LOCAL-00058" summary="adding values to cookie">
+      <created>1600255505649</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1600255505650</updated>
+    </task>
+    <task id="LOCAL-00059" summary="adding values to cookie">
+      <created>1600260320270</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1600260320270</updated>
+    </task>
+    <task id="LOCAL-00060" summary="adding values to cookie">
+      <created>1600260724507</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1600260724507</updated>
+    </task>
+    <task id="LOCAL-00061" summary="adding values to cookie">
+      <created>1600287404961</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1600287404961</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,12 +555,14 @@
     <MESSAGE value="- infographics" />
     <MESSAGE value="-- infographics" />
     <MESSAGE value="committing updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="committing updates" />
+    <MESSAGE value="Adding rating stars options" />
+    <MESSAGE value="adding values to cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding values to cookie" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1600203267588">
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1600287406386">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1600203267588" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1600287406386" />
   </component>
 </project>

@@ -242,8 +242,11 @@
     </div>
 </div>
 <div class="print-btn">
-    <button class="submit">Save Chore</button>
-    <button class="reset">Clear Chore</button>
+    <div>
+        <button class="submit">Save Chore</button>
+        <button class="reset">Clear Chore</button>
+    </div>
+
     <button class="print" onclick="downloadChart('to-print')">Download Chore Chart</button>
 </div>
 
@@ -321,6 +324,8 @@
             }
         });
 
+
+
         $('.checkbox input').click(function (e) {
             var $this = $(this),
                 info = $('.rating-stars');
@@ -359,20 +364,27 @@
 
         // Read cookies once page load
         cookieData = Cookies.get('choreCookies');
-        console.log(cookieData) // => 'value'
         // if cookie exists continue
         if (cookieData != null) {
             // split cookieData string into an array of fields and their values
             var cookieArray = cookieData.split('&');
-            console.log(cookieArray) // => 'value'
             // go through each field and split it too to get field name and it's value
             $.each(cookieArray, function(k, v) {
                 var field = v.split('=');
-                console.log(field[0])
                 // populate field with data
-                $('.chore-form').find('#'+field[0]).val(field[1]).attr('checked', 'checked');
+                $('.chore-form').find('#'+field[0]).val(field[1]);
             });
         }
+
+        // check all checkbox that already selected
+        $('.checkbox input').each(function(i,e){
+            var $val = $(e).val();
+            console.log($val)
+
+            if($val != 'on' ){
+                $(this).attr('checked', 'checked');
+            }
+        })
 
         // relace %20 in name to be space
         var name = $('#name-input').val().replace(/%20/g, " ");

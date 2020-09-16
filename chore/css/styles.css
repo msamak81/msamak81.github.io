@@ -242,6 +242,9 @@ body{
     width: 750px;
     margin: 30px 0 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 button{
     background: #29abc0;
@@ -253,14 +256,15 @@ button{
     outline: 0;
     transition: all ease-in-out 300ms;
     cursor:pointer;
+    margin-left: 30px;
 }
 .submit{
-    background: #e79a0e;
-    border: solid 2px #e29626;
+    background: #639b3a;
+    border: solid 2px #5d9335;
 }
 .reset{
-    background: #ffca1b;
-    border: solid 2px #f9c635;
+    background: #d00308;
+    border: solid 2px #cd0601;
 }
 button:hover{
     background: #fff;

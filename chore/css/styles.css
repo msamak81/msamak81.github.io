@@ -69,21 +69,22 @@ body{
     font-size: 13px;
     border: solid 1px var(--border-color);
     white-space: pre-wrap;
+    width: calc(80% / 7);
 }
 .chart-table table thead th:first-child{
     background: var(--light-blue);
-    width: 50%;
+    width: 20%;
 }
 .chart-table table tbody{}
 .chart-table table tbody td{
     border: solid 1px var(--border-color);
-    width: calc(100% / 5);
+    width: calc(80% / 7);
     padding: 0;
     position: relative;
     height: 46px;
 }
 .chart-table table tbody td:first-child{
-    width: 25%;
+    width: 20%;
     background: var(--light-blue);
     text-align: center;
     font-size: 12px;
@@ -231,7 +232,7 @@ body{
     border: none;
     outline: 0;
     font-size: 16px;
-    max-width: 100%;
+    max-width: 170px;
     color: var(--dark-blue);
     font-weight: bold;
     height: 30px;
@@ -294,6 +295,7 @@ button:hover{
     /* border: solid 2px #efce4a; */
     max-width: 282px;
     flex-flow: row wrap;
+    min-width: 170px;
 }
 .rating-stars.show {
     opacity: 1;
@@ -359,6 +361,7 @@ button:hover{
     font-weight: bold;
     outline: 0;
     margin-bottom: 3px;
+    max-width: 100%;
 }
 .description-input{
     font-size: 12px;

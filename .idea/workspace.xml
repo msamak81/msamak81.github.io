@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="adding values to cookie">
-      <change afterPath="$PROJECT_DIR$/clicks/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="clicks">
+      <change beforePath="$PROJECT_DIR$/clicks/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clicks/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +179,7 @@
       <workItem from="1555583540837" duration="2143000" />
       <workItem from="1555660695838" duration="3000" />
       <workItem from="1600203144757" duration="13381000" />
-      <workItem from="1610573383538" duration="184000" />
-    </task>
-    <task id="LOCAL-00015" summary="committing updates">
-      <created>1553505352503</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1553505352503</updated>
+      <workItem from="1610573383538" duration="414000" />
     </task>
     <task id="LOCAL-00016" summary="committing updates">
       <created>1553514779777</created>
@@ -525,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600291096324</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="clicks">
+      <created>1610573580223</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1610573580223</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,6 +557,7 @@
     <MESSAGE value="committing updates" />
     <MESSAGE value="Adding rating stars options" />
     <MESSAGE value="adding values to cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding values to cookie" />
+    <MESSAGE value="clicks" />
+    <option name="LAST_COMMIT_MESSAGE" value="clicks" />
   </component>
 </project>

@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b514517c-fd61-4aee-8242-d31b254cefbe" name="Default" comment="adding values to cookie">
+      <change afterPath="$PROJECT_DIR$/clicks/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chore/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/chore/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chore/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chore/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <recent name="$PROJECT_DIR$/MySTC-whatsNew/css" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (3)">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
@@ -99,13 +98,13 @@
     <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/dc/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="index.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/clicks/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/chore/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msamak81.github.io/QuranApp/test.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="functions.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="functions.js" working-dir="$PROJECT_DIR$/Infographics/New/js">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -121,16 +120,16 @@
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
       <item itemvalue="JavaScript Debug.test.html" />
-      <item itemvalue="Node.js.functions.js" />
       <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.index.html (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (3)" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
-        <item itemvalue="Node.js.functions.js" />
       </list>
     </recent_temporary>
   </component>
@@ -180,21 +179,8 @@
       <workItem from="1555583424038" duration="40000" />
       <workItem from="1555583540837" duration="2143000" />
       <workItem from="1555660695838" duration="3000" />
-      <workItem from="1600203144757" duration="12474000" />
-    </task>
-    <task id="LOCAL-00013" summary="committing updates">
-      <created>1553505067744</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1553505067744</updated>
-    </task>
-    <task id="LOCAL-00014" summary="committing updates">
-      <created>1553505204276</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1553505204276</updated>
+      <workItem from="1600203144757" duration="13381000" />
+      <workItem from="1610573383538" duration="184000" />
     </task>
     <task id="LOCAL-00015" summary="committing updates">
       <created>1553505352503</created>
@@ -525,7 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600287404961</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="adding values to cookie">
+      <created>1600289697385</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1600289697385</updated>
+    </task>
+    <task id="LOCAL-00063" summary="adding values to cookie">
+      <created>1600291096323</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1600291096324</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,6 +541,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -558,11 +559,5 @@
     <MESSAGE value="Adding rating stars options" />
     <MESSAGE value="adding values to cookie" />
     <option name="LAST_COMMIT_MESSAGE" value="adding values to cookie" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1600287406386">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1600287406386" />
   </component>
 </project>

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35d1cde5-2ad7-4cae-aac6-232431651c68" name="Default Changelist" comment="" />
+    <list default="true" id="35d1cde5-2ad7-4cae-aac6-232431651c68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../jojo/.idea/Jojo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/images/chorecharts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/images/egis2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/images/smile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/js/FileSaver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jojo/js/dom-to-image.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +28,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1hYk9arpwSdrpiYPdvEK1kgS0bd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,6 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -53,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600195263005</updated>
       <workItem from="1600195264121" duration="4492000" />
+      <workItem from="1600203010495" duration="23000" />
     </task>
     <servers />
   </component>

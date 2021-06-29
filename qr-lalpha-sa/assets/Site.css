@@ -1,0 +1,480 @@
+﻿
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+    min-height: 100%;
+    margin: 0 auto -30px;
+}
+
+.footer,
+.push {
+    height: 30px;
+}
+
+
+
+body {
+
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-image: url(bg2.png);
+    background-repeat: no-repeat;
+    font-family: 'Cairo' !important;
+    background-position: center;
+}
+@media only screen and (max-width : 761px) {
+    body {
+        padding-top: 150px;
+        padding-bottom: 20px;
+        background-size: cover;
+        background-image: url(bg-mobile.png);
+        background-repeat: no-repeat;
+        font-family: 'Cairo' !important;
+        background-position: center;
+    }
+}
+    #TEST {
+        color: red;
+    }
+
+
+    /* Set padding to keep content from hitting the edges */
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+    .dl-horizontal dt {
+        white-space: normal;
+    }
+
+    /* Set width on the form input elements since they're 100% wide by default */
+    input,
+    select,
+    textarea {
+        max-width: 280px;
+    }
+
+    .test-txt {
+        margin-top: 3%;
+        font-size: 22px;
+        color: #003289;
+        font-family: 'Cairo' !important;
+        font-weight: 700;
+        padding-top: 15px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .test-txt {
+            font-size: 20px;
+            text-align: right;
+            font-family: 'Cairo' !important;
+            text-transform: uppercase;
+            text-align: left;
+        }
+    }
+
+    .test-txt2 {
+        margin-top: 3%;
+        font-size: 22px;
+        color: #d70000;
+        font-family: 'Cairo' !important;
+        font-weight: 700;
+        padding-top: 15px;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .test-txt2 {
+            margin-top: 1%;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Cairo' !important;
+            text-align: left;
+        }
+    }
+
+    .logo {
+        height: 85px;
+        width: 373px;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .logo {
+            height: 60px;
+            width: 264px;
+        }
+    }
+
+.label {
+    color: #666 !important;
+    font-size: 20px !important;
+    font-family: 'Cairo' !important;
+    font-weight: 500 !important;
+    padding: .0em .0em .0em !important;
+    /*padding: .2em .6em .3em;*/
+}
+
+    .text-label {
+        font-size: 20px !important;
+        font-family: 'Cairo' !important;
+        color: #003289 !important;
+        /*margin-left: 11px;*/
+        font-weight: 500 !important;
+        /*padding-top: 5px;
+    padding: .2em .6em .3em;*/
+        text-transform: capitalize;
+    }
+
+    .btn {
+        border: 5px solid #a4d29e;
+        border-radius: 5px !important;
+    }
+
+    .bg-div {
+        background-color: #f5fcff;
+        height: 75px;
+        padding: 5px;
+        margin: 5px;
+        width: 272px;
+        padding-top: 15px;
+    }
+
+    @media only screen and (max-width : 761px) {
+
+        .bg-div {
+            /*width: 170px;*/
+            width: 46%;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .bg-div {
+            /*width: 150px;*/
+            width: 46%;
+        }
+    }
+
+
+    @media only screen and (max-width : 320px) {
+        .bg-div {
+            /*width: 140px;*/
+            width: 46%;
+        }
+    }
+
+    /*@media screen and (max-width: 992px) {
+    .bg-div {
+      
+        width: 200px;
+    }
+}
+    @media only screen and (max-width : 761px) {
+        .bg-div {
+            background-color: #f5fcff;
+            height: 75px;
+            padding: 5px;
+            margin: 5px;
+            width: 150px;
+        }
+    }*/
+
+
+    /*   @media only screen and (max-width: 600px) {
+        .bg-div {
+            width: 145px;
+        }
+    }
+
+  @media (min-width: 576px) {
+    .bg-div {
+        width: 170px;
+    }
+}
+
+}*/
+
+
+    .div-line {
+        border-bottom: solid #38c7fc;
+        width: 95%;
+        border-width: thin;
+    }
+
+    .Performed-txt {
+        font-size: 20px;
+        font-family: 'Cairo' !important;
+        color: #00baff;
+        font-weight: 500 !important;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .Performed-txt {
+            font-size: 18px;
+            font-family: 'Cairo' !important;
+        }
+    }
+
+    .Performed-txt2 {
+        font-size: 20px;
+        font-family: 'Cairo' !important;
+        color: #00baff;
+        /*font-weight: 600 !important;*/
+        font-weight: bold !important;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .Performed-txt2 {
+            font-size: 18px;
+            font-family: 'Cairo' !important;
+        }
+    }
+
+
+
+
+    .invalid-txt {
+        font-size: 40px;
+        font-family: 'Cairo' !important;
+        color: #333;
+        font-weight: 700 !important;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .invalid-txt {
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Cairo' !important;
+        }
+    }
+
+
+    .invalid-txt2 {
+        font-size: 25px;
+        font-family: 'Cairo' !important;
+        color: red;
+        font-weight: 400 !important;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .invalid-txt2 {
+            font-size: 15px;
+            text-align: center;
+            font-family: 'Cairo' !important;
+        }
+    }
+
+    .cross-icon {
+        /*height: 80%;*/
+        width: 80%;
+        text-align: center !important;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .cross-icon {
+            /*height: 60%;*/
+            width: 30%;
+            text-align: center !important;
+        }
+    }
+
+    .result-box {
+        width: 400px;
+        height: 60px;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Cairo' !important;
+        border-radius: 10px !important;
+        font-weight: 700;
+        padding: 10px;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .result-box {
+            width: 320px;
+            height: 60px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Cairo' !important;
+            border-radius: 5px !important;
+            font-weight: 600;
+            padding: 10px;
+        }
+    }
+
+
+
+    @media (min-width: 576px) {
+
+        .result-box {
+            width: 250px;
+            height: 60px;
+            font-size: 16px;
+            text-align: center;
+            font-family: 'Cairo' !important;
+            border-radius: 5px !important;
+            font-weight: 600;
+            padding: 10px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .result-box {
+            width: 300px;
+            height: 60px;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Cairo' !important;
+            border-radius: 5px !important;
+            font-weight: 600;
+            padding: 10px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .result-box {
+            width: 300px;
+            height: 60px;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Cairo' !important;
+            border-radius: 5px !important;
+            font-weight: 600;
+            padding: 10px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .result-box {
+            width: 440px;
+            height: 60px;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Cairo' !important;
+            border-radius: 5px !important;
+            font-weight: 700;
+            padding: 10px;
+        }
+    }
+
+    .result-nagative {
+        background-color: #5cb85c;
+        color: #fff;
+        border: 5px solid #a4d29e;
+        border-radius: 10px !important;
+    }
+
+    .result-postive {
+        color: #fff;
+        background-color: #dc3545;
+        border: 5px solid #dc3545;
+        border-radius: 10px !important;
+    }
+
+    .result-warning {
+        color: #212529;
+        background-color: #ffc107;
+        border: 5px solid #ffc107;
+        border-radius: 10px !important;
+    }
+
+
+    .order-1 {
+        -webkit-order: 1; /* Safari 6.1+ */
+        order: 1;
+    }
+
+    @media only screen and (max-width : 761px) {
+        .order-1 {
+            -webkit-order: 2; /* Safari 6.1+ */
+            order: 2;
+        }
+
+        .order-2 {
+            -webkit-order: 1; /* Safari 6.1+ */
+            order: 1;
+        }
+    }
+
+    .order-2 {
+        order: 2;
+        -webkit-order: 2; /* Safari 6.1+ */
+    }
+
+    @media only screen and (max-width : 761px) {
+        .order-2 {
+            -webkit-order: 1; /* Safari 6.1+ */
+            order: 1;
+        }
+    }
+
+
+
+
+.footer {
+    width: 100%;
+    /*position: absolute;*/
+    padding: 10px;
+    clear: both;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  /*  height: auto;
+    background-color: #f1f1f1;*/
+    text-align: center;
+    /*line-height: 30px;*/
+}
+
+.footer-txt {
+    font-family: 'Cairo' !important;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    /*line-height: 50px;*/
+}
+
+        .footer-txt a:link {
+            color: #333;
+        }
+
+        .footer-txt a:visited {
+            color: #333;
+        }
+
+
+        .footer-txt a:hover {
+            color: #333;
+        }
+
+        .footer-txt a:active {
+            color: #333;
+        }
+
+
+    @media only screen and (max-width : 761px) {
+        .footer-sm {
+            /*position: fixed !important;*/
+            text-align: center;
+            /* bottom: -51%;  
+                bottom: -10%;
+                            
+                font-size: 11px;
+                width: 100%;
+                clear: both;
+              
+                font-weight: 500;
+                height: auto;*/
+        }
+    }
+

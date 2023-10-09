@@ -1,0 +1,32 @@
+@use 'variables' as *;
+// responsive mixins
+@mixin respond-to($breakpoint) {
+	$raw-query: map-get($breakpoints, $breakpoint);
+
+	@if $raw-query {
+		$query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+		@media #{$query} {
+			@content;
+		}
+	} @else {
+		@error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+	}
+}
+
+@mixin respond-to-height($heightBreakpoint) {
+	$raw-query: map-get($heightBreakpoints, $heightBreakpoint);
+
+	@if $raw-query {
+		$query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+		@media #{$query} {
+			@content;
+		}
+	} @else {
+		@error 'No value found for `#{$heightBreakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+	}
+}
+

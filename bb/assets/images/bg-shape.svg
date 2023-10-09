@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="428px" height="238px" viewBox="0 0 428 238" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="50%" y1="3.70900927%" x2="50%" y2="71.9877705%" id="linearGradient-1">
+            <stop stop-color="#F7F7F7" stop-opacity="0.556578309" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header" transform="translate(8, -713)" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(0, 594)">
+                <g id="Group" transform="translate(0, 93)">
+                    <g transform="translate(-8, 26)">
+                        <path d="M1,92.6691623 C282.650145,-85.6033748 239.957833,126.65929 425.564428,76.159641 C426.544465,78.1018113 425.564428,238 425.564428,238 L1,238 C1,238 1.12618998,91.6927062 1,92.6691623 Z" id="Path_1" fill="#EAEAEA" opacity="0.204223778"></path>
+                        <path d="M426,47.9534166 C258.872525,-62.8526177 187.604536,109.308291 2.43450186,58.7680356 C1.45687268,60.7129254 2.43450186,238 2.43450186,238 L425.995289,238 C425.995289,238 425.873968,46.9815093 426,47.9534166 Z" id="Path_2" fill="#E7E7E7" opacity="0.29629226"></path>
+                        <path d="M426,47.9534166 C258.872525,-62.8526177 187.604536,109.308291 2.43450186,58.7680356 C1.45687268,60.7129254 2.43450186,238 2.43450186,238 L425.995289,238 C425.995289,238 425.873968,46.9815093 426,47.9534166 Z" id="Path_4" fill="#ECECEC" opacity="0.398679751"></path>
+                        <path d="M428,50.9742887 C134.849064,92.4991849 159.543645,25.650853 0.434699212,56.3719134 C-0.543374016,58.3124394 0.434699212,238 0.434699212,238 L428,238 C428,238 427.873911,50.0029523 428,50.9742887 Z" id="Path_3" fill="#EBEBEB" opacity="0.497838629"></path>
+                        <path d="M0,1.98080647 C183.517974,-18.8532123 95.3677847,134.536673 424.564428,1.98080647 C425.544465,3.92575953 424.564428,238 424.564428,238 L0,238 C0,238 0.126189983,1.01263293 0,1.98080647 Z" id="Path_1-2" fill="url(#linearGradient-1)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

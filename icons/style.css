@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'stc-icons';
-  src:  url('fonts/stc-icons.eot?4kc33m');
-  src:  url('fonts/stc-icons.eot?4kc33m#iefix') format('embedded-opentype'),
-    url('fonts/stc-icons.ttf?4kc33m') format('truetype'),
-    url('fonts/stc-icons.woff?4kc33m') format('woff'),
-    url('fonts/stc-icons.svg?4kc33m#stc-icons') format('svg');
+  src:  url('fonts/stc-icons.eot?y485s2');
+  src:  url('fonts/stc-icons.eot?y485s2#iefix') format('embedded-opentype'),
+    url('fonts/stc-icons.ttf?y485s2') format('truetype'),
+    url('fonts/stc-icons.woff?y485s2') format('woff'),
+    url('fonts/stc-icons.svg?y485s2#stc-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,76 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.stc-icons-contact:before {
+  content: "\ea39";
+}
+.stc-icons-bill-notpaid .path1:before {
+  content: "\ea3a";
+  color: rgb(0, 0, 0);
+}
+.stc-icons-bill-notpaid .path2:before {
+  content: "\ea3b";
+  margin-left: -1em;
+  color: rgb(255, 55, 94);
+}
+.stc-icons-bill-notpaid .path3:before {
+  content: "\ea3c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.stc-icons-bill-paidpaid .path1:before {
+  content: "\ea3d";
+  color: rgb(0, 0, 0);
+}
+.stc-icons-bill-paidpaid .path2:before {
+  content: "\ea3e";
+  margin-left: -1em;
+  color: rgb(0, 196, 140);
+}
+.stc-icons-bill-paidpaid .path3:before {
+  content: "\ea3f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.stc-icons-book-appointment:before {
+  content: "\ea40";
+}
+.stc-icons-international-landline:before {
+  content: "\ea41";
+}
+.stc-icons-merchant-vouchers:before {
+  content: "\ea42";
+}
+.stc-icons-rewards:before {
+  content: "\ea43";
+}
+.stc-icons-roaming-mobile:before {
+  content: "\ea44";
+}
+.stc-icons-roaming-packges:before {
+  content: "\ea45";
+}
+.stc-icons-stc-pay-colored .path1:before {
+  content: "\ea46";
+  color: rgb(79, 0, 140);
+}
+.stc-icons-stc-pay-colored .path2:before {
+  content: "\ea47";
+  margin-left: -1em;
+  color: rgb(0, 196, 140);
+}
+.stc-icons-stc-tv-logo-colored .path1:before {
+  content: "\ea48";
+  color: rgb(79, 0, 140);
+}
+.stc-icons-stc-tv-logo-colored .path2:before {
+  content: "\ea49";
+  margin-left: -1em;
+  color: rgb(255, 106, 57);
+}
+.stc-icons-stc-tv-logo:before {
+  content: "\ea4a";
+}
 .stc-icons-calls-international:before {
   content: "\ea30";
 }

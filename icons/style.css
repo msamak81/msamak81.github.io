@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'stc-icons';
-  src:  url('fonts/stc-icons.eot?c3lcqv');
-  src:  url('fonts/stc-icons.eot?c3lcqv#iefix') format('embedded-opentype'),
-    url('fonts/stc-icons.ttf?c3lcqv') format('truetype'),
-    url('fonts/stc-icons.woff?c3lcqv') format('woff'),
-    url('fonts/stc-icons.svg?c3lcqv#stc-icons') format('svg');
+  src:  url('fonts/stc-icons.eot?hqjmkn');
+  src:  url('fonts/stc-icons.eot?hqjmkn#iefix') format('embedded-opentype'),
+    url('fonts/stc-icons.ttf?hqjmkn') format('truetype'),
+    url('fonts/stc-icons.woff?hqjmkn') format('woff'),
+    url('fonts/stc-icons.svg?hqjmkn#stc-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.stc-icons-vanity-number:before {
+  content: "\ea4b";
+}
 .stc-icons-contact-900:before {
   content: "\ea39";
 }

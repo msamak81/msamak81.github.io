@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'stc-icons';
-  src:  url('fonts/stc-icons.eot?hqjmkn');
-  src:  url('fonts/stc-icons.eot?hqjmkn#iefix') format('embedded-opentype'),
-    url('fonts/stc-icons.ttf?hqjmkn') format('truetype'),
-    url('fonts/stc-icons.woff?hqjmkn') format('woff'),
-    url('fonts/stc-icons.svg?hqjmkn#stc-icons') format('svg');
+  src:  url('fonts/stc-icons.eot?kxrbfi');
+  src:  url('fonts/stc-icons.eot?kxrbfi#iefix') format('embedded-opentype'),
+    url('fonts/stc-icons.ttf?kxrbfi') format('truetype'),
+    url('fonts/stc-icons.woff?kxrbfi') format('woff'),
+    url('fonts/stc-icons.svg?kxrbfi#stc-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.stc-icons-down-arrow:before {
+  content: "\ea4c";
+}
+.stc-icons-port-out:before {
+  content: "\ea4d";
+}
+.stc-icons-up-arrow:before {
+  content: "\ea4e";
+}
 .stc-icons-vanity-number:before {
   content: "\ea4b";
 }

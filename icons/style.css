@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'stc-icons';
-  src:  url('fonts/stc-icons.eot?kxrbfi');
-  src:  url('fonts/stc-icons.eot?kxrbfi#iefix') format('embedded-opentype'),
-    url('fonts/stc-icons.ttf?kxrbfi') format('truetype'),
-    url('fonts/stc-icons.woff?kxrbfi') format('woff'),
-    url('fonts/stc-icons.svg?kxrbfi#stc-icons') format('svg');
+  src:  url('fonts/stc-icons.eot?fet23i');
+  src:  url('fonts/stc-icons.eot?fet23i#iefix') format('embedded-opentype'),
+    url('fonts/stc-icons.ttf?fet23i') format('truetype'),
+    url('fonts/stc-icons.woff?fet23i') format('woff'),
+    url('fonts/stc-icons.svg?fet23i#stc-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.stc-icons-applications:before {
+  content: "\ea4f";
+}
+.stc-icons-banking:before {
+  content: "\ea50";
+}
+.stc-icons-cars:before {
+  content: "\ea51";
+}
+.stc-icons-entertainment:before {
+  content: "\ea52";
+}
+.stc-icons-food-sweets:before {
+  content: "\ea53";
+}
+.stc-icons-health-new:before {
+  content: "\ea54";
+}
+.stc-icons-services:before {
+  content: "\ea55";
+}
 .stc-icons-down-arrow:before {
   content: "\ea4c";
 }
